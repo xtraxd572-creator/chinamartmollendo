@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Título y Metadatos SEO -->
-    <title>China Mart Mollendo | Catálogo de Importaciones</title>
-    <meta name="description" content="Explora nuestro catálogo en línea. Encuentra accesorios de cocina, juguetes y productos electrónicos en la Calle Comercio, Mollendo.">
+    <title>China Mart Mollendo | Catálogo Oficial</title>
+    <meta name="description" content="Explora los catálogos oficiales de importaciones y novedades en China Mart Mollendo.">
 
     <style>
-        /* Estilos Globales */
+        /* Estilos Globales e Identidad de Color */
         :root {
             --rojo-principal: #cc0000;
             --amarillo-acento: #ffcc00;
@@ -32,11 +32,11 @@
             line-height: 1.6;
         }
 
-        /* Encabezado y Navegación */
+        /* Encabezado Principal Mantenido Obligatoriamente */
         header {
             background-color: var(--rojo-principal);
             color: white;
-            padding: 1rem;
+            padding: 1.2rem 1rem;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -47,291 +47,74 @@
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* Alinea el título a la izquierda como la imagen original */
             align-items: center;
         }
 
         .logo h1 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             color: var(--amarillo-acento);
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
             font-weight: bold;
-            transition: color 0.3s;
+            letter-spacing: 0.5px;
         }
 
-        .nav-links a:hover {
-            color: var(--amarillo-acento);
-        }
-
-        /* Sección Hero / Banner Principal */
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com') no-repeat center center/cover;
-            height: 45vh;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+        /* Contenedor Principal para los Nuevos Catálogos */
+        .main-catalogo {
+            max-width: 1200px;
+            margin: 2rem auto;
             padding: 0 1rem;
         }
 
-        .hero h2 {
-            font-size: 2.3rem;
-            margin-bottom: 1rem;
-            color: var(--amarillo-acento);
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin-bottom: 1.5rem;
-        }
-
-        /* MENÚ DE INTERACCIÓN PRINCIPAL */
-        .botones-interaccion {
-            display: flex;
-            gap: 1rem;
-            max-width: 900px;
-            width: 100%;
-            justify-content: center;
-            flex-wrap: wrap;
+        .seccion-vacia {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: white;
+            border-radius: 8px;
+            border: 2px dashed var(--gris-borde);
             margin-top: 1rem;
         }
 
-        .btn-interact {
-            background-color: var(--amarillo-acento);
-            color: var(--oscuro);
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 30px;
-            font-size: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-            transition: transform 0.2s, background-color 0.2s;
-            border: 2px solid transparent;
-        }
-
-        .btn-interact:hover {
-            transform: scale(1.05);
-            background-color: white;
-            border-color: var(--rojo-principal);
-            color: var(--rojo-principal);
-        }
-
-        /* Contenedor de Secciones del Catálogo */
-        .catalogo-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
-
-        .seccion-producto {
-            margin-bottom: 4rem;
-            padding-top: 2rem;
-        }
-
-        .titulo-categoria {
-            font-size: 1.8rem;
-            color: var(--rojo-principal);
-            margin-bottom: 1.5rem;
-            border-bottom: 3px solid var(--rojo-principal);
-            padding-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        /* Grid de Tarjetas de Productos */
-        .grid-productos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 1.5rem;
-        }
-
-        /* Tarjeta de Producto Individual */
-        .item-card {
-            background: white;
-            border: 1px solid var(--gris-borde);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            display: flex;
-            flex-direction: column;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .item-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .item-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-            background: white;
-            padding: 0.5rem;
-            border-bottom: 1px solid var(--gris-borde);
-        }
-
-        .item-img-placeholder {
-            background-color: #f0f0f0;
-            height: 200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            font-weight: bold;
-            font-size: 0.9rem;
-            border-bottom: 1px solid var(--gris-borde);
-            text-align: center;
-            padding: 1rem;
-        }
-
-        .item-info {
-            padding: 1.2rem;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-        }
-
-        .item-title {
-            font-size: 1.1rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            color: var(--oscuro);
-        }
-
-        .item-desc {
-            font-size: 0.9rem;
+        .seccion-vacia p {
             color: #666;
-            margin-bottom: 1rem;
-            flex-grow: 1;
+            font-size: 1.2rem;
+            font-weight: 500;
         }
 
-        .btn-pedido {
-            background-color: var(--rojo-principal);
-            color: white;
-            text-align: center;
-            padding: 0.6rem;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            transition: background-color 0.2s;
-        }
-
-        .btn-pedido:hover {
-            background-color: #990000;
-        }
-
-        /* Sección Datos de Ubicación */
-        .info-contacto {
-            background-color: #eee;
-            padding: 3rem 1rem;
-        }
-
-        .info-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            align-items: center;
-        }
-
-        .detalles h3 {
-            margin-bottom: 1rem;
-            color: var(--rojo-principal);
-        }
-
-        .detalles p {
-            margin-bottom: 0.8rem;
-            font-size: 1rem;
-        }
-
-        /* Pie de Página */
+        /* Pie de Página Sencillo */
         footer {
             background-color: var(--oscuro);
             color: white;
             text-align: center;
             padding: 1.5rem 1rem;
             font-size: 0.9rem;
-        }
-
-        /* Adaptabilidad Móvil */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            .hero h2 {
-                font-size: 1.8rem;
-            }
-            .botones-interaccion {
-                flex-direction: column;
-                width: 100%;
-                padding: 0 1rem;
-            }
-            .btn-interact {
-                width: 100%;
-                text-align: center;
-            }
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado con la Línea Roja e Identidad Visual del Negocio -->
     <header>
-        <nav class="nav-container">
+        <div class="nav-container">
             <div class="logo">
                 <h1>China Mart Mollendo</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#cocina">Cocina</a></li>
-                <li><a href="#juguetes">Juguetes</a></li>
-                <li><a href="#electronica">Electrónica</a></li>
-                <li><a href="#visitanos">Ubicación</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <!-- Banner Principal -->
-    <section class="hero">
-        <h2>Importaciones y Novedades al Instante</h2>
-        <p>Explora directamente nuestras categorías más populares en Mollendo. Haz clic para revisar los productos disponibles.</p>
-        
-        <!-- LOS 3 BOTONES INTERACTIVOS COMPLETAMENTE CORREGIDOS -->
-        <div class="botones-interaccion">
-            <a href="#cocina" class="btn-interact">Q Accesorios de Cocina</a>
-            <a href="#juguetes" class="btn-interact">🧸 Juguetes</a>
-            <a href="#electronica" class="btn-interact">⚡ Productos Electrónicos</a>
+    <!-- Contenedor listo para recibir las imágenes y textos de tus catálogos reales -->
+    <main class="main-catalogo">
+        <div class="seccion-vacia">
+            <p>📥 Espacio preparado. Estoy listo para recibir las imágenes de tus nuevos catálogos...</p>
         </div>
-    </section>
+    </main>
 
-    <!-- CONTENEDOR DEL CATÁLOGO DIRECTO -->
-    <main class="catalogo-container">
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
+    </footer>
 
-        <!-- SECCIÓN 1: ACCESORIOS DE COCINA -->
-        <section id="cocina" class="seccion-producto">
-            <h2 class="titulo-categoria">🍳 Accesorios de Cocina</h2>
-            <div class="grid-productos">
-                
-                <!-- Tarjeta 1: Cocina Eléctrica -->
-                <div class="item-card">
-                    <img src="cocina.webp" alt="Cocina Eléctrica Nationalizer">
-                    <div class="item-info">
-                        <div class="item-title">Cocina Eléctrica Nationalizer</div>
-                        <p class="item-desc">Modelo NN-5824 de 2500W con dos hornillas (155mm + 185mm). Cuerpo de acero inoxidable, compacto, portátil y fácil de limpiar.</p>
+</body>
+</html>
