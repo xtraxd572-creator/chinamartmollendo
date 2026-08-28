@@ -95,25 +95,29 @@
             margin-bottom: 2rem;
         }
 
-        /* Botón de Contacto Rápido */
-        .btn-whatsapp {
+        /* Botón de Catálogos Corregido con Colores de la Marca */
+        .btn-catalogos {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: #25d366;
+            background-color: var(--rojo-principal);
             color: white;
             text-decoration: none;
-            padding: 0.8rem 2rem;
+            padding: 1rem 2rem;
             font-size: 1.1rem;
             font-weight: bold;
             border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
-            transition: transform 0.2s, background-color 0.2s;
+            box-shadow: 0 4px 15px rgba(204, 0, 0, 0.2);
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+            border: 2px solid transparent;
         }
 
-        .btn-whatsapp:hover {
+        .btn-catalogos:hover {
             transform: scale(1.03);
-            background-color: #20ba5a;
+            background-color: white;
+            color: var(--rojo-principal);
+            border-color: var(--rojo-principal);
+            box-shadow: 0 4px 15px rgba(204, 0, 0, 0.1);
         }
 
         /* Pie de Página */
@@ -136,6 +140,11 @@
             .welcome-box p {
                 font-size: 1rem;
             }
+            .btn-catalogos {
+                font-size: 0.95rem;
+                padding: 0.9rem 1.5rem;
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -156,9 +165,9 @@
             <h2>¡Bienvenido/a a China Mart Mollendo!</h2>
             <p>Estamos preparando nuestro catálogo digital oficial con las mejores novedades e importaciones pensadas para ti.</p>
             
-            <!-- Botón opcional de atención directo a su WhatsApp Real -->
-            <a href="https://wa.me" target="_blank" class="btn-whatsapp">
-                💬 Consultas por WhatsApp
+            <!-- NUEVO BOTÓN SOLICITADO CON EFECTO INTERACTIVO -->
+            <a href="#" class="btn-catalogos">
+                📂 ¿Desea ver los catálogos que tenemos para ti?
             </a>
         </div>
     </main>
