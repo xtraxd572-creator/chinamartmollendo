@@ -23,7 +23,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            scroll-behavior: smooth; /* Desplazamiento suave al hacer clic */
+            scroll-behavior: smooth;
         }
 
         body {
@@ -98,7 +98,7 @@
             margin-bottom: 1.5rem;
         }
 
-        /* MENÚ DE INTERACCIÓN PRINCIPAL (Las 3 Opciones Obligatorias) */
+        /* MENÚ DE INTERACCIÓN PRINCIPAL */
         .botones-interaccion {
             display: flex;
             gap: 1rem;
@@ -138,7 +138,7 @@
 
         .seccion-producto {
             margin-bottom: 4rem;
-            padding-top: 2rem; /* Espacio para que el menú sticky no tape el título */
+            padding-top: 2rem;
         }
 
         .titulo-categoria {
@@ -176,7 +176,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
 
-        /* Marcador de posición para fotos reales de productos */
         .item-img-placeholder {
             background-color: #f0f0f0;
             height: 180px;
@@ -300,12 +299,11 @@
         </nav>
     </header>
 
-    <!-- Banner Principal con las 3 Opciones de Interacción Directa -->
+    <!-- Banner Principal -->
     <section class="hero">
         <h2>Importaciones y Novedades al Instante</h2>
         <p>Explora directamente nuestras categorías más populares en Mollendo. Haz clic para revisar los productos disponibles.</p>
         
-        <!-- LOS 3 BOTONES INTERACTIVOS -->
         <div class="botones-interaccion">
             <a href="#cocina" class="btn-interact">🍳 Accesorios de Cocina</a>
             <a href="#juguetes" class="btn-interact">🧸 Juguetes</a>
@@ -320,8 +318,13 @@
         <section id="cocina" class="seccion-producto">
             <h2 class="titulo-categoria">🍳 Accesorios de Cocina</h2>
             <div class="grid-productos">
+                
+                <!-- Tarjeta 1: Cocina Eléctrica -->
                 <div class="item-card">
-                    <!-- Imagen real de la cocina eléctrica Nationalizer -->
                     <img src="https://ibb.co" alt="Cocina Eléctrica Nationalizer" style="width: 100%; height: 180px; object-fit: contain; background: white; padding: 0.5rem; border-bottom: 1px solid var(--gris-borde);">
                     <div class="item-info">
-                        <div class="item-title">Cocina Eléctrica Nationalizer</div>para picar en segundos.Consultar Precio
+                        <div class="item-title">Cocina Eléctrica Nationalizer</div>
+                        <p class="item-desc">Modelo NN-5824 de 2500W con dos hornillas (155mm + 185mm). Cuerpo de acero inoxidable, compacto, portátil y fácil de limpiar.</p>
+                        <a href="https://wa.me" target="_blank" class="btn-pedido">Consultar Precio</a>
+                    </div>
+                </div>
