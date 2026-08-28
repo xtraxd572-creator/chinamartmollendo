@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Título y Metadatos SEO -->
-    <title>China Mart Mollendo | Catálogo Oficial</title>
-    <meta name="description" content="Explora los catálogos oficiales de importaciones y novedades en China Mart Mollendo.">
+    <title>China Mart Mollendo | Catálogo de Bebidas Asiáticas</title>
+    <meta name="description" content="Explora nuestro catálogo exclusivo de bebidas asiáticas en China Mart Mollendo. Opciones frutadas, refrescantes e irresistibles.">
 
     <style>
         /* Estilos Globales e Identidad de Color */
@@ -16,6 +16,7 @@
             --oscuro: #1a1a1a;
             --claro: #f9f9f9;
             --gris-borde: #e0e0e0;
+            --rosado-suave: #fff0f5;
         }
 
         * {
@@ -30,9 +31,10 @@
             background-color: var(--claro);
             color: var(--oscuro);
             line-height: 1.6;
+            padding-bottom: 80px; /* Espacio para que el footer fijo no tape el contenido */
         }
 
-        /* Encabezado Principal (Se mantiene intacto) */
+        /* Encabezado Principal */
         header {
             background-color: var(--rojo-principal);
             color: white;
@@ -58,44 +60,149 @@
             letter-spacing: 0.5px;
         }
 
-        /* Contenedor Principal para los Nuevos Catálogos */
+        /* Contenedor Principal */
         .main-catalogo {
             max-width: 1200px;
-            margin: 2rem auto;
+            margin: 2.5rem auto;
             padding: 0 1rem;
         }
 
-        .seccion-vacia {
+        /* Encabezado del Catálogo de Bebidas */
+        .catalogo-header {
             text-align: center;
-            padding: 5rem 2rem;
-            background: white;
-            border-radius: 8px;
-            border: 2px dashed var(--gris-borde);
-            margin-top: 1rem;
+            margin-bottom: 3rem;
         }
 
-        .seccion-vacia p {
-            color: #666;
+        .catalogo-header h2 {
+            font-size: 2.2rem;
+            color: var(--rojo-principal);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .catalogo-header .tagline {
             font-size: 1.2rem;
-            font-weight: 500;
+            color: #555;
+            font-weight: 600;
+            font-style: italic;
+            word-spacing: 2px;
         }
 
-        /* Pie de Página */
+        .catalogo-header .tagline span {
+            color: var(--rojo-principal);
+        }
+
+        /* Grid de Tarjetas de Bebidas */
+        .grid-bebidas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Tarjeta de Bebida Individual */
+        .bebida-card {
+            background: white;
+            border: 1px solid var(--gris-borde);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bebida-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Espacio para la foto de cada bebida */
+        .bebida-img-container {
+            background-color: var(--rosado-suave);
+            height: 240px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 1px solid var(--gris-borde);
+        }
+
+        .bebida-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 1rem;
+        }
+
+        .placeholder-texto {
+            color: #a34e78;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1rem;
+            border: 2px dashed #e6b3cc;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        /* Información de la Bebida */
+        .bebida-info {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .bebida-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: 0.6rem;
+            color: var(--oscuro);
+        }
+
+        .bebida-desc {
+            font-size: 0.95rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        /* Botón de Pedido */
+        .btn-pedido {
+            background-color: var(--rojo-principal);
+            color: white;
+            text-align: center;
+            padding: 0.75rem;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: background-color 0.2s;
+            box-shadow: 0 3px 6px rgba(204,0,0,0.2);
+        }
+
+        .btn-pedido:hover {
+            background-color: #990000;
+        }
+
+        /* Pie de Página Fijo */
         footer {
             background-color: var(--oscuro);
             color: white;
             text-align: center;
-            padding: 1.5rem 1rem;
+            padding: 1.2rem 1rem;
             font-size: 0.9rem;
             position: fixed;
             bottom: 0;
             width: 100%;
+            z-index: 100;
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado con la Identidad Visual del Negocio -->
+    <!-- Encabezado con la Barra Roja y Letras Doradas -->
     <header>
         <div class="nav-container">
             <div class="logo">
@@ -104,16 +211,60 @@
         </div>
     </header>
 
-    <!-- Contenedor limpio esperando tus nuevas imágenes -->
+    <!-- Contenedor del Catálogo de Bebidas Asiáticas -->
     <main class="main-catalogo">
-        <div class="seccion-vacia">
-            <p>📥 Espacio limpio. Estoy listo para recibir los nuevos catálogos que te enviaron...</p>
+        
+        <div class="catalogo-header">
+            <h2>🧋 Bebidas Asiáticas 🔮</h2>
+            <p class="tagline">✨ Frutadas • 🍃 Refrescantes • 💖 Irresistibles</p>
         </div>
+
+        <div class="grid-bebidas">
+            
+            <!-- Bebida 1: Jugo de Mochi de Fresa / Bebida de Fresa Novedosa -->
+            <div class="bebida-card">
+                <div class="bebida-img-container">
+                    <!-- Cuando subas la primera imagen la conectas aquí cambiando el placeholder -->
+                    <div class="placeholder-texto">📸 Sube la foto como:<br><strong>bebida1.webp</strong></div>
+                </div>
+                <div class="bebida-info">
+                    <div class="bebida-title">Soda Asiática de Fresa & Crema</div>
+                    <p class="bebida-desc">Bebida gasificada ultra refrescante con trozos reales de jalea y un toque dulce irresistible que te transportará a Asia en el primer sorbo.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-pedido">Preguntar Disponibilidad</a>
+                </div>
+            </div>
+
+            <!-- Bebida 2: Té de Burbujas / Jugo de Uva Japonesa -->
+            <div class="bebida-card">
+                <div class="bebida-img-container">
+                    <div class="placeholder-texto">📸 Sube la foto como:<br><strong>bebida2.webp</strong></div>
+                </div>
+                <div class="bebida-info">
+                    <div class="bebida-title">Jugo Frutado de Uva Verde Míscato</div>
+                    <p class="bebida-desc">Bebida frutal con un sabor intenso y dulce a uva premium de exportación. Perfecta para tomarla heladísima en una tarde calurosa.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-pedido">Preguntar Disponibilidad</a>
+                </div>
+            </div>
+
+            <!-- Bebida 3: Té Verde con Mango / Melón Oriental -->
+            <div class="bebida-card">
+                <div class="bebida-img-container">
+                    <div class="placeholder-texto">📸 Sube la foto como:<br><strong>bebida3.webp</strong></div>
+                </div>
+                <div class="bebida-info">
+                    <div class="bebida-title">Refresco Exótico de Melón Dulce</div>
+                    <p class="bebida-desc">Una combinación irresistible y aromática de melón coreano. Suave textura frutada que te dejará con ganas de una lata más.</p>
+                    <a href="https://wa.me" target="_blank" class="btn-pedido">Preguntar Disponibilidad</a>
+                </div>
+            </div>
+
+        </div>
+
     </main>
 
     <!-- Pie de Página -->
     <footer>
-        <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
+        <p>&copy; 2026 China Mart Mollendo. Catálogo Oficial Exclusivo.</p>
     </footer>
 
 </body>
