@@ -16,6 +16,7 @@
             --oscuro: #1a1a1a;
             --claro: #f9f9f9;
             --gris-borde: #e0e0e0;
+            --verde-whatsapp: #25d366;
         }
 
         * {
@@ -92,32 +93,56 @@
         .welcome-box p {
             color: #555;
             font-size: 1.15rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
-        /* Botón de Catálogos Corregido con Colores de la Marca */
-        .btn-catalogos {
+        /* Título de la pregunta de catálogos */
+        .catalog-question {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        /* Contenedor para alinear los dos botones uno al lado del otro */
+        .buttons-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        /* Estilo base para ambos botones */
+        .btn-action {
+            flex: 1;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--rojo-principal);
-            color: white;
             text-decoration: none;
-            padding: 1rem 2rem;
+            padding: 0.9rem 1.5rem;
             font-size: 1.1rem;
             font-weight: bold;
             border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(204, 0, 0, 0.2);
-            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
-            border: 2px solid transparent;
+            transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        .btn-catalogos:hover {
+        .btn-action:hover {
             transform: scale(1.03);
-            background-color: white;
-            color: var(--rojo-principal);
-            border-color: var(--rojo-principal);
-            box-shadow: 0 4px 15px rgba(204, 0, 0, 0.1);
+            opacity: 0.9;
+        }
+
+        /* Botón IR específico */
+        .btn-ir {
+            background-color: var(--rojo-principal);
+        }
+
+        /* Botón CONSULTAR específico */
+        .btn-consultar {
+            background-color: var(--verde-whatsapp);
         }
 
         /* Pie de Página */
@@ -130,6 +155,7 @@
             width: 100%;
         }
 
+        /* Adaptabilidad para Pantallas Chicas de Celulares */
         @media (max-width: 480px) {
             .welcome-box {
                 padding: 2.5rem 1.5rem;
@@ -140,9 +166,14 @@
             .welcome-box p {
                 font-size: 1rem;
             }
-            .btn-catalogos {
-                font-size: 0.95rem;
-                padding: 0.9rem 1.5rem;
+            .catalog-question {
+                font-size: 1.1rem;
+            }
+            .buttons-group {
+                flex-direction: column; /* En celulares se ponen uno abajo del otro para que no se amontonen */
+                width: 100%;
+            }
+            .btn-action {
                 width: 100%;
             }
         }
@@ -159,16 +190,25 @@
         </div>
     </header>
 
-    <!-- Contenido Central Limpio de Bienvenida -->
+    <!-- Contenido Central Dinámico -->
     <main class="welcome-main">
         <div class="welcome-box">
             <h2>¡Bienvenido/a a China Mart Mollendo!</h2>
             <p>Estamos preparando nuestro catálogo digital oficial con las mejores novedades e importaciones pensadas para ti.</p>
             
-            <!-- NUEVO BOTÓN SOLICITADO CON EFECTO INTERACTIVO -->
-            <a href="#" class="btn-catalogos">
-                📂 ¿Desea ver los catálogos que tenemos para ti?
-            </a>
+            <!-- Pregunta del catálogo -->
+            <span class="catalog-question">📂 ¿Desea ver los catálogos que tenemos para ti?</span>
+
+            <!-- Las dos nuevas opciones solicitadas -->
+            <div class="buttons-group">
+                <!-- Botón IR (Rojo) -->
+                <a href="#" class="btn-action btn-ir">➡️ Ir</a>
+                
+                <!-- Botón CONSULTAR (Verde directo al WhatsApp de la tienda 914236008) -->
+                <a href="https://wa.me" target="_blank" class="btn-action btn-consultar">
+                    💬 Consultar
+                </a>
+            </div>
         </div>
     </main>
 
