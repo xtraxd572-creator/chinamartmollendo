@@ -24,6 +24,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth; /* Desplazamiento suave activado */
         }
 
         body {
@@ -32,7 +33,7 @@
             line-height: 1.6;
         }
 
-        /* Encabezado Principal Mantenido */
+        /* Encabezado Principal */
         header {
             background-color: var(--rojo-principal);
             color: white;
@@ -58,7 +59,7 @@
             letter-spacing: 0.5px;
         }
 
-        /* DISEÑO DE CONTENEDOR CON BARRA LATERAL (PANEL DE CONTROL) */
+        /* DISEÑO DE CONTENEDOR CON BARRA LATERAL */
         .layout-catalogo {
             max-width: 1200px;
             margin: 2rem auto;
@@ -76,6 +77,8 @@
             border-radius: 12px;
             border: 1px solid var(--gris-borde);
             box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 90px; /* Se queda fijo al hacer scroll en compu */
         }
 
         .sidebar-catalogos h3 {
@@ -155,6 +158,7 @@
             overflow: hidden;
             box-shadow: 0 6px 20px rgba(0,0,0,0.05);
             border: 1px solid var(--gris-borde);
+            scroll-margin-top: 90px; /* Evita que el menú tape el título al deslizar */
         }
 
         .product-image {
@@ -269,7 +273,7 @@
             margin-top: 4rem;
         }
 
-        /* ADAPTABILIDAD MÓVIL (Menú colapsable arriba en celulares) */
+        /* ADAPTABILIDAD MÓVIL */
         @media (max-width: 850px) {
             .layout-catalogo {
                 grid-template-columns: 1fr;
@@ -279,6 +283,8 @@
 
             .sidebar-catalogos {
                 padding: 1rem;
+                position: relative;
+                top: 0;
             }
 
             .sidebar-catalogos h3 {
@@ -288,7 +294,7 @@
 
             .menu-catalogos {
                 flex-direction: row;
-                overflow-x: auto; /* Permite deslizar los catálogos hacia los lados en móviles */
+                overflow-x: auto;
                 white-space: nowrap;
                 padding-bottom: 0.5rem;
             }
@@ -327,7 +333,8 @@
             <h3>📂 Catálogos</h3>
             <ul class="menu-catalogos">
                 <li>
-                    <a href="#" class="catalog-item active">
+                    <!-- CORREGIDO: Ahora apunta al id "seccion-licores" -->
+                    <a href="#seccion-licores" class="catalog-item active">
                         🏺 Licores Tradicionales
                     </a>
                 </li>
@@ -342,9 +349,3 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="catalog-item disabled" onclick="return false;">
-                        ⚡ Electrónicos <span class="badge-proximamente">Próximamente</span>
-                    </a>
-                </li>
-            </ul>
-        </aside>
