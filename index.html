@@ -4,19 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- =========================================================================
-         ESTAS LÍNEAS CONTROLAN CÓMO SE VE TU PÁGINA EN LOS BUSCADORES (SEO)
-         ========================================================================= -->
-    <!-- Título principal (El enlace grande que se vuelve morado al visitarlo) -->
-    <title>#china martmollendo, tienda virtual ...</title>
-    
-    <!-- Descripción corta (El texto gris que aparece debajo del título) -->
-    <meta name="description" content="#china martmollendo, tienda y consultas' CON GRAN CANTIDAD DE PUBLICO EN SU PRIMER DIA DE INAUGURACION LA ATENCION SERA DEM LUNES A DOMINGO ...">
-    
-    <!-- Etiquetas opcionales para cuando compartan el enlace por redes sociales (Facebook/WhatsApp) -->
-    <meta property="og:title" content="#Mollendo ABRIO SUS PUERTAS &quot;CHINA MART&quot; CON ...">
-    <meta property="og:description" content="#Mollendo ABRIO SUS PUERTAS 'CHINA MART' CON GRAN CANTIDAD DE PUBLICO EN SU PRIMER DIA DE INAUGURACION LA ATENCION SERA DEM LUNES A DOMINGO ...">
-    <meta property="og:type" content="website">
+    <!-- Título y Metadatos SEO -->
+    <title>China Mart Mollendo | Inicio</title>
+    <meta name="description" content="Encuentra la mayor variedad de artículos para el hogar, novedades, tecnología, juguetería y abarrotes en el corazón de Mollendo.">
 
     <style>
         /* Estilos Globales */
@@ -41,7 +31,7 @@
             overflow-x: hidden;
         }
 
-        /* PANTALLA DE ACCESO (LOGIN) */
+        /* PANTALLA DE ACCESO (LOGIN / REGISTRO) */
         .login-overlay {
             position: fixed;
             top: 0;
@@ -57,24 +47,52 @@
 
         .login-box {
             background: white;
-            padding: 2.5rem;
+            padding: 2.5rem 2.5rem 2rem 2.5rem;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
             text-align: center;
             border-top: 6px solid var(--amarillo-acento);
+            position: relative;
+        }
+
+        /* Pestañas de Iniciar Sesión / Registrarse */
+        .auth-tabs {
+            display: flex;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 0.75rem;
+            background: none;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+        }
+
+        .tab-btn.active {
+            color: var(--rojo-principal);
+            border-bottom: 3px solid var(--rojo-principal);
         }
 
         .login-box h2 {
             color: var(--rojo-principal);
             margin-bottom: 0.5rem;
+            display: none; /* Ocultado para usar las pestañas como título principal */
         }
 
         .login-box p {
             color: #666;
             font-size: 0.9rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .input-group {
@@ -115,7 +133,7 @@
             border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.3s;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
         }
 
         .btn-login:hover {
@@ -297,24 +315,30 @@
 </head>
 <body>
 
-    <!-- PANTALLA DE INGRESO OBLIGATORIO -->
+    <!-- PANTALLA DE INGRESO INTERACTIVA -->
     <div class="login-overlay" id="loginOverlay">
         <div class="login-box">
-            <h2>China Mart Mollendo</h2>
-            <p>Ingresa tus datos para acceder a la tienda.</p>
+            
+            <!-- Pestañas de Selección -->
+            <div class="auth-tabs">
+                <button type="button" class="tab-btn active" id="tabLogin" onclick="cambiarModo('login')">Iniciar Sesión</button>
+                <button type="button" class="tab-btn" id="tabRegister" onclick="cambiarModo('registro')">Registrarse</button>
+            </div>
+
+            <p id="authInstruction">Ingresa tus datos registrados para acceder a la tienda.</p>
             
             <form id="loginForm" onsubmit="validarAcceso(event)">
                 <div class="input-group">
-                    <label for="username">Nombre y Apellido:</label>
+                    <label id="lblUsername" for="username">Nombre y Apellido:</label>
                     <input type="text" id="username" placeholder="Ej. Juan Pérez" required>
                 </div>
                 
                 <div class="input-group">
-                    <label for="password">Crea una Contraseña:</label>
-                    <input type="password" id="password" placeholder="Ingresa cualquier contraseña" required>
+                    <label id="lblPassword" for="password">Contraseña:</label>
+                    <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
                 </div>
                 
-                <button type="submit" class="btn-login">Registrarse e Ingresar</button>
+                <button type="submit" class="btn-login" id="btnSubmit">Iniciar Sesión</button>
             </form>
         </div>
     </div>
@@ -328,11 +352,3 @@
                 </div>
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#ubicacion">Ubicación</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section id="inicio" class="hero">
-            <h2>¡Bienvenido, <span id="userGreeting" style="color: var(--amarillo-acento);">Cliente</span>!</h2>
