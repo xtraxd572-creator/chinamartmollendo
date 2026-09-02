@@ -116,6 +116,7 @@
             border-radius: 8px;
             transition: all 0.2s ease;
             background-color: var(--claro);
+            cursor: pointer;
         }
 
         .catalog-item.active {
@@ -245,175 +246,212 @@
 
     <div class="layout-catalogo">
         
-        <!-- BARRA LATERAL CON LAS 5 OPCIONES SOLICITADAS -->
+        <!-- BARRA LATERAL CON LAS 5 OPCIONES -->
         <aside class="sidebar-catalogos">
             <h3>📂 Selección</h3>
             <ul class="menu-catalogos">
-            <li><a href="catalogos.html" class="catalog-item active">Bebidas Asiáticas</a></li>
-            <li><a href="inciensos.html" class="catalog-item">Inciensos y Porta Inciensos</a></li>
-            <li><a href="bolsos.html" class="catalog-item">👛 Carteras, Mochilas y Más</a></li>
-            <li><a href="mascotas.html" class="catalog-item">🐾 Mascotas Agosto</a></li>
-            <li><a href="gorras.html" class="catalog-item">🧢 Gorras Damas y Varón</a></li>
-        </ul>
+                <li><a href="#" class="catalog-item active" onclick="mostrarCatalogo(event, 'bebidas')">🧋 Bebidas Asiáticas</a></li>
+                <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'inciensos')">🪔 Inciensos y Porta Inciensos</a></li>
+                <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'bolsos')">👛 Carteras, Mochilas y Más</a></li>
+                <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'mascotas')">🐾 Mascotas Agosto</a></li>
+                <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'gorras')">🧢 Gorras Damas y Varón</a></li>
+            </ul>
         </aside>
 
         <!-- PANEL DE EXPOSICIÓN -->
         <main class="content-catalogo">
             
             <!-- CATEGORÍA 1: BEBIDAS ASIÁTICAS -->
-                        <!-- CATEGORÍA 1: BEBIDAS ASIÁTICAS -->
             <div id="bebidas" class="catalogo-section active">
                 <h2 class="section-title">🧋 Bebidas Asiáticas</h2>
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
-                    <!-- Tu imagen oficial vinculada directamente desde tu repositorio -->
-                    <img src="bebidas_top.png" alt="Licor Tradicional Chino - China Mart Mollendo" style="width: 100%; display: block;">
-                </div>
-                <a href="https://wa.me" target="_blank" class="btn-whatsapp">
-                    💬 consultar producto.
-                </a>
-            </div>
-            <!-- PRODUCTO 2: CÓCTELES FRUTALES JOJU -->
-                               <!-- PRODUCTO 2: CÓCTELES FRUTALES JOJU -->
+                
                 <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_joju.png" alt="Cócteles Frutales JOJU - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto; background-color: #25d366;">
-                        💬 consultar producto.
+                    <img src="bebidas_top.png" alt="Licor Tradicional Chino - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Asi%C3%A1ticas" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
                     </a>
                 </div>
-<!-- PRODUCTO 3: NUEVO CATÁLOGO BEBIDAS DE TÉ CON LECHE -->
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_joju.png" alt="Cócteles Frutales JOJU - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20C%C3%B3cteles%20JOJU" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
                 <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
                     <img src="bebidas_milktea.png" alt="Bebidas de Té con Leche - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20T%C3%A9%20con%20Leche" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
                         💬 Consultar Sabores.
                     </a>
                 </div>
-<!-- PRODUCTO 4: NUEVO CATÁLOGO SOJU COREANO FRUTAL -->
+
                 <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
                     <img src="bebidas_soju.png" alt="Soju Coreano Sabores Frutales - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Soju%20Coreano" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
                         💬 Consultar Variedad de Soju coreano.
                     </a>
                 </div>
-<!-- PRODUCTO 5: NUEVO CATÁLOGO BEBIDAS COREANAS SELECCIÓN -->
+
                 <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
                     <img src="bebidas_coreanas.png" alt="Bebidas Coreanas Selección - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 consultar producto.
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Bebidas%20Coreanas" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
                     </a>
                 </div>
-<!-- PRODUCTO 6: NUEVO CATÁLOGO JUGOS CON PREBIÓTICOS NFC -->
+
                 <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
                     <img src="bebidas_nfc.png" alt="Jugos con Prebióticos NFC - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 consultar producto.
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Jugos%20NFC" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
                     </a>
                 </div>
-<!-- PRODUCTO 7: BEBIDAS CONCENTRADAS FRUTALES RICO -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_rico.png" alt="Bebidas Concentradas Frutales Rico - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20pedir%20las%20Bebidas%20Concentradas%20Rico%20de%20S/%2012.00" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 8: BEBIDA CONCENTRADA DE GRANADA ICE TALK -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_icetalk_granada.png" alt="Bebida Concentrada de Granada Ice Talk - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Ice%20Talk%20Granada%20(S/%206.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 9: LECHE DE MELÓN CON SORBETE -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_leche_melon.png" alt="Leche de Melón con Sorbete - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Leche%20de%20Mel%C3%B3n%20(S/%207.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto
-    </a>
-</div>
-            <!-- PRODUCTO 10: BEBIDA DE ALOE VERA SABOR NATURAL -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_aloe_vera.png" alt="Bebida de Aloe Vera Sabor Natural - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20(S/%205.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto
-    </a>
-</div>
-            <!-- PRODUCTO 11: BEBIDAS DE TÉ CON LECHE INSTANTÁNEAS -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_te_con_leche.png" alt="Bebidas con Té y Leche - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20de%20T%C3%A9%20con%20Leche%20(S/%206.30)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 12: BEBIDAS FRUTALES COREANAS CON TROZOS DE FRUTA -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_frutales_coreanas.png" alt="Bebidas Frutales Coreanas - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Frutales%20Coreanas%20(S/%206.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 13: BEBIDA DE JUGO DE UVA NATURAL -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_jugo_uva.png" alt="Bebida de Jugo de Uva Natural - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Jugo%20de%20Uva%20Natural%20(S/%204.60)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 14: BEBIDA DE ALOE VERA EN LATA -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_aloe_vera_lata.png" alt="Bebida de Aloe Vera en Lata - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20en%20Lata%20(S/%203.90)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 15: BROWN SUGAR MILK TEA (LATA 490ML) -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_brown_sugar_milk_tea.png" alt="Bebida de Té Negro Brown Sugar Milk Tea - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Brown%20Sugar%20Milk%20Tea%20(S/%208.40)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 16: TÉ HERBAL JIA DUO BAO -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_te_herbal_jia_duo_bao.png" alt="Bebida de Té Herbal Jia Duo Bao - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20T%C3%A9%20Herbal%20Jia%20Duo%20Bao%20(1%20x%20S/%205.50%20o%202%20x%20S/%209.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            <!-- PRODUCTO 17: SOJU COREANO DE UVA -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="bebidas_soju_uva.png" alt="Soju Coreano de Uva - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Soju%20Coreano%20de%20Uva" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-        </section>
 
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_rico.png" alt="Bebidas Concentradas Frutales Rico - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20pedir%20las%20Bebidas%20Concentradas%20Rico%20de%20S/%2012.00" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
 
-           <!-- CATEGORÍA 2: INCIENSOS -->
-<div id="inciensos" class="catalogo-section">
-    <h2 class="section-title">🪔 Porta inciensos</h2>
-    <!-- PRODUCTO 1: CATALOGO GENERAL DE PORTA INCIENSOS -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_catalogo_principal.png" alt="Catálogo Porta Inciensos y Inciensos - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Porta%20Inciensos%20y%20Variedades" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar producto.
-    </a>
-</div>
-</div>
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_icetalk_granada.png" alt="Bebida Concentrada de Granada Ice Talk - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Ice%20Talk%20Granada%20(S/%206.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
 
-<!-- CATEGORÍA 3: BOLSOS -->
-<div id="bolsos" class="catalogo-section">
-    <h2 class="section-title">🎒 Carteras, Mochilas, Canguros y Morales</h2>
-    <div class="placeholder-image-box">
-        <p>📷 Espacio listo. Sube la foto como: <strong>bolsos.webp</strong></p>
-        <p style="font-size:0.9rem; font-weight:normal; color:#888; margin-top:0.5rem;">Moda, variedad de diseños y compartimentos prácticos.</p>
-    </div>
-    <a href="https://wa.me/51914236008" target="_blank" class="btn-whatsapp">💬 Pedir este Catálogo</a>
-</div>
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_leche_melon.png" alt="Leche de Melón con Sorbete - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Leche%20de%20Mel%C3%B3n%20(S/%207.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_aloe_vera.png" alt="Bebida de Aloe Vera Sabor Natural - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20(S/%205.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_te_con_leche.png" alt="Bebidas con Té y Leche - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20de%20T%C3%A9%20con%20Leche%20(S/%206.30)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_frutales_coreanas.png" alt="Bebidas Frutales Coreanas - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Frutales%20Coreanas%20(S/%206.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_jugo_uva.png" alt="Bebida de Jugo de Uva Natural - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Jugo%20de%20Uva%20Natural%20(S/%204.60)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_aloe_vera_lata.png" alt="Bebida de Aloe Vera en Lata - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20en%20Lata%20(S/%203.90)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_brown_sugar_milk_tea.png" alt="Bebida de Té Negro Brown Sugar Milk Tea - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Brown%20Sugar%20Milk%20Tea%20(S/%208.40)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_te_herbal_jia_duo_bao.png" alt="Bebida de Té Herbal Jia Duo Bao - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20T%C3%A9%20Herbal%20Jia%20Duo%20Bao%20(1%20x%20S/%205.50%20o%202%20x%20S/%209.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="bebidas_soju_uva.png" alt="Soju Coreano de Uva - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Soju%20Coreano%20de%20Uva" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+            </div>
+
+            <!-- CATEGORÍA 2: INCIENSOS -->
+            <div id="inciensos" class="catalogo-section">
+                <h2 class="section-title">🪔 Porta Inciensos e Inciensos</h2>
+                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
+                    <img src="inciensos_catalogo_principal.png" alt="Catálogo Porta Inciensos y Inciensos - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Porta%20Inciensos%20y%20Variedades" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
+                        💬 Consultar producto.
+                    </a>
+                </div>
+            </div>
+
+            <!-- CATEGORÍA 3: BOLSOS -->
+            <div id="bolsos" class="catalogo-section">
+                <h2 class="section-title">🎒 Carteras, Mochilas, Canguros y Morales</h2>
+                <div class="placeholder-image-box">
+                    <p>📷 Espacio listo. Sube la foto del catálogo de bolsos.</p>
+                </div>
+                <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Carteras%20y%20Mochilas" target="_blank" class="btn-whatsapp">💬 Pedir este Catálogo</a>
+            </div>
 
             <!-- CATEGORÍA 4: MASCOTAS -->
-          
+            <div id="mascotas" class="catalogo-section">
+                <h2 class="section-title">🐾 Mascotas Agosto</h2>
+                <div class="placeholder-image-box">
+                    <p>📷 Espacio listo. Sube la foto del catálogo de mascotas.</p>
+                </div>
+                <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Productos%20de%20Mascotas" target="_blank" class="btn-whatsapp">💬 Pedir este Catálogo</a>
+            </div>
+
+            <!-- CATEGORÍA 5: GORRAS -->
+            <div id="gorras" class="catalogo-section">
+                <h2 class="section-title">🧢 Gorras Damas y Varón</h2>
+                <div class="placeholder-image-box">
+                    <p>📷 Espacio listo. Sube la foto del catálogo de gorras.</p>
+                </div>
+                <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Gorras" target="_blank" class="btn-whatsapp">💬 Pedir este Catálogo</a>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 China Mart Mollendo - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPT PARA CAMBIAR ENTRE CATEGORÍAS EN LA MISMA PÁGINA -->
+    <script>
+        function mostrarCatalogo(event, categoriaId) {
+            event.preventDefault();
+
+            // 1. Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.catalogo-section');
+            secciones.forEach(sec => sec.classList.remove('active'));
+
+            // 2. Desmarcar todos los botones
+            const botones = document.querySelectorAll('.catalog-item');
+            botones.forEach(btn => btn.classList.remove('active'));
+
+            // 3. Mostrar la sección seleccionada
+            const seccionSeleccionada = document.getElementById(categoriaId);
+            if (seccionSeleccionada) {
+                seccionSeleccionada.classList.add('active');
+            }
+
+            // 4. Activar el botón presionado
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
