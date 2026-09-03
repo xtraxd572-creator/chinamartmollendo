@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>China Mart Mollendo | Nuestros Catálogos</title>
-    <!-- Icono para la pestaña del navegador -->
     <link rel="icon" type="image/png" href="logo.png">
     <style>
         :root {
@@ -130,7 +129,6 @@
             color: var(--rojo-principal);
         }
 
-        /* Contenedor Derecha */
         .content-catalogo {
             background: white;
             border-radius: 16px;
@@ -147,20 +145,22 @@
             font-weight: bold;
         }
 
-        /* Marcador para las imágenes de catálogo */
-        .placeholder-image-box {
+        .card-producto {
             width: 100%;
-            background-color: #fffdf5;
-            border: 2px dashed var(--amarillo-acento);
-            padding: 4rem 2rem;
+            max-width: 500px;
+            margin: 0 auto 2rem auto;
+            border: 1px solid var(--gris-borde);
             border-radius: 12px;
-            margin-bottom: 2rem;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            background-color: white;
+            padding-bottom: 1.5rem;
         }
 
-        .placeholder-image-box p {
-            color: #555;
-            font-size: 1.1rem;
-            font-weight: 600;
+        .card-producto img {
+            width: 100%;
+            display: block;
+            margin-bottom: 1.5rem;
         }
 
         .btn-whatsapp {
@@ -171,13 +171,14 @@
             color: white;
             text-decoration: none;
             padding: 1rem 2rem;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             border-radius: 50px;
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
             transition: transform 0.2s, background-color 0.2s;
-            width: 100%;
+            width: 90%;
             max-width: 420px;
+            margin: 0 auto;
         }
 
         .btn-whatsapp:hover {
@@ -194,7 +195,6 @@
             margin-top: 4rem;
         }
 
-        /* Ocultar secciones inactivas al inicio */
         .catalogo-section {
             display: none;
         }
@@ -246,7 +246,7 @@
 
     <div class="layout-catalogo">
         
-        <!-- BARRA LATERAL CON LAS 5 OPCIONES -->
+        <!-- BARRA LATERAL -->
         <aside class="sidebar-catalogos">
             <h3>📂 Selección</h3>
             <ul class="menu-catalogos">
@@ -258,320 +258,225 @@
             </ul>
         </aside>
 
-        <!-- PANEL DE EXPOSICIÓN -->
+        <!-- PANEL PRINCIPAL -->
         <main class="content-catalogo">
             
             <!-- CATEGORÍA 1: BEBIDAS ASIÁTICAS -->
             <div id="bebidas" class="catalogo-section active">
                 <h2 class="section-title">🧋 Bebidas Asiáticas</h2>
                 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_top.png" alt="Licor Tradicional Chino - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Asi%C3%A1ticas" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_top.png" alt="Licor Tradicional Chino">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Asi%C3%A1ticas" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_joju.png" alt="Cócteles Frutales JOJU - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20C%C3%B3cteles%20JOJU" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_joju.png" alt="Cócteles Frutales JOJU">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20C%C3%B3cteles%20JOJU" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_milktea.png" alt="Bebidas de Té con Leche - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20T%C3%A9%20con%20Leche" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar Sabores.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_milktea.png" alt="Bebidas de Té con Leche">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20T%C3%A9%20con%20Leche" target="_blank" class="btn-whatsapp">💬 Consultar Sabores</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_soju.png" alt="Soju Coreano Sabores Frutales - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Soju%20Coreano" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar Variedad de Soju coreano.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_soju.png" alt="Soju Coreano Sabores Frutales">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Soju%20Coreano" target="_blank" class="btn-whatsapp">💬 Consultar Variedad de Soju coreano</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_coreanas.png" alt="Bebidas Coreanas Selección - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Bebidas%20Coreanas" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_coreanas.png" alt="Bebidas Coreanas Selección">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Bebidas%20Coreanas" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_nfc.png" alt="Jugos con Prebióticos NFC - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Jugos%20NFC" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_nfc.png" alt="Jugos con Prebióticos NFC">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Jugos%20NFC" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_rico.png" alt="Bebidas Concentradas Frutales Rico - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20pedir%20las%20Bebidas%20Concentradas%20Rico%20de%20S/%2012.00" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_rico.png" alt="Bebidas Concentradas Frutales Rico">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20pedir%20las%20Bebidas%20Concentradas%20Rico%20de%20S/%2012.00" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_icetalk_granada.png" alt="Bebida Concentrada de Granada Ice Talk - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Ice%20Talk%20Granada%20(S/%206.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_icetalk_granada.png" alt="Bebida Concentrada de Granada Ice Talk">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Ice%20Talk%20Granada%20(S/%206.50)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_leche_melon.png" alt="Leche de Melón con Sorbete - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Leche%20de%20Mel%C3%B3n%20(S/%207.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_leche_melon.png" alt="Leche de Melón con Sorbete">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Leche%20de%20Mel%C3%B3n%20(S/%207.00)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_aloe_vera.png" alt="Bebida de Aloe Vera Sabor Natural - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20(S/%205.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_aloe_vera.png" alt="Bebida de Aloe Vera Sabor Natural">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20(S/%205.50)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_te_con_leche.png" alt="Bebidas con Té y Leche - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20de%20T%C3%A9%20con%20Leche%20(S/%206.30)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_te_con_leche.png" alt="Bebidas con Té y Leche">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20de%20T%C3%A9%20con%20Leche%20(S/%206.30)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_frutales_coreanas.png" alt="Bebidas Frutales Coreanas - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Frutales%20Coreanas%20(S/%206.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_frutales_coreanas.png" alt="Bebidas Frutales Coreanas">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Frutales%20Coreanas%20(S/%206.00)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_jugo_uva.png" alt="Bebida de Jugo de Uva Natural - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Jugo%20de%20Uva%20Natural%20(S/%204.60)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_jugo_uva.png" alt="Bebida de Jugo de Uva Natural">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Jugo%20de%20Uva%20Natural%20(S/%204.60)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_aloe_vera_lata.png" alt="Bebida de Aloe Vera en Lata - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20en%20Lata%20(S/%203.90)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_aloe_vera_lata.png" alt="Bebida de Aloe Vera en Lata">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20en%20Lata%20(S/%203.90)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_brown_sugar_milk_tea.png" alt="Bebida de Té Negro Brown Sugar Milk Tea - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Brown%20Sugar%20Milk%20Tea%20(S/%208.40)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_brown_sugar_milk_tea.png" alt="Bebida Brown Sugar Milk Tea">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Brown%20Sugar%20Milk%20Tea%20(S/%208.40)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_te_herbal_jia_duo_bao.png" alt="Bebida de Té Herbal Jia Duo Bao - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20T%C3%A9%20Herbal%20Jia%20Duo%20Bao%20(1%20x%20S/%205.50%20o%202%20x%20S/%209.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_te_herbal_jia_duo_bao.png" alt="Té Herbal Jia Duo Bao">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20T%C3%A9%20Herbal%20Jia%20Duo%20Bao%20(1%20x%20S/%205.50%20o%202%20x%20S/%209.00)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="bebidas_soju_uva.png" alt="Soju Coreano de Uva - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Soju%20Coreano%20de%20Uva" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+                <div class="card-producto">
+                    <img src="bebidas_soju_uva.png" alt="Soju Coreano de Uva">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Soju%20Coreano%20de%20Uva" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
             </div>
 
             <!-- CATEGORÍA 2: INCIENSOS -->
             <div id="inciensos" class="catalogo-section">
                 <h2 class="section-title">🪔 Porta Inciensos e Inciensos</h2>
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-                    <img src="inciensos_catalogo_principal.png" alt="Catálogo Porta Inciensos y Inciensos - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Porta%20Inciensos%20y%20Variedades" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-                        💬 Consultar producto.
-                    </a>
+
+                <div class="card-producto">
+                    <img src="inciensos_catalogo_principal.png" alt="Catálogo Porta Inciensos">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Porta%20Inciensos%20y%20Variedades" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
-                <!--Elefante Buda y Árbol Castillo -->
-    <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-        <img src="inciensos_elefante_y_castillo.png" alt="Porta Incienso Elefante Buda y Árbol Castillo - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-        <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Porta%20Incienso%20Elefante%20Buda%20(S/%209.00)%20o%20%C3%81rbol%20y%20Castillo%20(S/%2011.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-            💬 Consultar por estos modelos
-        </a>
-    </div>
-<!--Pecesitos y Escalera -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_pecesitos_y_escalera.png" alt="Incienso Pecesitos e Incienso Escalera - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Pecesitos%20(S/%209.00)%20o%20Incienso%20Escalera%20(S/%207.80)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por estos modelos
-    </a>
-</div>
-                <!--Lago y Cascada -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_lago_y_cascada.png" alt="Incienso Lago e Incienso de Cascada - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Lago%20(S/%209.00)%20o%20Incienso%20de%20Cascada%20(S/%2011.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por estos modelos
-    </a>
-</div>
-                <!--Montañas y Tortuguita -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_montanas_y_tortuguita.png" alt="Incienso con Montañas y Porta Incienso con Tortuguita - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20con%20Monta%C3%B1as%20(S/%209.00)%20o%20Porta%20Incienso%20con%20Tortuguita%20(S/%2011.60)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por estos modelos
-    </a>
-</div>
-                <!--Montaña Grande y Conos -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_montana_y_conos.png" alt="Porta Incienso Montaña Grande y Porta Incienso Conos - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Porta%20Incienso%20Monta%C3%B1a%20Grande%20(S/%209.00)%20o%20Porta%20Incienso%20Conos%20(S/%2013.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por estos modelos
-    </a>
-</div>
-                <!--Caracol y Cascada de Lagos -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_caracol_y_cascada_lagos.png" alt="Incienso Caracol e Incienso Cascada de Lagos - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Caracol%20(S/%2013.50)%20o%20Incienso%20Cascada%20de%20Lagos%20(S/%209.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por estos modelos
-    </a>
-</div>
-                <!--Árbol y Casa / Circular Pequeño -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_arbol_casa_y_circular.png" alt="Incienso Árbol y Casa y Porta Incienso Circular Pequeño - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20%C3%81rbol%20y%20Casa%20(S/%2010.60)%20o%20Porta%20Incienso%20Circular%20Peque%C3%B1o%20(S/%207.80)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por estos modelos
-    </a>
-</div>
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_masalas.png" alt="Inciensos Masalas Exclusivas - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20los%20Inciensos%20Masalas%20Exclusivas%20(S/%203.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por aromas disponibles
-    </a>
-</div>
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_varillas_variedad.png" alt="Inciensos de Varillas Variedad - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20variedades%20de%20Inciensos%20en%20Varilla%20(S/%203.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por aromas disponibles
-    </a>
-</div>
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_tulasi_goloka.png" alt="Inciensos Tulasi y Goloka en Conos con Porta Incienso - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20los%20Inciensos%20Tulasi%20y%20Goloka%20en%20conos%20(S/%205.00)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por aromas disponibles
-    </a>
-</div>
-                <div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="inciensos_exclusivos_1_50.png" alt="Inciensos Exclusivos S/ 1.50 - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20los%20Inciensos%20Exclusivos%20(S/%201.50)" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por aromas disponibles
-    </a>
-</div>
-                <!-- ÚLTIMA IMAGEN: Incienso Tulasi Sándalo (Dragón) -->
-<div style="width: 100%; max-width: 500px; margin: 0 auto 2rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background-color: white; padding-bottom: 1.5rem;">
-    <img src="incienso_dragon_sandalo.png" alt="Incienso Tulasi Sándalo - China Mart Mollendo" style="width: 100%; display: block; margin-bottom: 1.5rem;">
-    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Tulasi%20de%20S%C3%A1ndalo" target="_blank" class="btn-whatsapp" style="max-width: 90%; margin: 0 auto;">
-        💬 Consultar por Incienso Sándalo
-    </a>
-</div>
-</div>
+
+                <div class="card-producto">
+                    <img src="inciensos_elefante_y_castillo.png" alt="Porta Incienso Elefante Buda y Árbol Castillo">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Porta%20Incienso%20Elefante%20Buda%20(S/%209.00)%20o%20%C3%81rbol%20y%20Castillo%20(S/%2011.00)" target="_blank" class="btn-whatsapp">💬 Consultar por estos modelos</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_pecesitos_y_escalera.png" alt="Incienso Pecesitos e Incienso Escalera">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Pecesitos%20(S/%209.00)%20o%20Incienso%20Escalera%20(S/%207.80)" target="_blank" class="btn-whatsapp">💬 Consultar por estos modelos</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_lago_y_cascada.png" alt="Incienso Lago e Incienso de Cascada">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Lago%20(S/%209.00)%20o%20Incienso%20de%20Cascada%20(S/%2011.00)" target="_blank" class="btn-whatsapp">💬 Consultar por estos modelos</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_montanas_y_tortuguita.png" alt="Incienso con Montañas y Porta Incienso con Tortuguita">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20con%20Monta%C3%B1as%20(S/%209.00)%20o%20Porta%20Incienso%20con%20Tortuguita%20(S/%2011.60)" target="_blank" class="btn-whatsapp">💬 Consultar por estos modelos</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_montana_y_conos.png" alt="Porta Incienso Montaña Grande y Conos">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Porta%20Incienso%20Monta%C3%B1a%20Grande%20(S/%209.00)%20o%20Porta%20Incienso%20Conos%20(S/%2013.00)" target="_blank" class="btn-whatsapp">💬 Consultar por estos modelos</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_caracol_y_cascada_lagos.png" alt="Incienso Caracol e Incienso Cascada de Lagos">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Caracol%20(S/%2013.50)%20o%20Incienso%20Cascada%20de%20Lagos%20(S/%209.00)" target="_blank" class="btn-whatsapp">💬 Consultar por estos modelos</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_arbol_casa_y_circular.png" alt="Incienso Árbol y Casa y Porta Incienso Circular Pequeño">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20%C3%81rbol%20y%20Casa%20(S/%2010.60)%20o%20Porta%20Incienso%20Circular%20Peque%C3%B1o%20(S/%207.80)" target="_blank" class="btn-whatsapp">💬 Consultar por estos modelos</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_masalas.png" alt="Inciensos Masalas Exclusivas">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20los%20Inciensos%20Masalas%20Exclusivas%20(S/%203.50)" target="_blank" class="btn-whatsapp">💬 Consultar por aromas disponibles</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_varillas_variedad.png" alt="Inciensos de Varillas Variedad">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20variedades%20de%20Inciensos%20en%20Varilla%20(S/%203.50)" target="_blank" class="btn-whatsapp">💬 Consultar por aromas disponibles</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_tulasi_goloka.png" alt="Inciensos Tulasi y Goloka en Conos con Porta Incienso">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20los%20Inciensos%20Tulasi%20y%20Goloka%20en%20conos%20(S/%205.00)" target="_blank" class="btn-whatsapp">💬 Consultar por aromas disponibles</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="inciensos_exclusivos_1_50.png" alt="Inciensos Exclusivos S/ 1.50">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20los%20Inciensos%20Exclusivos%20(S/%201.50)" target="_blank" class="btn-whatsapp">💬 Consultar por aromas disponibles</a>
+                </div>
+
+                <div class="card-producto">
+                    <img src="incienso_dragon_sandalo.png" alt="Incienso Tulasi Sándalo">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Incienso%20Tulasi%20de%20S%C3%A1ndalo" target="_blank" class="btn-whatsapp">💬 Consultar por Incienso Sándalo</a>
+                </div>
             </div>
-    <!-- CONTENEDOR PRINCIPAL DOS COLUMNAS -->
-<main style="display: flex; gap: 2rem; align-items: flex-start; max-width: 1200px; margin: 0 auto; padding: 1rem;">
 
-    <!-- COLUMNA IZQUIERDA: MENÚ DE SELECCIÓN -->
-    <aside style="width: 280px; flex-shrink: 0;">
-        <div style="background: white; border-radius: 12px; padding: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-            <h3 style="margin-top: 0;">📁 SELECCIÓN</h3>
-            <!-- Tus botones de navegación van aquí -->
-        </div>
-    </aside>
-
-    <!-- COLUMNA DERECHA: CONTENIDO DEL CATÁLOGO -->
-    <section style="flex-grow: 1;">
-
-           <!-- CATEGORÍA 3: CARTERAS, MOCHILAS Y MÁS -->
+            <!-- CATEGORÍA 3: CARTERAS, MOCHILAS Y MÁS (UNA POR UNA) -->
             <div id="bolsos" class="catalogo-section">
                 <h2 class="section-title">👛 Carteras, Mochilas y Más</h2>
 
-                <!-- PORTADA DE LA CATEGORÍA -->
-                <div style="width: 100%; max-width: 450px; margin: 0 auto 1.5rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; background-color: white; padding-bottom: 1rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                    <img src="bolsos_portada_principal.png" alt="Catálogo Carteras" style="width: 100%; display: block; margin-bottom: 1rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Carteras" target="_blank" class="btn-whatsapp" style="font-size: 0.85rem; padding: 8px 12px; width: 85%; margin: 0 auto; display: inline-block;">
-                        💬 Consultar por la colección
-                    </a>
+                <div class="card-producto">
+                    <img src="bolsos_portada_principal.png" alt="Catálogo Carteras">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Carteras" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
 
-                <!-- PRODUCTO 1: Cartera Asa Fruncida -->
-                <div style="width: 100%; max-width: 450px; margin: 0 auto 1.5rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; background-color: white; padding-bottom: 1rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                    <img src="cartera_asa_fruncida.png" alt="Cartera S/ 63.00" style="width: 100%; display: block; margin-bottom: 1rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Cartera%20Asa%20Fruncida%20(S/%2063.00)" target="_blank" class="btn-whatsapp" style="font-size: 0.85rem; padding: 8px 12px; width: 85%; margin: 0 auto; display: inline-block;">
-                        💬 Consultar
-                    </a>
+                <!-- Puedes ir pegando aquí tus 37 tarjetas una debajo de otra siguiendo esta misma estructura: -->
+                <!--
+                <div class="card-producto">
+                    <img src="mochila_1.png" alt="Mochila 1">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Mochila%201" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
-
-                <!-- PRODUCTO 2: Cartera de Hombro -->
-                <div style="width: 100%; max-width: 450px; margin: 0 auto 1.5rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; background-color: white; padding-bottom: 1rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                    <img src="cartera_hombro_66.png" alt="Cartera S/ 66.00" style="width: 100%; display: block; margin-bottom: 1rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Cartera%20de%20Hombro%20(S/%2066.00)" target="_blank" class="btn-whatsapp" style="font-size: 0.85rem; padding: 8px 12px; width: 85%; margin: 0 auto; display: inline-block;">
-                        💬 Consultar
-                    </a>
-                </div>
-
-                <!-- PRODUCTO 3: Cartera Negra con Cadena -->
-                <div style="width: 100%; max-width: 450px; margin: 0 auto 1.5rem auto; border: 1px solid var(--gris-borde); border-radius: 12px; overflow: hidden; background-color: white; padding-bottom: 1rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-                    <img src="cartera_negra_cadena_86.png" alt="Cartera S/ 86.00" style="width: 100%; display: block; margin-bottom: 1rem;">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Cartera%20Negra%20con%20Cadena%20(S/%2086.00)" target="_blank" class="btn-whatsapp" style="font-size: 0.85rem; padding: 8px 12px; width: 85%; margin: 0 auto; display: inline-block;">
-                        💬 Consultar
-                    </a>
-                </div>
+                -->
             </div>
 
-            <!-- MASCOTAS -->
+            <!-- CATEGORÍA 4: MASCOTAS -->
             <div id="mascotas" class="catalogo-section">
                 <h2 class="section-title">🐾 Mascotas Agosto</h2>
-                <div class="placeholder-image-box">
-                    <p> Subir la foto del catálogo de mascotas.</p>
+
+                <div class="card-producto">
+                    <img src="mascotas_portada.png" alt="Catálogo Mascotas">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Mascotas" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
-                <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Productos%20de%20Mascotas" target="_blank" class="btn-whatsapp">💬 Pedir este Catálogo</a>
             </div>
 
-            <!-- GORRAS -->
+            <!-- CATEGORÍA 5: GORRAS -->
             <div id="gorras" class="catalogo-section">
                 <h2 class="section-title">🧢 Gorras Damas y Varón</h2>
-                <div class="placeholder-image-box">
-                    <p> Subir la foto del catálogo de gorras.</p>
+
+                <div class="card-producto">
+                    <img src="gorras_portada.png" alt="Catálogo Gorras">
+                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20cat%C3%A1logo%20de%20Gorras" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
                 </div>
-                <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Gorras" target="_blank" class="btn-whatsapp">💬 Pedir este Catálogo</a>
             </div>
 
         </main>
     </div>
 
     <footer>
-        <p>&copy; 2026 China Mart Mollendo - Todos los derechos reservados.</p>
+        <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- SCRIPT PARA CAMBIAR ENTRE CATEGORÍAS EN LA MISMA PÁGINA -->
     <script>
-        function mostrarCatalogo(event, categoriaId) {
+        function mostrarCatalogo(event, idSeccion) {
             event.preventDefault();
 
-            // 1. Ocultar todas las secciones
             const secciones = document.querySelectorAll('.catalogo-section');
             secciones.forEach(sec => sec.classList.remove('active'));
 
-            // 2. Desmarcar todos los botones
-            const botones = document.querySelectorAll('.catalog-item');
-            botones.forEach(btn => btn.classList.remove('active'));
+            const items = document.querySelectorAll('.catalog-item');
+            items.forEach(item => item.classList.remove('active'));
 
-            // 3. Mostrar la sección seleccionada
-            const seccionSeleccionada = document.getElementById(categoriaId);
-            if (seccionSeleccionada) {
-                seccionSeleccionada.classList.add('active');
-            }
-
-            // 4. Activar el botón presionado
+            document.getElementById(idSeccion).classList.add('active');
             event.currentTarget.classList.add('active');
         }
     </script>
