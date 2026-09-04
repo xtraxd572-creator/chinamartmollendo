@@ -6,65 +6,53 @@
     <title>China Mart Mollendo | Nuestros Catálogos</title>
     <link rel="icon" type="image/png" href="logo.png">
    <style>
-  /* Estilos base para la cuadrícula del catálogo */
-  .contenedor-productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 15px;
-    padding: 15px;
-  }
+        :root {
+            --rojo-principal: #cc0000;
+            --amarillo-acento: #ffcc00;
+            --oscuro: #1a1a1a;
+            --claro: #f9f9f9;
+            --gris-borde: #e0e0e0;
+            --gris-fondo: #f0f2f5;
+        }
 
-  /* Estilos para las tarjetas */
-  .card-producto {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
 
-  .card-producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-  }
+        body {
+            background-color: var(--gris-fondo);
+            color: var(--oscuro);
+            line-height: 1.6;
+        }
 
-  .btn-whatsapp {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    background-color: #25d366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
+        header {
+            background-color: var(--rojo-principal);
+            color: white;
+            padding: 1.2rem 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
-  /* --- MEDIA QUERY PARA CELULARES (Pantallas de menos de 600px) --- */
-  @media (max-width: 600px) {
-    .contenedor-productos {
-      /* Muestra 2 productos por fila en celular */
-      grid-template-columns: repeat(2, 1fr); 
-      gap: 10px;
-      padding: 8px;
-    }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .card-producto {
-      padding: 8px;
-    }
-
-    .btn-whatsapp {
-      font-size: 0.8rem;
-      padding: 6px 8px;
-    }
-  }
-</style>
+        .logo h1 {
+            font-size: 1.6rem;
+            color: var(--amarillo-acento);
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
