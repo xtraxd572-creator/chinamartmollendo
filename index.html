@@ -1,233 +1,1013 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Título e Icono para la pestaña del navegador -->
-    <title>China Mart Mollendo | Bienvenidos</title>
-    <link rel="icon" type="image/png" href="logo.png">
-
-    <!-- Metadatos SEO -->
-    <meta name="description" content="Sitio oficial de China Mart Mollendo. Tu tienda de novedades e importaciones en la Calle Comercio 345.">
+    <title>ChinaMart Mollendo</title>
 
     <style>
-        /* Estilos Globales e Identidad de Color */
-        :root {
-            --rojo-principal: #cc0000;
-            --amarillo-acento: #ffcc00;
-            --oscuro: #1a1a1a;
-            --claro: #f9f9f9;
-            --gris-borde: #e0e0e0;
-            --verde-whatsapp: #25d366;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
         body {
-            background-color: var(--claro);
-            color: var(--oscuro);
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #15191d;
         }
 
-        /* Encabezado Principal */
         header {
-            background-color: var(--rojo-principal);
+            background-color: #15191d;
             color: white;
-            padding: 1.2rem 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            width: 100%;
+            min-height: 110px;
             display: flex;
-            justify-content: flex-start; 
             align-items: center;
+            padding: 0 50px;
         }
 
-        .logo h1 {
-            font-size: 1.6rem;
-            color: var(--amarillo-acento);
-            font-weight: bold;
-            letter-spacing: 0.5px;
-        }
-
-        /* Contenedor de la Bienvenida */
-        .welcome-main {
-            flex: 1;
+        .logo {
             display: flex;
+            align-items: center;
+            width: 350px;
+        }
+
+        .logo-cuadro {
+            background-color: #ed1c24;
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            align-items: center;
-            padding: 2rem 1rem;
+            font-size: 35px;
         }
 
-        .welcome-box {
-            background: white;
-            padding: 3.5rem 2rem;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            max-width: 600px;
+                .logo-cuadro img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .logo-texto {
+            margin-left: 15px;
+        }
+
+        .logo-texto h2 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        .logo-texto h2 span {
+            color: #ed1c24;
+        }
+
+        .logo-texto p {
+            margin: 5px 0;
             text-align: center;
-            border-top: 6px solid var(--rojo-principal);
-            border-bottom: 6px solid var(--amarillo-acento);
+            letter-spacing: 5px;
         }
 
-        .welcome-box h2 {
-            font-size: 2.2rem;
-            color: var(--rojo-principal);
-            margin-bottom: 1rem;
+        .buscador {
+            width: 350px;
+            background-color: #33383d;
+            border: 1px solid #777;
+            border-radius: 30px;
+            padding: 15px 20px;
+            color: white;
+            outline: none;
+        }
+
+        .buscador::placeholder {
+            color: #ddd;
+        }
+
+        .buscador:focus {
+            border-color: #ed1c24;
+        }
+
+        nav {
+            margin-left: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
             font-weight: bold;
         }
 
-        .welcome-box p {
-            color: #555;
-            font-size: 1.15rem;
-            margin-bottom: 1.5rem;
+        nav a:hover {
+            color: #ed1c24;
         }
 
-        /* Título de la pregunta de catálogos */
-        .catalog-question {
-            font-size: 1.25rem;
+        .principal {
+            min-height: 700px;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            padding: 0 80px;
+        }
+
+        /* Detalle rojo al lado derecho, como parte del estilo de la tienda */
+        .principal::after {
+            content: "";
+            position: absolute;
+            right: -180px;
+            top: -100px;
+            width: 520px;
+            height: 900px;
+            background-color: #ed1c24;
+            transform: rotate(12deg);
+            opacity: 0.95;
+            z-index: 0;
+        }
+
+        .carrusel {
+            width: 100%;
+            min-height: 700px;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(25px);
+            transition: opacity 0.7s ease, transform 0.7s ease, visibility 0.7s;
+        }
+
+        .slide.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+            z-index: 2;
+        }
+
+        .texto {
+            width: 45%;
+            z-index: 2;
+        }
+
+        .frase {
+            color: #d71920;
+            font-size: 32px;
+            font-style: italic;
+            font-family: Georgia, serif;
             font-weight: bold;
+        }
+
+        .texto h1 {
+            font-size: 50px;
+            margin: 20px 0;
+        }
+
+        .texto h1 span {
+            display: block;
+            color: #d71920;
+            font-family: Georgia, serif;
+            font-style: italic;
+            font-size: 70px;
+        }
+
+        .descripcion {
+            font-size: 20px;
+            line-height: 1.5;
             color: #333;
-            margin-bottom: 1.5rem;
+        }
+
+        .caracteristicas {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .caracteristica {
+            text-align: center;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+
+        .circulo {
+            width: 55px;
+            height: 55px;
+            border: 3px solid #ed1c24;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ed1c24;
+            font-size: 25px;
+            margin: auto;
+            background-color: white;
+        }
+
+        .boton {
+            background-color: #ed1c24;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .boton:hover {
+            background-color: #b9151b;
+        }
+
+        .producto {
+            width: 55%;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .producto img {
+            width: 65%;
+            max-width: 550px;
+        }
+
+        footer {
+            background-color: #15191d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        footer span {
+            color: #ed1c24;
+        }
+
+        .controles-carrusel {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .punto-carrusel {
+            width: 11px;
+            height: 11px;
+            border: 2px solid #ed1c24;
+            border-radius: 50%;
+            background-color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .punto-carrusel.active {
+            background-color: #ed1c24;
+            transform: scale(1.25);
+        }
+
+        .flecha-carrusel {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            background-color: rgba(21,25,29,0.75);
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .flecha-carrusel:hover {
+            background-color: #ed1c24;
+        }
+
+        .flecha-izquierda {
+            left: 25px;
+        }
+
+        .flecha-derecha {
+            right: 25px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                height: auto;
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .logo {
+                width: auto;
+                margin-bottom: 20px;
+            }
+
+            .buscador-contenedor {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .buscador {
+                width: 100%;
+                margin-bottom: 0;
+            }
+
+            nav {
+                margin: 0;
+            }
+
+            nav a {
+                margin: 10px;
+            }
+
+            .principal {
+                min-height: 900px;
+                padding: 30px 20px 80px;
+            }
+
+            .principal::after {
+                display: none;
+            }
+
+            .carrusel {
+                min-height: 820px;
+            }
+
+            .slide {
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 20px;
+            }
+
+            .texto {
+                width: 100%;
+                text-align: center;
+            }
+
+            .texto h1 {
+                font-size: 40px;
+            }
+
+            .texto h1 span {
+                font-size: 55px;
+            }
+
+            .caracteristicas {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .caracteristica {
+                margin-right: 0;
+            }
+
+            .producto {
+                width: 100%;
+                margin-top: 30px;
+            }
+
+            .producto img {
+                width: 75%;
+                max-width: 400px;
+            }
+
+            .flecha-carrusel {
+                width: 38px;
+                height: 38px;
+                font-size: 20px;
+            }
+
+            .flecha-izquierda {
+                left: 5px;
+            }
+
+            .flecha-derecha {
+                right: 5px;
+            }
+
+            .controles-carrusel {
+                bottom: 20px;
+            }
+        }
+    
+        /* BUSCADOR FUNCIONAL */
+        .buscador-contenedor {
+            position: relative;
+            width: 350px;
+            z-index: 2000;
+        }
+
+        .buscador-contenedor .buscador {
+            width: 100%;
+        }
+
+        .resultados-busqueda {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: white;
+            color: #15191d;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+            overflow: hidden;
+            max-height: 360px;
+            overflow-y: auto;
+        }
+
+        .resultados-busqueda.visible {
             display: block;
         }
 
-        /* Contenedor para alinear los dos botones uno al lado del otro */
-        .buttons-group {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            max-width: 450px;
-            margin: 0 auto;
-        }
-
-        /* Estilo base para ambos botones */
-        .btn-action {
-            flex: 1;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+        .resultado-busqueda {
+            display: block;
+            padding: 12px 15px;
             text-decoration: none;
-            padding: 0.9rem 1.5rem;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 50px;
-            transition: transform 0.2s, opacity 0.2s, background-color 0.2s;
-            color: white;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: #15191d;
+            border-bottom: 1px solid #eeeeee;
+            background: white;
+            cursor: pointer;
         }
 
-        .btn-action:hover {
-            transform: scale(1.03);
-            opacity: 0.9;
+        .resultado-busqueda:hover,
+        .resultado-busqueda:focus {
+            background: #fff1f2;
+            outline: none;
         }
 
-        /* Botón IR específico */
-        .btn-ir {
-            background-color: var(--rojo-principal);
+        .resultado-busqueda strong {
+            display: block;
+            font-size: 14px;
         }
 
-        /* Botón CONSULTAR específico */
-        .btn-consultar {
-            background-color: var(--verde-whatsapp);
+        .resultado-busqueda span {
+            display: block;
+            margin-top: 2px;
+            color: #777;
+            font-size: 12px;
         }
 
-        /* Pie de Página */
-        footer {
-            background-color: var(--oscuro);
-            color: white;
-            text-align: center;
-            padding: 1.5rem 1rem;
-            font-size: 0.9rem;
-            width: 100%;
+        .sin-resultados-busqueda {
+            padding: 14px 15px;
+            color: #666;
+            font-size: 14px;
+            background: white;
         }
 
-        /* Adaptabilidad para Pantallas Chicas de Celulares */
-        @media (max-width: 480px) {
-            .welcome-box {
-                padding: 2.5rem 1.5rem;
-            }
-            .welcome-box h2 {
-                font-size: 1.8rem;
-            }
-            .welcome-box p {
-                font-size: 1rem;
-            }
-            .catalog-question {
-                font-size: 1.1rem;
-            }
-            .buttons-group {
-                flex-direction: column; /* En celulares se ponen uno abajo del otro para que no se amontonen */
-                width: 100%;
-            }
-            .btn-action {
-                width: 100%;
-            }
-        }
     </style>
 </head>
+
 <body>
 
-    <!-- Barra Superior Roja y Letras Doradas -->
     <header>
-        <div class="nav-container">
-            <div class="logo">
-                <h1>China Mart Mollendo</h1>
+
+        <div class="logo">
+
+            <div class="logo-cuadro">
+                <img src="logo.png" alt="Logo China Mart">
             </div>
+
+            <div class="logo-texto">
+
+                <h2>
+                    CHINA<span>MART</span>
+                </h2>
+
+                <p>
+                    MOLLENDO
+                </p>
+
+            </div>
+
         </div>
+
+        <div class="buscador-contenedor">
+            <input
+                id="busquedaPrincipal"
+                class="buscador"
+                type="search"
+                placeholder="🔎 ¿Qué producto buscas?"
+                autocomplete="off"
+            >
+            <div id="resultadosBusquedaPrincipal" class="resultados-busqueda"></div>
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="categorias.html">
+                Categorías
+            </a>
+
+            <a href="#">
+                Ofertas
+            </a>
+
+            <a href="https://wa.me/51914236008?text=Hola%20China%20Mart%20Mollendo%2C%20quisiera%20hacer%20una%20consulta%20sobre%20un%20producto%20u%20oferta." target="_blank" rel="noopener noreferrer">
+                Contacto
+            </a>
+
+        </nav>
+
     </header>
 
-    <!-- Contenido Central Dinámico -->
-    <main class="welcome-main">
-        <div class="welcome-box">
-            <h2>¡Bienvenido/a a China Mart Mollendo!</h2>
-            <p>Estamos preparando nuestro catálogo digital oficial con las mejores novedades e importaciones pensadas para ti.</p>
-            
-            <!-- Pregunta del catálogo -->
-            <span class="catalog-question">📂 ¿Desea ver los catálogos que tenemos para ti?</span>
+    <section class="principal">
 
-            <!-- Las dos nuevas opciones solicitadas -->
-             <!-- GRUPO DE BOTONES CORREGIDO -->
-            <div class="buttons-group">
-                <!-- Botón IR (Lleva a la página de catálogos) -->
-                <a href="catalogos.html" class="btn-action btn-ir">➡️ Ir</a>
-                
-                <!-- Botón CONSULTAR (Lleva al WhatsApp de la tienda) -->
-            <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20hacer%20una%20consulta" target="_blank" class="btn-action btn-consultar">
-                💬 Consultar
-            </a>
+        <div class="carrusel">
+
+            <!-- 1. Flores artificiales -->
+            <div class="slide active">
+                <div class="texto">
+                    <div class="frase">
+                        Decora tu espacio con
+                        <br>
+                        estilo y armonía
+                    </div>
+
+                    <h1>
+                        ÁRBOL DECORATIVO
+                        <span>DE AJÍ</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Un toque de naturaleza y buena energía
+                        en tu hogar u oficina.
+                    </p>
+
+                    <div class="caracteristicas">
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Diseño<br>realista
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">★</div>
+                            Ideal para<br>interiores
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Materiales<br>de calidad
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">+</div>
+                            Perfecto<br>para regalar
+                        </div>
+                    </div>
+
+                    <a class="boton" href="categorias.html#flores">🌸 Ver categoría</a>
+                </div>
+
+                <div class="producto">
+                    <img src="arbol.png" alt="Mini Árbol Decorativo de Ajíes">
+                </div>
             </div>
-            <!-- Sección de TikTok agregada -->
-    <div class="seccion-tiktok">
-        <p> ¡Síguenos en TikTok para ver más novedades!</p>
-        <a href="https://www.tiktok.com/@chinamart06" target="_blank" class="btn-tiktok">
-            Ver TikTok @chinamart06
-        </a>
-    </div>
-</div>
-        </div>
-    </main>
 
-    <!-- Pie de Página -->
+            <!-- 2. Bebidas asiáticas -->
+            <div class="slide">
+                <div class="texto">
+                    <div class="frase">
+                        Refresca tus momentos
+                        <br>
+                        con nuevos sabores
+                    </div>
+
+                    <h1>
+                        BEBIDAS
+                        <span>ASIÁTICAS</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Descubre nuestra variedad de bebidas y sabores
+                        para disfrutar en cualquier momento.
+                    </p>
+
+                    <div class="caracteristicas">
+                        <div class="caracteristica">
+                            <div class="circulo">★</div>
+                            Sabores<br>variados
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Opciones<br>refrescantes
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">+</div>
+                            Para<br>disfrutar
+                        </div>
+                    </div>
+
+                    <a class="boton" href="categorias.html#bebidas">🧋 Ver categoría</a>
+                </div>
+
+                <div class="producto">
+                    <img src="bebidas_milktea.png" alt="Bebidas de Té con Leche">
+                </div>
+            </div>
+
+            <!-- 3. Porta inciensos -->
+            <div class="slide">
+                <div class="texto">
+                    <div class="frase">
+                        Dale un toque especial
+                        <br>
+                        a tus espacios
+                    </div>
+
+                    <h1>
+                        PORTA
+                        <span>INCIENSOS</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Diseños decorativos que aportan personalidad
+                        y estilo a tu hogar.
+                    </p>
+
+                    <div class="caracteristicas">
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Diseños<br>decorativos
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">★</div>
+                            Diferentes<br>modelos
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">+</div>
+                            Para<br>decorar
+                        </div>
+                    </div>
+
+                    <a class="boton" href="categorias.html#inciensos">🪔 Ver categoría</a>
+                </div>
+
+                <div class="producto">
+                    <img src="inciensos_elefante_y_castillo.png" alt="Porta Incienso Elefante Buda y Árbol Castillo">
+                </div>
+            </div>
+
+            <!-- 4. Carteras y bolsos -->
+            <div class="slide">
+                <div class="texto">
+                    <div class="frase">
+                        Estilo para cada ocasión
+                        <br>
+                        práctico y moderno
+                    </div>
+
+                    <h1>
+                        CARTERAS
+                        <span>Y BOLSOS</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Encuentra modelos para complementar tu estilo
+                        y llevar tus cosas cómodamente.
+                    </p>
+
+                    <div class="caracteristicas">
+                        <div class="caracteristica">
+                            <div class="circulo">★</div>
+                            Diseños<br>modernos
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Prácticos<br>y cómodos
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">+</div>
+                            Diferentes<br>modelos
+                        </div>
+                    </div>
+
+                    <a class="boton" href="categorias.html#bolsos">👛 Ver categoría</a>
+                </div>
+
+                <div class="producto">
+                    <img src="cartera_asa_fruncida.png" alt="Cartera de Hombro Asa Fruncida">
+                </div>
+            </div>
+
+            <!-- 5. Mascotas -->
+            <div class="slide">
+                <div class="texto">
+                    <div class="frase">
+                        También pensamos
+                        <br>
+                        en tus engreídos
+                    </div>
+
+                    <h1>
+                        PRODUCTOS
+                        <span>PARA MASCOTAS</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Encuentra productos pensados para consentir
+                        y cuidar a tus mascotas.
+                    </p>
+
+                    <div class="caracteristicas">
+                        <div class="caracteristica">
+                            <div class="circulo">★</div>
+                            Diseños<br>bonitos
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Variedad<br>de productos
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">+</div>
+                            Para tus<br>engreídos
+                        </div>
+                    </div>
+
+                    <a class="boton" href="categorias.html#mascotas">🐾 Ver categoría</a>
+                </div>
+
+                <div class="producto">
+                    <img src="ropa_para_mascotas_talla_universal_7.png" alt="Ropa para Mascotas Talla Universal">
+                </div>
+            </div>
+
+            <!-- 6. Gorras -->
+            <div class="slide">
+                <div class="texto">
+                    <div class="frase">
+                        Completa tu look
+                        <br>
+                        con tu propio estilo
+                    </div>
+
+                    <h1>
+                        GORRAS
+                        <span>DAMA Y VARÓN</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Diferentes diseños para darle un toque especial
+                        a tus outfits.
+                    </p>
+
+                    <div class="caracteristicas">
+                        <div class="caracteristica">
+                            <div class="circulo">★</div>
+                            Diseños<br>variados
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Para dama<br>y varón
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">+</div>
+                            Diferentes<br>estilos
+                        </div>
+                    </div>
+
+                    <a class="boton" href="categorias.html#gorras">🧢 Ver categoría</a>
+                </div>
+
+                <div class="producto">
+                    <img src="gorra_dama_bordada_20.png" alt="Gorra para Dama Bordada Adventure / Mood">
+                </div>
+            </div>
+
+            <!-- 7. Gimnasio y deporte -->
+            <div class="slide">
+                <div class="texto">
+                    <div class="frase">
+                        Muévete y entrena
+                        <br>
+                        con comodidad
+                    </div>
+
+                    <h1>
+                        GIMNASIO
+                        <span>Y DEPORTE</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Accesorios y productos para acompañarte
+                        durante tus actividades deportivas.
+                    </p>
+
+                    <div class="caracteristicas">
+                        <div class="caracteristica">
+                            <div class="circulo">✓</div>
+                            Accesorios<br>deportivos
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">★</div>
+                            Para<br>entrenar
+                        </div>
+                        <div class="caracteristica">
+                            <div class="circulo">+</div>
+                            Variedad<br>de productos
+                        </div>
+                    </div>
+
+                    <a class="boton" href="categorias.html#gimnasio%20y%20deportes">🏋️ Ver categoría</a>
+                </div>
+
+                <div class="producto">
+                    <img src="soporte_cervical.png" alt="Soporte Cervical Ergonómico">
+                </div>
+            </div>
+
+            <button class="flecha-carrusel flecha-izquierda" onclick="cambiarSlide(-1)" aria-label="Anterior">
+                ‹
+            </button>
+
+            <button class="flecha-carrusel flecha-derecha" onclick="cambiarSlide(1)" aria-label="Siguiente">
+                ›
+            </button>
+
+            <div class="controles-carrusel">
+                <button class="punto-carrusel active" onclick="irSlide(0)" aria-label="Flores"></button>
+                <button class="punto-carrusel" onclick="irSlide(1)" aria-label="Bebidas"></button>
+                <button class="punto-carrusel" onclick="irSlide(2)" aria-label="Inciensos"></button>
+                <button class="punto-carrusel" onclick="irSlide(3)" aria-label="Bolsos"></button>
+                <button class="punto-carrusel" onclick="irSlide(4)" aria-label="Mascotas"></button>
+                <button class="punto-carrusel" onclick="irSlide(5)" aria-label="Gorras"></button>
+                <button class="punto-carrusel" onclick="irSlide(6)" aria-label="Gimnasio y deporte"></button>
+            </div>
+
+        </div>
+
+    </section>
+
     <footer>
-        <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
+        CALIDAD
+        &nbsp; <span>•</span> &nbsp;
+        VARIEDAD
+        &nbsp; <span>•</span> &nbsp;
+        LOS MEJORES PRECIOS
     </footer>
 
+    <script>
+
+        let slideActual = 0;
+        const slides = document.querySelectorAll(".slide");
+        const puntos = document.querySelectorAll(".punto-carrusel");
+        let temporizador;
+
+        function mostrarSlide(numero) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            puntos.forEach(punto => punto.classList.remove("active"));
+
+            slideActual = (numero + slides.length) % slides.length;
+
+            slides[slideActual].classList.add("active");
+            puntos[slideActual].classList.add("active");
+        }
+
+        function cambiarSlide(direccion) {
+            mostrarSlide(slideActual + direccion);
+            reiniciarCarrusel();
+        }
+
+        function irSlide(numero) {
+            mostrarSlide(numero);
+            reiniciarCarrusel();
+        }
+
+        function iniciarCarrusel() {
+            temporizador = setInterval(() => {
+                mostrarSlide(slideActual + 1);
+            }, 5000);
+        }
+
+        function reiniciarCarrusel() {
+            clearInterval(temporizador);
+            iniciarCarrusel();
+        }
+
+        // BUSCADOR DEL INDEX
+        const productosBusqueda = [{"nombre": "Bebidas de Té con Leche", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebidas Coreanas Selección", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Jugos con Prebióticos NFC", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebidas Concentradas Frutales Rico", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebida Concentrada de Granada Ice Talk", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Leche de Melón con Sorbete", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebida de Aloe Vera Sabor Natural", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebidas con Té y Leche", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebidas Frutales Coreanas", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebida de Jugo de Uva Natural", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebida de Aloe Vera en Lata", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Bebida Brown Sugar Milk Tea", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Té Herbal Jia Duo Bao", "categoria": "Bebidas Asiáticas", "id": "bebidas"}, {"nombre": "Catálogo Porta Inciensos", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Porta Incienso Elefante Buda y Árbol Castillo", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Incienso Pecesitos e Incienso Escalera", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Incienso Lago e Incienso de Cascada", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Incienso con Montañas y Porta Incienso con Tortuguita", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Porta Incienso Montaña Grande y Conos", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Incienso Caracol e Incienso Cascada de Lagos", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Incienso Árbol y Casa y Porta Incienso Circular Pequeño", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Inciensos Masalas Exclusivas", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Inciensos de Varillas Variedad", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Inciensos Tulasi y Goloka en Conos con Porta Incienso", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Inciensos Exclusivos S/ 1.50", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Incienso Tulasi Sándalo", "categoria": "Porta Inciensos", "id": "inciensos"}, {"nombre": "Catálogo Carteras", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera de Hombro Asa Fruncida", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera de Hombro Texturizada", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Negra con Cadena Dorada", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera de Mano con Pompón y Pañuelo", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera de Hombro con Asas Anudadas", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Tote Tejida con Pañuelo Decorativo", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Tote de Hombro con Monedero", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Estructurada con Pañuelo Fashion Queen", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Bicolor con Correa Frontal", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Structured con Llavero de Estrella", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera con Asa Metálica y Colgante de Cuentas", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Texturizada con Llavero de Estrella", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Structured con Lazo y Colgante de Perla", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera con Solapa y Hebillas Decorativas", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Structured con Colgante de Flor", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera de Hombro con Bolsillo Frontal", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera con Solapa y Monedero Redondo Colgante", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Canguro Deportivo Multibolsillos", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Bolso de Viaje Espacioso BOBO", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Lonchera Térmica Bicolor Wellness", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Lonchera Térmica Unicolor con Bolsillo Frontal", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Canguro Cruzado Táctico Negro Multibolsillos", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Morral Compacto Unisex MEGATECH", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Mochila Antirrobo Urbana con Cierres Laterales", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Mochila Escolar Fashionbag con Llavero Miao", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Mochila Escolar Juvenil Start", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Mochila Escolar Sweet Bakery con Cartuchera Colgante", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Mochila Escolar JIALEJIEMEI con Peluche de Oso", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Set de Mochila Texturizada con Lonchera y Cartuchera", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Mochila Escolar Capibara con Llavero y Tarjetero Transparent", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera Morral con Solapa y Correa Labrada", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Cartera de Hombro Elegante con Pañuelo y Monedero Extraíble", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Bolso Tote Bag de Loneta Estampado", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Bolso Tote Bag de Tela Canvas con Diseños Variados", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Mascota Dragón China Mart Mollendo", "categoria": "Carteras, Mochilas y Más", "id": "bolsos"}, {"nombre": "Catálogo de Mascotas China Mart - Ropa, Pañales y Recoger Popo", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Ropa para Mascotas Talla Universal", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Ropa para Mascotas Diseños Vaca y Friends", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Ropa para Mascotas Diseños Happy y Perrito con Faldita", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Ropa para Mascotas Capucha Dinosaurio y Vestido con Alas", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Ropa para Mascotas Chaleco Bicolor Talla S-XXL", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Ropa para Mascotas Chaleco de Peluche con Anillo para Correa Talla S-XXL", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Ropa para Mascotas Mameluco Acolchado y Chaleco Polar", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Baño de Grass Sintético para Mascotas", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Hierba para Gatos Catnip y Regulador de Apetito", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Pañales Sabanillas Entrenadoras para Perro Talla M y L", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Pañales Sabanillas Entrenadoras para Perro Talla XL", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Gimnasio para Gatos Rascador Torre", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Gimnasio Rascador para Gatos 67 cm", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Areneros y Recogedores de Arena para Gatos", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Areneros para Gatos con Pala y Recogedores de Arena", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Recogedores de Arena para Gatos", "categoria": "Mascotas", "id": "mascotas"}, {"nombre": "Portada Catálogo de Gorras Dama y Varón", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama Bordada Adventure / Mood", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama Peruana Bonita / ARMY", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama Bordada Gatito", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama Apliques Brillantes Oso y Mariposa", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama Blue Shark / Gatito", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama Bordada New York", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama New York / Girl Power", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Dama New York Warehouse / Oso Brillantes", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón Blue Shark Verde", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón Blue Shark Negro / Azul", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón Blue Shark Blanco / Vino", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón Shark Celeste / Blanco", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón Shark Azul / Gris", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón Blue Shark Blanco / Alaska", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón New York Warehouse Azul", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón New York Warehouse Rojo / Blanco", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Gorra para Varón Blue Shark Negro / Blanco / Gris", "categoria": "Gorras Damas y Varón", "id": "gorras"}, {"nombre": "Mini Árbol Decorativo de Ajíes", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Flores Artificiales Decorativas en Maceta", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Rosas Artificiales Decorativas en Maceta", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Orquídea Artificial Decorativa en Maceta", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Ramos de Flores Variadas", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Ramo de Rosas Rojas en Florero Elegante", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Arreglo Floral Vintage con Girasoles", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Césped Artificial Decorativo en Rollo", "categoria": "Flores Artificiales", "id": "flores"}, {"nombre": "Soporte Cervical Ergonómico", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Chaleco Moldeador de Compresión", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Bandas de Resistencia y Muñequeras de Soporte", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Cuerda de Yoga Aéreo Aerial Yoga Rope", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Bustier Moldeador Slimming Bustier", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Faja de Cintura Alta High Waist Body Shaping Pants", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Extensor Pectoral Multifuncional", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Fitness Yoga Pants", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Cinta Modeladora en Tamaño Único", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Sistema de Entrenamiento en Suspensión Fitness Strap Training", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Corrector de Postura y Soporte de Espalda", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Soporte para Muñeca y Codo", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Top Deportivo Fitness Yoga", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Equipo para Abdominales con Ventosa", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Body Shaper Moldeador de Figura", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}, {"nombre": "Cinta Modeladora Completa en Tamaño Único", "categoria": "Gimnasio y Deporte", "id": "gimnasio y deportes"}];
+
+        function normalizarTexto(texto) {
+            return texto.toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .trim();
+        }
+
+
+        const categoriasBusqueda = [
+            { id: "bebidas", nombre: "Bebidas Asiáticas", palabras: ["bebida", "bebidas", "te", "té", "jugo", "jugos"] },
+            { id: "inciensos", nombre: "Porta Inciensos", palabras: ["incienso", "inciensos", "porta incienso", "porta inciensos"] },
+            { id: "bolsos", nombre: "Carteras, Mochilas y Más", palabras: ["cartera", "carteras", "mochila", "mochilas", "bolso", "bolsos", "morral", "lonchera", "canguro"] },
+            { id: "mascotas", nombre: "Mascotas", palabras: ["mascota", "mascotas", "perro", "perros", "gato", "gatos"] },
+            { id: "gorras", nombre: "Gorras Damas y Varón", palabras: ["gorra", "gorras"] },
+            { id: "flores", nombre: "Flores Artificiales", palabras: ["flor", "flores", "arbol", "árbol", "plantas", "decoracion", "decoración"] },
+            { id: "gimnasio y deportes", nombre: "Gimnasio y Deporte", palabras: ["gimnasio", "deporte", "deportes", "fitness", "yoga", "ejercicio"] }
+        ];
+
+        function buscarCategoriaExacta(consulta) {
+            const q = normalizarTexto(consulta);
+
+            return categoriasBusqueda.find(categoria => {
+                if (normalizarTexto(categoria.nombre) === q) return true;
+
+                return categoria.palabras.some(palabra =>
+                    normalizarTexto(palabra) === q
+                );
+            });
+        }
+
+        const buscadorPrincipal = document.getElementById("busquedaPrincipal");
+        const resultadosPrincipal = document.getElementById("resultadosBusquedaPrincipal");
+
+        function mostrarResultadosPrincipal() {
+            const consulta = normalizarTexto(buscadorPrincipal.value);
+            resultadosPrincipal.innerHTML = "";
+
+            if (!consulta) {
+                resultadosPrincipal.classList.remove("visible");
+                return;
+            }
+
+            const coincidencias = productosBusqueda.filter(producto => {
+                const texto = normalizarTexto(producto.nombre + " " + producto.categoria);
+                return texto.includes(consulta);
+            }).slice(0, 6);
+
+            if (coincidencias.length === 0) {
+                resultadosPrincipal.innerHTML =
+                    '<div class="sin-resultados-busqueda">No encontramos productos con “' +
+                    buscadorPrincipal.value.replace(/[<>]/g, "") +
+                    '”.</div>';
+            } else {
+                coincidencias.forEach(producto => {
+                    const enlace = document.createElement("a");
+                    enlace.className = "resultado-busqueda";
+                    enlace.href = "categorias.html?buscar=" +
+                        encodeURIComponent(producto.nombre) +
+                        "#" + encodeURIComponent(producto.id);
+                    enlace.innerHTML =
+                        "<strong>" + producto.nombre + "</strong>" +
+                        "<span>" + producto.categoria + "</span>";
+                    resultadosPrincipal.appendChild(enlace);
+                });
+            }
+
+            resultadosPrincipal.classList.add("visible");
+        }
+
+        buscadorPrincipal.addEventListener("input", mostrarResultadosPrincipal);
+
+        buscadorPrincipal.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+
+                const consulta = buscadorPrincipal.value.trim();
+                if (!consulta) return;
+
+                const categoria = buscarCategoriaExacta(consulta);
+
+                if (categoria) {
+                    window.location.href =
+                        "categorias.html#" + encodeURIComponent(categoria.id);
+                    return;
+                }
+
+                const primero = resultadosPrincipal.querySelector(".resultado-busqueda");
+
+                if (primero) {
+                    window.location.href = primero.href;
+                }
+            }
+
+            if (event.key === "Escape") {
+                resultadosPrincipal.classList.remove("visible");
+            }
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest(".buscador-contenedor")) {
+                resultadosPrincipal.classList.remove("visible");
+            }
+        });
+
+        iniciarCarrusel();
+
+    </script>
+
 </body>
+
 </html>
