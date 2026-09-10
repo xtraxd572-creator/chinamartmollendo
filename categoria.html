@@ -7,73 +7,177 @@
     <link rel="icon" type="image/png" href="logo.png">
    <style>
         :root {
-            --rojo-principal: #cc0000;
-            --amarillo-acento: #ffcc00;
-            --oscuro: #1a1a1a;
-            --claro: #f9f9f9;
-            --gris-borde: #e0e0e0;
-            --gris-fondo: #f0f2f5;
+            --rojo: #ed1c24;
+            --rojo-oscuro: #b9151b;
+            --oscuro: #15191d;
+            --gris: #f4f4f4;
+            --gris-claro: #f8f8f8;
+            --borde: #e1e1e1;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             scroll-behavior: smooth;
         }
 
         body {
-            background-color: var(--gris-fondo);
+            font-family: Arial, sans-serif;
+            background-color: var(--gris);
             color: var(--oscuro);
             line-height: 1.6;
         }
 
         header {
-            background-color: var(--rojo-principal);
+            background-color: var(--oscuro);
             color: white;
-            padding: 1.2rem 1rem;
+            min-height: 110px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.18);
         }
 
         .nav-container {
-            max-width: 1200px;
+            width: 100%;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            gap: 30px;
         }
 
-        .logo h1 {
-            font-size: 1.6rem;
-            color: var(--amarillo-acento);
+        .logo {
+            display: flex;
+            align-items: center;
+            min-width: 330px;
+        }
+
+        .logo-cuadro {
+            background-color: var(--rojo);
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            flex-shrink: 0;
+        }
+
+                .logo-cuadro img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .logo-texto {
+            margin-left: 15px;
+        }
+
+        .logo-texto h1 {
+            margin: 0;
+            font-size: 30px;
+            line-height: 1.1;
+            color: white;
+        }
+
+        .logo-texto h1 span {
+            color: var(--rojo);
+        }
+
+        .logo-texto p {
+            margin: 5px 0 0;
+            text-align: center;
+            letter-spacing: 5px;
+            font-size: 13px;
+        }
+
+        .buscador {
+            width: 350px;
+            background-color: #33383d;
+            border: 1px solid #777;
+            border-radius: 30px;
+            padding: 15px 20px;
+            color: white;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .buscador::placeholder {
+            color: #ddd;
+        }
+
+        .buscador:focus {
+            border-color: var(--rojo);
+        }
+
+        nav {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
             font-weight: bold;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            color: var(--rojo);
         }
 
         .btn-volver {
             color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 0.95rem;
-            background-color: rgba(255,255,255,0.1);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            transition: background-color 0.2s;
+            font-size: 15px;
+            background-color: var(--rojo);
+            padding: 11px 18px;
+            border-radius: 30px;
+            transition: background-color 0.2s, transform 0.2s;
+            white-space: nowrap;
         }
 
         .btn-volver:hover {
-            background-color: rgba(255,255,255,0.2);
+            background-color: var(--rojo-oscuro);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        .titulo-catalogos {
+            background-color: white;
+            text-align: center;
+            padding: 35px 20px 10px;
+        }
+
+        .titulo-catalogos h2 {
+            color: var(--rojo);
+            font-size: 34px;
+            margin-bottom: 5px;
+        }
+
+        .titulo-catalogos p {
+            color: #555;
+            font-size: 17px;
         }
 
         .layout-catalogo {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 2rem auto;
-            padding: 0 1rem;
+            padding: 0 2rem;
             display: grid;
-            grid-template-columns: 300px 1fr;
+            grid-template-columns: 280px 1fr;
             gap: 2rem;
             align-items: start;
         }
@@ -82,20 +186,20 @@
             background: white;
             padding: 1.5rem;
             border-radius: 12px;
-            border: 1px solid var(--gris-borde);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid var(--borde);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.06);
             position: sticky;
-            top: 90px;
+            top: 130px;
         }
 
         .sidebar-catalogos h3 {
             font-size: 1.1rem;
-            color: #666;
+            color: var(--oscuro);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 1.2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--gris-borde);
+            padding-bottom: 0.7rem;
+            border-bottom: 3px solid var(--rojo);
         }
 
         .menu-catalogos {
@@ -114,47 +218,68 @@
             font-weight: 600;
             border-radius: 8px;
             transition: all 0.2s ease;
-            background-color: var(--claro);
+            background-color: var(--gris-claro);
+            border-left: 4px solid transparent;
             cursor: pointer;
         }
 
         .catalog-item.active {
-            background-color: var(--rojo-principal);
+            background-color: var(--rojo);
             color: white;
-            box-shadow: 0 4px 10px rgba(204,0,0,0.2);
+            border-left-color: var(--rojo-oscuro);
+            box-shadow: 0 4px 10px rgba(237,28,36,0.25);
         }
 
         .catalog-item:hover:not(.active) {
             background-color: #eee;
-            color: var(--rojo-principal);
+            color: var(--rojo);
+            border-left-color: var(--rojo);
         }
 
         .content-catalogo {
             background: white;
             border-radius: 16px;
             padding: 2.5rem;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-            border: 1px solid var(--gris-borde);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            border: 1px solid var(--borde);
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-catalogo::before {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 5px;
+            background-color: var(--rojo);
+            border-radius: 10px;
+            margin: 0 auto 20px;
         }
 
         .section-title {
             font-size: 2rem;
-            color: var(--rojo-principal);
+            color: var(--rojo);
             margin-bottom: 1.5rem;
             font-weight: bold;
         }
 
         .card-producto {
             width: 100%;
-            max-width: 500px;
+            max-width: 650px;
             margin: 0 auto 2rem auto;
-            border: 1px solid var(--gris-borde);
+            border: 1px solid var(--borde);
             border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.07);
             background-color: white;
             padding-bottom: 1.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card-producto:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.10);
         }
 
         .card-producto img {
@@ -171,10 +296,10 @@
             color: white;
             text-decoration: none;
             padding: 1rem 2rem;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: bold;
             border-radius: 50px;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);
             transition: transform 0.2s, background-color 0.2s;
             width: 90%;
             max-width: 420px;
@@ -184,35 +309,97 @@
         .btn-whatsapp:hover {
             transform: scale(1.03);
             background-color: #20ba5a;
+            color: white;
+        }
+
+        .contenedor-productos {
+            width: 100%;
+        }
+
+        .catalogo-section {
+            display: none;
+        }
+
+        .catalogo-section.active {
+            display: block;
         }
 
         footer {
             background-color: var(--oscuro);
             color: white;
             text-align: center;
-            padding: 1.5rem 1rem;
-            font-size: 0.9rem;
+            padding: 30px;
+            font-weight: bold;
+            letter-spacing: 2px;
             margin-top: 4rem;
         }
 
-        .catalogo-section {
-            display: none;
+        footer span {
+            color: var(--rojo);
         }
-        .catalogo-section.active {
-            display: block;
+
+        @media (max-width: 1050px) {
+            header {
+                padding: 20px;
+            }
+
+            .nav-container {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                min-width: 0;
+            }
+
+            .buscador {
+                flex: 1;
+                min-width: 220px;
+            }
+
+            nav {
+                width: 100%;
+                justify-content: center;
+                margin-left: 0;
+            }
         }
 
         @media (max-width: 850px) {
+            header {
+                position: relative;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .logo {
+                margin: 0;
+            }
+
+            .buscador {
+                width: 90%;
+                flex: none;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
             .layout-catalogo {
                 grid-template-columns: 1fr;
                 margin: 1rem auto;
                 gap: 1.5rem;
+                padding: 0 1rem;
             }
+
             .sidebar-catalogos {
                 position: relative;
                 top: 0;
                 padding: 1rem;
             }
+
             .menu-catalogos {
                 flex-direction: row;
                 overflow-x: auto;
@@ -220,29 +407,183 @@
                 padding-bottom: 0.5rem;
                 gap: 0.5rem;
             }
+
             .catalog-item {
                 padding: 0.6rem 1rem;
                 font-size: 0.9rem;
+                border-left: none;
+                border-bottom: 3px solid transparent;
             }
+
+            .catalog-item.active,
+            .catalog-item:hover:not(.active) {
+                border-left: none;
+                border-bottom-color: var(--rojo);
+            }
+
             .content-catalogo {
                 padding: 1.5rem;
             }
+
             .section-title {
                 font-size: 1.6rem;
             }
+
+            .titulo-catalogos h2 {
+                font-size: 28px;
+            }
         }
+
+        @media (max-width: 500px) {
+            .logo-cuadro {
+                width: 60px;
+                height: 60px;
+                font-size: 30px;
+            }
+
+            .logo-texto h1 {
+                font-size: 25px;
+            }
+
+            .logo-texto p {
+                font-size: 11px;
+                letter-spacing: 4px;
+            }
+
+            .titulo-catalogos {
+                padding-top: 25px;
+            }
+
+            .content-catalogo {
+                padding: 1rem;
+            }
+        }
+    
+        /* BUSCADOR FUNCIONAL */
+        .buscador-contenedor {
+            position: relative;
+            width: 350px;
+            z-index: 2000;
+        }
+
+        .buscador-contenedor .buscador {
+            width: 100%;
+        }
+
+        .resultados-busqueda {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: white;
+            color: #15191d;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+            overflow: hidden;
+            max-height: 360px;
+            overflow-y: auto;
+        }
+
+        .resultados-busqueda.visible {
+            display: block;
+        }
+
+        .resultado-busqueda {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #15191d;
+            border-bottom: 1px solid #eeeeee;
+            background: white;
+            cursor: pointer;
+        }
+
+        .resultado-busqueda:hover,
+        .resultado-busqueda:focus {
+            background: #fff1f2;
+            outline: none;
+        }
+
+        .resultado-busqueda strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .resultado-busqueda span {
+            display: block;
+            margin-top: 2px;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .sin-resultados-busqueda {
+            padding: 14px 15px;
+            color: #666;
+            font-size: 14px;
+            background: white;
+        }
+
+        .mensaje-busqueda-catalogo {
+            display: none;
+            margin: 0 0 1.5rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background: #fff4f4;
+            border: 1px solid #ffd1d1;
+            color: #555;
+            text-align: center;
+        }
+
+        .card-producto.coincidencia-destacada {
+            outline: 3px solid #ed1c24;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 850px) {
+            .buscador-contenedor {
+                width: min(100%, 520px);
+            }
+        }
+
     </style>
 </head>
 <body>
 
-    <header>
+   <header>
         <div class="nav-container">
             <div class="logo">
-                <h1>China Mart Mollendo</h1>
+                <div class="logo-cuadro">
+                <img src="logo.png" alt="Logo China Mart">
             </div>
-            <a href="index.html" class="btn-volver">🏠 Volver</a>
+                <div class="logo-texto">
+                    <h1>CHINA<span>MART</span></h1>
+                    <p>MOLLENDO</p>
+                </div>
+            </div>
+
+            <div class="buscador-contenedor">
+                <input
+                    id="busquedaCatalogo"
+                    type="search"
+                    class="buscador"
+                    placeholder="🔎 Busca por nombre o tipo de producto..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="categorias.html">Categorías</a>
+                <a href="index.html" class="btn-volver">🏠 Volver</a>
+            </nav>
         </div>
     </header>
+
+    <section class="titulo-catalogos">
+        <h2>Nuestros Catálogos</h2>
+        <p>Explora nuestras categorías y consulta por tus productos favoritos.</p>
+    </section>
 
     <div class="layout-catalogo">
         
@@ -257,11 +598,13 @@
                 <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'gorras')">🧢 Gorras Damas y Varón</a></li>
                 <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'flores')">🌸 flores artificiales</a></li>
                 <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'gimnasio y deportes')">🏋️ Gimnasio y deporte</a></li>
+                <li><a href="#" class="catalog-item" onclick="mostrarCatalogo(event, 'juguetes para niño y niña')">⚽👦 categoria de juguetes 👧🧸</a></li>
             </ul>
         </aside>
 
         <!-- PANEL PRINCIPAL -->
         <main class="content-catalogo">
+            <div id="mensajeBusquedaCatalogo" class="mensaje-busqueda-catalogo"></div>
             
             <!-- CATEGORÍA 1: BEBIDAS ASIÁTICAS -->
             <div id="bebidas" class="catalogo-section active">
@@ -1040,26 +1383,157 @@
 </div>
     </div>
 </div>
+            <div id="juguetes para niño y niña" class="catalogo-section">
+    <h2 class="section-title"> ⚽👦 categoria de juguetes 👧🧸</h2>
+                <div class="contenedor-productos">
+        <!-- Soporte Cervical Ergonómico -->
+        <div class="card-producto">
         </main>
     </div>
+                     <img src="bicicleta.png" alt="Soporte Cervical Ergonómico - China Mart Mollendo">
+            <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Soporte%20Cervical" target="_blank" class="btn-whatsapp">
+                💬 Consultar producto
+            </a>
+        </div>
 
     <footer>
         <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
     </footer>
 
     <script>
+        function activarCatalogo(idSeccion) {
+            const seccion = document.getElementById(idSeccion);
+            if (!seccion) return;
+
+            document.querySelectorAll('.catalogo-section')
+                .forEach(sec => sec.classList.remove('active'));
+
+            document.querySelectorAll('.catalog-item')
+                .forEach(item => item.classList.remove('active'));
+
+            seccion.classList.add('active');
+
+            document.querySelectorAll('.catalog-item').forEach(item => {
+                const onclick = item.getAttribute('onclick') || '';
+                if (onclick.includes("'" + idSeccion + "'")) {
+                    item.classList.add('active');
+                }
+            });
+
+            setTimeout(() => {
+                seccion.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+
         function mostrarCatalogo(event, idSeccion) {
             event.preventDefault();
-
-            const secciones = document.querySelectorAll('.catalogo-section');
-            secciones.forEach(sec => sec.classList.remove('active'));
-
-            const items = document.querySelectorAll('.catalog-item');
-            items.forEach(item => item.classList.remove('active'));
-
-            document.getElementById(idSeccion).classList.add('active');
-            event.currentTarget.classList.add('active');
+            activarCatalogo(idSeccion);
+            history.replaceState(null, '', '#' + encodeURIComponent(idSeccion));
         }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const parametros = new URLSearchParams(window.location.search);
+            if (!parametros.get("buscar") && window.location.hash) {
+                const idSeccion = decodeURIComponent(window.location.hash.substring(1));
+                activarCatalogo(idSeccion);
+            }
+        });
+
+        const buscadorCatalogo = document.getElementById("busquedaCatalogo");
+        const mensajeBusquedaCatalogo = document.getElementById("mensajeBusquedaCatalogo");
+
+        function normalizarTexto(texto) {
+            return texto.toLowerCase()
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .trim();
+        }
+
+        function restaurarCatalogo() {
+            document.querySelectorAll(".card-producto").forEach(card => {
+                card.style.display = "";
+                card.classList.remove("coincidencia-destacada");
+            });
+
+            mensajeBusquedaCatalogo.style.display = "none";
+
+            const idHash = window.location.hash
+                ? decodeURIComponent(window.location.hash.substring(1))
+                : "bebidas";
+
+            activarCatalogo(document.getElementById(idHash) ? idHash : "bebidas");
+        }
+
+        function buscarEnCatalogo() {
+            const consulta = normalizarTexto(buscadorCatalogo.value);
+
+            if (!consulta) {
+                restaurarCatalogo();
+                return;
+            }
+
+            let total = 0;
+
+            document.querySelectorAll(".catalogo-section").forEach(seccion => {
+                let coincidenciasSeccion = 0;
+                const nombreCategoria = seccion.querySelector(".section-title")?.textContent || "";
+
+                seccion.querySelectorAll(".card-producto").forEach(card => {
+                    const imagen = card.querySelector("img");
+                    const nombre = imagen?.alt || "";
+                    const texto = normalizarTexto(nombre + " " + nombreCategoria);
+
+                    const restringido = /\b(licor|soju|coctel|cóctel)\b/i.test(nombre);
+                    const coincide = !restringido && texto.includes(consulta);
+
+                    card.style.display = coincide ? "" : "none";
+                    card.classList.toggle("coincidencia-destacada", coincide);
+
+                    if (coincide) {
+                        coincidenciasSeccion++;
+                        total++;
+                    }
+                });
+
+                seccion.classList.toggle("active", coincidenciasSeccion > 0);
+            });
+
+            document.querySelectorAll(".catalog-item")
+                .forEach(item => item.classList.remove("active"));
+
+            mensajeBusquedaCatalogo.style.display = "block";
+
+            if (total === 0) {
+                mensajeBusquedaCatalogo.textContent =
+                    'No encontramos productos con “' + buscadorCatalogo.value +
+                    '”. Prueba con una palabra más corta.';
+            } else {
+                mensajeBusquedaCatalogo.textContent =
+                    total === 1
+                        ? "Encontramos 1 producto."
+                        : "Encontramos " + total + " productos.";
+            }
+        }
+
+        buscadorCatalogo.addEventListener("input", buscarEnCatalogo);
+
+        window.addEventListener("DOMContentLoaded", () => {
+            const parametros = new URLSearchParams(window.location.search);
+            const busqueda = parametros.get("buscar");
+
+            if (busqueda) {
+                buscadorCatalogo.value = busqueda;
+                buscarEnCatalogo();
+
+                setTimeout(() => {
+                    const primera = document.querySelector(".card-producto.coincidencia-destacada");
+                    if (primera) {
+                        primera.scrollIntoView({ behavior: "smooth", block: "center" });
+                    }
+                }, 150);
+            }
+        });
+
     </script>
 </body>
 </html>
