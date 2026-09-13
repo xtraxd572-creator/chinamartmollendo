@@ -479,7 +479,11 @@
             justify-content: center;
             padding: 20px;
         }
-        .modal-contacto.activo { display: flex; }
+
+        .modal-contacto.activo {
+            display: flex;
+        }
+
         .contacto-contenido {
             width: 100%;
             max-width: 520px;
@@ -489,6 +493,7 @@
             position: relative;
             box-shadow: 0 20px 60px rgba(0,0,0,.30);
         }
+
         .contacto-cerrar {
             position: absolute;
             top: 14px;
@@ -503,18 +508,29 @@
             cursor: pointer;
             font-weight: bold;
         }
-        .contacto-cerrar:hover { background: #ed1c24; color: white; }
+
+        .contacto-cerrar:hover {
+            background: #ed1c24;
+            color: white;
+        }
+
         .contacto-contenido h2 {
             margin: 0 45px 8px 0;
             color: #ed1c24;
             font-size: 28px;
         }
+
         .contacto-intro {
             margin: 0 0 22px;
             color: #555;
             line-height: 1.5;
         }
-        .contacto-opciones { display: grid; gap: 14px; }
+
+        .contacto-opciones {
+            display: grid;
+            gap: 14px;
+        }
+
         .contacto-opcion {
             display: flex;
             align-items: center;
@@ -525,13 +541,15 @@
             text-decoration: none;
             color: #15191d;
             background: #fafafa;
-            transition: .2s;
+            transition: transform .2s, border-color .2s, background .2s;
         }
+
         .contacto-opcion:hover {
             transform: translateY(-2px);
             border-color: #ed1c24;
             background: #fff5f5;
         }
+
         .contacto-icono {
             width: 48px;
             height: 48px;
@@ -544,18 +562,31 @@
             background: #ed1c24;
             color: white;
         }
-        .contacto-opcion strong { display:block; font-size:16px; margin-bottom:3px; }
-        .contacto-opcion small { display:block; color:#666; line-height:1.35; }
+
+        .contacto-opcion strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+
+        .contacto-opcion small {
+            display: block;
+            color: #666;
+            line-height: 1.35;
+        }
 
         @media (max-width: 600px) {
-            .contacto-contenido { padding: 24px 18px; border-radius: 16px; }
-            .contacto-contenido h2 { font-size: 24px; }
-            .contacto-opcion { padding: 14px; }
-            .contacto-icono {
-                width: 44px;
-                height: 44px;
-                flex-basis: 44px;
-                font-size: 21px;
+            .contacto-contenido {
+                padding: 24px 18px;
+                border-radius: 16px;
+            }
+
+            .contacto-contenido h2 {
+                font-size: 24px;
+            }
+
+            .contacto-opcion {
+                padding: 14px;
             }
         }
 
