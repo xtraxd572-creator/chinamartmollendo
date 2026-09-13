@@ -467,6 +467,98 @@
             background: white;
         }
 
+    
+        /* VENTANA DE CONTACTO */
+        .modal-contacto {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.58);
+            z-index: 5000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .modal-contacto.activo { display: flex; }
+        .contacto-contenido {
+            width: 100%;
+            max-width: 520px;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0,0,0,.30);
+        }
+        .contacto-cerrar {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            border: none;
+            background: #f1f1f1;
+            color: #15191d;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            font-size: 22px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .contacto-cerrar:hover { background: #ed1c24; color: white; }
+        .contacto-contenido h2 {
+            margin: 0 45px 8px 0;
+            color: #ed1c24;
+            font-size: 28px;
+        }
+        .contacto-intro {
+            margin: 0 0 22px;
+            color: #555;
+            line-height: 1.5;
+        }
+        .contacto-opciones { display: grid; gap: 14px; }
+        .contacto-opcion {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 16px;
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            text-decoration: none;
+            color: #15191d;
+            background: #fafafa;
+            transition: .2s;
+        }
+        .contacto-opcion:hover {
+            transform: translateY(-2px);
+            border-color: #ed1c24;
+            background: #fff5f5;
+        }
+        .contacto-icono {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background: #ed1c24;
+            color: white;
+        }
+        .contacto-opcion strong { display:block; font-size:16px; margin-bottom:3px; }
+        .contacto-opcion small { display:block; color:#666; line-height:1.35; }
+
+        @media (max-width: 600px) {
+            .contacto-contenido { padding: 24px 18px; border-radius: 16px; }
+            .contacto-contenido h2 { font-size: 24px; }
+            .contacto-opcion { padding: 14px; }
+            .contacto-icono {
+                width: 44px;
+                height: 44px;
+                flex-basis: 44px;
+                font-size: 21px;
+            }
+        }
+
     </style>
 </head>
 
@@ -519,9 +611,7 @@
                 Ofertas
             </a>
 
-            <a href="https://wa.me/51914236008?text=Hola%20China%20Mart%20Mollendo%2C%20quisiera%20hacer%20una%20consulta%20sobre%20un%20producto%20u%20oferta." target="_blank" rel="noopener noreferrer">
-                Contacto
-            </a>
+            <a href="#" id="abrirContacto">Contacto</a>
 
         </nav>
 
@@ -851,6 +941,45 @@
 
     </section>
 
+
+    <!-- VENTANA DE CONTACTO -->
+    <div id="modalContacto" class="modal-contacto" aria-hidden="true">
+        <div class="contacto-contenido" role="dialog" aria-modal="true" aria-labelledby="tituloContacto">
+            <button class="contacto-cerrar" id="cerrarContacto" aria-label="Cerrar">×</button>
+
+            <h2 id="tituloContacto">📍 Contacta con China Mart</h2>
+            <p class="contacto-intro">
+                Elige una opción para comunicarte o ubicar la tienda.
+            </p>
+
+            <div class="contacto-opciones">
+                <a class="contacto-opcion" href="https://maps.app.goo.gl/TEqRencCkYtUKrMA9" target="_blank" rel="noopener noreferrer">
+                    <div class="contacto-icono">📍</div>
+                    <div>
+                        <strong>Cómo llegar</strong>
+                        <small>Referencia: China Mart está al lado de Credishop.</small>
+                    </div>
+                </a>
+
+                <a class="contacto-opcion" href="https://www.tiktok.com/@chinamart06" target="_blank" rel="noopener noreferrer">
+                    <div class="contacto-icono">🎵</div>
+                    <div>
+                        <strong>TikTok</strong>
+                        <small>@chinamart06</small>
+                    </div>
+                </a>
+
+                <a class="contacto-opcion" href="https://wa.me/51914236008?text=Hola%20China%20Mart%20Mollendo%2C%20quisiera%20hacer%20una%20consulta%20sobre%20un%20producto%20u%20oferta." target="_blank" rel="noopener noreferrer">
+                    <div class="contacto-icono">💬</div>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <small>914 236 008 · Consultas sobre productos y ofertas.</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <footer>
         CALIDAD
         &nbsp; <span>•</span> &nbsp;
@@ -894,7 +1023,44 @@
 
         function reiniciarCarrusel() {
             clearInterval(temporizador);
-            iniciarCarrusel();
+    
+        // CONTACTO
+        const abrirContacto = document.getElementById("abrirContacto");
+        const modalContacto = document.getElementById("modalContacto");
+        const cerrarContacto = document.getElementById("cerrarContacto");
+
+        function abrirVentanaContacto() {
+            modalContacto.classList.add("activo");
+            modalContacto.setAttribute("aria-hidden", "false");
+            document.body.style.overflow = "hidden";
+        }
+
+        function cerrarVentanaContacto() {
+            modalContacto.classList.remove("activo");
+            modalContacto.setAttribute("aria-hidden", "true");
+            document.body.style.overflow = "";
+        }
+
+        abrirContacto.addEventListener("click", function(event) {
+            event.preventDefault();
+            abrirVentanaContacto();
+        });
+
+        cerrarContacto.addEventListener("click", cerrarVentanaContacto);
+
+        modalContacto.addEventListener("click", function(event) {
+            if (event.target === modalContacto) {
+                cerrarVentanaContacto();
+            }
+        });
+
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape" && modalContacto.classList.contains("activo")) {
+                cerrarVentanaContacto();
+            }
+        });
+
+        iniciarCarrusel();
         }
 
         // BUSCADOR DEL INDEX
