@@ -1860,6 +1860,85 @@
                     }
         ];
 
+        // ============================================
+// CONECTAR PRODUCTOS.JS CON EL BUSCADOR
+// ============================================
+
+productosChinaMart.forEach(producto => {
+
+    const idCategoria =
+        detectarCategoriaProducto(producto);
+
+    if (!idCategoria) {
+        return;
+    }
+
+    const infoCategoria =
+        categoriasBusqueda.find(
+            categoria =>
+                categoria.id === idCategoria
+        );
+
+    const nombreCategoria =
+        infoCategoria
+            ? infoCategoria.nombre
+            : idCategoria;
+
+
+    // Buscar si el producto ya estaba
+    // registrado en el buscador antiguo.
+    const productoExistente =
+        productosBusqueda.find(
+            existente =>
+                normalizarTexto(existente.nombre) ===
+                normalizarTexto(producto.nombre)
+        );
+
+
+    if (productoExistente) {
+
+        // Si ya existe, agregamos sus palabras clave.
+        productoExistente.palabrasClave = [
+            ...new Set([
+                ...(productoExistente.palabrasClave || []),
+                ...(producto.palabrasClave || [])
+            ])
+        ];
+
+        productoExistente.id =
+            idCategoria;
+
+        productoExistente.categoria =
+            nombreCategoria;
+
+    } else {
+
+        // Si es un producto nuevo,
+        // se agrega automáticamente al buscador.
+        productosBusqueda.push({
+
+            nombre: producto.nombre,
+
+            categoria:
+                nombreCategoria,
+
+            id:
+                idCategoria,
+
+            palabrasClave:
+                producto.palabrasClave || []
+
+        });
+
+    }
+
+});
+
+
+console.log(
+    "🔎 Buscador del inicio conectado a productos.js"
+);
+
         function normalizarTexto(texto) {
             return texto.toLowerCase()
                 .normalize("NFD")
@@ -1904,7 +1983,11 @@
             }
 
             const coincidencias = productosBusqueda.filter(producto => {
-                const texto = normalizarTexto(producto.nombre + " " + producto.categoria);
+                const texto = normalizarTexto(
+    producto.nombre + " " +
+    producto.categoria + " " +
+    (producto.palabrasClave || []).join(" ")
+);
                 return texto.includes(consulta);
             }).slice(0, 6);
 
