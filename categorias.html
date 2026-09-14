@@ -1607,8 +1607,153 @@
     <footer>
         <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
     </footer>
-
+    
+<script src="productos.js"></script>
+    
     <script>
+
+// ============================================
+// CARGAR PRODUCTOS AUTOMÁTICAMENTE
+// ============================================
+
+function crearTarjetaProducto(producto) {
+
+    const tarjeta = document.createElement("div");
+    tarjeta.className = "card-producto";
+
+    const imagen = document.createElement("img");
+
+    imagen.src = producto.imagen;
+
+    imagen.alt =
+        producto.nombre +
+        " - China Mart Mollendo";
+
+
+    const boton = document.createElement("a");
+
+    boton.className = "btn-whatsapp";
+
+    boton.target = "_blank";
+
+    boton.textContent =
+        "💬 Consultar producto";
+
+
+    const mensaje =
+        producto.mensaje ||
+        "Hola, quisiera consultar por " +
+        producto.nombre;
+
+
+    boton.href =
+        "https://wa.me/51914236008?text=" +
+        encodeURIComponent(mensaje);
+
+
+    tarjeta.appendChild(imagen);
+
+    tarjeta.appendChild(boton);
+
+
+    return tarjeta;
+
+}
+
+
+
+// ============================================
+// COLOCAR PRODUCTOS EN SU CATEGORÍA
+// ============================================
+
+function cargarProductosAutomaticamente() {
+
+    productosChinaMart.forEach(producto => {
+
+        const categoria =
+            detectarCategoriaProducto(producto);
+
+
+        if (!categoria) {
+
+            console.warn(
+                "No se pudo detectar categoría:",
+                producto.nombre
+            );
+
+            return;
+
+        }
+
+
+        const seccion =
+            document.getElementById(categoria);
+
+
+        if (!seccion) {
+
+            console.warn(
+                "No existe la categoría:",
+                categoria
+            );
+
+            return;
+
+        }
+
+
+        // Evitar productos duplicados
+        const yaExiste =
+            Array.from(
+                document.querySelectorAll(
+                    ".card-producto img"
+                )
+            ).some(imagen =>
+                imagen.getAttribute("src") ===
+                producto.imagen
+            );
+
+
+        if (yaExiste) {
+
+            console.log(
+                "Producto ya existente:",
+                producto.nombre
+            );
+
+            return;
+
+        }
+
+
+        const contenedor =
+            seccion.querySelector(
+                ".contenedor-productos"
+            ) || seccion;
+
+
+        const tarjeta =
+            crearTarjetaProducto(producto);
+
+
+        contenedor.appendChild(tarjeta);
+
+
+        console.log(
+            producto.nombre +
+            " → " +
+            categoria
+        );
+
+    });
+
+}
+
+
+
+// Ejecutar al cargar la página
+cargarProductosAutomaticamente();
+        
         function activarCatalogo(idSeccion) {
             const seccion = document.getElementById(idSeccion);
             if (!seccion) return;
