@@ -9,7 +9,13 @@ const productosChinaMart = [
         nombre: "Scooter Infantil de 3 Ruedas",
         imagen: "scooter_infantil.png",
         categoria: "auto",
-        palabrasClave: ["scooter", "juguete", "infantil", "niño", "niña"],
+        palabrasClave: [
+            "scooter",
+            "juguete",
+            "infantil",
+            "niño",
+            "niña"
+        ],
         mensaje: "Hola, quisiera consultar por el Scooter Infantil de 3 Ruedas",
         codigo: "",
         stock: null
@@ -19,31 +25,45 @@ const productosChinaMart = [
         nombre: "Muñeca Melissa Fashion Princesa con Accesorios",
         imagen: "muneca_melissa_fashion.png",
         categoria: "auto",
-        palabrasClave: ["muñeca", "juguete", "princesa", "niña"],
+        palabrasClave: [
+            "muñeca",
+            "juguete",
+            "princesa",
+            "niña"
+        ],
         mensaje: "Hola, quisiera consultar por la Muñeca Melissa Fashion",
         codigo: "",
         stock: null
     },
 
     {
-    nombre: "Mochila Escolar Capibara",
-    imagen: "mochila_capibara_accesorios_80_80.png",
-    categoria: "auto",
-    palabrasClave: ["mochila", "escolar", "capibara", "bolso"],
-    mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
-    codigo: "",
-    stock: null
-},
+        nombre: "Mochila Escolar Capibara",
+        imagen: "mochila_capibara_accesorios_80_80.png",
+        categoria: "auto",
+        palabrasClave: [
+            "mochila",
+            "escolar",
+            "capibara",
+            "bolso"
+        ],
+        mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
+        codigo: "",
+        stock: null
+    },
 
-{
-    nombre: "Juguete de Prueba",
-    imagen: "logo.png",
-    categoria: "auto",
-    palabrasClave: ["juguete", "infantil"],
-    mensaje: "Hola, quisiera consultar por el Juguete de Prueba",
-    codigo: "",
-    stock: null
-}
+    // PRODUCTO DE PRUEBA
+    {
+        nombre: "Juguete de Prueba",
+        imagen: "logo.png",
+        categoria: "auto",
+        palabrasClave: [
+            "juguete",
+            "infantil"
+        ],
+        mensaje: "Hola, quisiera consultar por el Juguete de Prueba",
+        codigo: "",
+        stock: null
+    }
 
 ];
 
@@ -116,10 +136,13 @@ const categoriasChinaMart = {
 
     "juguetes para niño y niña": [
         "juguete",
+        "juguetes",
         "scooter",
         "bicicleta",
         "muñeca",
+        "muñecas",
         "muñeco",
+        "muñecos",
         "dinosaurio",
         "cometa",
         "pelota",
@@ -152,49 +175,100 @@ function normalizarTextoProducto(texto) {
 
 function detectarCategoriaProducto(producto) {
 
-    // Si escribimos una categoría manualmente,
-    // no hace falta detectarla.
+    // Si nosotros indicamos una categoría manualmente,
+    // se utiliza directamente.
     if (
         producto.categoria &&
         producto.categoria !== "auto"
     ) {
+
         return producto.categoria;
+
     }
 
 
-    // Juntamos nombre + palabras clave.
+    // Juntamos el nombre y las palabras clave.
     const texto = normalizarTextoProducto(
         producto.nombre + " " +
         (producto.palabrasClave || []).join(" ")
     );
 
 
-    // Buscamos coincidencias.
+    // Revisamos las categorías.
     for (const categoria in categoriasChinaMart) {
 
-        const palabras = categoriasChinaMart[categoria];
+        const palabras =
+            categoriasChinaMart[categoria];
+
 
         for (const palabra of palabras) {
 
             const palabraNormalizada =
-    normalizarTextoProducto(palabra);
+                normalizarTextoProducto(palabra);
 
-const palabraSegura =
-    palabraNormalizada.replace(
-        /[.*+?^${}()|[\]\\]/g,
-        "\\$&"
-    );
 
-const patron =
-    new RegExp(
-        "\\b" +
-        palabraSegura.replace(/\s+/g, "\\s+") +
-        "\\b",
-        "i"
-    );
+            // Escapar caracteres especiales.
+            const palabraSegura =
+                palabraNormalizada.replace(
+                    /[.*+?^${}()|[\]\\]/g,
+                    "\\$&"
+                );
 
-if (patron.test(texto)) {
 
-    return categoria;
+            // Esto evita errores como:
+            // "jugueTE" → bebidas
+            //
+            // Ahora "te" solamente coincide
+            // cuando realmente es una palabra.
+            const patron =
+                new RegExp(
+                    "\\b" +
+                    palabraSegura.replace(
+                        /\s+/g,
+                        "\\s+"
+                    ) +
+                    "\\b",
+                    "i"
+                );
+
+
+            if (patron.test(texto)) {
+
+                return categoria;
+
+            }
+
+        }
+
+    }
+
+
+    // Si no reconoce ninguna categoría.
+    return null;
 
 }
+
+
+// ============================================
+// MENSAJE PARA COMPROBAR QUE CARGÓ
+// ============================================
+
+console.log(
+    "✅ productos.js cargado correctamente"
+);
+
+
+// ============================================
+// PRUEBA EN CONSOLA
+// ============================================
+
+console.log(
+    "Categoría del Juguete de Prueba:",
+    detectarCategoriaProducto(
+        productosChinaMart.find(
+            producto =>
+                producto.nombre ===
+                "Juguete de Prueba"
+        )
+    )
+);
