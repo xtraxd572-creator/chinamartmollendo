@@ -26,14 +26,24 @@ const productosChinaMart = [
     },
 
     {
-        nombre: "Mochila Escolar Capibara",
-        imagen: "mochila_capibara_accesorios_80_80.png",
-        categoria: "auto",
-        palabrasClave: ["mochila", "escolar", "capibara", "bolso"],
-        mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
-        codigo: "",
-        stock: null
-    }
+    nombre: "Mochila Escolar Capibara",
+    imagen: "mochila_capibara_accesorios_80_80.png",
+    categoria: "auto",
+    palabrasClave: ["mochila", "escolar", "capibara", "bolso"],
+    mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Juguete de Prueba",
+    imagen: "logo.png",
+    categoria: "auto",
+    palabrasClave: ["juguete", "infantil"],
+    mensaje: "Hola, quisiera consultar por el Juguete de Prueba",
+    codigo: "",
+    stock: null
+}
 
 ];
 
