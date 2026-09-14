@@ -570,6 +570,7 @@
                     placeholder="🔎 Busca por nombre o tipo de producto..."
                     autocomplete="off"
                 >
+                <div id="resultadosBusquedaCatalogo" class="resultados-busqueda"></div>
             </div>
 
             <nav>
@@ -1647,6 +1648,7 @@
         });
 
         const buscadorCatalogo = document.getElementById("busquedaCatalogo");
+        const resultadosBusquedaCatalogo = document.getElementById("resultadosBusquedaCatalogo");
         const mensajeBusquedaCatalogo = document.getElementById("mensajeBusquedaCatalogo");
 
         function normalizarTexto(texto) {
@@ -1722,7 +1724,102 @@
             }
         }
 
-        buscadorCatalogo.addEventListener("input", buscarEnCatalogo);
+
+        function obtenerProductosParaBusqueda() {
+            const productos = [];
+
+            document.querySelectorAll(".catalogo-section").forEach(seccion => {
+                const idCategoria = seccion.id;
+                const tituloCategoria =
+                    seccion.querySelector(".section-title")?.textContent.trim() || "";
+
+                seccion.querySelectorAll(".card-producto").forEach(card => {
+                    const imagen = card.querySelector("img");
+                    if (!imagen) return;
+
+                    let nombre = imagen.alt || "";
+                    nombre = nombre.replace(/\s*-\s*China Mart Mollendo\s*$/i, "").trim();
+
+                    const restringido = /\b(licor|soju|coctel|cóctel)\b/i.test(nombre);
+                    if (!nombre || restringido) return;
+
+                    productos.push({
+                        nombre: nombre,
+                        categoria: tituloCategoria.replace(/^[^\wÁÉÍÓÚÜÑáéíóúüñ]+/, "").trim(),
+                        id: idCategoria
+                    });
+                });
+            });
+
+            return productos;
+        }
+
+        function mostrarSugerenciasCatalogo() {
+            const consulta = normalizarTexto(buscadorCatalogo.value);
+            resultadosBusquedaCatalogo.innerHTML = "";
+
+            if (!consulta) {
+                resultadosBusquedaCatalogo.classList.remove("visible");
+                return;
+            }
+
+            const coincidencias = obtenerProductosParaBusqueda()
+                .filter(producto => {
+                    const texto = normalizarTexto(
+                        producto.nombre + " " + producto.categoria
+                    );
+                    return texto.includes(consulta);
+                })
+                .slice(0, 6);
+
+            if (coincidencias.length === 0) {
+                resultadosBusquedaCatalogo.innerHTML =
+                    '<div class="sin-resultados-busqueda">No encontramos productos con “' +
+                    buscadorCatalogo.value.replace(/[<>]/g, "") +
+                    '”.</div>';
+            } else {
+                coincidencias.forEach(producto => {
+                    const enlace = document.createElement("a");
+                    enlace.className = "resultado-busqueda";
+                    enlace.href = "categorias.html?buscar=" +
+                        encodeURIComponent(producto.nombre) +
+                        "#" + encodeURIComponent(producto.id);
+
+                    enlace.innerHTML =
+                        "<strong>" + producto.nombre + "</strong>" +
+                        "<span>" + producto.categoria + "</span>";
+
+                    resultadosBusquedaCatalogo.appendChild(enlace);
+                });
+            }
+
+            resultadosBusquedaCatalogo.classList.add("visible");
+        }
+
+        buscadorCatalogo.addEventListener("input", () => {
+            buscarEnCatalogo();
+            mostrarSugerenciasCatalogo();
+        });
+
+        buscadorCatalogo.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                const primero = resultadosBusquedaCatalogo.querySelector(".resultado-busqueda");
+                if (primero) {
+                    event.preventDefault();
+                    window.location.href = primero.href;
+                }
+            }
+
+            if (event.key === "Escape") {
+                resultadosBusquedaCatalogo.classList.remove("visible");
+            }
+        });
+
+        document.addEventListener("click", (event) => {
+            if (!event.target.closest(".buscador-contenedor")) {
+                resultadosBusquedaCatalogo.classList.remove("visible");
+            }
+        });
 
         window.addEventListener("DOMContentLoaded", () => {
             const parametros = new URLSearchParams(window.location.search);
