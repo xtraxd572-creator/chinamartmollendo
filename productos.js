@@ -176,22 +176,25 @@ function detectarCategoriaProducto(producto) {
 
         for (const palabra of palabras) {
 
-            if (
-                texto.includes(
-                    normalizarTextoProducto(palabra)
-                )
-            ) {
+            const palabraNormalizada =
+    normalizarTextoProducto(palabra);
 
-                return categoria;
+const palabraSegura =
+    palabraNormalizada.replace(
+        /[.*+?^${}()|[\]\\]/g,
+        "\\$&"
+    );
 
-            }
+const patron =
+    new RegExp(
+        "\\b" +
+        palabraSegura.replace(/\s+/g, "\\s+") +
+        "\\b",
+        "i"
+    );
 
-        }
+if (patron.test(texto)) {
 
-    }
-
-
-    // Si no reconoce nada.
-    return null;
+    return categoria;
 
 }
