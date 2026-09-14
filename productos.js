@@ -49,20 +49,6 @@ const productosChinaMart = [
         mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
         codigo: "",
         stock: null
-    },
-
-    // PRODUCTO DE PRUEBA
-    {
-        nombre: "Juguete de Prueba",
-        imagen: "logo.png",
-        categoria: "auto",
-        palabrasClave: [
-            "juguete",
-            "infantil"
-        ],
-        mensaje: "Hola, quisiera consultar por el Juguete de Prueba",
-        codigo: "",
-        stock: null
     }
 
 ];
@@ -255,20 +241,4 @@ function detectarCategoriaProducto(producto) {
 
 console.log(
     "✅ productos.js cargado correctamente"
-);
-
-
-// ============================================
-// PRUEBA EN CONSOLA
-// ============================================
-
-console.log(
-    "Categoría del Juguete de Prueba:",
-    detectarCategoriaProducto(
-        productosChinaMart.find(
-            producto =>
-                producto.nombre ===
-                "Juguete de Prueba"
-        )
-    )
 );
