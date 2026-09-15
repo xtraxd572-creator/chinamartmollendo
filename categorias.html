@@ -545,7 +545,27 @@
                 width: min(100%, 520px);
             }
         }
+/* SCROLL PARA LA LISTA DE CATÁLOGOS */
+.menu-catalogos {
+    max-height: 65vh;
+    overflow-y: auto;
+    padding-right: 8px;
+}
 
+/* Barra de desplazamiento */
+.menu-catalogos::-webkit-scrollbar {
+    width: 8px;
+}
+
+.menu-catalogos::-webkit-scrollbar-thumb {
+    background-color: #ed1c24;
+    border-radius: 10px;
+}
+
+.menu-catalogos::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
