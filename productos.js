@@ -167,7 +167,22 @@ const categoriasChinaMart = {
             "monopoly",
             "infantil"
         ]
-    }
+    },
+        
+    "mascarillas y cuidado": {
+    nombre: "Mascarillas y Cuidado",
+    icono: "🧖",
+    palabras: [
+        "mascarilla",
+        "mascarillas",
+        "mascarilla facial",
+        "cuidado facial",
+        "skincare",
+        "rostro",
+        "parche facial",
+        "parches de ojos"
+    ]
+}
     };
 
 // ============================================
