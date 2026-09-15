@@ -180,7 +180,7 @@ const categoriasChinaMart = {
         "cartuchera",
         "escolar"
     ]
-};
+},
 
 
 // ============================================
