@@ -49,20 +49,7 @@ const productosChinaMart = [
         mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
         codigo: "",
         stock: null
-    },
-
-    {
-    nombre: "Cartuchera Escolar de Prueba",
-    imagen: "logo.png",
-    categoria: "auto",
-    palabrasClave: [
-        "cartuchera",
-        "escolar"
-    ],
-    mensaje: "Hola, quisiera consultar por la Cartuchera Escolar de Prueba",
-    codigo: "",
-    stock: null
-}
+    };
 
 ];
 
