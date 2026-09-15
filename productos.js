@@ -75,6 +75,20 @@ const productosChinaMart = [
     codigo: "",
 
     stock: null
+},
+    {
+    nombre: "Mascarillas Faciales Sakura Premium y Kiwi",
+    imagen: "mascarillas_sakura_kiwi.png",
+    categoria: "auto",
+    palabrasClave: [
+        "mascarilla",
+        "sakura",
+        "kiwi",
+        "cuidado facial"
+    ],
+    mensaje: "Hola, quisiera consultar por las Mascarillas Faciales Sakura Premium y Kiwi",
+    codigo: "",
+    stock: null
 }
 
 ];
