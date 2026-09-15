@@ -49,7 +49,7 @@ const productosChinaMart = [
         mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
         codigo: "",
         stock: null
-    };
+    }
 
 ];
 
