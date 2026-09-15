@@ -167,9 +167,7 @@ const categoriasChinaMart = {
             "monopoly",
             "infantil"
         ]
-    }
-
-},
+    },
 
 "utiles escolares": {
     nombre: "Útiles Escolares",
