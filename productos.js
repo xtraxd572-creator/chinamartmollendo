@@ -180,23 +180,7 @@ const categoriasChinaMart = {
             "monopoly",
             "infantil"
         ]
-    },
-
-"utiles escolares": {
-    nombre: "Útiles Escolares",
-    icono: "📚",
-    palabras: [
-        "cuaderno",
-        "lapicero",
-        "lapiz",
-        "lápiz",
-        "cartuchera",
-        "escolar"
-    ]
-}
-
-};    
-
+    };
 
 // ============================================
 // NORMALIZAR TEXTO
