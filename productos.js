@@ -169,6 +169,20 @@ const categoriasChinaMart = {
         ]
     }
 
+},
+    ,
+
+"utiles escolares": {
+    nombre: "Útiles Escolares",
+    icono: "📚",
+    palabras: [
+        "cuaderno",
+        "lapicero",
+        "lapiz",
+        "lápiz",
+        "cartuchera",
+        "escolar"
+    ]
 };
 
 
