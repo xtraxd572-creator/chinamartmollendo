@@ -60,82 +60,114 @@ const productosChinaMart = [
 
 const categoriasChinaMart = {
 
-    bebidas: [
-        "bebida",
-        "jugo",
-        "te",
-        "té",
-        "leche",
-        "aloe"
-    ],
+    bebidas: {
+        nombre: "Bebidas Asiáticas",
+        icono: "🧋",
+        palabras: [
+            "bebida",
+            "jugo",
+            "te",
+            "té",
+            "leche",
+            "aloe"
+        ]
+    },
 
-    inciensos: [
-        "incienso",
-        "porta incienso",
-        "portaincienso"
-    ],
+    inciensos: {
+        nombre: "Porta Inciensos",
+        icono: "🪔",
+        palabras: [
+            "incienso",
+            "porta incienso",
+            "portaincienso"
+        ]
+    },
 
-    bolsos: [
-        "cartera",
-        "mochila",
-        "bolso",
-        "morral",
-        "lonchera",
-        "canguro"
-    ],
+    bolsos: {
+        nombre: "Carteras, Mochilas y Más",
+        icono: "👛",
+        palabras: [
+            "cartera",
+            "mochila",
+            "bolso",
+            "morral",
+            "lonchera",
+            "canguro"
+        ]
+    },
 
-    mascotas: [
-        "mascota",
-        "perro",
-        "gato",
-        "arenero",
-        "rascador",
-        "catnip"
-    ],
+    mascotas: {
+        nombre: "Catálogo de Mascotas",
+        icono: "🐾",
+        palabras: [
+            "mascota",
+            "perro",
+            "gato",
+            "arenero",
+            "rascador",
+            "catnip"
+        ]
+    },
 
-    gorras: [
-        "gorra"
-    ],
+    gorras: {
+        nombre: "Gorras Damas y Varón",
+        icono: "🧢",
+        palabras: [
+            "gorra"
+        ]
+    },
 
-    flores: [
-        "flor",
-        "flores",
-        "rosa",
-        "orquidea",
-        "orquídea",
-        "arbol decorativo",
-        "árbol decorativo",
-        "cesped",
-        "césped"
-    ],
+    flores: {
+        nombre: "Flores Artificiales",
+        icono: "🌸",
+        palabras: [
+            "flor",
+            "flores",
+            "rosa",
+            "orquidea",
+            "orquídea",
+            "arbol decorativo",
+            "árbol decorativo",
+            "cesped",
+            "césped"
+        ]
+    },
 
-    "gimnasio y deportes": [
-        "gimnasio",
-        "deporte",
-        "fitness",
-        "yoga",
-        "entrenamiento",
-        "resistencia",
-        "postura",
-        "abdominal"
-    ],
+    "gimnasio y deportes": {
+        nombre: "Gimnasio y Deporte",
+        icono: "🏋️",
+        palabras: [
+            "gimnasio",
+            "deporte",
+            "fitness",
+            "yoga",
+            "entrenamiento",
+            "resistencia",
+            "postura",
+            "abdominal"
+        ]
+    },
 
-    "juguetes para niño y niña": [
-        "juguete",
-        "juguetes",
-        "scooter",
-        "bicicleta",
-        "muñeca",
-        "muñecas",
-        "muñeco",
-        "muñecos",
-        "dinosaurio",
-        "cometa",
-        "pelota",
-        "slime",
-        "monopoly",
-        "infantil"
-    ]
+    "juguetes para niño y niña": {
+        nombre: "Juguetes para Niño y Niña",
+        icono: "🧸",
+        palabras: [
+            "juguete",
+            "juguetes",
+            "scooter",
+            "bicicleta",
+            "muñeca",
+            "muñecas",
+            "muñeco",
+            "muñecos",
+            "dinosaurio",
+            "cometa",
+            "pelota",
+            "slime",
+            "monopoly",
+            "infantil"
+        ]
+    }
 
 };
 
@@ -183,8 +215,8 @@ function detectarCategoriaProducto(producto) {
     // Revisamos las categorías.
     for (const categoria in categoriasChinaMart) {
 
-        const palabras =
-            categoriasChinaMart[categoria];
+       const palabras =
+    categoriasChinaMart[categoria].palabras;
 
 
         for (const palabra of palabras) {
