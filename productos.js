@@ -170,7 +170,6 @@ const categoriasChinaMart = {
     }
 
 },
-    ,
 
 "utiles escolares": {
     nombre: "Útiles Escolares",
