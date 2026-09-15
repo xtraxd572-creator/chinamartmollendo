@@ -167,6 +167,7 @@ const categoriasChinaMart = {
             "monopoly",
             "infantil"
         ]
+    }
     };
 
 // ============================================
