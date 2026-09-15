@@ -89,8 +89,22 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por las Mascarillas Faciales Sakura Premium y Kiwi",
     codigo: "",
     stock: null
+},
+    
+{
+    nombre: "Mascarillas Faciales BIOAQUA Fresa y Blueberry",
+    imagen: "mascarillas_fresa_blueberry.png",
+    categoria: "auto",
+    palabrasClave: [
+        "mascarilla",
+        "fresa",
+        "blueberry",
+        "bioaqua"
+    ],
+    mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Fresa y Blueberry",
+    codigo: "",
+    stock: null
 }
-
 ];
 
 
