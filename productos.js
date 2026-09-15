@@ -49,7 +49,33 @@ const productosChinaMart = [
         mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
         codigo: "",
         stock: null
-    }
+    },
+    {
+    nombre: "Mascarillas Faciales BIOAQUA Koala y Zorrito",
+
+    imagen: "mascarilla_bioaqua_koala_zorrito.png",
+
+    categoria: "auto",
+
+    palabrasClave: [
+        "mascarilla",
+        "mascarillas",
+        "mascarilla facial",
+        "facial mask",
+        "bioaqua",
+        "koala",
+        "zorrito",
+        "cuidado facial",
+        "skincare",
+        "rostro"
+    ],
+
+    mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Koala y Zorrito",
+
+    codigo: "",
+
+    stock: null
+}
 
 ];
 
