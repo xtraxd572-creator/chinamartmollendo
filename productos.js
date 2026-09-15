@@ -104,6 +104,20 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Fresa y Blueberry",
     codigo: "",
     stock: null
+},
+    {
+    nombre: "Mascarillas Faciales BIOAQUA Panda y Perrito",
+    imagen: "mascarillas_panda_perrito.png",
+    categoria: "auto",
+    palabrasClave: [
+        "mascarilla",
+        "panda",
+        "perrito",
+        "bioaqua"
+    ],
+    mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Panda y Perrito",
+    codigo: "",
+    stock: null
 }
 ];
 
