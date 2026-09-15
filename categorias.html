@@ -1613,8 +1613,143 @@
     <script>
 
 // ============================================
-// CARGAR PRODUCTOS AUTOMÁTICAMENTE
+// CREAR CATEGORÍAS AUTOMÁTICAMENTE
 // ============================================
+
+function crearCategoriasAutomaticamente() {
+
+    const menu =
+        document.querySelector(".menu-catalogos");
+
+    const contenido =
+        document.querySelector(".content-catalogo");
+
+
+    if (!menu || !contenido) {
+        console.error(
+            "No se encontró el menú o el contenido de categorías."
+        );
+        return;
+    }
+
+
+    // Recorremos todas las categorías de productos.js
+    for (const idCategoria in categoriasChinaMart) {
+
+        const datos =
+            categoriasChinaMart[idCategoria];
+
+
+        // ====================================
+        // 1. CREAR BOTÓN DEL MENÚ
+        // ====================================
+
+        const enlaceExistente =
+            Array.from(
+                document.querySelectorAll(".catalog-item")
+            ).find(enlace =>
+                enlace.getAttribute("onclick")
+                    ?.includes("'" + idCategoria + "'")
+            );
+
+
+        if (!enlaceExistente) {
+
+            const li =
+                document.createElement("li");
+
+            const enlace =
+                document.createElement("a");
+
+            enlace.href = "#";
+            enlace.className = "catalog-item";
+
+            enlace.textContent =
+                datos.icono + " " + datos.nombre;
+
+
+            enlace.addEventListener(
+                "click",
+                function(event) {
+
+                    mostrarCatalogo(
+                        event,
+                        idCategoria
+                    );
+
+                }
+            );
+
+
+            li.appendChild(enlace);
+            menu.appendChild(li);
+
+
+            console.log(
+                "📂 Menú creado:",
+                datos.nombre
+            );
+
+        }
+
+
+        // ====================================
+        // 2. CREAR SECCIÓN DEL CATÁLOGO
+        // ====================================
+
+        let seccion =
+            document.getElementById(idCategoria);
+
+
+        if (!seccion) {
+
+            seccion =
+                document.createElement("div");
+
+            seccion.id =
+                idCategoria;
+
+            seccion.className =
+                "catalogo-section";
+
+
+            const titulo =
+                document.createElement("h2");
+
+            titulo.className =
+                "section-title";
+
+            titulo.textContent =
+                datos.icono + " " + datos.nombre;
+
+
+            const contenedorProductos =
+                document.createElement("div");
+
+            contenedorProductos.className =
+                "contenedor-productos";
+
+
+            seccion.appendChild(titulo);
+
+            seccion.appendChild(
+                contenedorProductos
+            );
+
+
+            contenido.appendChild(seccion);
+
+
+            console.log(
+                "✅ Catálogo creado:",
+                datos.nombre
+            );
+
+        }
+
+    }
+
+}
 
 function crearTarjetaProducto(producto) {
 
@@ -1665,7 +1800,8 @@ function crearTarjetaProducto(producto) {
 // ============================================
 // COLOCAR PRODUCTOS EN SU CATEGORÍA
 // ============================================
-
+crearCategoriasAutomaticamente();
+        
 function cargarProductosAutomaticamente() {
 
     productosChinaMart.forEach(producto => {
