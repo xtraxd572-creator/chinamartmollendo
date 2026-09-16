@@ -1024,10 +1024,239 @@
     
     <script>
 
-        let slideActual = 0;
-        const slides = document.querySelectorAll(".slide");
-        const puntos = document.querySelectorAll(".punto-carrusel");
-        let temporizador;
+       let slideActual = 0;
+let slides = [];
+let puntos = [];
+let temporizador;
+
+
+// ============================================
+// AGREGAR PRODUCTOS DESTACADOS AL CARRUSEL
+// ============================================
+
+function agregarDestacadosAlCarrusel() {
+
+    const carrusel =
+        document.querySelector(".carrusel");
+
+    const controles =
+        carrusel.querySelector(".controles-carrusel");
+
+    const flechaIzquierda =
+        carrusel.querySelector(".flecha-izquierda");
+
+
+    // Imágenes que ya aparecen en los slides antiguos.
+    // Así evitamos duplicarlas.
+    const imagenesExistentes = new Set(
+        Array.from(
+            carrusel.querySelectorAll(
+                ".slide .producto img"
+            )
+        ).map(
+            imagen =>
+                imagen.getAttribute("src")
+        )
+    );
+
+
+    const productosDestacados =
+        productosChinaMart.filter(
+            producto =>
+                producto.destacado === true &&
+                producto.imagen &&
+                !imagenesExistentes.has(
+                    producto.imagen
+                )
+        );
+
+
+    productosDestacados.forEach(producto => {
+
+        const idCategoria =
+            detectarCategoriaProducto(producto);
+
+        if (!idCategoria) {
+            return;
+        }
+
+
+        const datosCategoria =
+            categoriasChinaMart[idCategoria] || {
+                nombre: idCategoria,
+                icono: "🛍️"
+            };
+
+
+        // Si olvidamos poner características,
+        // muestra unas genéricas para no dejarlo vacío.
+        const caracteristicas =
+            producto.caracteristicas &&
+            producto.caracteristicas.length
+                ? producto.caracteristicas.slice(0, 4)
+                : [
+                    {
+                        icono: "✓",
+                        texto: "Producto destacado"
+                    },
+                    {
+                        icono: "★",
+                        texto: "Variedad disponible"
+                    },
+                    {
+                        icono: "+",
+                        texto: "Consulta en tienda"
+                    }
+                ];
+
+
+        const caracteristicasHTML =
+            caracteristicas.map(
+                caracteristica => `
+                    <div class="caracteristica">
+
+                        <div class="circulo">
+                            ${caracteristica.icono || "✓"}
+                        </div>
+
+                        ${caracteristica.texto || ""}
+
+                    </div>
+                `
+            ).join("");
+
+
+        const slide =
+            document.createElement("div");
+
+        slide.className = "slide";
+
+
+        slide.innerHTML = `
+
+            <div class="texto">
+
+                <div class="frase">
+                    ${producto.frase ||
+                    "Descubre algo especial"}
+                </div>
+
+                <h1>
+
+                    ${producto.titulo ||
+                    producto.nombre}
+
+                    ${
+                        producto.tituloDestacado
+                            ? `<span>${producto.tituloDestacado}</span>`
+                            : ""
+                    }
+
+                </h1>
+
+                <p class="descripcion">
+
+                    ${producto.descripcion ||
+                    "Conoce este producto disponible en China Mart Mollendo."}
+
+                </p>
+
+                <div class="caracteristicas">
+
+                    ${caracteristicasHTML}
+
+                </div>
+
+                <a
+                    class="boton"
+                    href="categorias.html#${encodeURIComponent(idCategoria)}"
+                >
+
+                    ${datosCategoria.icono || "🛍️"}
+                    Ver categoría
+
+                </a>
+
+            </div>
+
+
+            <div class="producto">
+
+                <img
+                    src="${producto.imagen}"
+                    alt="${producto.nombre}"
+                >
+
+            </div>
+        `;
+
+
+        // Se agrega antes de las flechas.
+        carrusel.insertBefore(
+            slide,
+            flechaIzquierda
+        );
+
+
+        // Crear también su puntito.
+        const numeroSlide =
+            carrusel.querySelectorAll(
+                ".slide"
+            ).length - 1;
+
+
+        const punto =
+            document.createElement("button");
+
+        punto.className =
+            "punto-carrusel";
+
+        punto.setAttribute(
+            "aria-label",
+            producto.nombre
+        );
+
+
+        punto.addEventListener(
+            "click",
+            function() {
+
+                irSlide(numeroSlide);
+
+            }
+        );
+
+
+        controles.appendChild(punto);
+
+    });
+
+
+    // Actualizar las listas después
+    // de agregar los productos nuevos.
+    slides =
+        Array.from(
+            document.querySelectorAll(".slide")
+        );
+
+    puntos =
+        Array.from(
+            document.querySelectorAll(
+                ".punto-carrusel"
+            )
+        );
+
+
+    console.log(
+        "⭐ Productos destacados cargados:",
+        productosDestacados.length
+    );
+
+}
+
+
+// Ejecutamos la carga de destacados.
+agregarDestacadosAlCarrusel();
 
         function mostrarSlide(numero) {
             slides.forEach(slide => slide.classList.remove("active"));
