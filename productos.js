@@ -118,6 +118,20 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Panda y Perrito",
     codigo: "",
     stock: null
+},
+    {
+    nombre: "Mascarillas Faciales BIOAQUA Granada y Limón",
+    imagen: "mascarillas_granada_limon.png",
+    categoria: "auto",
+    palabrasClave: [
+        "mascarilla",
+        "granada",
+        "limón",
+        "bioaqua"
+    ],
+    mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Granada y Limón",
+    codigo: "",
+    stock: null
 }
 ];
 
