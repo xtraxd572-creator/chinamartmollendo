@@ -1049,6 +1049,159 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por el Incienso Tulasi Sándalo",
     codigo: "",
     stock: null
+},
+    // ============================================
+// GIMNASIO Y DEPORTE
+// ============================================
+
+{
+    nombre: "Chaleco Moldeador de Compresión",
+    imagen: "chaleco_compresion.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["chaleco", "compresión", "gimnasio"],
+    mensaje: "Hola, quisiera consultar por el Chaleco Moldeador de Compresión",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bandas de Resistencia y Muñequeras de Soporte",
+    imagen: "bandas_resistencia_munequeras.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["bandas", "resistencia", "muñequeras", "entrenamiento"],
+    mensaje: "Hola, quisiera consultar por las Bandas de Resistencia y Muñequeras de Soporte",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cuerda de Yoga Aéreo Aerial Yoga Rope",
+    imagen: "yoga_aereo_rope.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["yoga", "aéreo", "cuerda", "entrenamiento"],
+    mensaje: "Hola, quisiera consultar por la Cuerda de Yoga Aéreo Aerial Yoga Rope",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bustier Moldeador Slimming Bustier",
+    imagen: "slimming_bustier.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["bustier", "ropa deportiva", "fitness"],
+    mensaje: "Hola, quisiera consultar por el Bustier Moldeador Slimming Bustier",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Faja de Cintura Alta High Waist Body Shaping Pants",
+    imagen: "faja_cintura_alta.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["faja", "cintura alta", "ropa deportiva"],
+    mensaje: "Hola, quisiera consultar por la Faja de Cintura Alta",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Extensor Pectoral Multifuncional",
+    imagen: "extensor_pectoral.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["extensor", "pectoral", "entrenamiento", "fitness"],
+    mensaje: "Hola, quisiera consultar por el Extensor Pectoral Multifuncional",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Fitness Yoga Pants",
+    imagen: "fitness_yoga_pants.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["fitness", "yoga", "pants", "ropa deportiva"],
+    mensaje: "Hola, quisiera consultar por los Fitness Yoga Pants",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cinta Modeladora en Tamaño Único",
+    imagen: "cinta_modeladora.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["cinta", "ropa deportiva", "fitness"],
+    mensaje: "Hola, quisiera consultar por la Cinta Modeladora en Tamaño Único",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Sistema de Entrenamiento en Suspensión Fitness Strap Training",
+    imagen: "fitness_strap_training.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["suspensión", "entrenamiento", "fitness", "strap"],
+    mensaje: "Hola, quisiera consultar por el Sistema de Entrenamiento en Suspensión Fitness Strap Training",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Corrector de Postura y Soporte de Espalda",
+    imagen: "corrector_postura_espalda.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["postura", "espalda", "soporte"],
+    mensaje: "Hola, quisiera consultar por el Corrector de Postura y Soporte de Espalda",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Soporte para Muñeca y Codo",
+    imagen: "soporte_muneca_codo.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["muñeca", "codo", "soporte"],
+    mensaje: "Hola, quisiera consultar por el Soporte para Muñeca y Codo",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Top Deportivo Fitness Yoga",
+    imagen: "top_deportivo_fitness_yoga.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["top", "deportivo", "fitness", "yoga"],
+    mensaje: "Hola, quisiera consultar por el Top Deportivo Fitness Yoga",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Equipo para Abdominales con Ventosa",
+    imagen: "equipo_abdominales_ventosa.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["abdominales", "ventosa", "entrenamiento"],
+    mensaje: "Hola, quisiera consultar por el Equipo para Abdominales con Ventosa",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Body Shaper Moldeador de Figura",
+    imagen: "body_shaper_moldeador.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["body shaper", "ropa deportiva", "fitness"],
+    mensaje: "Hola, quisiera consultar por el Body Shaper",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cinta Modeladora Completa en Tamaño Único",
+    imagen: "cinta_modeladora_tirantes.png",
+    categoria: "gimnasio y deportes",
+    palabrasClave: ["cinta", "tirantes", "ropa deportiva"],
+    mensaje: "Hola, quisiera consultar por la Cinta Modeladora Completa en Tamaño Único",
+    codigo: "",
+    stock: null
 }
 ];
 
