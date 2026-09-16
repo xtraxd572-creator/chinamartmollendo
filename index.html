@@ -1797,16 +1797,27 @@ agregarDestacadosAlCarrusel();
         }
 
 
-        const categoriasBusqueda = [
-            { id: "bebidas", nombre: "Bebidas Asiáticas", palabras: ["bebida", "bebidas", "te", "té", "jugo", "jugos"] },
-            { id: "inciensos", nombre: "Porta Inciensos", palabras: ["incienso", "inciensos", "porta incienso", "porta inciensos"] },
-            { id: "bolsos", nombre: "Carteras, Mochilas y Más", palabras: ["cartera", "carteras", "mochila", "mochilas", "bolso", "bolsos", "morral", "lonchera", "canguro"] },
-            { id: "mascotas", nombre: "Mascotas", palabras: ["mascota", "mascotas", "perro", "perros", "gato", "gatos"] },
-            { id: "gorras", nombre: "Gorras Damas y Varón", palabras: ["gorra", "gorras"] },
-            { id: "flores", nombre: "Flores Artificiales", palabras: ["flor", "flores", "arbol", "árbol", "plantas", "decoracion", "decoración"] },
-            { id: "gimnasio y deportes", nombre: "Gimnasio y Deporte", palabras: ["gimnasio", "deporte", "deportes", "fitness", "yoga", "ejercicio"] },
-            { id: "juguetes para niño y niña", nombre: "Juguetes para Niño y Niña", palabras: ["juguete", "juguetes", "jugueteria", "juguetería", "niño", "niña", "infantil"] }
-        ];
+       // ============================================
+// CATEGORÍAS AUTOMÁTICAS PARA EL BUSCADOR
+// ============================================
+
+const categoriasBusqueda =
+    Object.entries(categoriasChinaMart).map(
+        ([id, datos]) => {
+
+            return {
+                id: id,
+                nombre: datos.nombre,
+                palabras: datos.palabras || []
+            };
+
+        }
+    );
+
+console.log(
+    "📂 Categorías del buscador cargadas:",
+    categoriasBusqueda.length
+);
 
 
         // ============================================
