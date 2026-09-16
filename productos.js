@@ -131,7 +131,36 @@ const productosChinaMart = [
     ],
     mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Granada y Limón",
     codigo: "",
-    stock: null
+    stock: null,
+        destacado: true,
+
+    frase: "Frescura y cuidado para tu piel",
+
+    titulo: "MASCARILLAS FACIALES",
+
+    tituloDestacado: "GRANADA Y LIMÓN",
+
+    descripcion: "Mascarillas BIOAQUA con presentaciones frutales para complementar tu rutina de cuidado facial.",
+
+    caracteristicas: [
+        {
+            icono: "💧",
+            texto: "Hidratación suave"
+        },
+        {
+            icono: "🍋",
+            texto: "Diseños frutales"
+        },
+        {
+            icono: "✨",
+            texto: "Sensación fresca"
+        },
+        {
+            icono: "🎁",
+            texto: "Uso personal o regalo"
+        }
+    ]
+}
 }
 ];
 
