@@ -936,6 +936,119 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por los Recogedores de Arena para Gatos",
     codigo: "",
     stock: null
+},
+    // ============================================
+// PORTA INCIENSOS
+// ============================================
+
+{
+    nombre: "Incienso Pecesitos e Incienso Escalera",
+    imagen: "inciensos_pecesitos_y_escalera.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "pecesitos", "escalera"],
+    mensaje: "Hola, quisiera consultar por el Incienso Pecesitos e Incienso Escalera",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Incienso Lago e Incienso de Cascada",
+    imagen: "inciensos_lago_y_cascada.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "lago", "cascada"],
+    mensaje: "Hola, quisiera consultar por el Incienso Lago e Incienso de Cascada",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Incienso con Montañas y Porta Incienso con Tortuguita",
+    imagen: "inciensos_montanas_y_tortuguita.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "montañas", "tortuguita"],
+    mensaje: "Hola, quisiera consultar por el Incienso con Montañas y Porta Incienso con Tortuguita",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Porta Incienso Montaña Grande y Conos",
+    imagen: "inciensos_montana_y_conos.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "montaña", "conos"],
+    mensaje: "Hola, quisiera consultar por el Porta Incienso Montaña Grande y Conos",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Incienso Caracol e Incienso Cascada de Lagos",
+    imagen: "inciensos_caracol_y_cascada_lagos.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "caracol", "cascada", "lagos"],
+    mensaje: "Hola, quisiera consultar por el Incienso Caracol e Incienso Cascada de Lagos",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Incienso Árbol y Casa y Porta Incienso Circular Pequeño",
+    imagen: "inciensos_arbol_casa_y_circular.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "árbol", "casa", "circular"],
+    mensaje: "Hola, quisiera consultar por el Incienso Árbol y Casa y Porta Incienso Circular Pequeño",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Inciensos Masalas Exclusivas",
+    imagen: "inciensos_masalas.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "masala", "aroma"],
+    mensaje: "Hola, quisiera consultar por los Inciensos Masalas Exclusivas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Inciensos de Varillas Variedad",
+    imagen: "inciensos_varillas_variedad.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "varillas", "aromas"],
+    mensaje: "Hola, quisiera consultar por los Inciensos de Varillas Variedad",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Inciensos Tulasi y Goloka en Conos con Porta Incienso",
+    imagen: "inciensos_tulasi_goloka.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "tulasi", "goloka", "conos"],
+    mensaje: "Hola, quisiera consultar por los Inciensos Tulasi y Goloka en Conos",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Inciensos Exclusivos",
+    imagen: "inciensos_exclusivos_1_50.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "exclusivos", "aromas"],
+    mensaje: "Hola, quisiera consultar por los Inciensos Exclusivos",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Incienso Tulasi Sándalo",
+    imagen: "incienso_dragon_sandalo.png",
+    categoria: "inciensos",
+    palabrasClave: ["incienso", "tulasi", "sándalo"],
+    mensaje: "Hola, quisiera consultar por el Incienso Tulasi Sándalo",
+    codigo: "",
+    stock: null
 }
 ];
 
