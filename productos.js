@@ -1202,6 +1202,149 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por la Cinta Modeladora Completa en Tamaño Único",
     codigo: "",
     stock: null
+},
+    // ============================================
+// JUGUETES - PARTE 1
+// ============================================
+
+{
+    nombre: "Carro Montable Astronauta y Bicicleta Infantil",
+    imagen: "bicicleta.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "bicicleta", "infantil", "astronauta"],
+    mensaje: "Hola, quisiera consultar por el Carro Montable Astronauta y Bicicleta Infantil",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Muñecas Elegantes Jelena",
+    imagen: "munecas_elegantes_jelena.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["muñeca", "jelena", "juguete"],
+    mensaje: "Hola, quisiera consultar por las Muñecas Elegantes Jelena",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Set Hayley Eye Doctor Muñeca Oftalmóloga",
+    imagen: "hayley_eye_doctor.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["muñeca", "hayley", "doctora", "juguete"],
+    mensaje: "Hola, quisiera consultar por el Set Hayley Eye Doctor",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Juego de Tiro Smart Counting y Set Didáctico de Playa",
+    imagen: "tiro_blanco_y_set_playa.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "juego", "playa", "smart counting"],
+    mensaje: "Hola, quisiera consultar por el Juego Smart Counting o el Set Didáctico de Playa",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Juego de Apilamiento Jirafa",
+    imagen: "juego_apilamiento_jirafa.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "jirafa", "apilamiento", "infantil"],
+    mensaje: "Hola, quisiera consultar por el Juego de Apilamiento Jirafa",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Móvil Musical para Cuna Sweet Cuddles",
+    imagen: "movil_musical_cuna.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "móvil", "musical", "cuna"],
+    mensaje: "Hola, quisiera consultar por el Móvil Musical para Cuna Sweet Cuddles",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Juguete de Agua y Diamond Painting Casa 3D",
+    imagen: "pistola_agua_uzi_y_diamond_painting_casa.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "agua", "diamond painting", "casa 3d"],
+    mensaje: "Hola, quisiera consultar por este set de juguete de agua o Diamond Painting Casa 3D",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Set de Ping Pong y Varita Mágica Flash Magic Wand",
+    imagen: "set_ping_pong_y_varita_magica.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "ping pong", "varita", "mágica"],
+    mensaje: "Hola, quisiera consultar por el Set de Ping Pong o la Varita Mágica",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Mini Mesa de Billar y Juguete de Agua",
+    imagen: "mini_billar_y_pistola_agua.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "billar", "agua", "mesa"],
+    mensaje: "Hola, quisiera consultar por la Mini Mesa de Billar o el Juguete de Agua",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Monopoly K-POP Ludo y Monopoly Edición Mundial",
+    imagen: "monopoly_kpop_y_monopoly_mundial.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "monopoly", "kpop", "ludo"],
+    mensaje: "Hola, quisiera consultar por los juegos Monopoly K-POP o Monopoly Mundial",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Mosaico de Diamantes Arte que Brilla",
+    imagen: "mosaico_diamantes_arte.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "mosaico", "diamantes", "arte"],
+    mensaje: "Hola, quisiera consultar por el Mosaico de Diamantes Arte que Brilla",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Set de Figuras Dinosaurios y Animales Natural World",
+    imagen: "set_dinosaurios_y_animales_natural_world.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "dinosaurio", "animales", "figuras"],
+    mensaje: "Hola, quisiera consultar por el Set de Dinosaurios o Animales Natural World",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Set de Figuras Reptiles y Beautiful Girl Cosmetics Sirena",
+    imagen: "set_reptiles_y_cosmetics_sirena.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "reptiles", "sirena", "cosmetics"],
+    mensaje: "Hola, quisiera consultar por el Set de Reptiles o Beautiful Girl Cosmetics Sirena",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Set de Pintura Animal World y Varita Mágica Dream",
+    imagen: "set_pintura_animales_y_varita_dream.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "pintura", "animales", "varita"],
+    mensaje: "Hola, quisiera consultar por el Set de Pintura Animal World o la Varita Mágica Dream",
+    codigo: "",
+    stock: null
 }
 ];
 
