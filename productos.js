@@ -1345,6 +1345,149 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por el Set de Pintura Animal World o la Varita Mágica Dream",
     codigo: "",
     stock: null
+},
+    // ============================================
+// JUGUETES - PARTE 2
+// ============================================
+
+{
+    nombre: "Juguete de Agua Super Water Gun y Juego Bowling Shooting",
+    imagen: "pistola_agua_rosada_y_bowling_shooting.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "agua", "bowling", "shooting"],
+    mensaje: "Hola, quisiera consultar por el Juguete de Agua Super Water Gun o el Juego Bowling Shooting",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Juego Smart Counting Shooting y Super Gun Espacial",
+    imagen: "smart_counting_shooting_y_super_gun_espacial.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "smart counting", "espacial", "juego"],
+    mensaje: "Hola, quisiera consultar por el Juego Smart Counting Shooting o el Super Gun Espacial",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Set de Sirena Mermaid y Portarretrato Infantil",
+    imagen: "set_sirena_y_portarretrato_infantil.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "sirena", "mermaid", "portarretrato"],
+    mensaje: "Hola, quisiera consultar por el Set de Sirena Mermaid o el Portarretrato Infantil",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Slime en Frasco y Varita Wizardly Magic Stick",
+    imagen: "slime_y_varita_wizardly_magic_stick.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "slime", "varita", "magic stick"],
+    mensaje: "Hola, quisiera consultar por el Slime o la Varita Wizardly Magic Stick",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Varita Mágica de Princesa Unicornio y Unicornios Nadadores",
+    imagen: "varita_princesa_unicornio_y_unicornios_nadadores.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "varita", "unicornio", "princesa"],
+    mensaje: "Hola, quisiera consultar por la Varita Mágica de Princesa o los Unicornios Nadadores",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Muñecas Melissa Fashion Pareja Vacaciones y Set de Moda",
+    imagen: "munecas_melissa_fashion_pareja_y_moda.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["muñeca", "melissa fashion", "pareja", "moda"],
+    mensaje: "Hola, quisiera consultar por las Muñecas Melissa Fashion Pareja Vacaciones o Set de Moda",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Muñecas Hayley Eye Doctor y Beauty Lighting & Music",
+    imagen: "munecas_hayley_eye_doctor_y_beauty_music.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["muñeca", "hayley", "beauty", "music"],
+    mensaje: "Hola, quisiera consultar por las Muñecas Hayley Eye Doctor o Beauty Lighting & Music",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Muñecas Melissa Fashion Barbie y Ken y Set Vestido Elegante",
+    imagen: "melissa_fashion_barbie_ken_y_vestido_elegante.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["muñeca", "melissa fashion", "barbie", "ken"],
+    mensaje: "Hola, quisiera consultar por las Muñecas Melissa Fashion Barbie y Ken o Set Vestido Elegante",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Muñecas Beauty Lighting Music y Melissa Fashion con Sombrero",
+    imagen: "munecas_beauty_lighting_y_melissa_fashion_sombrero.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["muñeca", "beauty", "melissa fashion", "sombrero"],
+    mensaje: "Hola, quisiera consultar por las Muñecas Beauty Lighting Music o Melissa Fashion con Sombrero",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Aros de Colores Hula Hoop",
+    imagen: "aros_de_colores_hula_hoop.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "aros", "hula hoop", "colores"],
+    mensaje: "Hola, quisiera consultar por los Aros de Colores Hula Hoop",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Dinosaurio de Arrastre y Cometa Infantil",
+    imagen: "dinosaurio_arrastre_y_cometa_infantil.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "dinosaurio", "cometa", "infantil"],
+    mensaje: "Hola, quisiera consultar por el Dinosaurio de Arrastre o la Cometa Infantil",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Sets Militares Military Power Aviones y Super Warrior",
+    imagen: "set_militar_aviones_y_super_warrior.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "military power", "aviones", "super warrior"],
+    mensaje: "Hola, quisiera consultar por los Sets Military Power Aviones o Super Warrior",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Punching Ball Infantil con Guantes de Boxeo",
+    imagen: "punching_ball_infantil_con_guantes.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "punching ball", "guantes", "infantil"],
+    mensaje: "Hola, quisiera consultar por el Punching Ball Infantil con Guantes",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "DIY Diamond Painting Corazón Mariposa y Ave Elegante",
+    imagen: "diy_diamond_painting_mariposa_y_ave.png",
+    categoria: "juguetes para niño y niña",
+    palabrasClave: ["juguete", "diamond painting", "mariposa", "arte"],
+    mensaje: "Hola, quisiera consultar por los kits DIY Diamond Painting",
+    codigo: "",
+    stock: null
 }
 ];
 
