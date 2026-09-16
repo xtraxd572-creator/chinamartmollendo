@@ -160,6 +160,344 @@ const productosChinaMart = [
             texto: "Uso personal o regalo"
         }
     ]
+},
+    // ============================================
+// DESTACADO 1 - ÁRBOL DECORATIVO
+// ============================================
+
+{
+    nombre: "Mini Árbol Decorativo de Ajíes",
+    imagen: "arbol.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "árbol",
+        "ají",
+        "decorativo",
+        "flores"
+    ],
+
+    mensaje: "Hola, quisiera consultar por el Mini Árbol Decorativo de Ajíes",
+
+    codigo: "",
+    stock: null,
+
+    destacado: true,
+
+    frase: "Decora tu espacio con estilo y armonía",
+
+    titulo: "ÁRBOL DECORATIVO",
+
+    tituloDestacado: "DE AJÍ",
+
+    descripcion: "Un toque de naturaleza y buena energía en tu hogar u oficina.",
+
+    caracteristicas: [
+        {
+            icono: "✓",
+            texto: "Diseño realista"
+        },
+        {
+            icono: "★",
+            texto: "Ideal para interiores"
+        },
+        {
+            icono: "✓",
+            texto: "Materiales de calidad"
+        },
+        {
+            icono: "+",
+            texto: "Perfecto para regalar"
+        }
+    ]
+},
+
+
+// ============================================
+// DESTACADO 2 - BEBIDAS
+// ============================================
+
+{
+    nombre: "Bebidas de Té con Leche",
+    imagen: "bebidas_milktea.png",
+    categoria: "bebidas",
+
+    palabrasClave: [
+        "bebida",
+        "té",
+        "leche",
+        "milk tea"
+    ],
+
+    mensaje: "Hola, quisiera consultar por las Bebidas de Té con Leche",
+
+    codigo: "",
+    stock: null,
+
+    destacado: true,
+
+    frase: "Refresca tus momentos con nuevos sabores",
+
+    titulo: "BEBIDAS",
+
+    tituloDestacado: "ASIÁTICAS",
+
+    descripcion: "Descubre nuestra variedad de bebidas y sabores para disfrutar en cualquier momento.",
+
+    caracteristicas: [
+        {
+            icono: "★",
+            texto: "Sabores variados"
+        },
+        {
+            icono: "✓",
+            texto: "Opciones refrescantes"
+        },
+        {
+            icono: "+",
+            texto: "Para disfrutar"
+        }
+    ]
+},
+
+
+// ============================================
+// DESTACADO 3 - PORTA INCIENSOS
+// ============================================
+
+{
+    nombre: "Porta Incienso Elefante Buda y Árbol Castillo",
+    imagen: "inciensos_elefante_y_castillo.png",
+    categoria: "inciensos",
+
+    palabrasClave: [
+        "incienso",
+        "porta incienso",
+        "elefante",
+        "castillo"
+    ],
+
+    mensaje: "Hola, quisiera consultar por el Porta Incienso Elefante Buda y Árbol Castillo",
+
+    codigo: "",
+    stock: null,
+
+    destacado: true,
+
+    frase: "Dale un toque especial a tus espacios",
+
+    titulo: "PORTA",
+
+    tituloDestacado: "INCIENSOS",
+
+    descripcion: "Diseños decorativos que aportan personalidad y estilo a tu hogar.",
+
+    caracteristicas: [
+        {
+            icono: "✓",
+            texto: "Diseños decorativos"
+        },
+        {
+            icono: "★",
+            texto: "Diferentes modelos"
+        },
+        {
+            icono: "+",
+            texto: "Para decorar"
+        }
+    ]
+},
+
+
+// ============================================
+// DESTACADO 4 - CARTERAS
+// ============================================
+
+{
+    nombre: "Cartera de Hombro Asa Fruncida",
+    imagen: "cartera_asa_fruncida.png",
+    categoria: "bolsos",
+
+    palabrasClave: [
+        "cartera",
+        "bolso",
+        "hombro",
+        "asa"
+    ],
+
+    mensaje: "Hola, quisiera consultar por la Cartera de Hombro Asa Fruncida",
+
+    codigo: "",
+    stock: null,
+
+    destacado: true,
+
+    frase: "Estilo para cada ocasión, práctico y moderno",
+
+    titulo: "CARTERAS",
+
+    tituloDestacado: "Y BOLSOS",
+
+    descripcion: "Encuentra modelos para complementar tu estilo y llevar tus cosas cómodamente.",
+
+    caracteristicas: [
+        {
+            icono: "★",
+            texto: "Diseños modernos"
+        },
+        {
+            icono: "✓",
+            texto: "Prácticos y cómodos"
+        },
+        {
+            icono: "+",
+            texto: "Diferentes modelos"
+        }
+    ]
+},
+
+
+// ============================================
+// DESTACADO 5 - MASCOTAS
+// ============================================
+
+{
+    nombre: "Ropa para Mascotas Talla Universal",
+    imagen: "ropa_para_mascotas_talla_universal_7.png",
+    categoria: "mascotas",
+
+    palabrasClave: [
+        "mascota",
+        "ropa",
+        "perro",
+        "talla universal"
+    ],
+
+    mensaje: "Hola, quisiera consultar por la Ropa para Mascotas Talla Universal",
+
+    codigo: "",
+    stock: null,
+
+    destacado: true,
+
+    frase: "También pensamos en tus engreídos",
+
+    titulo: "PRODUCTOS",
+
+    tituloDestacado: "PARA MASCOTAS",
+
+    descripcion: "Encuentra productos pensados para consentir y cuidar a tus mascotas.",
+
+    caracteristicas: [
+        {
+            icono: "★",
+            texto: "Diseños bonitos"
+        },
+        {
+            icono: "✓",
+            texto: "Variedad de productos"
+        },
+        {
+            icono: "+",
+            texto: "Para tus engreídos"
+        }
+    ]
+},
+
+
+// ============================================
+// DESTACADO 6 - GORRAS
+// ============================================
+
+{
+    nombre: "Gorra para Dama Bordada Adventure / Mood",
+    imagen: "gorra_dama_bordada_20.png",
+    categoria: "gorras",
+
+    palabrasClave: [
+        "gorra",
+        "dama",
+        "adventure",
+        "mood"
+    ],
+
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama Bordada Adventure / Mood",
+
+    codigo: "",
+    stock: null,
+
+    destacado: true,
+
+    frase: "Completa tu look con tu propio estilo",
+
+    titulo: "GORRAS",
+
+    tituloDestacado: "DAMA Y VARÓN",
+
+    descripcion: "Diferentes diseños para darle un toque especial a tus outfits.",
+
+    caracteristicas: [
+        {
+            icono: "★",
+            texto: "Diseños variados"
+        },
+        {
+            icono: "✓",
+            texto: "Para dama y varón"
+        },
+        {
+            icono: "+",
+            texto: "Diferentes estilos"
+        }
+    ]
+},
+
+
+// ============================================
+// DESTACADO 7 - GIMNASIO
+// ============================================
+
+{
+    nombre: "Soporte Cervical Ergonómico",
+    imagen: "soporte_cervical.png",
+    categoria: "gimnasio y deportes",
+
+    palabrasClave: [
+        "soporte",
+        "cervical",
+        "ergonómico",
+        "gimnasio"
+    ],
+
+    mensaje: "Hola, quisiera consultar por el Soporte Cervical Ergonómico",
+
+    codigo: "",
+    stock: null,
+
+    destacado: true,
+
+    frase: "Muévete y entrena con comodidad",
+
+    titulo: "GIMNASIO",
+
+    tituloDestacado: "Y DEPORTE",
+
+    descripcion: "Accesorios y productos para acompañarte durante tus actividades deportivas.",
+
+    caracteristicas: [
+        {
+            icono: "✓",
+            texto: "Accesorios deportivos"
+        },
+        {
+            icono: "★",
+            texto: "Para entrenar"
+        },
+        {
+            icono: "+",
+            texto: "Variedad de productos"
+        }
+    ]
 }
 ];
 
