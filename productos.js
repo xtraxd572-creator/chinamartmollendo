@@ -498,6 +498,128 @@ const productosChinaMart = [
             texto: "Variedad de productos"
         }
     ]
+},
+    // ============================================
+// FLORES ARTIFICIALES
+// ============================================
+
+{
+    nombre: "Flores Artificiales Decorativas en Maceta",
+    imagen: "flores_artificiales_maceta.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "flores",
+        "maceta",
+        "decoración"
+    ],
+
+    mensaje: "Hola, quisiera consultar por las Flores Artificiales Decorativas en Maceta",
+
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Rosas Artificiales Decorativas en Maceta",
+    imagen: "rosas_artificiales_maceta.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "rosas",
+        "flores",
+        "maceta"
+    ],
+
+    mensaje: "Hola, quisiera consultar por las Rosas Artificiales Decorativas en Maceta",
+
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Orquídea Artificial Decorativa en Maceta",
+    imagen: "orquidea_artificial_maceta.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "orquídea",
+        "flor",
+        "maceta"
+    ],
+
+    mensaje: "Hola, quisiera consultar por la Orquídea Artificial Decorativa en Maceta",
+
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Ramos de Flores Variadas",
+    imagen: "ramos_flores_variadas.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "ramo",
+        "flores",
+        "decoración"
+    ],
+
+    mensaje: "Hola, quisiera consultar por los Ramos de Flores Variadas",
+
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Ramo de Rosas Rojas en Florero Elegante",
+    imagen: "ramo_rosas_florero_negro.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "rosas",
+        "ramo",
+        "florero"
+    ],
+
+    mensaje: "Hola, quisiera consultar por el Ramo de Rosas Rojas en Florero Elegante",
+
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Arreglo Floral Vintage con Girasoles",
+    imagen: "arreglo_flores_caja_vintage.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "girasoles",
+        "arreglo floral",
+        "flores"
+    ],
+
+    mensaje: "Hola, quisiera consultar por el Arreglo Floral Vintage con Girasoles",
+
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Césped Artificial Decorativo en Rollo",
+    imagen: "cesped_artificial_rollo.png",
+    categoria: "flores",
+
+    palabrasClave: [
+        "césped",
+        "artificial",
+        "decoración"
+    ],
+
+    mensaje: "Hola, quisiera consultar por el Césped Artificial Decorativo en Rollo",
+
+    codigo: "",
+    stock: null
 }
 ];
 
