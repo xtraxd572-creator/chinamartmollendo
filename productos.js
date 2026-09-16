@@ -620,6 +620,169 @@ const productosChinaMart = [
 
     codigo: "",
     stock: null
+},
+    // ============================================
+// GORRAS DAMA Y VARÓN
+// ============================================
+
+{
+    nombre: "Gorra para Dama Peruana Bonita / ARMY",
+    imagen: "gorra_dama_peruana_bonita_army_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "dama", "peruana", "army"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama Peruana Bonita / ARMY",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Dama Bordada Gatito",
+    imagen: "gorra_dama_gatito_negro_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "dama", "gatito"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama Bordada Gatito",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Dama Apliques Brillantes Oso y Mariposa",
+    imagen: "gorra_dama_oso_mariposa_brillantes_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "dama", "oso", "mariposa"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama con Apliques Brillantes Oso y Mariposa",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Dama Blue Shark / Gatito",
+    imagen: "gorra_dama_blue_shark_gatito_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "dama", "blue shark", "gatito"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama Blue Shark / Gatito",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Dama Bordada New York",
+    imagen: "gorra_dama_new_york_estatua_libertad_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "dama", "new york"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama Bordada New York",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Dama New York / Girl Power",
+    imagen: "gorra_dama_new_york_girl_power_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "dama", "new york", "girl power"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama New York / Girl Power",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Dama New York Warehouse / Oso Brillantes",
+    imagen: "gorra_dama_new_york_warehouse_oso_brillantes_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "dama", "new york", "oso"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Dama New York Warehouse / Oso Brillantes",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón Blue Shark Verde",
+    imagen: "gorra_varon_blue_shark_verde_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "blue shark", "verde"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón Blue Shark Verde",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón Blue Shark Negro / Azul",
+    imagen: "gorra_varon_blue_shark_negro_azul_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "blue shark", "negro", "azul"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón Blue Shark Negro / Azul",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón Blue Shark Blanco / Vino",
+    imagen: "gorra_varon_blue_shark_blanco_vino_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "blue shark", "blanco", "vino"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón Blue Shark Blanco / Vino",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón Shark Celeste / Blanco",
+    imagen: "gorra_varon_shark_celeste_blanco_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "shark", "celeste", "blanco"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón Shark Celeste / Blanco",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón Shark Azul / Gris",
+    imagen: "gorra_varon_shark_azul_gris_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "shark", "azul", "gris"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón Shark Azul / Gris",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón Blue Shark Blanco / Alaska",
+    imagen: "gorra_varon_blue_shark_blanco_alaska_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "blue shark", "alaska"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón Blue Shark Blanco / Alaska",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón New York Warehouse Azul",
+    imagen: "gorra_varon_new_york_warehouse_azul_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "new york", "warehouse", "azul"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón New York Warehouse Azul",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón New York Warehouse Rojo / Blanco",
+    imagen: "gorra_varon_new_york_warehouse_rojo_blanco_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "new york", "rojo", "blanco"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón New York Warehouse Rojo / Blanco",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gorra para Varón Blue Shark Negro / Blanco / Gris",
+    imagen: "gorra_varon_blue_shark_negro_blanco_gris_20.png",
+    categoria: "gorras",
+    palabrasClave: ["gorra", "varón", "blue shark", "negro", "blanco", "gris"],
+    mensaje: "Hola, quisiera consultar por la Gorra para Varón Blue Shark Negro / Blanco / Gris",
+    codigo: "",
+    stock: null
 }
 ];
 
