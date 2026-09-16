@@ -783,6 +783,159 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por la Gorra para Varón Blue Shark Negro / Blanco / Gris",
     codigo: "",
     stock: null
+},
+    // ============================================
+// MASCOTAS
+// ============================================
+
+{
+    nombre: "Ropa para Mascotas Diseños Vaca y Friends",
+    imagen: "ropa_mascotas_vaca_y_friends_16_18.png",
+    categoria: "mascotas",
+    palabrasClave: ["mascota", "ropa", "vaca", "friends"],
+    mensaje: "Hola, quisiera consultar por la Ropa para Mascotas Diseños Vaca y Friends",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Ropa para Mascotas Diseños Happy y Perrito con Faldita",
+    imagen: "ropa_mascotas_happy_perrito_18.png",
+    categoria: "mascotas",
+    palabrasClave: ["mascota", "ropa", "happy", "perrito"],
+    mensaje: "Hola, quisiera consultar por la Ropa para Mascotas Diseños Happy y Perrito con Faldita",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Ropa para Mascotas Capucha Dinosaurio y Vestido con Alas",
+    imagen: "ropa_mascotas_dinosaurio_y_alas_24_26.png",
+    categoria: "mascotas",
+    palabrasClave: ["mascota", "ropa", "dinosaurio", "alas"],
+    mensaje: "Hola, quisiera consultar por la Ropa para Mascotas Capucha Dinosaurio y Vestido con Alas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Ropa para Mascotas Chaleco Bicolor Talla S-XXL",
+    imagen: "ropa_mascotas_chaleco_bicolor_16.png",
+    categoria: "mascotas",
+    palabrasClave: ["mascota", "ropa", "chaleco", "bicolor"],
+    mensaje: "Hola, quisiera consultar por la Ropa para Mascotas Chaleco Bicolor",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Ropa para Mascotas Chaleco de Peluche con Anillo para Correa Talla S-XXL",
+    imagen: "ropa_mascotas_chaleco_peluche_arnes_16.png",
+    categoria: "mascotas",
+    palabrasClave: ["mascota", "ropa", "chaleco", "peluche"],
+    mensaje: "Hola, quisiera consultar por el Chaleco de Peluche para Mascotas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Ropa para Mascotas Mameluco Acolchado y Chaleco Polar",
+    imagen: "ropa_mascotas_mameluco_y_chaleco_11_50_19.png",
+    categoria: "mascotas",
+    palabrasClave: ["mascota", "ropa", "mameluco", "chaleco"],
+    mensaje: "Hola, quisiera consultar por la Ropa para Mascotas Mameluco Acolchado y Chaleco Polar",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Baño de Grass Sintético para Mascotas",
+    imagen: "bano_grass_sintetico_mascotas_32_54_50.png",
+    categoria: "mascotas",
+    palabrasClave: ["mascota", "perro", "baño", "grass"],
+    mensaje: "Hola, quisiera consultar por el Baño de Grass Sintético para Mascotas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Hierba para Gatos Catnip y Regulador de Apetito",
+    imagen: "hierba_para_gatos_regulador_apetito_3_60_8.png",
+    categoria: "mascotas",
+    palabrasClave: ["gato", "catnip", "hierba", "mascota"],
+    mensaje: "Hola, quisiera consultar por la Hierba para Gatos Catnip",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Pañales Sabanillas Entrenadoras para Perro Talla M y L",
+    imagen: "panales_para_perro_training_pads_30.png",
+    categoria: "mascotas",
+    palabrasClave: ["perro", "pañales", "sabanillas", "training pads"],
+    mensaje: "Hola, quisiera consultar por los Pañales Sabanillas Entrenadoras para Perro Talla M y L",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Pañales Sabanillas Entrenadoras para Perro Talla XL",
+    imagen: "panales_para_perro_training_pads_xl_30.png",
+    categoria: "mascotas",
+    palabrasClave: ["perro", "pañales", "sabanillas", "xl"],
+    mensaje: "Hola, quisiera consultar por los Pañales Sabanillas Entrenadoras para Perro Talla XL",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gimnasio para Gatos Rascador Torre",
+    imagen: "gymnasio_para_gatos_rascador_237_280.png",
+    categoria: "mascotas",
+    palabrasClave: ["gato", "gimnasio", "rascador", "torre"],
+    mensaje: "Hola, quisiera consultar por el Gimnasio para Gatos Rascador Torre",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Gimnasio Rascador para Gatos 67 cm",
+    imagen: "gimnasio_rascador_gatos_67cm_118.png",
+    categoria: "mascotas",
+    palabrasClave: ["gato", "gimnasio", "rascador", "67 cm"],
+    mensaje: "Hola, quisiera consultar por el Gimnasio Rascador para Gatos de 67 cm",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Areneros y Recogedores de Arena para Gatos",
+    imagen: "areneros_y_recogedores_para_gatos_2_30.png",
+    categoria: "mascotas",
+    palabrasClave: ["gato", "arenero", "arena", "recogedor"],
+    mensaje: "Hola, quisiera consultar por los Areneros y Recogedores de Arena para Gatos",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Areneros para Gatos con Pala y Recogedores de Arena",
+    imagen: "areneros_con_pala_y_recogedores_gato_2_36.png",
+    categoria: "mascotas",
+    palabrasClave: ["gato", "arenero", "pala", "recogedor"],
+    mensaje: "Hola, quisiera consultar por los Areneros para Gatos con Pala y Recogedores",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Recogedores de Arena para Gatos",
+    imagen: "recogedores_de_arena_para_gato_2.png",
+    categoria: "mascotas",
+    palabrasClave: ["gato", "arena", "recogedor", "arenero"],
+    mensaje: "Hola, quisiera consultar por los Recogedores de Arena para Gatos",
+    codigo: "",
+    stock: null
 }
 ];
 
