@@ -1822,6 +1822,164 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por el Morral Compacto Unisex MEGATECH",
     codigo: "",
     stock: null
+},
+    // ============================================
+// CARTERAS, MOCHILAS Y MÁS - PARTE 3
+// ============================================
+
+{
+    nombre: "Mochila Antirrobo Urbana con Cierres Laterales",
+    imagen: "mochila_antirrobo_zippers_82.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "mochila",
+        "antirrobo",
+        "urbana",
+        "cierres"
+    ],
+    mensaje: "Hola, quisiera consultar por la Mochila Antirrobo Urbana con Cierres Laterales",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Mochila Escolar Fashionbag con Llavero Miao",
+    imagen: "mochila_escolar_fashionbag_55_80.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "mochila",
+        "escolar",
+        "fashionbag",
+        "miao",
+        "llavero"
+    ],
+    mensaje: "Hola, quisiera consultar por la Mochila Escolar Fashionbag con Llavero Miao",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Mochila Escolar Juvenil Start",
+    imagen: "mochila_escolar_start_63.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "mochila",
+        "escolar",
+        "juvenil",
+        "start"
+    ],
+    mensaje: "Hola, quisiera consultar por la Mochila Escolar Juvenil Start",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Mochila Escolar Sweet Bakery con Cartuchera Colgante",
+    imagen: "mochila_sweet_bakery_cartuchera_63.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "mochila",
+        "escolar",
+        "sweet bakery",
+        "cartuchera"
+    ],
+    mensaje: "Hola, quisiera consultar por la Mochila Escolar Sweet Bakery con Cartuchera Colgante",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Mochila Escolar JIALEJIEMEI con Peluche de Oso",
+    imagen: "mochila_oso_peluche_jialejiemei_60.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "mochila",
+        "escolar",
+        "oso",
+        "peluche",
+        "jialejiemei"
+    ],
+    mensaje: "Hola, quisiera consultar por la Mochila Escolar JIALEJIEMEI con Peluche de Oso",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Set de Mochila Texturizada con Lonchera y Cartuchera",
+    imagen: "set_mochila_panal_lonchera_64_80.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "mochila",
+        "set",
+        "lonchera",
+        "cartuchera",
+        "texturizada"
+    ],
+    mensaje: "Hola, quisiera consultar por el Set de Mochila Texturizada con Lonchera y Cartuchera",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera Morral con Solapa y Correa Labrada",
+    imagen: "cartera_morral_solapa_correa_85.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "morral",
+        "solapa",
+        "correa"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera Morral con Solapa y Correa Labrada",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera de Hombro Elegante con Pañuelo y Monedero Extraíble",
+    imagen: "cartera_hobo_panuelo_monedero_85.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "hombro",
+        "pañuelo",
+        "monedero",
+        "hobo"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera de Hombro con Pañuelo y Monedero Extraíble",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bolso Tote Bag de Loneta Estampado",
+    imagen: "bolso_tote_loneta_estampado_8.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "bolso",
+        "tote",
+        "loneta",
+        "estampado"
+    ],
+    mensaje: "Hola, quisiera consultar por el Bolso Tote Bag de Loneta Estampado",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bolso Tote Bag de Tela Canvas con Diseños Variados",
+    imagen: "bolso_tote_canvas_disenos_9.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "bolso",
+        "tote",
+        "canvas",
+        "tela",
+        "diseños"
+    ],
+    mensaje: "Hola, quisiera consultar por el Bolso Tote Bag de Tela Canvas con Diseños Variados",
+    codigo: "",
+    stock: null
 }
 ];
 
