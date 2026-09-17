@@ -1231,7 +1231,7 @@
         <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
     </footer>
     
-<script src="productos.js?v=2"></script>
+<script src="productos.js?v=3"></script>
     
     <script>
 
@@ -1291,17 +1291,10 @@ function crearCategoriasAutomaticamente() {
                 datos.icono + " " + datos.nombre;
 
 
-            enlace.addEventListener(
-                "click",
-                function(event) {
-
-                    mostrarCatalogo(
-                        event,
-                        idCategoria
-                    );
-
-                }
-            );
+            enlace.setAttribute(
+    "onclick",
+    "mostrarCatalogo(event, '" + idCategoria + "')"
+);
 
 
             li.appendChild(enlace);
