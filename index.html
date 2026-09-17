@@ -1025,770 +1025,6 @@ agregarDestacadosAlCarrusel();
             }
         });
 
-        // BUSCADOR DEL INDEX
-        const productosBusqueda = [
-                    {
-                                "nombre": "Cócteles Frutales JOJU",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebidas de Té con Leche",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebidas Coreanas Selección",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Jugos con Prebióticos NFC",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebidas Concentradas Frutales Rico",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebida Concentrada de Granada Ice Talk",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Leche de Melón con Sorbete",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebida de Aloe Vera Sabor Natural",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebidas con Té y Leche",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebidas Frutales Coreanas",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebida de Jugo de Uva Natural",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebida de Aloe Vera en Lata",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Bebida Brown Sugar Milk Tea",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Té Herbal Jia Duo Bao",
-                                "categoria": "Bebidas Asiáticas",
-                                "id": "bebidas"
-                    },
-                    {
-                                "nombre": "Catálogo Porta Inciensos",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Porta Incienso Elefante Buda y Árbol Castillo",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Incienso Pecesitos e Incienso Escalera",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Incienso Lago e Incienso de Cascada",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Incienso con Montañas y Porta Incienso con Tortuguita",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Porta Incienso Montaña Grande y Conos",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Incienso Caracol e Incienso Cascada de Lagos",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Incienso Árbol y Casa y Porta Incienso Circular Pequeño",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Inciensos Masalas Exclusivas",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Inciensos de Varillas Variedad",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Inciensos Tulasi y Goloka en Conos con Porta Incienso",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Inciensos Exclusivos S/ 1.50",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Incienso Tulasi Sándalo",
-                                "categoria": "Porta Inciensos",
-                                "id": "inciensos"
-                    },
-                    {
-                                "nombre": "Catálogo Carteras",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera de Hombro Asa Fruncida",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera de Hombro Texturizada",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Negra con Cadena Dorada",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera de Mano con Pompón y Pañuelo",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera de Hombro con Asas Anudadas",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Tote Tejida con Pañuelo Decorativo",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Tote de Hombro con Monedero",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Estructurada con Pañuelo Fashion Queen",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Bicolor con Correa Frontal",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Structured con Llavero de Estrella",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera con Asa Metálica y Colgante de Cuentas",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Texturizada con Llavero de Estrella",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Structured con Lazo y Colgante de Perla",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera con Solapa y Hebillas Decorativas",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Structured con Colgante de Flor",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera de Hombro con Bolsillo Frontal",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera con Solapa y Monedero Redondo Colgante",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Canguro Deportivo Multibolsillos",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Bolso de Viaje Espacioso BOBO",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Lonchera Térmica Bicolor Wellness",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Lonchera Térmica Unicolor con Bolsillo Frontal",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Canguro Cruzado Táctico Negro Multibolsillos",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Morral Compacto Unisex MEGATECH",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Mochila Antirrobo Urbana con Cierres Laterales",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Mochila Escolar Fashionbag con Llavero Miao",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Mochila Escolar Juvenil Start",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Mochila Escolar Sweet Bakery con Cartuchera Colgante",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Mochila Escolar JIALEJIEMEI con Peluche de Oso",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Set de Mochila Texturizada con Lonchera y Cartuchera",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Mochila Escolar Capibara con Llavero y Tarjetero Transparent",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera Morral con Solapa y Correa Labrada",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Cartera de Hombro Elegante con Pañuelo y Monedero Extraíble",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Bolso Tote Bag de Loneta Estampado",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Bolso Tote Bag de Tela Canvas con Diseños Variados",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Mascota Dragón China Mart Mollendo",
-                                "categoria": "Carteras, Mochilas y Más",
-                                "id": "bolsos"
-                    },
-                    {
-                                "nombre": "Catálogo de Mascotas China Mart - Ropa, Pañales y Recoger Popo",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Ropa para Mascotas Talla Universal",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Ropa para Mascotas Diseños Vaca y Friends",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Ropa para Mascotas Diseños Happy y Perrito con Faldita",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Ropa para Mascotas Capucha Dinosaurio y Vestido con Alas",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Ropa para Mascotas Chaleco Bicolor Talla S-XXL",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Ropa para Mascotas Chaleco de Peluche con Anillo para Correa Talla S-XXL",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Ropa para Mascotas Mameluco Acolchado y Chaleco Polar",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Baño de Grass Sintético para Mascotas",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Hierba para Gatos Catnip y Regulador de Apetito",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Pañales Sabanillas Entrenadoras para Perro Talla M y L",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Pañales Sabanillas Entrenadoras para Perro Talla XL",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Gimnasio para Gatos Rascador Torre",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Gimnasio Rascador para Gatos 67 cm",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Areneros y Recogedores de Arena para Gatos",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Areneros para Gatos con Pala y Recogedores de Arena",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Recogedores de Arena para Gatos",
-                                "categoria": "Mascotas",
-                                "id": "mascotas"
-                    },
-                    {
-                                "nombre": "Portada Catálogo de Gorras Dama y Varón",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama Bordada Adventure / Mood",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama Peruana Bonita / ARMY",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama Bordada Gatito",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama Apliques Brillantes Oso y Mariposa",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama Blue Shark / Gatito",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama Bordada New York",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama New York / Girl Power",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Dama New York Warehouse / Oso Brillantes",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón Blue Shark Verde",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón Blue Shark Negro / Azul",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón Blue Shark Blanco / Vino",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón Shark Celeste / Blanco",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón Shark Azul / Gris",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón Blue Shark Blanco / Alaska",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón New York Warehouse Azul",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón New York Warehouse Rojo / Blanco",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Gorra para Varón Blue Shark Negro / Blanco / Gris",
-                                "categoria": "Gorras Damas y Varón",
-                                "id": "gorras"
-                    },
-                    {
-                                "nombre": "Mini Árbol Decorativo de Ajíes",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Flores Artificiales Decorativas en Maceta",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Rosas Artificiales Decorativas en Maceta",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Orquídea Artificial Decorativa en Maceta",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Ramos de Flores Variadas",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Ramo de Rosas Rojas en Florero Elegante",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Arreglo Floral Vintage con Girasoles",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Césped Artificial Decorativo en Rollo",
-                                "categoria": "Flores Artificiales",
-                                "id": "flores"
-                    },
-                    {
-                                "nombre": "Soporte Cervical Ergonómico",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Chaleco Moldeador de Compresión",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Bandas de Resistencia y Muñequeras de Soporte",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Cuerda de Yoga Aéreo Aerial Yoga Rope",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Bustier Moldeador Slimming Bustier",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Faja de Cintura Alta High Waist Body Shaping Pants",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Extensor Pectoral Multifuncional",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Fitness Yoga Pants",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Cinta Modeladora en Tamaño Único",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Sistema de Entrenamiento en Suspensión Fitness Strap Training",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Corrector de Postura y Soporte de Espalda",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Soporte para Muñeca y Codo",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Top Deportivo Fitness Yoga",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Equipo para Abdominales con Ventosa",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Body Shaper Moldeador de Figura",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Cinta Modeladora Completa en Tamaño Único",
-                                "categoria": "Gimnasio y Deporte",
-                                "id": "gimnasio y deportes"
-                    },
-                    {
-                                "nombre": "Carro Montable Astronauta y Bicicleta Infantil",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Scooter Infantil de 3 Ruedas",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Muñecas Elegantes Jelena",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Muñeca Melissa Fashion Princesa con Accesorios",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Set Hayley Eye Doctor Muñeca Oftalmóloga",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Juego de Tiro Smart Counting y Set Didáctico de Playa",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Juego de Apilamiento Jirafa",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Móvil Musical para Cuna Sweet Cuddles",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Pistola de Agua Uzi Ice Horn y Diamond Painting Casa 3D",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Set de Ping Pong y Varita Mágica Flash Magic Wand",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Mini Mesa de Billar y Pistola de Agua",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Monopoly K-POP Ludo y Monopoly Edición Mundial",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Mosaico de Diamantes Arte que Brilla",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Set de Figuras Dinosaurios y Animales Natural World",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Set de Figuras Reptiles y Beautiful Girl Cosmetics Sirena",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Set de Pintura Animal World y Varita Mágica Dream Magic Wand",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Pistola de Agua Super Water Gun y Juego Bowling Shooting",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Juego Smart Counting Shooting y Super Gun Espacial",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Set de Sirena Mermaid y Portarretrato Infantil",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Slime en frasco y Varita Wizardly Magic Stick",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Varita Mágica de Princesa Unicornio y Unicornios Nadadores",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Muñecas Melissa Fashion Pareja Vacaciones y Set de Moda",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Muñecas Hayley Eye Doctor y Beauty Lighting & Music",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Muñecas Melissa Fashion Barbie y Ken y Set Vestido Elegante",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Muñecas Beauty Lighting Music y Melissa Fashion con Sombrero",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Aros de Colores Hula Hoop",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Dinosaurio de Arrastre y Cometa Infantil",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Sets Militares Military Power Aviones y Super Warrior",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "Punching Ball Infantil con Guantes de Boxeo",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    },
-                    {
-                                "nombre": "DIY Diamond Painting Corazón Mariposa y Ave Elegante",
-                                "categoria": "Juguetes para Niño y Niña",
-                                "id": "juguetes para niño y niña"
-                    }
-        ];
-
         function normalizarTexto(texto) {
             return texto.toLowerCase()
                 .normalize("NFD")
@@ -1819,84 +1055,93 @@ console.log(
     categoriasBusqueda.length
 );
 
-
-        // ============================================
-// CONECTAR PRODUCTOS.JS CON EL BUSCADOR
+// ============================================
+// BUSCADOR DEL INDEX
 // ============================================
 
-productosChinaMart.forEach(producto => {
+function normalizarTexto(texto) {
 
-    const idCategoria =
-        detectarCategoriaProducto(producto);
+    return String(texto || "")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
 
-    if (!idCategoria) {
-        return;
-    }
-
-    const infoCategoria =
-        categoriasBusqueda.find(
-            categoria =>
-                categoria.id === idCategoria
-        );
-
-    const nombreCategoria =
-        infoCategoria
-            ? infoCategoria.nombre
-            : idCategoria;
+}
 
 
-    // Buscar si el producto ya estaba
-    // registrado en el buscador antiguo.
-    const productoExistente =
-        productosBusqueda.find(
-            existente =>
-                normalizarTexto(existente.nombre) ===
-                normalizarTexto(producto.nombre)
-        );
+// ============================================
+// CATEGORÍAS AUTOMÁTICAS
+// ============================================
+
+const categoriasBusqueda =
+    Object.entries(categoriasChinaMart).map(
+        ([id, datos]) => {
+
+            return {
+                id: id,
+                nombre: datos.nombre,
+                palabras: datos.palabras || []
+            };
+
+        }
+    );
 
 
-    if (productoExistente) {
+// ============================================
+// PRODUCTOS AUTOMÁTICOS DESDE productos.js
+// ============================================
 
-        // Si ya existe, agregamos sus palabras clave.
-        productoExistente.palabrasClave = [
-            ...new Set([
-                ...(productoExistente.palabrasClave || []),
-                ...(producto.palabrasClave || [])
-            ])
-        ];
+const productosBusqueda =
+    productosChinaMart
+        .map(producto => {
 
-        productoExistente.id =
-            idCategoria;
+            const idCategoria =
+                detectarCategoriaProducto(producto);
 
-        productoExistente.categoria =
-            nombreCategoria;
+            if (!idCategoria) {
+                return null;
+            }
 
-    } else {
 
-        // Si es un producto nuevo,
-        // se agrega automáticamente al buscador.
-        productosBusqueda.push({
+            const datosCategoria =
+                categoriasChinaMart[idCategoria];
 
-            nombre: producto.nombre,
 
-            categoria:
-                nombreCategoria,
+            return {
 
-            id:
-                idCategoria,
+                nombre:
+                    producto.nombre,
 
-            palabrasClave:
-                producto.palabrasClave || []
+                categoria:
+                    datosCategoria
+                        ? datosCategoria.nombre
+                        : idCategoria,
 
-        });
+                id:
+                    idCategoria,
 
-    }
+                palabrasClave:
+                    producto.palabrasClave || []
 
-});
+            };
+
+        })
+        .filter(producto => producto !== null);
 
 
 console.log(
-    "🔎 Buscador del inicio conectado a productos.js"
+    "📂 Categorías cargadas:",
+    categoriasBusqueda.length
+);
+
+console.log(
+    "🔎 Productos cargados en el buscador:",
+    productosBusqueda.length
+);
+        
+console.log(
+    " Buscador del inicio conectado a productos.js"
 );
 
         function buscarCategoriaExacta(consulta) {
