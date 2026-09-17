@@ -1980,6 +1980,189 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por el Bolso Tote Bag de Tela Canvas con Diseños Variados",
     codigo: "",
     stock: null
+},
+    // ============================================
+// BEBIDAS ASIÁTICAS
+// ============================================
+
+{
+    nombre: "Jugos con Prebióticos NFC",
+    imagen: "bebidas_nfc.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "jugo",
+        "jugos",
+        "nfc",
+        "prebióticos",
+        "prebioticos"
+    ],
+    mensaje: "Hola, quisiera consultar por los Jugos con Prebióticos NFC",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebidas Concentradas Frutales Rico",
+    imagen: "bebidas_rico.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "bebidas",
+        "frutal",
+        "frutales",
+        "rico",
+        "concentrada"
+    ],
+    mensaje: "Hola, quisiera consultar por las Bebidas Concentradas Frutales Rico",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebida Concentrada de Granada Ice Talk",
+    imagen: "bebidas_icetalk_granada.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "granada",
+        "ice talk",
+        "icetalk",
+        "frutal"
+    ],
+    mensaje: "Hola, quisiera consultar por la Bebida Concentrada de Granada Ice Talk",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Leche de Melón con Sorbete",
+    imagen: "bebidas_leche_melon.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "leche",
+        "melón",
+        "melon",
+        "sorbete"
+    ],
+    mensaje: "Hola, quisiera consultar por la Leche de Melón con Sorbete",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebida de Aloe Vera Sabor Natural",
+    imagen: "bebidas_aloe_vera.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "aloe",
+        "aloe vera",
+        "natural"
+    ],
+    mensaje: "Hola, quisiera consultar por la Bebida de Aloe Vera Sabor Natural",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebidas con Té y Leche",
+    imagen: "bebidas_te_con_leche.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "té",
+        "te",
+        "leche",
+        "milk tea",
+        "té con leche",
+        "te con leche"
+    ],
+    mensaje: "Hola, quisiera consultar por las Bebidas con Té y Leche",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebidas Frutales Coreanas",
+    imagen: "bebidas_frutales_coreanas.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "bebidas",
+        "frutal",
+        "frutales",
+        "coreana",
+        "coreanas",
+        "corea"
+    ],
+    mensaje: "Hola, quisiera consultar por las Bebidas Frutales Coreanas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebida de Jugo de Uva Natural",
+    imagen: "bebidas_jugo_uva.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "jugo",
+        "uva",
+        "natural"
+    ],
+    mensaje: "Hola, quisiera consultar por la Bebida de Jugo de Uva Natural",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebida de Aloe Vera en Lata",
+    imagen: "bebidas_aloe_vera_lata.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "aloe",
+        "aloe vera",
+        "lata"
+    ],
+    mensaje: "Hola, quisiera consultar por la Bebida de Aloe Vera en Lata",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bebida Brown Sugar Milk Tea",
+    imagen: "bebidas_brown_sugar_milk_tea.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "brown sugar",
+        "milk tea",
+        "té con leche",
+        "te con leche"
+    ],
+    mensaje: "Hola, quisiera consultar por la Bebida Brown Sugar Milk Tea",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Té Herbal Jia Duo Bao",
+    imagen: "bebidas_te_herbal_jia_duo_bao.png",
+    categoria: "bebidas",
+    palabrasClave: [
+        "bebida",
+        "té",
+        "te",
+        "herbal",
+        "jia duo bao",
+        "jia"
+    ],
+    mensaje: "Hola, quisiera consultar por el Té Herbal Jia Duo Bao",
+    codigo: "",
+    stock: null
 }
 ];
 
