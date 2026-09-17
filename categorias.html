@@ -544,6 +544,92 @@
             .buscador-contenedor {
                 width: min(100%, 520px);
             }
+            /* ============================================
+   BEBIDAS SOLO PARA MAYORES DE 18 AÑOS
+   ============================================ */
+
+.seccion-mayores {
+    margin-top: 45px;
+    padding-top: 30px;
+    border-top: 3px solid #ed1c24;
+}
+
+.aviso-mayores {
+    background-color: #15191d;
+    color: white;
+
+    padding: 22px;
+    margin-bottom: 25px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+.aviso-mayores h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.aviso-mayores p {
+    margin: 0;
+    color: #dddddd;
+    line-height: 1.5;
+}
+
+.contenedor-productos-mayores {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.card-producto-mayores {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card-producto-mayores img {
+    width: 100%;
+
+    border-radius: 8px;
+
+    display: block;
+}
+
+.card-producto-mayores h4 {
+    margin: 14px 0 5px;
+
+    color: #15191d;
+
+    font-size: 17px;
+}
+
+.card-producto-mayores .solo-adultos {
+    display: inline-block;
+
+    margin-top: 5px;
+
+    padding: 5px 10px;
+
+    background-color: #ed1c24;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
         }
 /* SCROLL PARA LA LISTA DE CATÁLOGOS */
 .menu-catalogos {
@@ -627,95 +713,136 @@
         <main class="content-catalogo">
             <div id="mensajeBusquedaCatalogo" class="mensaje-busqueda-catalogo"></div>
             
-            <!-- CATEGORÍA 1: BEBIDAS ASIÁTICAS -->
-            <div id="bebidas" class="catalogo-section active">
-                <h2 class="section-title">🧋 Bebidas Asiáticas</h2>
-                
-                <div class="card-producto">
-                    <img src="bebidas_top.png" alt="Licor Tradicional Chino">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Asi%C3%A1ticas" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+            <!-- ============================================
+     CATEGORÍA 1: BEBIDAS ASIÁTICAS
+     ============================================ -->
 
-                <div class="card-producto">
-                    <img src="bebidas_joju.png" alt="Cócteles Frutales JOJU">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20C%C3%B3cteles%20JOJU" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+<div id="bebidas" class="catalogo-section active">
 
-                <div class="card-producto">
-                    <img src="bebidas_milktea.png" alt="Bebidas de Té con Leche">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20T%C3%A9%20con%20Leche" target="_blank" class="btn-whatsapp">💬 Consultar Sabores</a>
-                </div>
+    <h2 class="section-title">
+        🧋 Bebidas Asiáticas
+    </h2>
 
-                <div class="card-producto">
-                    <img src="bebidas_soju.png" alt="Soju Coreano Sabores Frutales">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Soju%20Coreano" target="_blank" class="btn-whatsapp">💬 Consultar Variedad de Soju coreano</a>
-                </div>
 
-                <div class="card-producto">
-                    <img src="bebidas_coreanas.png" alt="Bebidas Coreanas Selección">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Bebidas%20Coreanas" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+    <!-- ========================================
+         BEBIDAS GENERALES
+         Se cargan automáticamente desde
+         productos.js
+         ======================================== -->
 
-                <div class="card-producto">
-                    <img src="bebidas_nfc.png" alt="Jugos con Prebióticos NFC">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Jugos%20NFC" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+    <div class="contenedor-productos">
+    </div>
 
-                <div class="card-producto">
-                    <img src="bebidas_rico.png" alt="Bebidas Concentradas Frutales Rico">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20pedir%20las%20Bebidas%20Concentradas%20Rico%20de%20S/%2012.00" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
 
-                <div class="card-producto">
-                    <img src="bebidas_icetalk_granada.png" alt="Bebida Concentrada de Granada Ice Talk">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20Ice%20Talk%20Granada%20(S/%206.50)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+    <!-- ========================================
+         BEBIDAS SOLO PARA MAYORES DE 18 AÑOS
+         ======================================== -->
 
-                <div class="card-producto">
-                    <img src="bebidas_leche_melon.png" alt="Leche de Melón con Sorbete">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Leche%20de%20Mel%C3%B3n%20(S/%207.00)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+    <div class="seccion-mayores">
 
-                <div class="card-producto">
-                    <img src="bebidas_aloe_vera.png" alt="Bebida de Aloe Vera Sabor Natural">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20(S/%205.50)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+        <div class="aviso-mayores">
 
-                <div class="card-producto">
-                    <img src="bebidas_te_con_leche.png" alt="Bebidas con Té y Leche">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20de%20T%C3%A9%20con%20Leche%20(S/%206.30)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+            <h3>
+                🔞 Bebidas solo para mayores de 18 años
+            </h3>
 
-                <div class="card-producto">
-                    <img src="bebidas_frutales_coreanas.png" alt="Bebidas Frutales Coreanas">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20las%20Bebidas%20Frutales%20Coreanas%20(S/%206.00)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+            <p>
+                Venta exclusiva a personas adultas.
+                La tienda puede solicitar verificación de edad
+                antes de realizar la venta.
+            </p>
 
-                <div class="card-producto">
-                    <img src="bebidas_jugo_uva.png" alt="Bebida de Jugo de Uva Natural">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Jugo%20de%20Uva%20Natural%20(S/%204.60)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+        </div>
 
-                <div class="card-producto">
-                    <img src="bebidas_aloe_vera_lata.png" alt="Bebida de Aloe Vera en Lata">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20la%20Bebida%20de%20Aloe%20Vera%20en%20Lata%20(S/%203.90)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
 
-                <div class="card-producto">
-                    <img src="bebidas_brown_sugar_milk_tea.png" alt="Bebida Brown Sugar Milk Tea">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Brown%20Sugar%20Milk%20Tea%20(S/%208.40)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+        <div class="contenedor-productos-mayores">
 
-                <div class="card-producto">
-                    <img src="bebidas_te_herbal_jia_duo_bao.png" alt="Té Herbal Jia Duo Bao">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20T%C3%A9%20Herbal%20Jia%20Duo%20Bao%20(1%20x%20S/%205.50%20o%202%20x%20S/%209.00)" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
 
-                <div class="card-producto">
-                    <img src="bebidas_soju_uva.png" alt="Soju Coreano de Uva">
-                    <a href="https://wa.me/51914236008?text=Hola,%20quisiera%20consultar%20por%20el%20Soju%20Coreano%20de%20Uva" target="_blank" class="btn-whatsapp">💬 Consultar producto</a>
-                </div>
+            <!-- LICOR TRADICIONAL CHINO -->
+
+            <div class="card-producto-mayores">
+
+                <img
+                    src="bebidas_top.png"
+                    alt="Licor Tradicional Chino"
+                >
+
+                <h4>
+                    Licor Tradicional Chino
+                </h4>
+
+                <span class="solo-adultos">
+                    🔞 Solo mayores de 18 años
+                </span>
+
             </div>
+
+
+            <!-- CÓCTELES JOJU -->
+
+            <div class="card-producto-mayores">
+
+                <img
+                    src="bebidas_joju.png"
+                    alt="Cócteles Frutales JOJU"
+                >
+
+                <h4>
+                    Cócteles Frutales JOJU
+                </h4>
+
+                <span class="solo-adultos">
+                    🔞 Solo mayores de 18 años
+                </span>
+
+            </div>
+
+
+            <!-- SOJU COREANO -->
+
+            <div class="card-producto-mayores">
+
+                <img
+                    src="bebidas_soju.png"
+                    alt="Soju Coreano Sabores Frutales"
+                >
+
+                <h4>
+                    Soju Coreano Sabores Frutales
+                </h4>
+
+                <span class="solo-adultos">
+                    🔞 Solo mayores de 18 años
+                </span>
+
+            </div>
+
+
+            <!-- SOJU DE UVA -->
+
+            <div class="card-producto-mayores">
+
+                <img
+                    src="bebidas_soju_uva.png"
+                    alt="Soju Coreano de Uva"
+                >
+
+                <h4>
+                    Soju Coreano de Uva
+                </h4>
+
+                <span class="solo-adultos">
+                    🔞 Solo mayores de 18 años
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
 
             <div id="inciensos" class="catalogo-section">
 
