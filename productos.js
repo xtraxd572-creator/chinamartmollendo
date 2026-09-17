@@ -1488,6 +1488,173 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por los kits DIY Diamond Painting",
     codigo: "",
     stock: null
+},
+    // ============================================
+// CARTERAS, MOCHILAS Y MÁS - PARTE 1
+// ============================================
+
+{
+    nombre: "Cartera de Hombro Texturizada",
+    imagen: "cartera_hombro_66.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "hombro",
+        "texturizada",
+        "bolso"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera de Hombro Texturizada",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera Negra con Cadena Dorada",
+    imagen: "cartera_negra_cadena_86.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "negra",
+        "cadena",
+        "dorada"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera Negra con Cadena Dorada",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera de Mano con Pompón y Pañuelo",
+    imagen: "cartera_pompom_68_40.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "mano",
+        "pompón",
+        "pañuelo"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera de Mano con Pompón y Pañuelo",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera de Hombro con Asas Anudadas",
+    imagen: "cartera_hombro_nudos_98.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "hombro",
+        "asas",
+        "nudos"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera de Hombro con Asas Anudadas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera Tote Tejida con Pañuelo Decorativo",
+    imagen: "cartera_tejida_panuelo_60.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "tote",
+        "tejida",
+        "pañuelo"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera Tote Tejida con Pañuelo Decorativo",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera Tote de Hombro con Monedero",
+    imagen: "cartera_tote_monedero_90.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "tote",
+        "hombro",
+        "monedero"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera Tote de Hombro con Monedero",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera Estructurada con Pañuelo Fashion Queen",
+    imagen: "cartera_estructurada_panuelo_72.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "estructurada",
+        "pañuelo",
+        "fashion queen"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera Estructurada con Pañuelo Fashion Queen",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera Bicolor con Correa Frontal",
+    imagen: "cartera_bicolor_correa_68_40.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "bicolor",
+        "correa",
+        "frontal"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera Bicolor con Correa Frontal",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera con Llavero de Estrella",
+    imagen: "cartera_llavero_estrella_73_80.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "llavero",
+        "estrella"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera con Llavero de Estrella",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera con Asa Metálica y Colgante de Cuentas",
+    imagen: "cartera_asa_metalica_colgante_73_80.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "asa metálica",
+        "colgante",
+        "cuentas"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera con Asa Metálica y Colgante de Cuentas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera Texturizada con Llavero de Estrella",
+    imagen: "cartera_texturizada_estrella_82.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "texturizada",
+        "llavero",
+        "estrella"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera Texturizada con Llavero de Estrella",
+    codigo: "",
+    stock: null
 }
 ];
 
