@@ -8,7 +8,8 @@
    <style>
         :root {
             --rojo: #ed1c24;
-            --rojo-oscuro: #b9151b;
+            --rojo-oscuro:
+            #b9151b;
             --oscuro: #15191d;
             --gris: #f4f4f4;
             --gris-claro: #f8f8f8;
@@ -632,7 +633,7 @@
     font-size: 12px;
     font-weight: bold;
 }
-        }
+        
 /* SCROLL PARA LA LISTA DE CATÁLOGOS */
 .menu-catalogos {
     max-height: 65vh;
@@ -653,6 +654,222 @@
 .menu-catalogos::-webkit-scrollbar-track {
     background-color: #eeeeee;
     border-radius: 10px;
+}
+       /* ============================================
+   CORRECCIÓN FINAL PARA CELULARES
+   CATEGORÍAS
+   ============================================ */
+
+@media (max-width: 850px) {
+
+    /* Evita que toda la página se ensanche */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* CONTENEDOR PRINCIPAL */
+    .layout-catalogo {
+        width: 100%;
+        max-width: 100%;
+
+        grid-template-columns: minmax(0, 1fr);
+
+        margin: 1rem auto;
+
+        padding-left: 12px;
+        padding-right: 12px;
+
+        gap: 16px;
+    }
+
+
+    /* IMPORTANTE:
+       permite que ambos bloques se encojan
+       al ancho real del celular */
+    .sidebar-catalogos,
+    .content-catalogo {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+
+    /* ========================================
+       MENÚ HORIZONTAL DE CATEGORÍAS
+       ======================================== */
+
+    .sidebar-catalogos {
+        overflow: hidden;
+
+        padding: 15px;
+    }
+
+    .menu-catalogos {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        max-height: none;
+
+        padding: 0 0 8px 0;
+
+        gap: 8px;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .menu-catalogos li {
+        flex: 0 0 auto;
+    }
+
+    .catalog-item {
+        flex: 0 0 auto;
+
+        white-space: nowrap;
+
+        padding: 10px 14px;
+
+        font-size: 14px;
+    }
+
+
+    /* ========================================
+       PANEL DE PRODUCTOS
+       ======================================== */
+
+    .content-catalogo {
+        padding: 16px 12px;
+
+        overflow: hidden;
+    }
+
+    .content-catalogo::before {
+        margin-bottom: 14px;
+    }
+
+    .section-title {
+        font-size: 23px;
+
+        line-height: 1.25;
+
+        margin-bottom: 16px;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* ========================================
+       TARJETAS DE PRODUCTOS
+       ======================================== */
+
+    .card-producto {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto 18px;
+
+        padding-bottom: 12px;
+    }
+
+    .card-producto img {
+        width: 100%;
+        max-width: 100%;
+
+        height: auto;
+
+        margin-bottom: 12px;
+    }
+
+
+    /* BOTÓN WHATSAPP */
+
+    .btn-whatsapp {
+        width: calc(100% - 24px);
+
+        max-width: none;
+
+        padding: 13px 16px;
+
+        font-size: 15px;
+    }
+
+
+    /* ========================================
+       SECCIÓN +18
+       ======================================== */
+
+    .seccion-mayores {
+        margin-top: 28px;
+
+        padding-top: 20px;
+    }
+
+    .aviso-mayores {
+        padding: 16px 12px;
+
+        margin-bottom: 18px;
+    }
+
+    .aviso-mayores h3 {
+        font-size: 19px;
+
+        line-height: 1.3;
+    }
+
+    .aviso-mayores p {
+        font-size: 14px;
+    }
+
+    .contenedor-productos-mayores {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .card-producto-mayores {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .card-producto-mayores img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width: 500px) {
+
+    .titulo-catalogos {
+        padding: 22px 14px 8px;
+    }
+
+    .titulo-catalogos h2 {
+        font-size: 26px;
+    }
+
+    .titulo-catalogos p {
+        font-size: 15px;
+
+        line-height: 1.45;
+    }
+
 }
     </style>
 </head>
@@ -1006,7 +1223,9 @@
     <div class="contenedor-productos">
     </div>
 
-            </main>
+</div>
+
+</main>
 </div>
     <footer>
         <p>&copy; 2026 China Mart Mollendo. Todos los derechos reservados.</p>
