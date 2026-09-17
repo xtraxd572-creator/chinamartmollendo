@@ -301,107 +301,225 @@
             right: 25px;
         }
 
-        @media (max-width: 800px) {
+        /* ============================================
+   VERSIÓN PARA CELULARES
+   ============================================ */
 
-            header {
-                height: auto;
-                flex-direction: column;
-                padding: 20px;
-            }
+@media (max-width: 800px) {
 
-            .logo {
-                width: auto;
-                margin-bottom: 20px;
-            }
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 18px 15px 22px;
+        gap: 15px;
+    }
 
-            .buscador-contenedor {
-                width: 80%;
-                margin-bottom: 20px;
-            }
+    .logo {
+        width: auto;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
 
-            .buscador {
-                width: 100%;
-                margin-bottom: 0;
-            }
+    .logo-cuadro {
+        width: 65px;
+        height: 65px;
+    }
 
-            nav {
-                margin: 0;
-            }
+    .logo-texto h2 {
+        font-size: 32px;
+    }
 
-            nav a {
-                margin: 10px;
-            }
+    .logo-texto p {
+        font-size: 14px;
+        letter-spacing: 5px;
+    }
 
-            .principal {
-                min-height: 900px;
-                padding: 30px 20px 80px;
-            }
 
-            .principal::after {
-                display: none;
-            }
+    /* BUSCADOR */
 
-            .carrusel {
-                min-height: 820px;
-            }
+    .buscador-contenedor {
+        width: 100%;
+        max-width: 600px;
+        margin-bottom: 5px;
+    }
 
-            .slide {
-                flex-direction: column;
-                justify-content: center;
-                padding-top: 20px;
-            }
+    .buscador {
+        width: 100%;
+        padding: 14px 18px;
+        font-size: 16px;
+    }
 
-            .texto {
-                width: 100%;
-                text-align: center;
-            }
 
-            .texto h1 {
-                font-size: 40px;
-            }
+    /* MENÚ */
 
-            .texto h1 span {
-                font-size: 55px;
-            }
+    nav {
+        margin: 0;
+        width: 100%;
 
-            .caracteristicas {
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 20px;
-            }
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
-            .caracteristica {
-                margin-right: 0;
-            }
+        gap: 8px 18px;
+    }
 
-            .producto {
-                width: 100%;
-                margin-top: 30px;
-            }
+    nav a {
+        margin: 0;
+        font-size: 16px;
+    }
 
-            .producto img {
-                width: 75%;
-                max-width: 400px;
-            }
 
-            .flecha-carrusel {
-                width: 38px;
-                height: 38px;
-                font-size: 20px;
-            }
+    /* CARRUSEL */
 
-            .flecha-izquierda {
-                left: 5px;
-            }
+    .principal {
+        min-height: 1050px;
+        padding: 20px 18px 90px;
+    }
 
-            .flecha-derecha {
-                right: 5px;
-            }
+    .principal::after {
+        display: none;
+    }
 
-            .controles-carrusel {
-                bottom: 20px;
-            }
-        }
+    .carrusel {
+        min-height: 1000px;
+    }
+
+    .slide {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        padding-top: 25px;
+    }
+
+
+    /* TEXTO */
+
+    .texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .frase {
+        font-size: 23px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .texto h1 {
+        font-size: 34px;
+        line-height: 1.15;
+
+        margin: 12px 0 18px;
+
+        overflow-wrap: break-word;
+    }
+
+    .texto h1 span {
+        font-size: 45px;
+        line-height: 1.05;
+
+        margin-top: 5px;
+
+        overflow-wrap: break-word;
+    }
+
+    .descripcion {
+        font-size: 18px;
+        line-height: 1.45;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        max-width: 95%;
+    }
+
+
+    /* CARACTERÍSTICAS */
+
+    .caracteristicas {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px 10px;
+
+        width: 100%;
+
+        margin-top: 25px;
+    }
+
+    .caracteristica {
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 1.25;
+
+        min-width: 0;
+
+        overflow-wrap: break-word;
+    }
+
+    .circulo {
+        width: 50px;
+        height: 50px;
+
+        font-size: 22px;
+
+        margin: 0 auto 8px;
+    }
+
+
+    /* BOTÓN */
+
+    .boton {
+        font-size: 17px;
+
+        padding: 13px 24px;
+
+        margin-top: 25px;
+    }
+
+
+    /* IMAGEN DEL PRODUCTO */
+
+    .producto {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+    .producto img {
+        width: 88%;
+
+        max-width: 380px;
+
+        height: auto;
+    }
+
+
+    /* FLECHAS */
+
+    .flecha-carrusel {
+        width: 38px;
+        height: 38px;
+
+        font-size: 20px;
+    }
+
+    .flecha-izquierda {
+        left: 3px;
+    }
+
+    .flecha-derecha {
+        right: 3px;
+    }
+
+    .controles-carrusel {
+        bottom: 20px;
+    }
+
+}
     
         /* BUSCADOR FUNCIONAL */
         .buscador-contenedor {
