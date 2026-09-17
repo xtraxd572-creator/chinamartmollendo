@@ -1032,29 +1032,6 @@ agregarDestacadosAlCarrusel();
                 .trim();
         }
 
-
-       // ============================================
-// CATEGORÍAS AUTOMÁTICAS PARA EL BUSCADOR
-// ============================================
-
-const categoriasBusqueda =
-    Object.entries(categoriasChinaMart).map(
-        ([id, datos]) => {
-
-            return {
-                id: id,
-                nombre: datos.nombre,
-                palabras: datos.palabras || []
-            };
-
-        }
-    );
-
-console.log(
-    "📂 Categorías del buscador cargadas:",
-    categoriasBusqueda.length
-);
-
 // ============================================
 // BUSCADOR DEL INDEX
 // ============================================
