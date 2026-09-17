@@ -1655,6 +1655,173 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por la Cartera Texturizada con Llavero de Estrella",
     codigo: "",
     stock: null
+},
+    // ============================================
+// CARTERAS, MOCHILAS Y MÁS - PARTE 2
+// ============================================
+
+{
+    nombre: "Cartera con Lazo y Colgante de Perla",
+    imagen: "cartera_lazo_perla_70_20.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "lazo",
+        "perla",
+        "colgante"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera con Lazo y Colgante de Perla",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera con Solapa y Hebillas Decorativas",
+    imagen: "cartera_solapa_correas_73_80.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "solapa",
+        "hebillas",
+        "correas"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera con Solapa y Hebillas Decorativas",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera con Colgante de Flor",
+    imagen: "cartera_colgante_flor_73_80.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "flor",
+        "colgante"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera con Colgante de Flor",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera de Hombro con Bolsillo Frontal",
+    imagen: "cartera_bolsillo_frontal_61_20.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "hombro",
+        "bolsillo",
+        "frontal"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera de Hombro con Bolsillo Frontal",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Cartera con Solapa y Monedero Redondo Colgante",
+    imagen: "cartera_solapa_monedero_redondo_50_40.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "cartera",
+        "solapa",
+        "monedero",
+        "redondo"
+    ],
+    mensaje: "Hola, quisiera consultar por la Cartera con Solapa y Monedero Redondo Colgante",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Canguro Deportivo Multibolsillos",
+    imagen: "canguro_deportivo_34.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "canguro",
+        "deportivo",
+        "multibolsillos",
+        "bolso"
+    ],
+    mensaje: "Hola, quisiera consultar por el Canguro Deportivo Multibolsillos",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Bolso de Viaje Espacioso BOBO",
+    imagen: "bolso_viaje_bobo_75.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "bolso",
+        "viaje",
+        "bobo",
+        "equipaje"
+    ],
+    mensaje: "Hola, quisiera consultar por el Bolso de Viaje Espacioso BOBO",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Lonchera Térmica Bicolor Wellness",
+    imagen: "lonchera_termica_bicolor_39_60.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "lonchera",
+        "térmica",
+        "bicolor",
+        "wellness"
+    ],
+    mensaje: "Hola, quisiera consultar por la Lonchera Térmica Bicolor Wellness",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Lonchera Térmica Unicolor con Bolsillo Frontal",
+    imagen: "lonchera_termica_bolsillo_39_60.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "lonchera",
+        "térmica",
+        "unicolor",
+        "bolsillo"
+    ],
+    mensaje: "Hola, quisiera consultar por la Lonchera Térmica Unicolor con Bolsillo Frontal",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Canguro Cruzado Táctico Negro Multibolsillos",
+    imagen: "canguro_negro_tactico_37_80.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "canguro",
+        "táctico",
+        "negro",
+        "multibolsillos"
+    ],
+    mensaje: "Hola, quisiera consultar por el Canguro Cruzado Táctico Negro Multibolsillos",
+    codigo: "",
+    stock: null
+},
+
+{
+    nombre: "Morral Compacto Unisex MEGATECH",
+    imagen: "morral_compacto_megatech_21.png",
+    categoria: "bolsos",
+    palabrasClave: [
+        "morral",
+        "compacto",
+        "megatech",
+        "bolso"
+    ],
+    mensaje: "Hola, quisiera consultar por el Morral Compacto Unisex MEGATECH",
+    codigo: "",
+    stock: null
 }
 ];
 
