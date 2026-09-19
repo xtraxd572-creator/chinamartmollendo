@@ -2421,6 +2421,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de fresa",
+        imagen: "mascarilla_facial_fresa.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "fresa"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla de fresa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
