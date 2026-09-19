@@ -2259,6 +2259,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Mascarilla facial do beauty sabila piel",
+        imagen: "mascarilla_facial_do_beauty_barro_sabila_piel",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "do beauty",
+            "sabila",
+            "piel"
+            ],
+        mensaje: "Hola, quisiera consultar por la Mascarilla facial de barro con sabila para todo tipo de piel",
+
+        codigo: "",
+        stock: null
     }
 ];
 
