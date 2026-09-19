@@ -2230,6 +2230,24 @@ const productosChinaMart = [
     codigo: "",
     stock: null
 },
+    {
+    nombre: "Mascarillas bioaqua chamomile orange",
+    imagen: "mascarilla_bioaqua_chamomile_orange.png",
+    categoria: "mascarillas y cuidado",
+
+    palabrasClave: [
+    "mascailla",
+    "bioaqua",
+    "chamomile",
+    "orange",
+    "naranja"
+    ],
+
+    mensaje: "Hola, quisiera consultar por la Mascarilla facial bioaqua chamomile y la Mascarilla facial orange",
+
+    codigo: "",
+    stock: null
+    }
 ];
 
 
