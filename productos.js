@@ -2362,7 +2362,7 @@ const productosChinaMart = [
     },
     {
         nombre: "mascarilla facial de granada",
-        imagen: "mascarilla_facial_granada,png",
+        imagen: "mascarilla_facial_granada.png",
         categoria: "mascarillas y cuidado",
 
         palabrasClave: [
@@ -2371,6 +2371,20 @@ const productosChinaMart = [
             "granada"
             ],
         mensaje: "Hola, quisiera consultar por la mascarilla facial de granada",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "mascarilla facial de uva",
+        imagen: "mascarilla_facial_de_uva.png",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "uva"
+            ],
+        mansaje: "Hola, quisiera consultar por la mascarilla de uva",
 
         codigo: "",
         stock: null
