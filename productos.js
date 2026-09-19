@@ -2452,6 +2452,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de pepinillo",
+        imagen: "mascarilla_facial_pepinillo.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "pepinillo"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla facial de pepinillo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
