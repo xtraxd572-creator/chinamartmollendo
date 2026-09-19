@@ -2312,6 +2312,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial baba de caracol",
+        imagen: "mascarilla_facial_baba_de_caracol.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "baba",
+            "caracol"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla facial baba de caracol",
+
+        codigo: "",
+        stock: null
     }
 ];
 
