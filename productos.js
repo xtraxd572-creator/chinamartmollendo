@@ -2389,6 +2389,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de carbon activado",
+        imagen: "mascarilla_facial_carbon_activado.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "carbon",
+            "activado"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla facial de carbon activado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
