@@ -2294,6 +2294,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Mascarilla facial de coco",
+        imagen: "mascarilla_facial_coco_mask_dr_la_rosa.png",
+        categoria: "mascarillas y cuidado",
+
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "coco",
+            "dr la rosa",
+            "mask"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla facial de coco",
+
+        codigo: "",
+        stock: null
     }
 ];
 
