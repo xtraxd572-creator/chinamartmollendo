@@ -2378,6 +2378,7 @@ const productosChinaMart = [
     {
         nombre: "mascarilla facial de uva",
         imagen: "mascarilla_facial_de_uva.png",
+        categoria: "mascarillas y cuidado",
 
         palabrasClave: [
             "mascarilla",
