@@ -2247,6 +2247,23 @@ const productosChinaMart = [
 
     codigo: "",
     stock: null
+    },
+    {
+        nombre: "Mascarillas bioaqua natural mask rorec",
+        imagen: "mascarillas_bioaqua_natural_mask_rorec.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "bioaqua",
+            "natural",
+            "mask",
+            "rorec"
+            ],
+        mensaje: "Hola, quisiera consultar por la Mascarilla facial natural mask y la mascarilla facial rorec",
+
+        codigo: "",
+        stock: null
     }
 ];
 
