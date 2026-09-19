@@ -2331,7 +2331,7 @@ const productosChinaMart = [
     },
     {
         nombre: "mascarilla facial de carbon",
-        imagen: "mascarilla_facial_carbon",
+        imagen: "mascarilla_facial_carbon.png",
         categoria: "mascarillas y cuidado",
 
         palabrasClave: [
