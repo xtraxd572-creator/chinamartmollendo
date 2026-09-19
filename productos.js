@@ -2164,7 +2164,29 @@ const productosChinaMart = [
     mensaje: "Hola, quisiera consultar por el Té Herbal Jia Duo Bao",
     codigo: "",
     stock: null
-}
+},
+    {
+    nombre: "Mascarillas Faciales BIOAQUA Olive y Dr. La Rosa Arroz",
+    imagen: "mascarillas_olive_arroz.png",
+    categoria: "mascarillas y cuidado",
+
+    palabrasClave: [
+        "mascarilla",
+        "mascarillas",
+        "facial",
+        "bioaqua",
+        "olive",
+        "oliva",
+        "arroz",
+        "dr la rosa",
+        "cuidado facial"
+    ],
+
+    mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Olive y Dr. La Rosa Arroz",
+
+    codigo: "",
+    stock: null
+},
 ];
 
 
