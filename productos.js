@@ -2187,6 +2187,28 @@ const productosChinaMart = [
     codigo: "",
     stock: null
 },
+    {
+    nombre: "Mascarillas Faciales BIOAQUA Camellias y Peach",
+    imagen: "mascarillas_camellias_peach.png",
+    categoria: "mascarillas y cuidado",
+
+    palabrasClave: [
+        "mascarilla",
+        "mascarillas",
+        "facial",
+        "bioaqua",
+        "camellias",
+        "camelia",
+        "peach",
+        "durazno",
+        "cuidado facial"
+    ],
+
+    mensaje: "Hola, quisiera consultar por las Mascarillas Faciales BIOAQUA Camellias y Peach",
+
+    codigo: "",
+    stock: null
+}
 ];
 
 
