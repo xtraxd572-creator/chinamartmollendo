@@ -2262,7 +2262,7 @@ const productosChinaMart = [
     },
     {
         nombre: "Mascarilla facial do beauty sabila piel",
-        imagen: "mascarilla_facial_do_beauty_barro_sabila_piel",
+        imagen: "mascarilla_facial_do_beauty_barro_sabila_piel.png",
         categoria: "mascarillas y cuidado",
 
         palabrasClave: [
