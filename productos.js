@@ -1,8 +1,3 @@
-// ============================================
-// PRODUCTOS - CHINA MART MOLLENDO
-// ============================================
-
-// Aquí estarán TODOS los productos de la tienda.
 const productosChinaMart = [
 
     {
