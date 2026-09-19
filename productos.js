@@ -2208,7 +2208,28 @@ const productosChinaMart = [
 
     codigo: "",
     stock: null
-}
+},
+    {
+    nombre: "Mascarilla Facial BIOAQUA Honey",
+    imagen: "mascarilla_bioaqua_honey.png",
+    categoria: "mascarillas y cuidado",
+
+    palabrasClave: [
+        "mascarilla",
+        "mascarillas",
+        "facial",
+        "bioaqua",
+        "honey",
+        "miel",
+        "cuidado facial",
+        "skincare"
+    ],
+
+    mensaje: "Hola, quisiera consultar por la Mascarilla Facial BIOAQUA Honey",
+
+    codigo: "",
+    stock: null
+},
 ];
 
 
