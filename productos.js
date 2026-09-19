@@ -18,7 +18,8 @@ const productosChinaMart = [
         ],
         mensaje: "Hola, quisiera consultar por el Scooter Infantil de 3 Ruedas",
         codigo: "",
-        stock: null
+        stock: null,
+        destacado: true
     },
 
     {
