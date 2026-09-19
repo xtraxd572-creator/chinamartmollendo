@@ -2359,6 +2359,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de granada",
+        imagen: "mascarilla_facial_granada,png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "granada"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla facial de granada",
+
+        codigo: "",
+        stock: null
     }
 ];
 
