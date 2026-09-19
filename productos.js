@@ -2501,7 +2501,7 @@ const productosChinaMart = [
     },
     {
         nombre: "mascarilla facial de leche",
-        imagen: "mascarilla_facial_de_leche",
+        imagen: "mascarilla_facial_de_leche.png",
         categoria: "mascarillas y cuidado",
 
         palabrasClave: [
