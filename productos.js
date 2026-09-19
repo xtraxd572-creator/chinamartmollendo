@@ -2498,6 +2498,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de leche",
+        imagen: "mascarilla_facial_de_leche",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "leche"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla de leche",
+
+        codigo: "",
+        stock: null
     }
 ];
 
