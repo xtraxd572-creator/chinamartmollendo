@@ -2467,6 +2467,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de miel de abeja",
+        imagen: "mascarilla_facial_miel_de_abeja.png",
+        categoria: "mascarillas y cuidado",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarillas",
+            "facial",
+            "miel",
+            "abeja"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla de miel de abeja",
+
+        codigo: "",
+        stock: null
     }
 ];
 
