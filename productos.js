@@ -2343,6 +2343,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de caviar",
+        imagen: "mascarilla_facial_caviar_mask.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "caviar",
+            "mask"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla facial de caviar",
+
+        codigo: "",
+        stock: null
     }
 ];
 
