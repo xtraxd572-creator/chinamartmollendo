@@ -2436,6 +2436,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial acido hialurinico",
+        imagen: "mascarilla_facial_acido_hialuronico.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "acido",
+            "hialurinico"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilal facial acido hialurinico",
+
+        codigo: "",
+        stock: null
     }
 ];
 
