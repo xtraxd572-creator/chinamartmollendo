@@ -2405,6 +2405,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial sakura premiun",
+        imagen: "mascarilla_facial_sakura_premiun.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "sakura",
+            "premiun"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla sakura premiun",
+
+        codigo: "",
+        stock: null
     }
 ];
 
