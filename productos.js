@@ -2328,6 +2328,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascarilla facial de carbon",
+        imagen: "mascarilla_facial_carbon",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "carbon"
+            ],
+        mensaje: "Hola, quisiera consultar por la mascarilla facial de carbon",
+
+        codigo: "",
+        stock: null
     }
 ];
 
