@@ -2276,13 +2276,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Mascarilla facial aloe vera",
+        imagen: "mascarilla_facial_aloe_vera.png",
+        categoria: "mascarillas y cuidado",
+
+        palabrasClave: [
+            "mascarilla",
+            "facial",
+            "aloe vera",
+            "manchas oscuras",
+            "arrugas",
+            "poros"
+            ],
+        mensaje: "Hola, quisiera consultar por la Mascarilla facial aloe vera",
+
+        codigo: "",
+        stock: null
     }
 ];
 
 
-// ============================================
-// CATEGORÍAS
-// ============================================
+//categorias
 
 const categoriasChinaMart = {
 
