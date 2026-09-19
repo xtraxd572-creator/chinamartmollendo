@@ -49,7 +49,6 @@ const productosChinaMart = [
         mensaje: "Hola, quisiera consultar por la Mochila Escolar Capibara",
         codigo: "",
         stock: null
-        destacado: true,
     },
     {
     nombre: "Mascarillas Faciales BIOAQUA Koala y Zorrito",
