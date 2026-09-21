@@ -2579,6 +2579,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bebida sabor fresa",
+        imagen: "bebida_sabor_fresa.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "fresa"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la bebida sabor fresa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
