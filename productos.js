@@ -2644,7 +2644,22 @@ const categoriasChinaMart = {
         "parche facial",
         "parches de ojos"
     ]
-}
+},
+    "Comida y Bebidas Chinas y Coreanas": {
+        nombre: "comida y bebidas chinas y koreanas",
+        icono: "🍜",
+        palabras: [
+            "comida",
+            "china",
+            "chino",
+            "bebida",
+            "coreana",
+            "coreano",
+            "asiatica",
+            "snack",
+            "dulce"
+            ]
+    }
     };
 
 // ============================================
