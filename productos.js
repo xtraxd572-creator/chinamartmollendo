@@ -2548,7 +2548,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "bebidas sabor frutal",
+        nombre: "bebidas frutales",
         imagen: "bebida_sabor_cereza.png",
         categoria: "bebidas",
 
