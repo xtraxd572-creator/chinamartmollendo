@@ -2562,6 +2562,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "refrescante y deliciosas",
+        imagen: "refrescantes_y_deliciosas.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "refrescante",
+            "deliciosas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las bebidas te de limon y te verde",
+
+        codigo: "",
+        stock: null
     }
 ];
 
