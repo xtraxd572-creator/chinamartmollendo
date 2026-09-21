@@ -2514,6 +2514,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "oolong tea drink",
+        imagen: "oolong_tea_drink.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "tea",
+            "drink",
+            "refresco"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la bebida oolong tea drink",
+
+        codigo: "",
+        stock: null
     }
 ];
 
