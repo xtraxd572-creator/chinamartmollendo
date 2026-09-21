@@ -2530,6 +2530,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bebida sabor cereza",
+        imagen: "bebida_sabor_cereza.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "cereza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la bebida sabor a cereza",
+
+        codigo: "",
+        stock: null
     }
 ];
 
