@@ -2662,21 +2662,29 @@ const categoriasChinaMart = {
         "parches de ojos"
     ]
 },
-    "comida y bebidas chinas y coreanas": {
-        nombre: "Comida y Bebidas Chinas y Coreanas",
-        icono: "🍜",
-        palabras: [
-            "comida",
-            "china",
-            "chino",
-            "bebida",
-            "coreana",
-            "coreano",
-            "asiatica",
-            "snack",
-            "dulce"
-            ]
-    }
+    "alimentos y condimentos asiaticos": {
+    nombre: "Alimentos y Condimentos Asiáticos",
+    icono: "🍜",
+    palabras: [
+        "alimento",
+        "alimentos",
+        "comida",
+        "snack",
+        "dulce",
+        "galleta",
+        "ramen",
+        "fideos",
+        "salsa",
+        "condimento",
+        "alga",
+        "asiatico",
+        "asiático",
+        "chino",
+        "china",
+        "coreano",
+        "coreana"
+    ]
+}
     };
 
 // ============================================
