@@ -2548,8 +2548,8 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "bebidas frutales",
-        imagen: "bebida_sabor_cereza.png",
+        nombre: "bebida unica y saborisante",
+        imagen: "bebida_sabor_frutal.png",
         categoria: "bebidas",
 
         palabrasClave: [
