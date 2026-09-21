@@ -2595,6 +2595,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "refrescante y delicioso",
+        imagen: "refresecante_y_delicioso.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "refrescante",
+            "delicioso"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las bebidas sabor durazno, uva y manzana",
+
+        codigo: "",
+        stock: null
     }
 ];
 
