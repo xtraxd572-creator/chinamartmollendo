@@ -2514,6 +2514,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bebidas sabor brown sugar milk tea y peach",
+        imagen: "brown_sugar_milk_tea_peach.png",
+        categoria: "comida y bebidas chinas coreanas",
+
+        palabrasClave: [
+            "bebidas",
+            "brown sugar",
+            "milk",
+            "tea",
+            "peach"
+            ],
+        mensaje: "Hola, quisiera consultar por las bebidas brown sugar milk tea y el peach",
+
+        codigo: "",
+        stock: null
     }
 ];
 
