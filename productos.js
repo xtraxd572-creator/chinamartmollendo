@@ -2645,8 +2645,8 @@ const categoriasChinaMart = {
         "parches de ojos"
     ]
 },
-    "Comida y Bebidas Chinas y Coreanas": {
-        nombre: "comida y bebidas chinas y koreanas",
+    "comida y bebidas chinas y coreanas": {
+        nombre: "Comida y Bebidas Chinas y Coreanas",
         icono: "🍜",
         palabras: [
             "comida",
