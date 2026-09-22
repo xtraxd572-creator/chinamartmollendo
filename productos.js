@@ -2631,6 +2631,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "frutal sabores naranja, uva y manzana",
+        imagen: "frutal_sabor_naranja_uva_manzana",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "frutal",
+            "frutales",
+            "naranja",
+            "uva",
+            "manzana"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los sabores frutales sabores naranja, uva y manzana",
+
+        codigo: "",
+        stock: null
     }
 ];
 
