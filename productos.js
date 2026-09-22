@@ -2781,7 +2781,24 @@ const productosChinaMart = [
     codigo: "",
     stock: null,
     soloMayores: true
-}
+},
+    {
+        nombre: "bebida frutada con mango",
+        imagen: "bebida_frutada_con_mango.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "frutada",
+            "mango"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la bebida frutada con mango",
+
+        codigo: "",
+        stock: null
+    }
         
 ];
 
