@@ -2834,6 +2834,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabores camaron picante y pollo cremoso picante",
+        imagen: "fideos_sabores_camarones_picantes_pollo_cremoso_picante.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "camaron",
+            "picante",
+            "pollo",
+            "cremoso",
+            "picantes"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos de camaron picante y de pollo cremoso picante",
+
+        codigo: "",
+        stock: null
     }
         
 ];
