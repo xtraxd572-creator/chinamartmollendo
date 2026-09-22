@@ -2672,7 +2672,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    }
+    },
+    {
+        nombre: "tea con limon",
+        imagen: "te_con_limon.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "tea",
+            "limon"
+
+            ],
+        mensaje: "Hola, quisiera consultar por bebida de tea con limon",
+
+        codigo: "",
+        stock: null
 ];
 
 
