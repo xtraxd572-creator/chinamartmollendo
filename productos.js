@@ -2634,7 +2634,7 @@ const productosChinaMart = [
     },
     {
         nombre: "frutal sabores naranja, uva y manzana",
-        imagen: "frutal_sabor_naranja_uva_manzana",
+        imagen: "frutal_sabor_naranja_uva_manzana.png",
         categoria: "bebidas",
 
         palabrasClave: [
@@ -2648,6 +2648,27 @@ const productosChinaMart = [
 
             ],
         mensaje: "Hola, quisiera consultar por los sabores frutales sabores naranja, uva y manzana",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "frutales sabores mango, lichi y piña",
+        imagen: "frutales_sabores_mango_lichi_y_piña.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "frutal",
+            "frutales",
+            "mango",
+            "lichi",
+            "piña",
+            "sabores"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los sabores frutales sabores mango, lichi y piña",
 
         codigo: "",
         stock: null
