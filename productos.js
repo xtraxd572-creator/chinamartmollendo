@@ -2760,7 +2760,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    }
+    },
+    {
+    nombre: "Bebida RIO Rosa y Lychee",
+    imagen: "bebida_rio_de_rosa_y_lychee.png",
+    categoria: "bebidas",
+
+    palabrasClave: [
+        "rio",
+        "rosa",
+        "lychee",
+        "lichi",
+        "bebida",
+        "alcohol",
+        "3% vol",
+        "bebida alcoholica"
+    ],
+
+    mensaje: "Hola, quisiera consultar por la Bebida RIO Rosa y Lychee",
+    codigo: "",
+    stock: null,
+    soloMayores: true
+}
+        
 ];
 
 
