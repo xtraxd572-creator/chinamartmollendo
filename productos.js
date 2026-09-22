@@ -2798,6 +2798,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos en vaso",
+        imagen: "fideos_instantaneos_en_vaso.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabraClave: [
+            "fideos",
+            "vaso",
+            "instantaneos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos en vaso",
+
+        codigo: "",
+        stock: null
     }
         
 ];
