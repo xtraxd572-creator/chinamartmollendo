@@ -2876,8 +2876,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    }
-        
+    },
+    {
+        nombre: "fideo instantaneo sabor a pollo",
+        imagen: "fideo_instantaneo_sabor_pollo.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideo",
+            "instantaneo",
+            "pollo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el fideo sabor a pollo",
+
+        codigo: "",
+        stock: null
+    }       
 ];
 
 
