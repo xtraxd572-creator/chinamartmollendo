@@ -2612,6 +2612,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "sabores naranja y pera frutal",
+        imagen: "sabores_naranja_y_pera_frutal.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "naranja",
+            "orange",
+            "pera",
+            "frutal"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los sabores frutales sabor naranja y pera",
+
+        codigo: "",
+        stock: null
     }
 ];
 
