@@ -2689,7 +2689,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    }
+    },
+    {
+        nombre: "agua de limon",
+        imagen: "agua_de_limon.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "agua",
+            "limon"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la bebdida agua de limon",
+
+        codigo: "",
+        stock: null
 ];
 
 
