@@ -2706,6 +2706,7 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    }
 ];
 
 
