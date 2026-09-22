@@ -2854,6 +2854,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabores pork bone soup y hot chicken",
+        imagen: "fideos_sabores_pork_bone_soup_y_hot_chicken.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "sabores",
+            "pork",
+            "bone soup",
+            "hot",
+            "chicken",
+            "pollo",
+            "picante"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabores pork bone soup y hot chicken",
+
+        codigo: "",
+        stock: null
     }
         
 ];
