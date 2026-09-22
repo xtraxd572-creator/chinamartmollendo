@@ -2814,6 +2814,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneo de res estilo picante, camaron picante, sabor suave y udon tempura",
+        imagen: "fideos_instantaneos_sabores_unicos.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "picante",
+            "udon",
+            "camaron",
+            "res"
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos de res estilo picante, camaron picante, sabor picante y udon tempura",
+
+        codigo: "",
+        stock: null
     }
         
 ];
