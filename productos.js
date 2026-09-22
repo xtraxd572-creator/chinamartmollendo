@@ -2564,7 +2564,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "refrescante y deliciosas",
+        nombre: "bebidas te de limon y te verde",
         imagen: "refrescantes_y_deliciosas.png",
         categoria: "bebidas",
 
@@ -2597,7 +2597,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "refrescante y delicioso",
+        nombre: "bebidas sabores durazno, uva y manzana",
         imagen: "refresecante_y_delicioso.png",
         categoria: "bebidas",
 
@@ -2703,6 +2703,25 @@ const productosChinaMart = [
 
             ],
         mensaje: "Hola, quisiera consultar por la bebdida agua de limon",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "jugo de fruta real sabores lichi y melocoton",
+        imagen: "jugo_de_fruta_real_sabor_lichi_melocoton.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "jugo",
+            "frutal",
+            "fruta",
+            "sabores",
+            "lichi",
+            "melocoton"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los jugos real sabores lichi y melocoton",
 
         codigo: "",
         stock: null
