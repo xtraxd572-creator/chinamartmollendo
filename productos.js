@@ -2743,6 +2743,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bebidas sabores lichi y fresa",
+        imagen: "bebidas_sabores_lichi_y_fresa.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "lichi",
+            "fresa"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las bebidas sabores lichi y fresa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
