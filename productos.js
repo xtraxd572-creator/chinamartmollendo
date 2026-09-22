@@ -2725,6 +2725,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bebidas de trozos aloe vera y uva verde",
+        imagen: "bebidas_trozoz_aloe_vera_y_uva_verde.png",
+        categoria: "bebidas",
+
+        palabrasClave: [
+            "bebidas",
+            "bebida",
+            "aloe vera",
+            "uva",
+            "verde"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las bebidas de trozos aloe vera y uva verde",
+
+        codigo: "",
+        stock: null
     }
 ];
 
