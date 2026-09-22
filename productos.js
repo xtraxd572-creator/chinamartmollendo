@@ -2826,7 +2826,9 @@ const productosChinaMart = [
             "picante",
             "udon",
             "camaron",
-            "res"
+            "res",
+            "vaso"
+            
             ],
         mensaje: "Hola, quisiera consultar por los fideos de res estilo picante, camaron picante, sabor picante y udon tempura",
 
