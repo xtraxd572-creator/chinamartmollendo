@@ -3141,6 +3141,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "salsa de soya sabor superior y salsa de ostion sabor intenso",
+        imagen: "salsa_de_soya_sabor_superior_y_salsa_de_ostion_sabor_intenso.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "salsa",
+            "soya",
+            "superior",
+            "ostion",
+            "intenso"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las salsas de soya sabor superior, salsa de ostion sabor intenso",
+
+        codigo: "",
+        stock: null
     }
 ];
 
