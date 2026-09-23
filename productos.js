@@ -3175,6 +3175,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "salsa de ostion",
+        imagen: "salsa_de_ostion.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "salsa",
+            "ostion"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la salsa de ostion",
+
+        codigo: "",
+        stock: null
     }
 ];
 
