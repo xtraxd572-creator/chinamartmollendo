@@ -3190,6 +3190,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "hongo shitake deshidratado",
+        imagen: "hongo_shiitake_deshidratado.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+
+        palabrasClave: [
+            "hongo",
+            "shitake",
+            "deshidratado"
+
+            ],
+        mensaje: "Hola, quisiera consultar poe el hongo shitake deshidratado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
