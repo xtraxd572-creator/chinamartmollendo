@@ -3045,6 +3045,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabor carne con pimienta de szechuan y sabor pollo tradicional",
+        imagen: "fideos_instantaneos_sabor_carne_con_pimienta_de_szechuan_y_sabor_pollo_tradicional.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "carne",
+            "pimienta",
+            "szechuan",
+            "pollo",
+            "tradicional"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabor carne con pimienta de szechuan y sabor a pollo tradicional",
+
+        codigo: "",
+        stock: null
     }
 ];
 
