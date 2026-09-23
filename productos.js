@@ -3105,6 +3105,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "salsa de soya premiun chef bang",
+        imagen: "salsa_de_soya_premiun_chef_bang.png",
+        categoria: "alimentos y condimentos asiatios",
+
+        palabrasClave: [
+            "salsa",
+            "soya",
+            "premiun",
+            "chef"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la salsa de soya premiun chef bang",
+
+        codigo: "",
+        stock: null
     }
 ];
 
