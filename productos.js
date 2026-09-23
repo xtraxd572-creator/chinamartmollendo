@@ -2970,6 +2970,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabor mariscos y a ansungtangmyun",
+        imagen: "fideos_instantaneos_sabor_de_mariscos_y_ansungtangmyun.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "mariscos",
+            "ansungtangmyun",
+            "picante"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabor a maricos y a ansungtangmyun",
+
+        codigo: "",
+        stock: null
     }
 ];
 
