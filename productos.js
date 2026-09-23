@@ -3069,7 +3069,7 @@ const productosChinaMart = [
     {
         nombre: "fideos instantaneos sabor tomate con huevo y carne y sabor caldo dorado con carne de res",
         imagen: "fideos_instantaneos_sabor_tomate_con_huevo_y_carne_sabor_caldo_dorado_con_carne_de_res.png",
-        categoria: "alimentos y condimentos asieticos",
+        categoria: "alimentos y condimentos asiaticos",
 
         palabrasClave: [
             "fideos",
@@ -3109,7 +3109,7 @@ const productosChinaMart = [
     {
         nombre: "salsa de soya premiun chef bang",
         imagen: "salsa_de_soya_premiun_chef_bang.png",
-        categoria: "alimentos y condimentos asiatios",
+        categoria: "alimentos y condimentos asiaticos",
 
         palabrasClave: [
             "salsa",
