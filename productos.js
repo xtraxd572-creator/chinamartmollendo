@@ -3159,6 +3159,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "aceite de sesamo",
+        imagen: "aceite_de_sesamo.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+
+        palabrasClave: [
+            "aceite",
+            "sesamo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el aceite de sesamo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
