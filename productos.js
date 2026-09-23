@@ -2988,6 +2988,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabor a vegetal y a sabor agridulce picante con carne",
+        imagen: "fideos_instantaneos_sabor_vegetal_y_agridulce_picante_con_carne.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "vegetal",
+            "agridulce",
+            "picante",
+            "carne"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabor a vegetal y a sabor agridulce picante con carne",
+
+        codigo: "",
+        stock: null
     }
 ];
 
