@@ -2933,6 +2933,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabor a mar y sabor a res con vegetal",
+        imagen: "fideos_instantaneos_sabores_a_mar_y_res_con_vegetal.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "mar",
+            "res",
+            "vegetal"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabores a mar y sabor a res con vegetal",
+
+        codigo: "",
+        stock: null
     }
 ];
 
