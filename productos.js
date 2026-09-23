@@ -3086,6 +3086,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "salsa tailandesa dulce picante y sillao con champiñon",
+        imagen: "salsas_asiaticas.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "salsa",
+            "salsas",
+            "dulce",
+            "picante",
+            "sillao",
+            "champiñon"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las salsas asiaticas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
