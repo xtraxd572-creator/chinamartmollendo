@@ -2914,6 +2914,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos de chapagatti, sabor clasico y picante",
+        imagen: "fideos_instantaneos_chapagetti_sabores_clasico_y_picante.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "chapagatti",
+            "clasico",
+            "picante",
+            "picantes"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos de chapagatti",
+
+        codigo: "",
+        stock: null
     }
 ];
 
