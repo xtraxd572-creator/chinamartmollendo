@@ -2951,6 +2951,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabores buldak picante extremo y shin ramyun",
+        imagen: "fideos_instantaneos_sabores_buldak_picante_extremo_y_shin_ramyun.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "buldak",
+            "picante",
+            "extremo",
+            "shin ramyun"
+
+            ],
+        mansaje: "Hola, quisiera consultar por los fideos instantaneos sabores buldak picante extremo y el shin ramyun",
+
+        codigo: "",
+        stock: null
     }
 ];
 
