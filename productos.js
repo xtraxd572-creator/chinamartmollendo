@@ -3065,6 +3065,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabor tomate con huevo y carne y sabor caldo dorado con carne de res",
+        imagen: "fideos_instantaneos_sabor_tomate_con_huevo_y_carne_sabor_caldo_dorado_con_carne_de_res.png",
+        categoria: "alimentos y condimentos asieticos",
+
+        palabrasClave: [
+            "fideos",
+            "isntantaneos",
+            "tomate",
+            "huevo",
+            "carne",
+            "caldo",
+            "dorado",
+            "res"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabor a tomate con huevo y carne y sabor caldo dorado con carne de res",
+
+        codigo: "",
+        stock: null
     }
 ];
 
