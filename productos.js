@@ -3025,6 +3025,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabor a pollo con hongos y sabor carne con aji picante",
+        imagen: "fideos_instantaneos_sabor_pollo_con_hongos_y_sabor_carne_con_aji.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "pollo",
+            "hongos",
+            "carne",
+            "aji",
+            "picante"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabor a pollo con hongos y sabor a carne con aji picante",
+
+        codigo: "",
+        stock: null
     }
 ];
 
