@@ -3007,6 +3007,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fideos instantaneos sabor a mariscos y sabor res con sauerkraut",
+        imagen: "fideos_instantaneos_sabor_mariscos_y_sabor_res_con_sauerkraut.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "instantaneos",
+            "marsicos",
+            "res",
+            "sauerkraut"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos sabor a maricos y a sabor de res con sauerkraut",
+
+        codigo: "",
+        stock: null
     }
 ];
 
