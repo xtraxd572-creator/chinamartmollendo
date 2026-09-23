@@ -3122,6 +3122,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "salsa de soya pearl rive bridge y aceite de ajonjoli",
+        imagen: "salsas_de_soya_pearl_river_bridge_y_aceite_de_ajonjoli.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "salsa",
+            "soya",
+            "pearl",
+            "rive bridge",
+            "aceite",
+            "ajonjoli"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la salsa de soya pearl rive bridge y el aceite de ajonjoli",
+
+        codigo: "",
+        stock: null
     }
 ];
 
