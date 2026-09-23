@@ -2892,7 +2892,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    }       
+    },
+    {
+        nombre: "fideos instantaneos sabores carbonara gochujang y pollo picante clasico shin",
+        imagen: "fideos_instantaneos_sabor_carbonara_gochujang_y_pollo_picante.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "fideos",
+            "fideo",
+            "instantaneo",
+            "instantaneos",
+            "carbonara",
+            "gochujang",
+            "pollo",
+            "picante",
+            "picantes"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabores carbonara gochujang y de pollo picante clasico shin",
+
+        codigo: "",
+        stock: null
+    }
 ];
 
 
