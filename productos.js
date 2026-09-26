@@ -3246,6 +3246,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "wowo candy, caramelo sabor a fresa",
+        imagen: "wowo_candy_caramelo_sabor_fresa.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "wowo",
+            "candy",
+            "caramelos",
+            "fresa"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo wowo candy sabor a fresa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
