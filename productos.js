@@ -3263,6 +3263,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "sushi nori alga marina tostada",
+        imagen: "sushi_nori_alga_marina_tostada.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "sushi",
+            "nori",
+            "alga",
+            "marina",
+            "tostada"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el sushi nori alga marina tostada",
+
+        codigo: "",
+        stock: null
     }
 ];
 
