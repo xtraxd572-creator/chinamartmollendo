@@ -3523,6 +3523,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "galletas de macaron",
+        imagen: "galletas_de_macaron.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "galleta",
+            "galletas",
+            "macaron"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las galletas de macaron",
+
+        codigo: "",
+        stock: null
     }
 ];
 
