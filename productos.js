@@ -3281,6 +3281,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "palillos chinos, practicos, resistentes y con estilo",
+        imagen: "palillos_chinos.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "palillos",
+            "chinos",
+            "chino",
+            "resistentes",
+            "estilo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los palillos chinos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
