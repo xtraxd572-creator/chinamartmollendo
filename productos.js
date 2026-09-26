@@ -3401,6 +3401,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "galleta sable, sabor a te verde",
+        imagen: "galleta_sable_sabor_te_verde.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "galleta",
+            "sable",
+            "te",
+            "verde"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la galleta sable, sabor a te verde",
+
+        codigo: "",
+        stock: null
     }
 ];
 
