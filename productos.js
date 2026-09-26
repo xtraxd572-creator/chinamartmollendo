@@ -3368,6 +3368,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelo suave, sabor a naranja",
+        imagen: "caramelo_suave_sabor_naranja.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelo",
+            "orange",
+            "naranja"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo suave, sabor a naranja",
+
+        codigo: "",
+        stock: null
     }
 ];
 
