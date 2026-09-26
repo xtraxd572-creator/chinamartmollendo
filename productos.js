@@ -3299,6 +3299,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "sazonador de pollo, sabor autentico",
+        imagen: "sazonador_de_pollo_sabor_autentico.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "sazonador",
+            "pollo",
+            "autentico"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el sazonador de pollo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
