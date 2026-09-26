@@ -3350,6 +3350,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "te verde, calidad premiun",
+        imagen: "te_verde_calidad_premiun.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "te",
+            "tea",
+            "verde",
+            "premiun",
+            "calidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el te verde, calidad premiun",
+
+        codigo: "",
+        stock: null
     }
 ];
 
