@@ -3384,6 +3384,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "galletas suaves y rellenas, sabores a arandano y frutilla",
+        imagen: "sable_galletas_suaves_y_rellenas_sabor_arandado_y_sabor_frutilla.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "galletas",
+            "arandano",
+            "frutilla",
+            "rellenas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las galletas sable, sabores arandano y frutillas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
