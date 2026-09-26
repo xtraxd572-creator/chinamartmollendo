@@ -3558,6 +3558,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mini galletas tipo sandwich, sabores mixtos",
+        imagen: "mini_galletas_tipo_sandwich.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "mini",
+            "galletas",
+            "galleta",
+            "sandwich",
+            "mixtos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las mini galletas tipo sandwich, sabores mixtos",
+
+        cogido: "",
+        stock: null
     }
 ];
 
