@@ -3503,6 +3503,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "te verde special gunpowder",
+        imagen: "te_verde_special_gunpowder.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "te",
+            "tea",
+            "verde",
+            "green",
+            "special",
+            "especial",
+            "gunpowder"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el te verde special gunpowder",
+
+        codigo: "",
+        stock: null
     }
 ];
 
