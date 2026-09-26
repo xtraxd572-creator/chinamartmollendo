@@ -3576,6 +3576,23 @@ const productosChinaMart = [
 
         cogido: "",
         stock: null
+    },
+    {
+        nombre: "sable, sabores matcha y chocolate",
+        imagen: "sable_sabores_matcha_y_chocolate.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "sable",
+            "sabores",
+            "matcha",
+            "chocolate"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los snack sable, sabores matcha y cocholate",
+
+        codigo: "",
+        stock: null
     }
 ];
 
