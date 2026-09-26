@@ -3596,7 +3596,7 @@ const productosChinaMart = [
     },
     {
         nombre: "bravo clan, rollitos crujientes rellenos",
-        imagen: "rollitos_crujientes_rellenos",
+        imagen: "rollitos_crujientes_rellenos.png",
         categoria: "alimentos y condimentos asiaticos",
 
         palabrasClave: [
