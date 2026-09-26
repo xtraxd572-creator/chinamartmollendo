@@ -3449,6 +3449,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "te puerh y te rojo",
+        imagen: "te_chinos.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "te",
+            "puerh",
+            "rojo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los tes puerh y te rojo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
