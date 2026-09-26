@@ -3315,6 +3315,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pan rallado estilo asiatico y almidon de yuca",
+        imagen: "pan_rallado_estilo_asiatico_y_espesante_natural_y_versatil.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "pan",
+            "rallado",
+            "asiatico",
+            "almidon",
+            "yuca"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el pan rallado y el almidon de yuca",
+
+        codigo: "",
+        stock: null
     }
 ];
 
