@@ -3209,7 +3209,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "wowo candy, dulces chinos con gran sabor",
+        nombre: "wowo candy, caramelo blando de leche y caramelo sabor frutas",
         imagen: "candy_dulces_chinos_de_leche_y_frutas.png",
         categoria: "alimentos y condimentos asiaticos",
 
@@ -3220,10 +3220,29 @@ const productosChinaMart = [
             "chinos",
             "dulce",
             "leche",
-            "frutas"
+            "frutas",
+            "caramelo",
+            "wowo"
 
             ],
         mensaje: "Hola, quisiera consultar por los dulces wowo candy",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "wowo candy, caramelo sabor cereza",
+        imagen: "wowo_candy_caramelo_sabor_cereza.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "wowo",
+            "candy",
+            "caramelo",
+            "cereza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo wowo candy sabor a cereza",
 
         codigo: "",
         stock: null
