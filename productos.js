@@ -3465,6 +3465,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "gomitas de jugos de frutas",
+        imagen: "gomitas_de_jugos_de_frutas.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "gomitas",
+            "gomita",
+            "jugos",
+            "frutas",
+            "fruta"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las gomitas de jugos de frutas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
