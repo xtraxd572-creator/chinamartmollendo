@@ -3539,6 +3539,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "galletas de macaron, sabor a frutos secos mixtos",
+        imagen: "galletas_de_macaron_sabor_a_frutos_secos_mixtos.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "galletas",
+            "galleta",
+            "macaron",
+            "frutos",
+            "secos",
+            "mixtos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las galletas de macaron, sabor a frutos secos mixtos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
