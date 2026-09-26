@@ -3434,6 +3434,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelo relleno de leche, crujiente por fuera, suaves por dentro",
+        imagen: "caramelo_relleno_de_leche.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelo",
+            "leche"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo relleno de leche",
+
+        codigo: "",
+        stock: null
     }
 ];
 
