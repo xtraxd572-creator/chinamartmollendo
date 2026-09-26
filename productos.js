@@ -3483,6 +3483,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "jasmine tea y green tea",
+        imagen: "te_jasmin_y_te_verde.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+
+        palabrasClave: [
+            "jasmin",
+            "jasmine",
+            "tea",
+            "te",
+            "green",
+            "verde"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los tes jasmin y el te verde",
+
+        codigo: "",
+        stock: null
     }
 ];
 
