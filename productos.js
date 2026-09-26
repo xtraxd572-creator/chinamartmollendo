@@ -3418,6 +3418,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "galleta sable, sabor a chocolate",
+        imagen: "galleta_sable_sabor_chocolate.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "galleta",
+            "sable",
+            "chocolate"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la galleta sable, sabor a chocolate",
+
+        codigo: "",
+        stock: null
     }
 ];
 
