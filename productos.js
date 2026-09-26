@@ -3207,6 +3207,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "wowo candy, dulces chinos con gran sabor",
+        imagen: "candy_dulces_chinos_de_leche_y_frutas.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "candy",
+            "dulces",
+            "chino",
+            "chinos",
+            "dulce",
+            "leche",
+            "frutas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los dulces wowo candy",
+
+        codigo: "",
+        stock: null
     }
 ];
 
