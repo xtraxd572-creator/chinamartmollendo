@@ -3333,6 +3333,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelo de leche sabor taro, dulzura asiatica",
+        imagen: "caramelo_de_leche_sabor_taro.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelo",
+            "leche",
+            "taro",
+            "dulzura"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo de leche sabor taro",
+
+        codigo: "",
+        stock: null
     }
 ];
 
