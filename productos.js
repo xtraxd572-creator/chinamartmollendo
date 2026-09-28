@@ -3803,6 +3803,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelo yake, sabor intenso en cada bocado",
+        imagen: "caramelos_yake.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelo",
+            "yake"
+
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo yake",
+
+        codigo: "",
+        stock: null
     }
 ];
 
