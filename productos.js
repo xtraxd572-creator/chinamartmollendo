@@ -3715,6 +3715,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "cocount sticky jelly, el autentico sabor de asia",
+        imagen: "coconut_stcky_jelly.png",
+        categoria: "alimentos y condimentos asiaticos:",
+
+        palabrasClave: [
+            "cocount",
+            "sticky",
+            "jelly",
+            "coco"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el cocount sticky jelly",
+
+        codigo: "",
+        stock: null
     }
 ];
 
