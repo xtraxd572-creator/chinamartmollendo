@@ -3751,6 +3751,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "alga marina snack, crujiente, saludable y lleno de sabor",
+        imagen: "alga_marina_snack.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "alga",
+            "marina",
+            "snack",
+            "original"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el snack alga marina",
+
+        codigo: "",
+        stock: null
     }
 ];
 
