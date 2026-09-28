@@ -3677,6 +3677,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "galletas franzzi, un delicioso momento en cada bocado",
+        imagen: "galletas_franzzi.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "galletas",
+            "franzzi",
+            "galleta"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las galletas franzzi",
+
+        codigo: "",
+        stock: null
     }
 ];
 
