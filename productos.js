@@ -3787,6 +3787,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelo de ciruela verde",
+        imagen: "caramelo_de_ciruela_verde.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelo",
+            "ciruela",
+            "verde"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo de ciruela verde",
+
+        codigo: "",
+        stock: null
     }
 ];
 
