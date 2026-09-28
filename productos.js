@@ -3661,6 +3661,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelo de ginseng, energia y bienestar en cada bocado",
+        imagen: "caramelos_de_ginseng.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelo",
+            "caramelos",
+            "ginseng"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo de ginseng",
+
+        codigo: "",
+        stock: null
     }
 ];
 
