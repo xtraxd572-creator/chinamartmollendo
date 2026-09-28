@@ -3732,6 +3732,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelo wowo, dulce sabor frutal que todos disfrutan",
+        imagen: "caramelos_wowo.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelo",
+            "caramelos",
+            "wowo",
+            "dulce",
+            "frutal",
+            "candy"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo wowo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
