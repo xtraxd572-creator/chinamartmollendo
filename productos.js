@@ -3628,6 +3628,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "desayunos tradicionales, sabores que reconfortan tu dia",
+        imagen: "desayunos_tradicionales.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave:[
+            "desayunos",
+            "desayuno",
+            "tradicionales"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los desayunos tradicionales",
+
+        codigo: "",
+        stock: null
     }
 ];
 
