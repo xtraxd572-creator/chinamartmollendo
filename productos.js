@@ -3644,6 +3644,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelos asiaticos, dulzura para compartir",
+        imagen: "caramelos_asiaticos.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave:[
+            "caramelos",
+            "caramelo",
+            "asiaticos",
+            "dulzura"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo asiatico",
+
+        codigo: "",
+        stock: null
     }
 ];
 
