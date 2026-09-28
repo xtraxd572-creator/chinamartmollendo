@@ -3768,6 +3768,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "caramelos white rabbit, clasico caramelo de leche asiatico",
+        imagen: "caramelos_white_rabbit.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "caramelos",
+            "caramelo",
+            "white",
+            "rabbit",
+            "leche",
+            "asiatico"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el caramelo white rabbit",
+
+        codigo: "",
+        stock: null
     }
 ];
 
