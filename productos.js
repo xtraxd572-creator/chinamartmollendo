@@ -3819,6 +3819,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "gomitas sabores surtidos",
+        imagen: "gomitas_sabores_surtidos.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "gomitas",
+            "surtidos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las gomitas sabores surtidas",
+
+
+        codigo: "",
+        stock: null
     }
 ];
 
