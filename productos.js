@@ -3850,6 +3850,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "sweet potato y shrimp cracker",
+        imagen: "dos_sabores.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "sweet",
+            "potato",
+            "shrimp",
+            "cracker"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los sweet potato y el shrimp cracker",
+
+        codigo: "",
+        stock: null
     }
 ];
 
