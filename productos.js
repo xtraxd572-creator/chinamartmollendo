@@ -3610,6 +3610,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "choco crisp cone, conitos crujientes de chocolate",
+        imagen: "choco_crisp_cone.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "choco",
+            "crisp",
+            "conitos",
+            "crujientes",
+            "chocolate"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el choco crisp cone",
+
+        codigo: "",
+        stock: null
     }
 ];
 
