@@ -3686,10 +3686,32 @@ const productosChinaMart = [
         palabrasClave: [
             "galletas",
             "franzzi",
-            "galleta"
+            "galleta",
+            "queso",
+            "chocolate",
+            "vainilla",
+            "limon"
 
             ],
         mensaje: "Hola, quisiera consultar por las galletas franzzi",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "galletas wafers, crujientes, cremosas y llenas de sabor",
+        imagen: "galletas_wafers.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "galletas",
+            "galleta",
+            "wafers",
+            "coco",
+            "limon"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las galletas wafers",
 
         codigo: "",
         stock: null
