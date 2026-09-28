@@ -3835,6 +3835,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "aros de cebolla, crujientes y llenos de sabor",
+        imagen: "aros_de_cebolla.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "aros",
+            "ceboolla"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los aros de ceboola",
+
+        codigo: "",
+        stock: null
     }
 ];
 
