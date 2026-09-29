@@ -842,12 +842,71 @@ let slides = [];
 let puntos = [];
 let temporizador;
 
-
+        // ============================================
+// CARRUSEL AUTOMÁTICO DE PRODUCTOS
 // ============================================
-// AGREGAR PRODUCTOS DESTACADOS AL CARRUSEL
-// ============================================
 
-function agregarDestacadosAlCarrusel() {
+const CANTIDAD_PRODUCTOS_CARRUSEL = 6;
+
+let productosRondaAnterior = new Set();
+
+
+function obtenerProductosAleatorios() {
+
+    // Productos que sí pueden aparecer
+    const productosDisponibles =
+        productosChinaMart.filter(producto => {
+
+            const categoria =
+                detectarCategoriaProducto(producto);
+
+            return (
+                producto.imagen &&
+                categoria &&
+                producto.soloMayores !== true
+            );
+
+        });
+
+
+    // Evitamos repetir inmediatamente
+    // los productos de la ronda anterior
+    let candidatos =
+        productosDisponibles.filter(producto =>
+            !productosRondaAnterior.has(producto.imagen)
+        );
+
+
+    // Por si algún día hay pocos productos
+    if (candidatos.length < CANTIDAD_PRODUCTOS_CARRUSEL) {
+        candidatos = productosDisponibles;
+    }
+
+
+    // Mezclamos los productos
+    candidatos.sort(() => Math.random() - 0.5);
+
+
+    // Elegimos solamente 6
+    const seleccion =
+        candidatos.slice(
+            0,
+            CANTIDAD_PRODUCTOS_CARRUSEL
+        );
+
+
+    // Guardamos cuáles salieron
+    productosRondaAnterior =
+        new Set(
+            seleccion.map(producto => producto.imagen)
+        );
+
+
+    return seleccion;
+}
+
+
+function cargarProductosCarrusel() {
 
     const carrusel =
         document.querySelector(".carrusel");
@@ -859,221 +918,217 @@ function agregarDestacadosAlCarrusel() {
         carrusel.querySelector(".flecha-izquierda");
 
 
-    // Imágenes que ya aparecen en los slides antiguos.
-    // Así evitamos duplicarlas.
-    const imagenesExistentes = new Set(
-        Array.from(
-            carrusel.querySelectorAll(
-                ".slide .producto img"
-            )
-        ).map(
-            imagen =>
-                imagen.getAttribute("src")
-        )
+    // Quitar los productos anteriores
+    carrusel
+        .querySelectorAll(".slide")
+        .forEach(slide => slide.remove());
+
+
+    // Quitar los puntos anteriores
+    controles.innerHTML = "";
+
+
+    // Elegir productos nuevos
+    const productosElegidos =
+        obtenerProductosAleatorios();
+
+
+    productosElegidos.forEach(
+        (producto, indice) => {
+
+            const idCategoria =
+                detectarCategoriaProducto(producto);
+
+
+            const datosCategoria =
+                categoriasChinaMart[idCategoria] || {
+                    nombre: idCategoria,
+                    icono: "🛍️"
+                };
+
+
+            // Características propias o genéricas
+            const caracteristicas =
+                producto.caracteristicas &&
+                producto.caracteristicas.length
+                    ? producto.caracteristicas.slice(0, 4)
+                    : [
+                        {
+                            icono: "✓",
+                            texto: "Disponible en tienda"
+                        },
+                        {
+                            icono: "★",
+                            texto: "Variedad disponible"
+                        },
+                        {
+                            icono: "+",
+                            texto: "Conoce más"
+                        }
+                    ];
+
+
+            const caracteristicasHTML =
+                caracteristicas.map(
+                    caracteristica => `
+                        <div class="caracteristica">
+
+                            <div class="circulo">
+                                ${caracteristica.icono || "✓"}
+                            </div>
+
+                            ${caracteristica.texto || ""}
+
+                        </div>
+                    `
+                ).join("");
+
+
+            // Crear slide
+            const slide =
+                document.createElement("div");
+
+            slide.className = "slide";
+
+
+            slide.innerHTML = `
+
+                <div class="texto">
+
+                    <div class="frase">
+                        ${
+                            producto.frase ||
+                            "Descubre algo especial"
+                        }
+                    </div>
+
+                    <h1>
+
+                        ${
+                            producto.titulo ||
+                            producto.nombre
+                        }
+
+                        ${
+                            producto.tituloDestacado
+                                ? `<span>${producto.tituloDestacado}</span>`
+                                : ""
+                        }
+
+                    </h1>
+
+                    <p class="descripcion">
+
+                        ${
+                            producto.descripcion ||
+                            "Conoce este producto disponible en China Mart Mollendo."
+                        }
+
+                    </p>
+
+
+                    <div class="caracteristicas">
+
+                        ${caracteristicasHTML}
+
+                    </div>
+
+
+                    <a
+                        class="boton"
+                        href="categorias.html#${encodeURIComponent(idCategoria)}"
+                    >
+
+                        ${datosCategoria.icono || "🛍️"}
+                        Ver categoría
+
+                    </a>
+
+                </div>
+
+
+                <div class="producto">
+
+                    <img
+                        src="${producto.imagen}"
+                        alt="${producto.nombre}"
+                    >
+
+                </div>
+            `;
+
+
+            carrusel.insertBefore(
+                slide,
+                flechaIzquierda
+            );
+
+
+            // Crear puntito
+            const punto =
+                document.createElement("button");
+
+            punto.className =
+                "punto-carrusel";
+
+            punto.setAttribute(
+                "aria-label",
+                producto.nombre
+            );
+
+
+            punto.addEventListener(
+                "click",
+                function() {
+
+                    irSlide(indice);
+
+                }
+            );
+
+
+            controles.appendChild(punto);
+
+        }
     );
 
 
-    const productosDestacados =
-        productosChinaMart.filter(
-            producto =>
-                producto.destacado === true &&
-                producto.imagen &&
-                !imagenesExistentes.has(
-                    producto.imagen
-                )
-        );
-
-
-    productosDestacados.forEach(producto => {
-
-        const idCategoria =
-            detectarCategoriaProducto(producto);
-
-        if (!idCategoria) {
-            return;
-        }
-
-
-        const datosCategoria =
-            categoriasChinaMart[idCategoria] || {
-                nombre: idCategoria,
-                icono: "🛍️"
-            };
-
-
-        // Si olvidamos poner características,
-        // muestra unas genéricas para no dejarlo vacío.
-        const caracteristicas =
-            producto.caracteristicas &&
-            producto.caracteristicas.length
-                ? producto.caracteristicas.slice(0, 4)
-                : [
-                    {
-                        icono: "✓",
-                        texto: "Producto destacado"
-                    },
-                    {
-                        icono: "★",
-                        texto: "Variedad disponible"
-                    },
-                    {
-                        icono: "+",
-                        texto: "Consulta en tienda"
-                    }
-                ];
-
-
-        const caracteristicasHTML =
-            caracteristicas.map(
-                caracteristica => `
-                    <div class="caracteristica">
-
-                        <div class="circulo">
-                            ${caracteristica.icono || "✓"}
-                        </div>
-
-                        ${caracteristica.texto || ""}
-
-                    </div>
-                `
-            ).join("");
-
-
-        const slide =
-            document.createElement("div");
-
-        slide.className = "slide";
-
-
-        slide.innerHTML = `
-
-            <div class="texto">
-
-                <div class="frase">
-                    ${producto.frase ||
-                    "Descubre algo especial"}
-                </div>
-
-                <h1>
-
-                    ${producto.titulo ||
-                    producto.nombre}
-
-                    ${
-                        producto.tituloDestacado
-                            ? `<span>${producto.tituloDestacado}</span>`
-                            : ""
-                    }
-
-                </h1>
-
-                <p class="descripcion">
-
-                    ${producto.descripcion ||
-                    "Conoce este producto disponible en China Mart Mollendo."}
-
-                </p>
-
-                <div class="caracteristicas">
-
-                    ${caracteristicasHTML}
-
-                </div>
-
-                <a
-                    class="boton"
-                    href="categorias.html#${encodeURIComponent(idCategoria)}"
-                >
-
-                    ${datosCategoria.icono || "🛍️"}
-                    Ver categoría
-
-                </a>
-
-            </div>
-
-
-            <div class="producto">
-
-                <img
-                    src="${producto.imagen}"
-                    alt="${producto.nombre}"
-                >
-
-            </div>
-        `;
-
-
-        // Se agrega antes de las flechas.
-        carrusel.insertBefore(
-            slide,
-            flechaIzquierda
-        );
-
-
-        // Crear también su puntito.
-        const numeroSlide =
-            carrusel.querySelectorAll(
-                ".slide"
-            ).length - 1;
-
-
-        const punto =
-            document.createElement("button");
-
-        punto.className =
-            "punto-carrusel";
-
-        punto.setAttribute(
-            "aria-label",
-            producto.nombre
-        );
-
-
-        punto.addEventListener(
-            "click",
-            function() {
-
-                irSlide(numeroSlide);
-
-            }
-        );
-
-
-        controles.appendChild(punto);
-
-    });
-
-
-    // Actualizar las listas después
-    // de agregar los productos nuevos.
+    // Actualizar listas
     slides =
         Array.from(
-            document.querySelectorAll(".slide")
+            carrusel.querySelectorAll(".slide")
         );
+
 
     puntos =
         Array.from(
-            document.querySelectorAll(
+            controles.querySelectorAll(
                 ".punto-carrusel"
             )
         );
-    // Mostrar automáticamente el primer producto
-if (slides.length > 0) {
-    mostrarSlide(0);
-}
+
+
+    slideActual = 0;
+
+
+    if (slides.length > 0) {
+
+        mostrarSlide(0);
+
+    }
 
 
     console.log(
-        "⭐ Productos destacados cargados:",
-        productosDestacados.length
+        "🎠 Nueva ronda del carrusel:",
+        productosElegidos.length,
+        "productos"
     );
 
 }
 
 
-// Ejecutamos la carga de destacados.
-agregarDestacadosAlCarrusel();
+// Primera carga
+cargarProductosCarrusel();
 
         function mostrarSlide(numero) {
             slides.forEach(slide => slide.classList.remove("active"));
@@ -1096,10 +1151,24 @@ agregarDestacadosAlCarrusel();
         }
 
         function iniciarCarrusel() {
-            temporizador = setInterval(() => {
-                mostrarSlide(slideActual + 1);
-            }, 5000);
+
+    temporizador = setInterval(() => {
+
+        // Si llegó al último producto,
+        // carga una ronda completamente nueva
+        if (slideActual === slides.length - 1) {
+
+            cargarProductosCarrusel();
+
+        } else {
+
+            mostrarSlide(slideActual + 1);
+
         }
+
+    }, 5000);
+
+}
 
         function reiniciarCarrusel() {
             clearInterval(temporizador);
