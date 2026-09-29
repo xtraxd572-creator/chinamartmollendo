@@ -2385,7 +2385,7 @@ const productosChinaMart = [
             "facial",
             "uva"
             ],
-        mensaje: "Hola, quisiera consultar por la mascarilla de uva",
+        mansaje: "Hola, quisiera consultar por la mascarilla de uva",
 
         codigo: "",
         stock: null
@@ -2804,7 +2804,7 @@ const productosChinaMart = [
         imagen: "fideos_instantaneos_en_vaso.png",
         categoria: "alimentos y condimentos asiaticos",
 
-        palabrasClave: [
+        palabraClave: [
             "fideos",
             "vaso",
             "instantaneos"
@@ -2813,7 +2813,6 @@ const productosChinaMart = [
         mensaje: "Hola, quisiera consultar por los fideos instantaneos en vaso",
 
         codigo: "",
-    
         stock: null
     },
     {
@@ -2967,7 +2966,7 @@ const productosChinaMart = [
             "shin ramyun"
 
             ],
-        mensaje: "Hola, quisiera consultar por los fideos instantaneos sabores buldak picante extremo y el shin ramyun",
+        mansaje: "Hola, quisiera consultar por los fideos instantaneos sabores buldak picante extremo y el shin ramyun",
 
         codigo: "",
         stock: null
@@ -3886,41 +3885,6 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    },
-    {
-        nombre: "plato hondo blanco y plato redondo blanco con borde azul",
-        imagen: "platos_para_tu_mesa.png",
-        categoria: "platos asiaticos",
-
-        palabrasClave: [
-            "platos",
-            "hondo",
-            "redondo"
-            "azul",
-            "blanco"
-
-            ],
-        mensaje: "Hola, quisiera consultar por los platos blanco y bordes azules",
-
-        codigo: "",
-        stock: null
-    },
-    {
-        nombre: "platos estilo oriental, eleganica y practicidad",
-        imagen: "platos_estilo_oriental.png",
-        categoria: "platos asiaticos",
-
-        palabrasClave: [
-            "platos",
-            "oriental",
-            "elegancia",
-            "estilo"
-
-            ],
-        mensaje: "Hola, quisiera consultar por los platos estilo oriental",
-
-        codigo: "",
-        stock: null
     }
 ];
 
@@ -4073,18 +4037,6 @@ const categoriasChinaMart = {
         "china",
         "coreano",
         "coreana"
-    ]
-},
-    "platos asiaticos": {
-    nombre: "Platos Asiáticos",
-    icono: "🍽️",
-    palabras: [
-        "plato",
-        "platos",
-        "asiatico",
-        "asiático",
-        "chino",
-        "china"
     ]
 }
     };
