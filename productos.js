@@ -4075,7 +4075,7 @@ const categoriasChinaMart = {
         "coreana"
     ]
 },
-    "Platos Asiáticos":{
+    "Platos Asiáticos": {
         nombre: "Platos Asiáticos",
         icono: "🍽️",
         palabras: [
