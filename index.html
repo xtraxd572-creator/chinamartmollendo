@@ -1049,10 +1049,12 @@ function cargarProductosCarrusel() {
 
                 <div class="producto">
 
-                    <img
-                        src="${producto.imagen}"
-                        alt="${producto.nombre}"
-                    >
+                   <img
+    src="${producto.imagen}"
+    alt="${producto.nombre}"
+    loading="${indice === 0 ? "eager" : "lazy"}"
+    decoding="async"
+>
 
                 </div>
             `;
