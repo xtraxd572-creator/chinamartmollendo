@@ -3888,7 +3888,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "plato hondo blanco y plato redondo blanco con borde azul":,
+        nombre: "plato hondo blanco y plato redondo blanco con borde azul",
         imagen: "platos_para_tu_mesa.png",
         categoria: "platos asiaticos",
 
