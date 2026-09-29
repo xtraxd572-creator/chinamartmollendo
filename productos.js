@@ -3861,7 +3861,7 @@ const productosChinaMart = [
             "potato",
             "shrimp",
             "cracker",
-            "picante".
+            "picante",
             "camaron"
 
             ],
