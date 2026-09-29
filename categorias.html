@@ -1379,6 +1379,8 @@ function crearTarjetaProducto(producto) {
     imagen.alt =
         producto.nombre +
         " - China Mart Mollendo";
+    imagen.loading = "lazy";
+    imagen.decoding = "async";
 
 
     const boton = document.createElement("a");
