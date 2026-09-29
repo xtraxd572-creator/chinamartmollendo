@@ -3885,6 +3885,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "platos elegancia oriental para tu mesa",
+        imagen: "platos_para_tu_mesa.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "platos"
+            "elegancia",
+            "plato"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los platos de elegancia oriental",
+
+        codigo: "",
+        stock: null
     }
 ];
 
