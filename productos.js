@@ -3852,7 +3852,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "sweet potato y shrimp cracker",
+        nombre: "sweet potato y shrimp cracker picante",
         imagen: "dos_sabores.png",
         categoria: "alimentos y condimentos asiaticos",
 
@@ -3860,10 +3860,28 @@ const productosChinaMart = [
             "sweet",
             "potato",
             "shrimp",
-            "cracker"
+            "cracker",
+            "picante".
+            "camaron"
 
             ],
         mensaje: "Hola, quisiera consultar por los sweet potato y el shrimp cracker",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "shrimp crackers, autentico sabor a camaron",
+        imagen: "shirmp crackers_originales.png",
+        categoria: "alimentos y condimentos asiaticos",
+
+        palabrasClave: [
+            "shrimp",
+            "crackers",
+            "camaron"
+
+            ],
+        mensaje: "Hola, quisiera consultar po el shrimp crackers original",
 
         codigo: "",
         stock: null
