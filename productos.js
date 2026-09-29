@@ -3904,6 +3904,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "platos estilo oriental, eleganica y practicidad",
+        imagen: "platos_estilo_oriental.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "platos",
+            "oriental",
+            "elegancia",
+            "estilo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los platos estilo oriental",
+
+        codigo: "",
+        stock: null
     }
 ];
 
