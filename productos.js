@@ -3917,6 +3917,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato marmoleado",
+        imagen: "plato_marmoleado.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "marmoleado"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato marmoleado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
