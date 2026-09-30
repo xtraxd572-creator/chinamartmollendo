@@ -4018,6 +4018,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato diseño floral",
+        imagen: "plato_diseño_floral.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "floral"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato diseño floral",
+
+        codigo: "",
+        stock: null
     }
 ];
 
