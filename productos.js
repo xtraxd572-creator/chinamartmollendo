@@ -4034,6 +4034,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato diseño rosa, romanticismo y elegancia",
+        imagen: "plato_diseño_rosa.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "rosa",
+            "elegancia"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato diseño rosa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
