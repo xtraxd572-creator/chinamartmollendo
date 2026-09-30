@@ -4001,6 +4001,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato vintage de plumas",
+        imagen: "plato_vintage_de_plumas.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "vintage",
+            "plumas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato vintage de plumas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
