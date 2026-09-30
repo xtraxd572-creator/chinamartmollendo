@@ -4051,6 +4051,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bandejas decorativas, elegancia y estilo en cada presentacion",
+        imagen: "bandejas_decorativas.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "bandejas",
+            "decorativas",
+            "elegancia",
+            "estilo",
+            "rosa",
+            "pastel",
+            "azul",
+            "celeste",
+            "verde",
+            "lima"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las bandejas decorativas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
