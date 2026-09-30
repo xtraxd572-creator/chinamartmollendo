@@ -4110,6 +4110,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "tazones mosaico mediterraneo",
+        imagen: "tazones_mosaico_mediterraneo.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "tazones",
+            "mosaico",
+            "mediterraneo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los tazones mosaico mediterraneos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
