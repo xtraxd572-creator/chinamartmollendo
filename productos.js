@@ -4074,6 +4074,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato cuadrado dorado, elegancia moderna para tu mesa",
+        imagen: "plato_cuadrado_dorado.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "platos",
+            "plato",
+            "cuadrado",
+            "dorado",
+            "elegancia"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato cuadrado dorado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
