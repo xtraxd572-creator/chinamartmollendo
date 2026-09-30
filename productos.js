@@ -3984,6 +3984,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato con diseño tradicional y elegante",
+        imagen: "plato_diseño_tradicional_y_elegante.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "plato",
+            "tradicional",
+            "elegante"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato con diseño tradicional",
+
+        codigo: "",
+        stock: null
     }
 ];
 
