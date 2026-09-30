@@ -3892,7 +3892,7 @@ const productosChinaMart = [
         categoria: "platos asiaticos",
 
         palabrasClave: [
-            "platos"
+            "platos",
             "elegancia",
             "plato"
 
