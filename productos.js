@@ -3919,7 +3919,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "plato marmoleado",
+        nombre: "plato marmoleado, elegancia y estilo",
         imagen: "plato_marmoleado.png",
         categoria: "platos asiaticos",
 
@@ -3930,6 +3930,23 @@ const productosChinaMart = [
 
             ],
         mensaje: "Hola, quisiera consultar por el plato marmoleado",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "plato semihondo, elegancia y resistencia",
+        imagen: "plato_semihondo.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "semihondo",
+            "elegancia"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato semihondo",
 
         codigo: "",
         stock: null
