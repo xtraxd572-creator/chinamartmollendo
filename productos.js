@@ -3967,6 +3967,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato, diseño moderno y elegante",
+        imagen: "plato_diseño_moderno.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "moderno",
+            "elegante"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato, diseño moderno y elegante",
+
+        codigo: "",
+        stock: null
     }
 ];
 
