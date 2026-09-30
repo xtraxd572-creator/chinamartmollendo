@@ -4092,6 +4092,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bowl azul dorado, elegancia y estilo",
+        imagen: "bowl_azul_dorado.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "bowl",
+            "azul",
+            "dorado",
+            "elegancia",
+            "estilo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el bowl azul dorado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
