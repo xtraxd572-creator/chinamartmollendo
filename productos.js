@@ -3950,6 +3950,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato semihondo, elegancia y resistencia en cada comida",
+        imagen: "plato_semihondo_elegancia_y_resistencia.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "semihondo",
+            "elegancia",
+            "resistencia"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato semihondo, elegancia y resistencia",
+
+        codigo: "",
+        stock: null
     }
 ];
 
