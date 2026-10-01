@@ -4151,7 +4151,7 @@ const productosChinaMart = [
 
         palabrasClave: [
             "under",
-            "plato".
+            "plato",
             "platos",
             "coleccion"
 
