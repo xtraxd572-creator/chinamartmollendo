@@ -4194,6 +4194,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato kawaii de ositos",
+        imagen: "Plato_Kawaii_de_Ositos.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "kawaii",
+            "kawai",
+            "ositos",
+            "osito"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato kawaii de ositos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
