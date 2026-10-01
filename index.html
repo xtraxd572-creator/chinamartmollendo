@@ -708,7 +708,294 @@
                 padding: 14px;
             }
         }
+/* ============================================
+   MINI ASISTENTE CHINA MART
+   ============================================ */
 
+.asistente-china-mart {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 4500;
+}
+
+
+/* BOTÓN DEL DRAGÓN */
+
+.asistente-boton {
+    width: 78px;
+    height: 78px;
+
+    border: 3px solid #ed1c24;
+    border-radius: 50%;
+
+    background-color: white;
+
+    cursor: pointer;
+
+    padding: 4px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.asistente-boton:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.30);
+}
+
+
+.asistente-boton img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    border-radius: 50%;
+}
+
+
+/* VENTANA DEL ASISTENTE */
+
+.asistente-panel {
+    display: none;
+
+    position: absolute;
+
+    right: 0;
+    bottom: 92px;
+
+    width: 360px;
+    max-width: calc(100vw - 30px);
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,0.28);
+
+    border:
+        1px solid #dddddd;
+}
+
+
+.asistente-panel.activo {
+    display: block;
+}
+
+
+/* CABECERA */
+
+.asistente-cabecera {
+    background-color: #15191d;
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 16px;
+}
+
+
+.asistente-titulo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-weight: bold;
+}
+
+
+.asistente-avatar {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    padding: 3px;
+}
+
+
+.asistente-cerrar {
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* MENSAJES */
+
+.asistente-mensajes {
+    height: 310px;
+
+    overflow-y: auto;
+
+    padding: 15px;
+
+    background-color: #f4f4f4;
+}
+
+
+.mensaje-asistente {
+    max-width: 85%;
+
+    margin-bottom: 12px;
+
+    padding: 10px 13px;
+
+    border-radius: 14px;
+
+    line-height: 1.4;
+
+    font-size: 14px;
+}
+
+
+.mensaje-asistente.dragon {
+    background-color: white;
+
+    color: #15191d;
+
+    border:
+        1px solid #dddddd;
+}
+
+
+.mensaje-asistente.usuario {
+    margin-left: auto;
+
+    background-color: #ed1c24;
+
+    color: white;
+}
+
+
+/* ENLACES QUE ENVÍA EL DRAGÓN */
+
+.enlace-asistente {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #ed1c24;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.enlace-asistente:hover {
+    text-decoration: underline;
+}
+
+
+/* CAJA PARA ESCRIBIR */
+
+.asistente-formulario {
+    display: flex;
+
+    padding: 10px;
+
+    gap: 8px;
+
+    border-top:
+        1px solid #dddddd;
+
+    background-color: white;
+}
+
+
+.asistente-entrada {
+    flex: 1;
+
+    border:
+        1px solid #cccccc;
+
+    border-radius: 20px;
+
+    padding: 10px 14px;
+
+    outline: none;
+}
+
+
+.asistente-entrada:focus {
+    border-color: #ed1c24;
+}
+
+
+.asistente-enviar {
+    width: 42px;
+    height: 42px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #ed1c24;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+    .asistente-china-mart {
+        right: 12px;
+        bottom: 12px;
+    }
+
+
+    .asistente-panel {
+        position: fixed;
+
+        left: 12px;
+        right: 12px;
+
+        bottom: 100px;
+
+        width: auto;
+
+        max-width: none;
+    }
+
+
+    .asistente-boton {
+        width: 68px;
+        height: 68px;
+    }
+
+}
     </style>
 </head>
 
@@ -825,6 +1112,114 @@
         </div>
     </div>
 
+<!-- ============================================
+     MINI ASISTENTE CHINA MART
+     ============================================ -->
+
+<div class="asistente-china-mart">
+
+    <!-- Ventana del asistente -->
+
+    <div
+        id="panelAsistente"
+        class="asistente-panel"
+        aria-hidden="true"
+    >
+
+        <div class="asistente-cabecera">
+
+            <div class="asistente-titulo">
+
+                <img
+                    src="mascota_dragon_china_mart.png"
+                    alt="Dragón asistente de China Mart"
+                    class="asistente-avatar"
+                >
+
+                <span>
+                    Asistente China Mart
+                </span>
+
+            </div>
+
+
+            <button
+                id="cerrarAsistente"
+                class="asistente-cerrar"
+                aria-label="Cerrar asistente"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- Aquí aparecerán los mensajes -->
+
+        <div
+            id="mensajesAsistente"
+            class="asistente-mensajes"
+        >
+
+            <div class="mensaje-asistente dragon">
+
+                🐉 ¡Hola! Soy el asistente de China Mart.
+
+                <br><br>
+
+                Puedes preguntarme por productos,
+                categorías, ubicación o contacto.
+
+            </div>
+
+        </div>
+
+
+        <!-- Caja para escribir -->
+
+        <form
+            id="formAsistente"
+            class="asistente-formulario"
+        >
+
+            <input
+                id="entradaAsistente"
+                class="asistente-entrada"
+                type="text"
+                placeholder="Ejemplo: busco mochilas"
+                autocomplete="off"
+            >
+
+            <button
+                class="asistente-enviar"
+                type="submit"
+                aria-label="Enviar"
+            >
+                ➤
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Botón flotante -->
+
+    <button
+        id="botonAsistente"
+        class="asistente-boton"
+        aria-label="Abrir asistente"
+    >
+
+        <img
+            src="mascota_dragon_china_mart.png"
+            alt="Asistente China Mart"
+        >
+
+    </button>
+
+</div>
+    
     <footer>
         CALIDAD
         &nbsp; <span>•</span> &nbsp;
@@ -1253,6 +1648,11 @@ const categoriasBusqueda =
 
 const productosBusqueda =
     productosChinaMart
+
+        .filter(producto =>
+            producto.soloMayores !== true
+        )
+
         .map(producto => {
 
             const idCategoria =
@@ -1392,7 +1792,452 @@ console.log(
                 resultadosPrincipal.classList.remove("visible");
             }
         });
+// ============================================
+// MINI ASISTENTE CHINA MART
+// ============================================
 
+
+// Elementos del asistente
+
+const botonAsistente =
+    document.getElementById("botonAsistente");
+
+const panelAsistente =
+    document.getElementById("panelAsistente");
+
+const cerrarAsistente =
+    document.getElementById("cerrarAsistente");
+
+const mensajesAsistente =
+    document.getElementById("mensajesAsistente");
+
+const formAsistente =
+    document.getElementById("formAsistente");
+
+const entradaAsistente =
+    document.getElementById("entradaAsistente");
+
+
+// ============================================
+// ABRIR Y CERRAR
+// ============================================
+
+function abrirAsistente() {
+
+    panelAsistente.classList.add("activo");
+
+    panelAsistente.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+
+    entradaAsistente.focus();
+
+}
+
+
+function cerrarVentanaAsistente() {
+
+    panelAsistente.classList.remove("activo");
+
+    panelAsistente.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+}
+
+
+botonAsistente.addEventListener(
+    "click",
+    abrirAsistente
+);
+
+
+cerrarAsistente.addEventListener(
+    "click",
+    cerrarVentanaAsistente
+);
+
+
+// ============================================
+// MOSTRAR MENSAJES
+// ============================================
+
+function agregarMensajeAsistente(
+    texto,
+    tipo = "dragon",
+    enlace = null
+) {
+
+    const mensaje =
+        document.createElement("div");
+
+
+    mensaje.className =
+        "mensaje-asistente " + tipo;
+
+
+    // textContent evita interpretar
+    // el mensaje como código HTML.
+
+    mensaje.textContent = texto;
+
+
+    // Si queremos mostrar un botón o enlace
+
+    if (enlace) {
+
+        const boton =
+            document.createElement("a");
+
+
+        boton.className =
+            "enlace-asistente";
+
+
+        boton.href =
+            enlace.url;
+
+
+        boton.textContent =
+            enlace.texto;
+
+
+        mensaje.appendChild(boton);
+
+    }
+
+
+    mensajesAsistente.appendChild(
+        mensaje
+    );
+
+
+    // Llevar el scroll al último mensaje
+
+    mensajesAsistente.scrollTop =
+        mensajesAsistente.scrollHeight;
+
+}
+
+
+// ============================================
+// PALABRAS ÚTILES DE LA CONSULTA
+// ============================================
+
+function obtenerPalabrasConsulta(texto) {
+
+    const palabrasIgnoradas = [
+        "busco",
+        "buscar",
+        "quiero",
+        "quisiera",
+        "tienen",
+        "tiene",
+        "hay",
+        "necesito",
+        "para",
+        "una",
+        "uno",
+        "unos",
+        "unas",
+        "algo",
+        "por",
+        "favor",
+        "estoy",
+        "buscando"
+    ];
+
+
+    return normalizarTexto(texto)
+        .split(/\s+/)
+        .filter(palabra =>
+            palabra.length > 2 &&
+            !palabrasIgnoradas.includes(palabra)
+        );
+
+}
+
+
+// ============================================
+// BUSCAR PRODUCTOS
+// ============================================
+
+function buscarProductosAsistente(consulta) {
+
+    const palabras =
+        obtenerPalabrasConsulta(consulta);
+
+
+    if (palabras.length === 0) {
+        return [];
+    }
+
+
+    return productosBusqueda
+
+        .map(producto => {
+
+            const textoProducto =
+                normalizarTexto(
+                    producto.nombre + " " +
+                    producto.categoria + " " +
+                    (
+                        producto.palabrasClave || []
+                    ).join(" ")
+                );
+
+
+            let puntos = 0;
+
+
+            palabras.forEach(palabra => {
+
+                if (
+                    textoProducto.includes(
+                        palabra
+                    )
+                ) {
+
+                    puntos++;
+
+                }
+
+            });
+
+
+            return {
+                producto: producto,
+                puntos: puntos
+            };
+
+        })
+
+
+        // Solamente dejamos coincidencias
+
+        .filter(resultado =>
+            resultado.puntos > 0
+        )
+
+
+        // Los mejores resultados primero
+
+        .sort(
+            (a, b) =>
+                b.puntos - a.puntos
+        )
+
+
+        // Máximo tres productos
+
+        .slice(0, 3)
+
+        .map(resultado =>
+            resultado.producto
+        );
+
+}
+
+
+// ============================================
+// RESPUESTA DEL DRAGÓN
+// ============================================
+
+function responderAsistente(consulta) {
+
+    const texto =
+        normalizarTexto(consulta);
+
+
+    // SALUDO
+
+    if (
+        texto === "hola" ||
+        texto === "buenas" ||
+        texto.includes("buenos dias") ||
+        texto.includes("buenas tardes")
+    ) {
+
+        agregarMensajeAsistente(
+            "🐉 ¡Hola! ¿Qué producto estás buscando?"
+        );
+
+        return;
+
+    }
+
+
+    // UBICACIÓN
+
+    if (
+        texto.includes("ubicacion") ||
+        texto.includes("direccion") ||
+        texto.includes("donde queda") ||
+        texto.includes("como llegar")
+    ) {
+
+        agregarMensajeAsistente(
+
+            "📍 Puedes consultar la ubicación de China Mart Mollendo aquí:",
+
+            "dragon",
+
+            {
+                texto:
+                    "Ver ubicación",
+
+                url:
+                    "https://maps.app.goo.gl/TEqRencCkYtUKrMA9"
+            }
+
+        );
+
+        return;
+
+    }
+
+
+    // CONTACTO
+
+    if (
+        texto.includes("whatsapp") ||
+        texto.includes("contacto") ||
+        texto.includes("telefono")
+    ) {
+
+        agregarMensajeAsistente(
+
+            "💬 Puedes comunicarte con China Mart mediante WhatsApp.",
+
+            "dragon",
+
+            {
+                texto:
+                    "Abrir WhatsApp",
+
+                url:
+                    "https://wa.me/51914236008"
+            }
+
+        );
+
+        return;
+
+    }
+
+
+    // BUSCAR PRODUCTOS
+
+    const encontrados =
+        buscarProductosAsistente(
+            consulta
+        );
+
+
+    if (encontrados.length > 0) {
+
+        agregarMensajeAsistente(
+            "🐉 Encontré " +
+            encontrados.length +
+            (
+                encontrados.length === 1
+                    ? " producto relacionado:"
+                    : " productos relacionados:"
+            )
+        );
+
+
+        encontrados.forEach(
+            producto => {
+
+                agregarMensajeAsistente(
+
+                    "🛍️ " +
+                    producto.nombre +
+                    "\n" +
+                    producto.categoria,
+
+                    "dragon",
+
+                    {
+                        texto:
+                            "Ver producto",
+
+                        url:
+                            "categorias.html?buscar=" +
+                            encodeURIComponent(
+                                producto.nombre
+                            ) +
+                            "#" +
+                            encodeURIComponent(
+                                producto.id
+                            )
+                    }
+
+                );
+
+            }
+        );
+
+
+        return;
+
+    }
+
+
+    // SI NO ENCUENTRA NADA
+
+    agregarMensajeAsistente(
+        "🐉 No encontré un producto con esa búsqueda. Prueba escribiendo algo como “mochila”, “mascarilla”, “juguetes” o “platos”."
+    );
+
+}
+
+
+// ============================================
+// CUANDO EL USUARIO ENVÍA EL MENSAJE
+// ============================================
+
+formAsistente.addEventListener(
+    "submit",
+    function(event) {
+
+        event.preventDefault();
+
+
+        const consulta =
+            entradaAsistente.value.trim();
+
+
+        if (!consulta) {
+            return;
+        }
+
+
+        // Mostrar lo que escribió el usuario
+
+        agregarMensajeAsistente(
+            consulta,
+            "usuario"
+        );
+
+
+        // Limpiar la caja
+
+        entradaAsistente.value = "";
+
+
+        // Responder
+
+        responderAsistente(
+            consulta
+        );
+
+    }
+);
         iniciarCarrusel();
 
     </script>
