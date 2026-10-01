@@ -4126,6 +4126,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato botanero dividino, practico y elegante",
+        imagen: "Plato_Botanero_Dividido_ChinAmart_Mollendo.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "platos",
+            "plato",
+            "botanero",
+            "dividino"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato botanero dividino",
+
+        codigo: "",
+        stock: null
     }
 ];
 
