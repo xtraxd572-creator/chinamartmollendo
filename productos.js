@@ -4177,6 +4177,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "plato rustico terra",
+        imagen: "Plato_Rústico_Terra_en_Mollendo.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "plato",
+            "platos",
+            "rustico",
+            "terra"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el plato rustico terra",
+
+        codigo: "",
+        stock: null
     }
 ];
 
