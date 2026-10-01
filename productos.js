@@ -4143,6 +4143,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "coleccion under the sea",
+        imagen: "Colección_Under_the_Sea_Chinamart _Mollendo.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "under",
+            "plato".
+            "platos",
+            "coleccion"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la coleccion under the sea",
+
+        codigo: "",
+        stock: null
     }
 ];
 
