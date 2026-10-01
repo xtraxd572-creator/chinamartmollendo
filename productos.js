@@ -4160,6 +4160,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "tazon floral delicado, detalle encatador",
+        imagen: "Tazón_floral_delicado_para_tu_mesa.png",
+        categoria: "platos asiaticos",
+
+        palabrasClave: [
+            "tazon",
+            "floral",
+            "delicado",
+            "encantador"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el tazon floral delicado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
