@@ -2041,10 +2041,18 @@ function buscarProductosAsistente(consulta) {
 
 }
 
+// MEMORIA SIMPLE DEL ASISTENTE
 
-// ============================================
+const memoriaAsistente = {
+
+    ultimaConsulta: "",
+
+    ultimaCategoria: "",
+
+    ultimosProductos: []
+
+};
 // RESPUESTA DEL DRAGÓN
-// ============================================
 
 function responderAsistente(consulta) {
 
