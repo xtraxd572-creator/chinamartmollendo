@@ -4480,6 +4480,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, pelota rugby con sonido, pelota erizo con sonido y pelota de pata con sonido",
+        imagen: "Juguetes_coloridos_para_mascotas _felices_y_amistosos.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "mascota",
+            "rugby",
+            "erizo",
+            "pata",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes de pelota rugby con sonido, la pelota erizo con sonido y la pelota de pata con sonido",
+
+        codigo: "",
+        stock: null
     }
 ];
 
