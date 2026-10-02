@@ -4415,6 +4415,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, hueso masticable, pelota erizo azul y pelota monstruo",
+        imagen: "Juguetes_divertidos_para_mascotas_feliz.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "mascota",
+            "hueso",
+            "masticable",
+            "erizo",
+            "monstruo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes hueso masticable, pelota erizo azul y la pelota monstruo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
