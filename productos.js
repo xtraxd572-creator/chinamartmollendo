@@ -4436,6 +4436,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, perrito con sonido, pelota erizo y pelota con textura",
+        imagen: "Juguetes_coloridos_para_mascotas_y_perros.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "perrito",
+            "pelota",
+            "erizo",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes de perrito con sonido, pelota erizo y la pelota con textura",
+
+        codigo: "",
+        stock: null
     }
 ];
 
