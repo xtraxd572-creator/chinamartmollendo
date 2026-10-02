@@ -4603,6 +4603,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "arnes y correa para mascotas, seguridad, comodidad y libertad",
+        imagen: "Arnés_y_Correa_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "arnes",
+            "correa",
+            "mascotas",
+            "seguridad",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el arnes y correa para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
