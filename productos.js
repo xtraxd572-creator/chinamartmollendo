@@ -4502,6 +4502,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para tus mascotas, hueso con textura unica y hueso masticable unica",
+        imagen: "Juguetes_coloridos_para_mascotas_felices_perros.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "mascota",
+            "hueso",
+            "huesos",
+            "masticable",
+            "textura"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los huesos con textura unica y el hueso masticable unico",
+
+        codigo: "",
+        stock: null
     }
 ];
 
