@@ -4584,6 +4584,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguete de pollo con sonido y juguete masticable con textura",
+        imagen: "Juguetes_Coloridos_para_Mascotas_se.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguete",
+            "juguetes",
+            "mascotas",
+            "masticable",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por lso juguetes de pollo con sonido y el juguete masticable con textura",
+
+        codigo: "",
+        stock: null
     }
 ];
 
