@@ -4523,6 +4523,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, hueso masticable, hueso con textura y dona masticable",
+        imagen: "Juguetes_coloridos_para_mascotas_perros.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "mascota",
+            "hueso",
+            "masticable",
+            "textura",
+            "dona",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes de hueso masticable, hueso con textura y la dona masticable",
+
+
+        codigo: "",
+        stock: null
     }
 ];
 
