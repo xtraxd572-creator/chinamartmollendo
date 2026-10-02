@@ -4279,6 +4279,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pelotas aparencia cerdito, popo y perrito, diseños divertidos para su entretenimiento",
+        imagen: "Juguetes_Coloridos_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "pelotas",
+            "cerdito",
+            "popo",
+            "perrito",
+            "mascotas",
+            "perro",
+            "perros"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pelotas cerdito, popo y perrito",
+
+        codigo: "",
+        stock: null
     }
 ];
 
