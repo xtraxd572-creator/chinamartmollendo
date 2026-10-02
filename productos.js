@@ -4545,6 +4545,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, pelotas con cascabel y set de pelotas con textura",
+        imagen: "Juguetes_Divertidos_para_Mascotas_sip.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "mascotas",
+            "mascota",
+            "pelotas",
+            "pelota",
+            "set",
+            "cascabel"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pelotas con cascabel y el set de pelotas con textura",
+
+        codigo: "",
+        stock: null
     }
 ];
 
