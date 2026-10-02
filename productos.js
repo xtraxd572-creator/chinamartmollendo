@@ -4299,6 +4299,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes tipos pelotas erizo, caracol y monstruo",
+        imagen: "Juguetes_divertidos_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "pelotas",
+            "erizo",
+            "caracol",
+            "monstruo",
+            "perros",
+            "perro",
+            "mascotas",
+            "mascota"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pelotas tipo erizo, caracol y monstruo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
