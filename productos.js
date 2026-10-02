@@ -4369,6 +4369,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+
+        nombre: "juguetes para mascotas, pelota rugby, pelota basquet y pochoclo",
+        imagen: "Juguetes_para_mascotas_con_perro_feliz.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "mascota",
+            "pelota",
+            "pelotas",
+            "rugby",
+            "basquet",
+            "pochoclo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes para mascota, pelota rugby, pelota basquet y el pochoclo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
