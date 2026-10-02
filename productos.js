@@ -4258,6 +4258,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "bloque pet y hueso erizo, diversion y cuidado para tu mascota",
+        imagen: "Juguetes_divertidos_para_mascotas_felices.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "bloque",
+            "pet",
+            "hueso",
+            "erizo",
+            "perro",
+            "perros",
+            "mascota",
+            "mascotas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes de mascotas bloque pet y hueso erizo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
