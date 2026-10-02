@@ -4457,6 +4457,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, raton en queso con sonido, pelota rugby y pelota de peluche",
+        imagen: "Juguetes_divertidos_para_mascotas_y_animales.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "mascota",
+            "raton",
+            "queso",
+            "pelota",
+            "pelotas",
+            "rugby",
+            "peluche"
+
+            ],
+        mensaje: "Hola, quisiera consultar por lo juguetes de raton en queso con sonido, la pelota rugby y la semipelota de peluche",
+
+        codigo: "",
+        stock: null
     }
 ];
 
