@@ -4568,7 +4568,7 @@ const productosChinaMart = [
     },
     {
         nombre: "juguete para tu mascota, juguete codo masticable y resistente",
-        imagen: "Juguete_Helado _para _Mascotas.png",
+        imagen: "Juguete_Helado_para_Mascotas.png",
         categoria: "mascotas",
 
         palabrasClave: [
