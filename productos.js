@@ -4345,6 +4345,30 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, pelota crater, pelota erizo resistente y gato con textura",
+        imagen: "Juguetes_divertidos_para_animales.png",
+        categoria: "mascotas",
+
+
+        palabrasClave: [
+            "juguetes",
+            "mascotas",
+            "mascota",
+            "pelota",
+            "pelotas",
+            "erizo",
+            "perros",
+            "perro",
+            "gato",
+            "textura"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes pelotas crater, pelota erizo resistente y gato con textura",
+
+        codigo: "",
+        stock: null
     }
 ];
 
