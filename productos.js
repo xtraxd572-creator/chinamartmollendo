@@ -4213,6 +4213,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para tus mascotas, diversion y cuidado para tu mascota",
+        imagen: "Juguetes_resistentes_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascota",
+            "mascotas",
+            "juguetes",
+            "juguete",
+            "entretenimiento"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes interactivos hueso, balon y mancuerna",
+
+        codigo: "",
+        stock: null
     }
 ];
 
