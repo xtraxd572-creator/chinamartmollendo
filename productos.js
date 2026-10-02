@@ -4215,7 +4215,7 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "juguetes para tus mascotas, diversion y cuidado para tu mascota",
+        nombre: "Set de juguetes para mascotas",
         imagen: "Juguetes_resistentes_para_mascotas.png",
         categoria: "mascotas",
 
@@ -4224,10 +4224,37 @@ const productosChinaMart = [
             "mascotas",
             "juguetes",
             "juguete",
+            "perro",
+            "pelota",
+            "hueso",
+            "masticable",
             "entretenimiento"
 
             ],
         mensaje: "Hola, quisiera consultar por los juguetes interactivos hueso, balon y mancuerna",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "Pack de juguetes masticables para perros",
+        imagen: "Juguetes_coloridos_para_mascotas_felices.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascota",
+            "mascotas",
+            "perro",
+            "perros",
+            "juguetes",
+            "juguete",
+            "pelota",
+            "hueso",
+            "masticable",
+            "entretenimiento"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el pack de juguetes masticables para perros",
 
         codigo: "",
         stock: null
