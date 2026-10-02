@@ -4321,6 +4321,30 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, apariencia pelota multitextura, hueso con textura y helado masticable",
+        imagen: "Juguetes_coloridos_para_perros.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "mascota",
+            "pelotas",
+            "pelota",
+            "hueso",
+            "helado",
+            "perros",
+            "perro"
+
+
+            ],
+        mensaje: "Hola, quisiera consultar por lo juguetes con aparencia multitextura, hueso con textura y helado masticable",
+
+        codigo: "",
+        stock: null
     }
 ];
 
