@@ -4392,6 +4392,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguetes para mascotas, vaca con sonido, pelota rugby amarilla y zanahoria con sonido",
+        imagen: "Juguetes_divertidos_para_mascotas_con_perro_feliz.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "mascotas",
+            "mascota",
+            "vaca",
+            "rugby",
+            "amarillo",
+            "zanahoria",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes vaca con sonido, pelota rugby amarilla y la zanahoria con sonido",
+
+        codigo: "",
+        stock: null
     }
 ];
 
