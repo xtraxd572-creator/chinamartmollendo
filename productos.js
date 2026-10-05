@@ -4622,6 +4622,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "arnes para mascotas,pet show, estilo, comodidad y seguridad",
+        imagen: "Arnés_colorido_para_mascotas_felices.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "arnes",
+            "mascotas",
+            "mascota",
+            "perro",
+            "perros",
+            "correa"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el arnes pet show",
+
+        codigo: "",
+        stock: null
     }
 ];
 
