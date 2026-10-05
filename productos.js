@@ -4660,6 +4660,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pecheras y arneses para mascotas, variedad de diseños",
+        imagen: "Pecheras_y_arneses_para_mascotas_se.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "pecheras",
+            "arneses",
+            "mascotas",
+            "mascota",
+            "perro",
+            "perros",
+            "gato",
+            "gatos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pecheras y las arneses para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
