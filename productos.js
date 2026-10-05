@@ -4641,6 +4641,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "arnes para mascotas, comodidad y seguridad, arnes pet",
+        imagen: "Arnés_para_mascotas_ comodidad_y_estilo.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "arnes",
+            "mascotas",
+            "mascota",
+            "perros",
+            "perro",
+            "correa"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el arnes para mascotas pet azul",
+
+        codigo: "",
+        stock: null
     }
 ];
 
