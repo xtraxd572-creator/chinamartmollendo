@@ -4681,6 +4681,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "arnes mochila para mascotas, diseño unico y comodidad",
+        imagen: "Arnés_Mochila_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "arnes",
+            "mochila",
+            "mascotas",
+            "mascota",
+            "perro",
+            "perros",
+            "gato",
+            "gatos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el arnes de mochila para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
