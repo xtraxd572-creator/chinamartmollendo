@@ -4808,6 +4808,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pechera azul para mascotas, suave y comodo",
+        imagen: "Pechera_Azul_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "pechera",
+            "azul",
+            "mascotas",
+            "mascota",
+            "perros",
+            "perro",
+            "gatos",
+            "gato" 
+
+            ],
+        mensaje: "Hola, quisiera consultar por la pechera azul para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
