@@ -4722,6 +4722,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pecheras y arnes para mascotas, estilo unico para tu mascota",
+        imagen: "Pecheras_y_arneses_con_estilo_y_comodidad.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "mascota",
+            "pecheras",
+            "arnes",
+            "perro",
+            "perros",
+            "gato",
+            "gatos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pecheras y arnes para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
