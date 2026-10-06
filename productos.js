@@ -4765,6 +4765,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pecheras y arneses para tus mascotas, colores, comodidad y estilo",
+        imagen: "Pecheras_Coloridas_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "pecheras",
+            "arneses",
+            "mascotas",
+            "mascota",
+            "perros",
+            "perro",
+            "gato",
+            "gatos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pecheras y arneses de colores y mas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
