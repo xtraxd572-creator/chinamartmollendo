@@ -4743,6 +4743,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pechera y arnes ola, comodidad y estilo",
+        imagen: "Pechera_y_Arnés_para_Paseos.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "pechera",
+            "mascota",
+            "arnes",
+            "ola",
+            "perros",
+            "perro",
+            "gato",
+            "gatos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por le pechera y arnes ola",
+
+        codigo: "",
+        stock: null
     }
 ];
 
