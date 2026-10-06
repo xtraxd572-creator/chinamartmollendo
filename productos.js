@@ -4786,6 +4786,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "arneses y correa para mascotas, estilo y seguridad",
+        imagen: "Arneses_coloridos_para_mascotas_felices.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "mascota",
+            "arneses",
+            "correa",
+            "correas",
+            "perros",
+            "perro",
+            "gato",
+            "gatos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los arneses y correas para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
