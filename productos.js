@@ -4605,231 +4605,235 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "arnes y correa para mascotas, seguridad, comodidad y libertad",
-        imagen: "Arnés_y_Correa_para_Mascotas.png",
-        categoria: "mascotas",
+    nombre: "Arnés con correa clásico para mascotas",
+    imagen: "Arnés_y_Correa_para_Mascotas.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "arnes",
-            "correa",
-            "mascotas",
-            "seguridad",
-            "perros",
-            "perro"
+    palabrasClave: [
+        "arnes",
+        "correa",
+        "mascotas",
+        "mascota",
+        "seguridad",
+        "perros",
+        "perro",
+        "paseo"
+    ],
+    mensaje: "Hola, quisiera consultar por el arnés con correa clásico para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por el arnes y correa para mascotas",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "arnes para mascotas,pet show, estilo, comodidad y seguridad",
-        imagen: "Arnés_colorido_para_mascotas_felices.png",
-        categoria: "mascotas",
+    nombre: "Arnés Pet Show colorido para mascotas",
+    imagen: "Arnés_colorido_para_mascotas_felices.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "arnes",
-            "mascotas",
-            "mascota",
-            "perro",
-            "perros",
-            "correa"
+    palabrasClave: [
+        "arnes",
+        "pet show",
+        "mascotas",
+        "mascota",
+        "perro",
+        "perros",
+        "correa",
+        "colorido"
+    ],
+    mensaje: "Hola, quisiera consultar por el arnés Pet Show colorido para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por el arnes pet show",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "arnes para mascotas, comodidad y seguridad, arnes pet",
-        imagen: "Arnés_para_mascotas_ comodidad_y_estilo.png",
-        categoria: "mascotas",
+    nombre: "Arnés Pet azul para mascotas",
+    imagen: "Arnés_para_mascotas_comodidad_y_estilo.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "arnes",
-            "mascotas",
-            "mascota",
-            "perros",
-            "perro",
-            "correa"
+    palabrasClave: [
+        "arnes",
+        "mascotas",
+        "mascota",
+        "perros",
+        "perro",
+        "correa",
+        "azul",
+        "comodidad"
+    ],
+    mensaje: "Hola, quisiera consultar por el arnés Pet azul para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por el arnes para mascotas pet azul",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "pecheras y arneses para mascotas, variedad de diseños",
-        imagen: "Pecheras_y_arneses_para_mascotas_se.png",
-        categoria: "mascotas",
+    nombre: "Set de pecheras y arneses surtidos para mascotas",
+    imagen: "Pecheras_y_arneses_para_mascotas_se.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "pecheras",
-            "arneses",
-            "mascotas",
-            "mascota",
-            "perro",
-            "perros",
-            "gato",
-            "gatos"
+    palabrasClave: [
+        "pecheras",
+        "arneses",
+        "mascotas",
+        "mascota",
+        "perro",
+        "perros",
+        "gato",
+        "gatos",
+        "set"
+    ],
+    mensaje: "Hola, quisiera consultar por el set de pecheras y arneses surtidos para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por las pecheras y las arneses para mascotas",
+    codigo: "",
+    stock: null
+},
+   {
+    nombre: "Arnés mochila para mascotas",
+    imagen: "Arnés_Mochila_para_Mascotas.png",
+    categoria: "mascotas",
 
-        codigo: "",
-        stock: null
-    },
+    palabrasClave: [
+        "arnes",
+        "mochila",
+        "mascotas",
+        "mascota",
+        "perro",
+        "perros",
+        "gato",
+        "gatos",
+        "comodidad"
+    ],
+    mensaje: "Hola, quisiera consultar por el arnés mochila para mascotas",
+
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "arnes mochila para mascotas, diseño unico y comodidad",
-        imagen: "Arnés_Mochila_para_Mascotas.png",
-        categoria: "mascotas",
+    nombre: "Arnés ajustable para mascotas",
+    imagen: "Arnés_y_correa_para_mascotas.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "arnes",
-            "mochila",
-            "mascotas",
-            "mascota",
-            "perro",
-            "perros",
-            "gato",
-            "gatos"
+    palabrasClave: [
+        "arnes",
+        "mascotas",
+        "mascota",
+        "perros",
+        "perro",
+        "gato",
+        "gatos",
+        "ajustable"
+    ],
+    mensaje: "Hola, quisiera consultar por el arnés ajustable para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por el arnes de mochila para mascotas",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "arnes para mascotas, estilo y seguridad",
-        imagen: "Arnés_y_correa_para_mascotas.png",
-        categoria: "mascotas",
+    nombre: "Pecheras y arneses con estilo para mascotas",
+    imagen: "Pecheras_y_arneses_con_estilo_y_comodidad.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "arnes",
-            "mascotas",
-            "mascota",
-            "perros",
-            "perro",
-            "gato",
-            "gatos"
+    palabrasClave: [
+        "mascotas",
+        "mascota",
+        "pecheras",
+        "arnes",
+        "perro",
+        "perros",
+        "gato",
+        "gatos",
+        "comodidad",
+        "estilo"
+    ],
+    mensaje: "Hola, quisiera consultar por las pecheras y arneses con estilo para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por los arnes para mascotas",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "pecheras y arnes para mascotas, estilo unico para tu mascota",
-        imagen: "Pecheras_y_arneses_con_estilo_y_comodidad.png",
-        categoria: "mascotas",
+    nombre: "Pechera y arnés modelo Ola para mascotas",
+    imagen: "Pechera_y_Arnés_para_Paseos.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "mascotas",
-            "mascota",
-            "pecheras",
-            "arnes",
-            "perro",
-            "perros",
-            "gato",
-            "gatos"
+    palabrasClave: [
+        "mascotas",
+        "pechera",
+        "mascota",
+        "arnes",
+        "ola",
+        "perros",
+        "perro",
+        "gato",
+        "gatos",
+        "paseo"
+    ],
+    mensaje: "Hola, quisiera consultar por la pechera y arnés modelo Ola para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por las pecheras y arnes para mascotas",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "pechera y arnes ola, comodidad y estilo",
-        imagen: "Pechera_y_Arnés_para_Paseos.png",
-        categoria: "mascotas",
+    nombre: "Pecheras coloridas para mascotas",
+    imagen: "Pecheras_Coloridas_para_Mascotas.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "mascotas",
-            "pechera",
-            "mascota",
-            "arnes",
-            "ola",
-            "perros",
-            "perro",
-            "gato",
-            "gatos"
+    palabrasClave: [
+        "pecheras",
+        "arneses",
+        "mascotas",
+        "mascota",
+        "perros",
+        "perro",
+        "gato",
+        "gatos",
+        "coloridas"
+    ],
+    mensaje: "Hola, quisiera consultar por las pecheras coloridas para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por le pechera y arnes ola",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "pecheras y arneses para tus mascotas, colores, comodidad y estilo",
-        imagen: "Pecheras_Coloridas_para_Mascotas.png",
-        categoria: "mascotas",
+    nombre: "Arneses y correas coloridas para mascotas",
+    imagen: "Arneses_coloridos_para_mascotas_felices.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "pecheras",
-            "arneses",
-            "mascotas",
-            "mascota",
-            "perros",
-            "perro",
-            "gato",
-            "gatos"
+    palabrasClave: [
+        "mascotas",
+        "mascota",
+        "arneses",
+        "correa",
+        "correas",
+        "perros",
+        "perro",
+        "gato",
+        "gatos",
+        "coloridas"
+    ],
+    mensaje: "Hola, quisiera consultar por los arneses y correas coloridas para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por las pecheras y arneses de colores y mas",
-
-        codigo: "",
-        stock: null
-    },
+    codigo: "",
+    stock: null
+},
     {
-        nombre: "arneses y correa para mascotas, estilo y seguridad",
-        imagen: "Arneses_coloridos_para_mascotas_felices.png",
-        categoria: "mascotas",
+    nombre: "Pechera azul suave para mascotas",
+    imagen: "Pechera_Azul_para_Mascotas.png",
+    categoria: "mascotas",
 
-        palabrasClave: [
-            "mascotas",
-            "mascota",
-            "arneses",
-            "correa",
-            "correas",
-            "perros",
-            "perro",
-            "gato",
-            "gatos"
+    palabrasClave: [
+        "pechera",
+        "azul",
+        "mascotas",
+        "mascota",
+        "perros",
+        "perro",
+        "gatos",
+        "gato",
+        "suave"
+    ],
+    mensaje: "Hola, quisiera consultar por la pechera azul suave para mascotas",
 
-            ],
-        mensaje: "Hola, quisiera consultar por los arneses y correas para mascotas",
-
-        codigo: "",
-        stock: null
-    },
-    {
-        nombre: "pechera azul para mascotas, suave y comodo",
-        imagen: "Pechera_Azul_para_Mascotas.png",
-        categoria: "mascotas",
-
-        palabrasClave: [
-            "pechera",
-            "azul",
-            "mascotas",
-            "mascota",
-            "perros",
-            "perro",
-            "gatos",
-            "gato" 
-
-            ],
-        mensaje: "Hola, quisiera consultar por la pechera azul para mascotas",
-
-        codigo: "",
-        stock: null
-    }
+    codigo: "",
+    stock: null
+}
 ];
 
 
