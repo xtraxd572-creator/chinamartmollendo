@@ -4833,7 +4833,26 @@ const productosChinaMart = [
 
     codigo: "",
     stock: null
-}
+},
+    {
+        nombre: "juguetes dulces para mascotas, suaves, divertidos, y resistentes",
+        imagen: "Juguetes_Dulces_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasCalve: [
+            "gatos",
+            "gato",
+            "perros",
+            "perro",
+            "mascota",
+            "mascota"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los dulces para mascotas",
+
+        codigo: "",
+        stock: null
+    }
 ];
 
 
