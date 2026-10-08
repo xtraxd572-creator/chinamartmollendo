@@ -4646,7 +4646,7 @@ const productosChinaMart = [
 },
     {
     nombre: "Arnés Pet azul para mascotas",
-    imagen: "Arnés_para_mascotas_comodidad_y_estilo.png",
+    imagen: "Arnés_para mascotas_ comodidad_y_estilo.png",
     categoria: "mascotas",
 
     palabrasClave: [
