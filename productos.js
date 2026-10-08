@@ -4897,6 +4897,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "alimento para tus mascotas, nutricion y sabor",
+        imagen: "Alimento_y_amor_para_tu_mascota.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "perros",
+            "perro",
+            "mascotas",
+            "mascota",
+            "alimento"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el mimaskot doglover para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
