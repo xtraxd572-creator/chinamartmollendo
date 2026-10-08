@@ -4852,6 +4852,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "peluches sonajeros para mascotas, divertido y suaves",
+        imagen: "Peluche_Sonajero_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "mascota",
+            "sonajeros",
+            "sonajero",
+            "perro",
+            "perros",
+            "gatos",
+            "gato",
+            "peluches",
+            "peluche"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los peluches sonajeros para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
