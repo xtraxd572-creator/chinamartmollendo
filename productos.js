@@ -4936,6 +4936,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "diversion futbolera para tu mascota, forma de hueso",
+        imagen: "Diversión_Futbolera_para_tu_Mascota.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "mascota",
+            "futbolera",
+            "perros",
+            "perro",
+            "futbol"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el juguete forma de hueso futbolera",
+
+        codigo: "",
+        stock: null
     }
 ];
 
