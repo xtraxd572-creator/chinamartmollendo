@@ -4875,6 +4875,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "peluche masticable para mascotas, suave y ligero",
+        imagen: "Peluche_masticable_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "peluche",
+            "peluches",
+            "mascotas",
+            "mascota",
+            "masticable",
+            "gato",
+            "gatos",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quiseria consultar por el peluche masticable para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
