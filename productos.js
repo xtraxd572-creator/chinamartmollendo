@@ -4915,6 +4915,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "diversion y mordida para tu mascota, juguete boni",
+        imagen: "Diversión_y_mordida_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "mascota",
+            "perros",
+            "perro",
+            "gato",
+            "gatos",
+            "juguete",
+            "boni"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el juguete boni masticable, forma hueso",
+
+        codigo: "",
+        stock: null
     }
 ];
 
