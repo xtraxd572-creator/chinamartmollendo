@@ -4955,6 +4955,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "nudo travieso para tus mascotas, juguete mordedor",
+        imagen: "Nudo_Travieso_Diversión_para_Mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "nudo",
+            "mascotas",
+            "mascota",
+            "gato",
+            "gatos",
+            "juguetes",
+            "juguete"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el nudo travieso pet show",
+
+        codigo: "",
+        stock: null
     }
 ];
 
