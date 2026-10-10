@@ -4968,10 +4968,34 @@ const productosChinaMart = [
             "gato",
             "gatos",
             "juguetes",
-            "juguete"
+            "juguete",
+            "perro",
+            "perros"
 
             ],
         mensaje: "Hola, quisiera consultar por el nudo travieso pet show",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "mordedores divertidos para tus mascotas, entretenimiendo y resistente",
+        imagen: "Mordedores_divertidos_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mordedores",
+            "mascotas",
+            "mascota",
+            "mordedor",
+            "resistente",
+            "gatos",
+            "gato",
+            "perros",
+            "perro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los mordedores para mascotas, hot dog, hueso y hamburguesa",
 
         codigo: "",
         stock: null
