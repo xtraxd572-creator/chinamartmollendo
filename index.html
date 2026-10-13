@@ -1792,463 +1792,1332 @@ console.log(
                 resultadosPrincipal.classList.remove("visible");
             }
         });
-// ============================================
-// MINI ASISTENTE CHINA MART
-// ============================================
+<script>
+/*
+  MINI ASISTENTE - CHINA MART MOLLENDO
+  Versión mejorada para index.html.
 
+  - Reconoce preguntas con signos y tildes.
+  - Busca productos mediante palabras y sinónimos.
+  - Permite ver categorías y ubicación.
+  - Incluye acceso a WhatsApp.
+  - No muestra precios ni confirma stock.
+  - Excluye bebidas alcohólicas y productos restringidos.
+*/
+(function () {
+    "use strict";
 
-// Elementos del asistente
+    // Evita que el asistente aparezca dos veces.
+    if (document.getElementById("cm-asistente-widget")) return;
 
-const botonAsistente =
-    document.getElementById("botonAsistente");
+    const ESTILOS = `
+        #cm-asistente-widget,
+        #cm-asistente-widget * {
+            box-sizing: border-box;
+        }
 
-const panelAsistente =
-    document.getElementById("panelAsistente");
+        #cm-asistente-widget {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-const cerrarAsistente =
-    document.getElementById("cerrarAsistente");
+        #cm-asistente-widget .cm-lanzador {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            z-index: 99990;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            min-height: 58px;
+            padding: 9px 16px 9px 10px;
+            border: 2px solid #fff;
+            border-radius: 999px;
+            background: #ed1c24;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0,0,0,.28);
+            font-size: 14px;
+            font-weight: 700;
+            transition: transform .18s ease;
+        }
 
-const mensajesAsistente =
-    document.getElementById("mensajesAsistente");
+        #cm-asistente-widget .cm-lanzador:hover {
+            transform: translateY(-2px);
+        }
 
-const formAsistente =
-    document.getElementById("formAsistente");
+        #cm-asistente-widget .cm-dragon {
+            display: grid;
+            place-items: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #15191d;
+            font-size: 23px;
+        }
 
-const entradaAsistente =
-    document.getElementById("entradaAsistente");
+        #cm-asistente-widget .cm-panel {
+            position: fixed;
+            right: 20px;
+            bottom: 90px;
+            z-index: 99991;
+            display: none;
+            flex-direction: column;
+            width: min(370px, calc(100vw - 24px));
+            height: min(570px, calc(100vh - 112px));
+            min-height: 320px;
+            overflow: hidden;
+            border: 1px solid #d9d9d9;
+            border-radius: 18px;
+            background: #fff;
+            color: #15191d;
+            box-shadow: 0 12px 38px rgba(0,0,0,.28);
+        }
 
+        #cm-asistente-widget .cm-panel.cm-abierto {
+            display: flex;
+        }
 
-// ============================================
-// ABRIR Y CERRAR
-// ============================================
+        #cm-asistente-widget .cm-cabecera {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 14px;
+            background: #15191d;
+            color: #fff;
+        }
 
-function abrirAsistente() {
+        #cm-asistente-widget .cm-cabecera-icono {
+            display: grid;
+            place-items: center;
+            flex: 0 0 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #ed1c24;
+            font-size: 24px;
+        }
 
-    panelAsistente.classList.add("activo");
+        #cm-asistente-widget .cm-titulos {
+            min-width: 0;
+            flex: 1;
+        }
 
-    panelAsistente.setAttribute(
-        "aria-hidden",
-        "false"
-    );
+        #cm-asistente-widget .cm-titulos strong {
+            display: block;
+            font-size: 15px;
+        }
 
+        #cm-asistente-widget .cm-titulos small {
+            display: block;
+            margin-top: 3px;
+            color: #d6d6d6;
+            font-size: 11px;
+        }
 
-    entradaAsistente.focus();
+        #cm-asistente-widget .cm-cerrar {
+            display: grid;
+            place-items: center;
+            flex: 0 0 40px;
+            height: 40px;
+            border: 0;
+            border-radius: 10px;
+            background: transparent;
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+        }
 
-}
+        #cm-asistente-widget .cm-cerrar:hover {
+            background: rgba(255,255,255,.12);
+        }
 
+        #cm-asistente-widget .cm-mensajes {
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            gap: 10px;
+            min-height: 0;
+            overflow-y: auto;
+            padding: 14px 12px;
+            background: #f5f6f7;
+            overscroll-behavior: contain;
+        }
 
-function cerrarVentanaAsistente() {
+        #cm-asistente-widget .cm-mensaje {
+            width: fit-content;
+            max-width: 94%;
+            padding: 10px 12px;
+            border-radius: 14px;
+            font-size: 13px;
+            line-height: 1.45;
+            overflow-wrap: anywhere;
+        }
 
-    panelAsistente.classList.remove("activo");
+        #cm-asistente-widget .cm-mensaje p {
+            margin: 0;
+            white-space: pre-line;
+        }
 
-    panelAsistente.setAttribute(
-        "aria-hidden",
-        "true"
-    );
+        #cm-asistente-widget .cm-bot {
+            align-self: flex-start;
+            border: 1px solid #e2e2e2;
+            background: #fff;
+            border-top-left-radius: 4px;
+        }
 
-}
+        #cm-asistente-widget .cm-usuario {
+            align-self: flex-end;
+            background: #15191d;
+            color: #fff;
+            border-top-right-radius: 4px;
+        }
 
+        #cm-asistente-widget .cm-acciones-mensaje {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 10px;
+        }
 
-botonAsistente.addEventListener(
-    "click",
-    abrirAsistente
-);
+        #cm-asistente-widget .cm-accion {
+            min-height: 36px;
+            padding: 8px 10px;
+            border: 1px solid #ed1c24;
+            border-radius: 10px;
+            background: #fff;
+            color: #b80e17;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
 
+        #cm-asistente-widget .cm-accion:hover {
+            background: #fff0f0;
+        }
 
-cerrarAsistente.addEventListener(
-    "click",
-    cerrarVentanaAsistente
-);
+        #cm-asistente-widget .cm-resultados {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 9px;
+            width: 100%;
+            margin-top: 10px;
+        }
 
+        #cm-asistente-widget .cm-producto {
+            display: grid;
+            grid-template-columns: 70px minmax(0,1fr);
+            gap: 10px;
+            padding: 9px;
+            border: 1px solid #e5e5e5;
+            border-radius: 12px;
+            background: #fff;
+        }
 
-// ============================================
-// MOSTRAR MENSAJES
-// ============================================
+        #cm-asistente-widget .cm-producto img {
+            display: block;
+            width: 70px;
+            height: 76px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #f7f7f7;
+        }
 
-function agregarMensajeAsistente(
-    texto,
-    tipo = "dragon",
-    enlace = null
-) {
+        #cm-asistente-widget .cm-producto-info {
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+        }
 
-    const mensaje =
-        document.createElement("div");
+        #cm-asistente-widget .cm-producto-info strong {
+            font-size: 12px;
+            line-height: 1.35;
+            overflow-wrap: anywhere;
+        }
 
+        #cm-asistente-widget .cm-producto-info small {
+            color: #666;
+            font-size: 10px;
+        }
 
-    mensaje.className =
-        "mensaje-asistente " + tipo;
+        #cm-asistente-widget .cm-whatsapp,
+        #cm-asistente-widget .cm-enlace {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 34px;
+            margin-top: auto;
+            padding: 7px 9px;
+            border-radius: 8px;
+            background: #168447;
+            color: #fff;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+        }
 
+        #cm-asistente-widget .cm-enlace {
+            background: #15191d;
+        }
 
-    // textContent evita interpretar
-    // el mensaje como código HTML.
+        #cm-asistente-widget .cm-whatsapp:hover {
+            background: #116b38;
+        }
 
-    mensaje.textContent = texto;
+        #cm-asistente-widget .cm-enlace:hover {
+            background: #30363c;
+        }
 
+        #cm-asistente-widget .cm-categorias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7px;
+            margin-top: 10px;
+        }
 
-    // Si queremos mostrar un botón o enlace
+        #cm-asistente-widget .cm-categoria {
+            min-height: 38px;
+            padding: 8px 10px;
+            border: 1px solid #d8d8d8;
+            border-radius: 10px;
+            background: #fff;
+            color: #15191d;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: left;
+        }
 
-    if (enlace) {
+        #cm-asistente-widget .cm-categoria:hover {
+            border-color: #ed1c24;
+            background: #fff4f4;
+        }
 
-        const boton =
-            document.createElement("a");
+        #cm-asistente-widget .cm-pie {
+            padding: 9px 10px 10px;
+            border-top: 1px solid #e5e5e5;
+            background: #fff;
+        }
 
+        #cm-asistente-widget .cm-atajos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 9px;
+        }
 
-        boton.className =
-            "enlace-asistente";
+        #cm-asistente-widget .cm-atajo {
+            min-height: 32px;
+            padding: 6px 9px;
+            border: 1px solid #ddd;
+            border-radius: 999px;
+            background: #fff;
+            color: #333;
+            font-size: 11px;
+            cursor: pointer;
+        }
 
+        #cm-asistente-widget .cm-atajo:hover {
+            border-color: #ed1c24;
+            color: #b80e17;
+        }
 
-        boton.href =
-            enlace.url;
+        #cm-asistente-widget .cm-formulario {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
 
+        #cm-asistente-widget .cm-entrada {
+            width: 100%;
+            min-width: 0;
+            height: 43px;
+            padding: 0 12px;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            outline: none;
+            background: #fff;
+            color: #15191d;
+            font-size: 16px;
+        }
 
-        boton.textContent =
-            enlace.texto;
+        #cm-asistente-widget .cm-entrada:focus {
+            border-color: #ed1c24;
+            box-shadow: 0 0 0 2px rgba(237,28,36,.12);
+        }
 
+        #cm-asistente-widget .cm-enviar {
+            flex: 0 0 auto;
+            height: 43px;
+            padding: 0 13px;
+            border: 0;
+            border-radius: 12px;
+            background: #ed1c24;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
 
-        mensaje.appendChild(boton);
+        #cm-asistente-widget .cm-enviar:hover {
+            background: #c9121b;
+        }
 
-    }
+        #cm-asistente-widget .cm-nota {
+            margin: 7px 2px 0;
+            color: #777;
+            font-size: 10px;
+            line-height: 1.35;
+        }
 
+        #cm-asistente-widget .cm-solo-lectura {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
 
-    mensajesAsistente.appendChild(
-        mensaje
-    );
+        @media (max-width: 480px) {
+            #cm-asistente-widget .cm-lanzador {
+                right: 12px;
+                bottom: 12px;
+                min-height: 54px;
+                padding-right: 13px;
+            }
 
+            #cm-asistente-widget .cm-panel {
+                right: 12px;
+                bottom: 78px;
+                width: calc(100vw - 24px);
+                height: min(570px, calc(100vh - 92px));
+                min-height: 300px;
+                border-radius: 16px;
+            }
 
-    // Llevar el scroll al último mensaje
+            #cm-asistente-widget .cm-mensajes {
+                padding: 11px 9px;
+            }
 
-    mensajesAsistente.scrollTop =
-        mensajesAsistente.scrollHeight;
+            #cm-asistente-widget .cm-producto {
+                grid-template-columns: 62px minmax(0,1fr);
+            }
 
-}
+            #cm-asistente-widget .cm-producto img {
+                width: 62px;
+                height: 70px;
+            }
+        }
 
+        @media (prefers-reduced-motion: reduce) {
+            #cm-asistente-widget *,
+            #cm-asistente-widget *::before,
+            #cm-asistente-widget *::after {
+                transition: none !important;
+                scroll-behavior: auto !important;
+            }
+        }
+    `;
 
-// ============================================
-// PALABRAS ÚTILES DE LA CONSULTA
-// ============================================
+    const estilo = document.createElement("style");
+    estilo.id = "cm-asistente-estilos";
+    estilo.textContent = ESTILOS;
+    document.head.appendChild(estilo);
 
-function obtenerPalabrasConsulta(texto) {
+    const widget = document.createElement("div");
+    widget.id = "cm-asistente-widget";
 
-    const palabrasIgnoradas = [
-        "busco",
-        "buscar",
-        "quiero",
-        "quisiera",
-        "tienen",
-        "tiene",
-        "hay",
-        "necesito",
-        "para",
-        "una",
-        "uno",
-        "unos",
-        "unas",
-        "algo",
-        "por",
-        "favor",
-        "estoy",
-        "buscando"
-    ];
+    widget.innerHTML = `
+        <button class="cm-lanzador" type="button"
+            aria-expanded="false"
+            aria-controls="cm-asistente-panel"
+            aria-label="Abrir asistente de China Mart">
+            <span class="cm-dragon" aria-hidden="true">🐉</span>
+            <span>¿Te ayudo?</span>
+        </button>
 
+        <section class="cm-panel" id="cm-asistente-panel"
+            role="dialog"
+            aria-label="Asistente de China Mart Mollendo"
+            aria-hidden="true">
 
-    return normalizarTexto(texto)
-        .split(/\s+/)
-        .filter(palabra =>
-            palabra.length > 2 &&
-            !palabrasIgnoradas.includes(palabra)
+            <header class="cm-cabecera">
+                <span class="cm-cabecera-icono" aria-hidden="true">🐉</span>
+
+                <div class="cm-titulos">
+                    <strong>Asistente China Mart</strong>
+                    <small>Te ayudo a encontrar productos</small>
+                </div>
+
+                <button class="cm-cerrar" type="button"
+                    aria-label="Cerrar asistente">×</button>
+            </header>
+
+            <div class="cm-mensajes" role="log"
+                aria-live="polite"
+                aria-relevant="additions text"></div>
+
+            <div class="cm-pie">
+                <div class="cm-atajos" aria-label="Preguntas rápidas">
+                    <button class="cm-atajo" type="button"
+                        data-cm-accion="buscar">🛍️ Buscar</button>
+
+                    <button class="cm-atajo" type="button"
+                        data-cm-accion="categorias">📂 Categorías</button>
+
+                    <button class="cm-atajo" type="button"
+                        data-cm-accion="ubicacion">📍 Ubicación</button>
+
+                    <button class="cm-atajo" type="button"
+                        data-cm-accion="whatsapp">💬 WhatsApp</button>
+                </div>
+
+                <form class="cm-formulario">
+                    <label class="cm-solo-lectura"
+                        for="cm-asistente-entrada">
+                        Escribe tu pregunta
+                    </label>
+
+                    <input class="cm-entrada"
+                        id="cm-asistente-entrada"
+                        type="text"
+                        autocomplete="off"
+                        maxlength="180"
+                        placeholder="Ej.: ¿Tienen mochilas?">
+
+                    <button class="cm-enviar" type="submit">Enviar</button>
+                </form>
+
+                <p class="cm-nota">
+                    Consulta disponibilidad y precio por WhatsApp.
+                    El asistente no confirma stock.
+                </p>
+            </div>
+        </section>
+    `;
+
+    document.body.appendChild(widget);
+
+    const botonAbrir = widget.querySelector(".cm-lanzador");
+    const panel = widget.querySelector(".cm-panel");
+    const botonCerrar = widget.querySelector(".cm-cerrar");
+    const mensajes = widget.querySelector(".cm-mensajes");
+    const formulario = widget.querySelector(".cm-formulario");
+    const entrada = widget.querySelector(".cm-entrada");
+
+    // Enlaces de la tienda.
+    const WHATSAPP =
+        "https://wa.me/51914236008?text=" +
+        encodeURIComponent(
+            "Hola, quisiera consultar por los productos de China Mart Mollendo."
         );
 
-}
+    const MAPA =
+        "https://maps.app.goo.gl/TEqRencCkYtUKrMA9";
 
+    // Palabras que ayudan a reconocer la intención del cliente.
+    const PALABRAS_RESTRINGIDAS =
+        /\b(soju|alcohol|alcoholica|alcoholicas|licor|licores|cerveza|cervezas|vino|vinos|ron|vodka|whisky|whiskey|pisco|tequila|ginebra|gin|seltzer|rio)\b/i;
 
-// ============================================
-// BUSCAR PRODUCTOS
-// ============================================
+    const PALABRAS_UBICACION =
+        /\b(ubicacion|direccion|donde esta|donde estan|donde queda|donde quedan|como llego|como llegar|mapa|localizacion|local|llegar)\b/;
 
-function buscarProductosAsistente(consulta) {
+    const PALABRAS_CONTACTO =
+        /\b(whatsapp|contacto|contactar|telefono|numero|escribirles|hablar con alguien|atencion al cliente)\b/;
 
-    const palabras =
-        obtenerPalabrasConsulta(consulta);
+    const PALABRAS_PRECIO =
+        /\b(precio|precios|cuanto cuesta|cuanto valen|stock|disponibilidad|disponible|disponibles)\b/;
 
+    const PALABRAS_CATEGORIAS =
+        /\b(categoria|categorias|catalogo|catalogos|que venden|que productos tienen|que tienen|mostrar todo|ver todo)\b/;
 
-    if (palabras.length === 0) {
-        return [];
+    const SALUDO =
+        /^(hola|holi|hey|hello|hi|buenas|buenos dias|buenas tardes|buenas noches|que tal|como estas)$/;
+
+    // Palabras que no suelen identificar un producto.
+    const PALABRAS_VACIAS = new Set([
+        "a", "al", "algo", "algun", "alguna", "algunas", "algunos",
+        "asi", "buenas", "buenos", "con", "de", "del", "dia", "dias",
+        "el", "ella", "ellas", "ellos", "en", "es", "esta", "estan",
+        "favor", "hay", "hola", "la", "las", "lo", "los", "me", "mi",
+        "mis", "necesito", "para", "por", "pueden", "que", "quisiera",
+        "quiero", "se", "si", "tarde", "tardes", "te", "tienen", "tiene",
+        "un", "una", "unas", "uno", "unos", "ustedes", "venden", "vende",
+        "ver", "busco", "buscando", "muestrame", "muestra", "mostrar",
+        "dame", "deseo", "y", "producto", "productos", "categoria",
+        "categorias", "catalogo", "catalogos", "oferta", "ofertas",
+        "todo", "todos", "toda", "todas", "porfa", "porfavor",
+        "china", "mart", "mollendo"
+    ]);
+
+    // Palabras parecidas que pueden usar los clientes.
+    const SINONIMOS = {
+        mochila: ["mochila", "bolso", "cartera", "morral", "lonchera"],
+        mochilas: ["mochila", "bolso", "cartera", "morral", "lonchera"],
+        cartera: ["cartera", "bolso", "mochila", "morral"],
+        carteras: ["cartera", "bolso", "mochila", "morral"],
+        bolso: ["bolso", "cartera", "mochila", "morral"],
+        bolsos: ["bolso", "cartera", "mochila", "morral"],
+        gorra: ["gorra", "gorras"],
+        gorras: ["gorra", "gorras"],
+        mascota: ["mascota", "perro", "gato", "arnes", "correa", "rascador", "arenero"],
+        mascotas: ["mascota", "perro", "gato", "arnes", "correa", "rascador", "arenero"],
+        perro: ["perro", "mascota", "arnes", "correa", "juguete"],
+        perros: ["perro", "mascota", "arnes", "correa", "juguete"],
+        gato: ["gato", "mascota", "rascador", "arenero"],
+        gatos: ["gato", "mascota", "rascador", "arenero"],
+        juguete: ["juguete", "muñeca", "pelota", "scooter", "dinosaurio", "monopoly"],
+        juguetes: ["juguete", "muñeca", "pelota", "scooter", "dinosaurio", "monopoly"],
+        flor: ["flor", "rosa", "orquidea", "planta", "arbol"],
+        flores: ["flor", "rosa", "orquidea", "planta", "arbol"],
+        deporte: ["deporte", "gimnasio", "yoga", "fitness", "ejercicio"],
+        deportes: ["deporte", "gimnasio", "yoga", "fitness", "ejercicio"],
+        incienso: ["incienso", "porta incienso"],
+        inciensos: ["incienso", "porta incienso"],
+        plato: ["plato", "vajilla", "ceramica"],
+        platos: ["plato", "vajilla", "ceramica"],
+        bebida: ["bebida", "jugo", "te", "leche", "aloe"],
+        bebidas: ["bebida", "jugo", "te", "leche", "aloe"],
+        mascarilla: ["mascarilla", "cuidado facial", "skincare"],
+        mascarillas: ["mascarilla", "cuidado facial", "skincare"]
+    };
+
+    // Quita tildes, signos y espacios repetidos.
+    function normalizar(texto) {
+        return String(texto || "")
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-z0-9\s_-]/g, " ")
+            .replace(/[_-]+/g, " ")
+            .replace(/\s+/g, " ")
+            .trim();
     }
 
+    function lista(valor) {
+        if (Array.isArray(valor)) return valor;
+        if (valor === null || valor === undefined || valor === "") return [];
+        return [valor];
+    }
 
-    return productosBusqueda
+    // Lee los productos desde productos.js.
+    function obtenerCatalogo() {
+        let productos = [];
+        let categorias = {};
 
-        .map(producto => {
+        try {
+            if (
+                typeof productosChinaMart !== "undefined" &&
+                Array.isArray(productosChinaMart)
+            ) {
+                productos = productosChinaMart;
+            }
+        } catch (error) {
+            productos = [];
+        }
 
-            const textoProducto =
-                normalizarTexto(
-                    producto.nombre + " " +
-                    producto.categoria + " " +
-                    (
-                        producto.palabrasClave || []
-                    ).join(" ")
-                );
+        try {
+            if (
+                typeof categoriasChinaMart !== "undefined" &&
+                categoriasChinaMart &&
+                typeof categoriasChinaMart === "object"
+            ) {
+                categorias = categoriasChinaMart;
+            }
+        } catch (error) {
+            categorias = {};
+        }
 
+        return { productos: productos, categorias: categorias };
+    }
 
-            let puntos = 0;
+    function categoriaId(producto, categorias) {
+        let id = producto && producto.categoria
+            ? String(producto.categoria)
+            : "";
 
-
-            palabras.forEach(palabra => {
-
-                if (
-                    textoProducto.includes(
-                        palabra
-                    )
-                ) {
-
-                    puntos++;
-
+        if (!id || id === "auto" || !categorias[id]) {
+            try {
+                if (typeof detectarCategoriaProducto === "function") {
+                    id = detectarCategoriaProducto(producto) || id;
                 }
+            } catch (error) {
+                // Se conserva la categoría disponible.
+            }
+        }
 
+        return id || "";
+    }
+
+    // Excluye productos marcados para mayores y bebidas alcohólicas.
+    function esProductoRestringido(producto) {
+        if (!producto) return true;
+
+        if (
+            producto.soloMayores === true ||
+            producto.soloMayoresDeEdad === true
+        ) {
+            return true;
+        }
+
+        if (Number(producto.edadMinima || 0) >= 18) {
+            return true;
+        }
+
+        const texto = normalizar([
+            producto.nombre,
+            producto.categoria,
+            ...lista(producto.palabrasClave)
+        ].join(" "));
+
+        return PALABRAS_RESTRINGIDAS.test(texto);
+    }
+
+    function obtenerProductos() {
+        const datos = obtenerCatalogo();
+
+        return datos.productos
+            .filter(function (producto) {
+                return !esProductoRestringido(producto);
+            })
+            .map(function (producto) {
+                const id = categoriaId(producto, datos.categorias);
+                const categoria = datos.categorias[id] || {};
+
+                const palabras = lista(producto.palabrasClave).join(" ");
+                const palabrasCategoria = lista(categoria.palabras).join(" ");
+
+                const texto = normalizar([
+                    producto.nombre,
+                    producto.categoria,
+                    categoria.nombre,
+                    palabras,
+                    palabrasCategoria
+                ].join(" "));
+
+                return {
+                    original: producto,
+                    idCategoria: id,
+                    nombreCategoria: categoria.nombre || id || "Catálogo",
+                    texto: texto,
+                    nombre: String(producto.nombre || "Producto de China Mart"),
+                    imagen: String(producto.imagen || "")
+                };
             });
+    }
 
+    function obtenerCategorias() {
+        const datos = obtenerCatalogo();
+
+        return Object.entries(datos.categorias).map(function (entradaCategoria) {
+            const id = entradaCategoria[0];
+            const datosCategoria = entradaCategoria[1] || {};
 
             return {
-                producto: producto,
-                puntos: puntos
+                id: id,
+                nombre: String(datosCategoria.nombre || id),
+                icono: String(datosCategoria.icono || "🛍️"),
+                palabras: lista(datosCategoria.palabras),
+                texto: normalizar([
+                    id,
+                    datosCategoria.nombre,
+                    ...lista(datosCategoria.palabras)
+                ].join(" "))
             };
-
-        })
-
-
-        // Solamente dejamos coincidencias
-
-        .filter(resultado =>
-            resultado.puntos > 0
-        )
-
-
-        // Los mejores resultados primero
-
-        .sort(
-            (a, b) =>
-                b.puntos - a.puntos
-        )
-
-
-        // Máximo tres productos
-
-        .slice(0, 3)
-
-        .map(resultado =>
-            resultado.producto
-        );
-
-}
-
-// MEMORIA SIMPLE DEL ASISTENTE
-
-const memoriaAsistente = {
-
-    ultimaConsulta: "",
-
-    ultimaCategoria: "",
-
-    ultimosProductos: []
-
-};
-// RESPUESTA DEL DRAGÓN
-
-function responderAsistente(consulta) {
-
-    const texto =
-        normalizarTexto(consulta);
-
-
-    // SALUDO
-
-    if (
-        texto === "hola" ||
-        texto === "buenas" ||
-        texto.includes("buenos dias") ||
-        texto.includes("buenas tardes")
-    ) {
-
-        agregarMensajeAsistente(
-            "🐉 ¡Hola! ¿Qué producto estás buscando?"
-        );
-
-        return;
-
+        });
     }
 
+    // Obtiene palabras importantes y sus sinónimos.
+    function extraerTerminos(texto) {
+        const tokens = normalizar(texto).split(" ").filter(Boolean);
+        const terminos = new Set();
 
-    // UBICACIÓN
-
-    if (
-        texto.includes("ubicacion") ||
-        texto.includes("direccion") ||
-        texto.includes("donde queda") ||
-        texto.includes("como llegar")
-    ) {
-
-        agregarMensajeAsistente(
-
-            "📍 Puedes consultar la ubicación de China Mart Mollendo aquí:",
-
-            "dragon",
-
-            {
-                texto:
-                    "Ver ubicación",
-
-                url:
-                    "https://maps.app.goo.gl/TEqRencCkYtUKrMA9"
+        tokens.forEach(function (token) {
+            if (token.length > 1 && !PALABRAS_VACIAS.has(token)) {
+                terminos.add(token);
             }
 
-        );
+            // Convierte plurales sencillos a singular.
+            if (token.length > 4 && token.endsWith("s")) {
+                const singular = token.slice(0, -1);
 
-        return;
-
-    }
-
-
-    // CONTACTO
-
-    if (
-        texto.includes("whatsapp") ||
-        texto.includes("contacto") ||
-        texto.includes("telefono")
-    ) {
-
-        agregarMensajeAsistente(
-
-            "💬 Puedes comunicarte con China Mart mediante WhatsApp.",
-
-            "dragon",
-
-            {
-                texto:
-                    "Abrir WhatsApp",
-
-                url:
-                    "https://wa.me/51914236008"
+                if (
+                    singular.length > 1 &&
+                    !PALABRAS_VACIAS.has(singular)
+                ) {
+                    terminos.add(singular);
+                }
             }
 
-        );
+            // Añade sinónimos.
+            if (SINONIMOS[token]) {
+                SINONIMOS[token].forEach(function (sinonimo) {
+                    terminos.add(normalizar(sinonimo));
+                });
+            }
+        });
 
-        return;
-
+        return Array.from(terminos).filter(function (termino) {
+            return termino.length > 1 && !PALABRAS_VACIAS.has(termino);
+        });
     }
 
+    // Da más puntos cuando la palabra aparece en el nombre.
+    function puntuarProducto(producto, terminos, consultaCompleta) {
+        let puntos = 0;
+        const nombre = normalizar(producto.nombre);
 
-    // BUSCAR PRODUCTOS
+        terminos.forEach(function (termino) {
+            if (nombre.includes(termino)) {
+                puntos += 4;
+            } else if (producto.texto.includes(termino)) {
+                puntos += 2;
+            }
+        });
 
-    const encontrados =
-        buscarProductosAsistente(
-            consulta
+        if (consultaCompleta.length > 2 && nombre.includes(consultaCompleta)) {
+            puntos += 5;
+        }
+
+        return puntos;
+    }
+
+    function desplazarAlFinal() {
+        mensajes.scrollTop = mensajes.scrollHeight;
+    }
+
+    function agregarMensaje(rol, texto) {
+        const burbuja = document.createElement("div");
+
+        burbuja.className =
+            "cm-mensaje " +
+            (rol === "usuario" ? "cm-usuario" : "cm-bot");
+
+        const parrafo = document.createElement("p");
+        parrafo.textContent = texto;
+
+        burbuja.appendChild(parrafo);
+        mensajes.appendChild(burbuja);
+
+        desplazarAlFinal();
+
+        return burbuja;
+    }
+
+    function agregarAcciones(contenedor, acciones) {
+        if (!acciones || !acciones.length) return;
+
+        const grupo = document.createElement("div");
+        grupo.className = "cm-acciones-mensaje";
+
+        acciones.forEach(function (accion) {
+            const boton = document.createElement("button");
+
+            boton.type = "button";
+            boton.className = "cm-accion";
+            boton.textContent = accion.texto;
+
+            boton.addEventListener("click", accion.ejecutar);
+            grupo.appendChild(boton);
+        });
+
+        contenedor.appendChild(grupo);
+        desplazarAlFinal();
+    }
+
+    function agregarEnlace(contenedor, url, texto, clase) {
+        const enlace = document.createElement("a");
+
+        enlace.className = clase || "cm-enlace";
+        enlace.href = url;
+        enlace.textContent = texto;
+        enlace.target = "_blank";
+        enlace.rel = "noopener noreferrer";
+
+        contenedor.appendChild(enlace);
+
+        return enlace;
+    }
+
+    function mostrarUbicacion() {
+        const mensaje = agregarMensaje(
+            "bot",
+            "¡Claro! Puedes ver la ubicación de China Mart Mollendo en el mapa:"
         );
 
+        agregarEnlace(
+            mensaje,
+            MAPA,
+            "📍 Abrir ubicación en Google Maps",
+            "cm-enlace"
+        );
+    }
 
-    if (encontrados.length > 0) {
-
-        agregarMensajeAsistente(
-            "🐉 Encontré " +
-            encontrados.length +
-            (
-                encontrados.length === 1
-                    ? " producto relacionado:"
-                    : " productos relacionados:"
-            )
+    function mostrarWhatsApp(texto) {
+        const mensaje = agregarMensaje(
+            "bot",
+            texto ||
+            "Puedes escribir a la tienda por WhatsApp para consultar productos, precios y disponibilidad."
         );
 
+        agregarEnlace(
+            mensaje,
+            WHATSAPP,
+            "💬 Consultar por WhatsApp",
+            "cm-whatsapp"
+        );
+    }
 
-        encontrados.forEach(
-            producto => {
+    function mostrarCategorias() {
+        const categorias = obtenerCategorias();
 
-                agregarMensajeAsistente(
+        const mensaje = agregarMensaje(
+            "bot",
+            "¿Qué tipo de producto buscas? Elige una categoría:"
+        );
 
-                    "🛍️ " +
-                    producto.nombre +
-                    "\n" +
-                    producto.categoria,
-
-                    "dragon",
-
-                    {
-                        texto:
-                            "Ver producto",
-
-                        url:
-                            "categorias.html?buscar=" +
-                            encodeURIComponent(
-                                producto.nombre
-                            ) +
-                            "#" +
-                            encodeURIComponent(
-                                producto.id
-                            )
+        if (!categorias.length) {
+            agregarAcciones(mensaje, [
+                {
+                    texto: "Buscar productos",
+                    ejecutar: pedirProducto
+                },
+                {
+                    texto: "WhatsApp",
+                    ejecutar: function () {
+                        mostrarWhatsApp();
                     }
+                }
+            ]);
 
-                );
-
-            }
-        );
-
-
-        return;
-
-    }
-
-
-    // SI NO ENCUENTRA NADA
-
-    agregarMensajeAsistente(
-        "🐉 No encontré un producto con esa búsqueda. Prueba escribiendo algo como “mochila”, “mascarilla”, “juguetes” o “platos”."
-    );
-
-}
-
-
-// ============================================
-// CUANDO EL USUARIO ENVÍA EL MENSAJE
-// ============================================
-
-formAsistente.addEventListener(
-    "submit",
-    function(event) {
-
-        event.preventDefault();
-
-
-        const consulta =
-            entradaAsistente.value.trim();
-
-
-        if (!consulta) {
             return;
         }
 
+        const grupo = document.createElement("div");
+        grupo.className = "cm-categorias";
 
-        // Mostrar lo que escribió el usuario
+        categorias.forEach(function (categoria) {
+            const boton = document.createElement("button");
 
-        agregarMensajeAsistente(
-            consulta,
-            "usuario"
-        );
+            boton.type = "button";
+            boton.className = "cm-categoria";
+            boton.textContent = categoria.icono + " " + categoria.nombre;
 
+            boton.addEventListener("click", function () {
+                buscarPorCategoria(categoria.id, categoria.nombre);
+            });
 
-        // Limpiar la caja
+            grupo.appendChild(boton);
+        });
 
-        entradaAsistente.value = "";
-
-
-        // Responder
-
-        responderAsistente(
-            consulta
-        );
-
+        mensaje.appendChild(grupo);
+        desplazarAlFinal();
     }
-);
-        iniciarCarrusel();
 
-    </script>
+    function pedirProducto() {
+        agregarMensaje(
+            "bot",
+            "¡Dime qué producto buscas! Por ejemplo: mochila, gorra, juguetes, flores o productos para mascotas."
+        );
+
+        entrada.focus();
+    }
+
+    function mostrarProductos(resultados, notaExtra) {
+        if (!resultados.length) return;
+
+        const mensaje = agregarMensaje(
+            "bot",
+            "Encontré estas opciones del catálogo:"
+        );
+
+        if (notaExtra) {
+            const nota = document.createElement("p");
+
+            nota.style.marginTop = "7px";
+            nota.style.fontSize = "11px";
+            nota.style.color = "#666";
+            nota.textContent = notaExtra;
+
+            mensaje.appendChild(nota);
+        }
+
+        const listaResultados = document.createElement("div");
+        listaResultados.className = "cm-resultados";
+
+        resultados.slice(0, 4).forEach(function (producto) {
+            const tarjeta = document.createElement("article");
+            tarjeta.className = "cm-producto";
+
+            if (producto.imagen) {
+                const imagen = document.createElement("img");
+
+                imagen.src = producto.imagen;
+                imagen.alt = producto.nombre;
+                imagen.loading = "lazy";
+
+                imagen.addEventListener("error", function () {
+                    imagen.style.display = "none";
+                });
+
+                tarjeta.appendChild(imagen);
+            }
+
+            const info = document.createElement("div");
+            info.className = "cm-producto-info";
+
+            const nombre = document.createElement("strong");
+            nombre.textContent = producto.nombre;
+            info.appendChild(nombre);
+
+            const categoria = document.createElement("small");
+            categoria.textContent = producto.nombreCategoria;
+            info.appendChild(categoria);
+
+            const mensajeWhatsApp =
+                producto.original.mensaje ||
+                ("Hola, quisiera consultar por " + producto.nombre + ".");
+
+            const enlace = document.createElement("a");
+
+            enlace.className = "cm-whatsapp";
+            enlace.href =
+                "https://wa.me/51914236008?text=" +
+                encodeURIComponent(mensajeWhatsApp);
+
+            enlace.target = "_blank";
+            enlace.rel = "noopener noreferrer";
+            enlace.textContent = "Consultar por WhatsApp";
+
+            info.appendChild(enlace);
+            tarjeta.appendChild(info);
+            listaResultados.appendChild(tarjeta);
+        });
+
+        mensaje.appendChild(listaResultados);
+        desplazarAlFinal();
+    }
+
+    function buscarPorCategoria(idCategoria, nombreCategoria) {
+        const productos = obtenerProductos().filter(function (producto) {
+            return producto.idCategoria === idCategoria;
+        });
+
+        if (!productos.length) {
+            const mensaje = agregarMensaje(
+                "bot",
+                "Todavía no encuentro productos cargados para “" +
+                nombreCategoria +
+                "”. Puedes revisar el catálogo o consultar directamente a la tienda."
+            );
+
+            agregarAcciones(mensaje, [
+                {
+                    texto: "Ver categorías",
+                    ejecutar: mostrarCategorias
+                },
+                {
+                    texto: "WhatsApp",
+                    ejecutar: function () {
+                        mostrarWhatsApp();
+                    }
+                }
+            ]);
+
+            return;
+        }
+
+        mostrarProductos(
+            productos.slice(0, 4),
+            "Para confirmar precio y disponibilidad, consulta por WhatsApp."
+        );
+
+        if (idCategoria !== "bebidas") {
+            const mensaje = mensajes.lastElementChild;
+
+            const enlace = document.createElement("a");
+            enlace.className = "cm-enlace";
+            enlace.href = "categorias.html#" + encodeURIComponent(idCategoria);
+            enlace.textContent = "Ver categoría completa";
+            enlace.target = "_blank";
+            enlace.rel = "noopener noreferrer";
+
+            mensaje.appendChild(enlace);
+            desplazarAlFinal();
+        }
+    }
+
+    function buscarProductos(consulta, esConsultaPrecio) {
+        const productos = obtenerProductos();
+
+        const consultaLimpia = normalizar(consulta)
+            .replace(
+                /\b(precio|precios|cuanto cuesta|cuanto valen|stock|disponibilidad|disponible|disponibles)\b/g,
+                " "
+            )
+            .replace(/\s+/g, " ")
+            .trim();
+
+        const terminos = extraerTerminos(consultaLimpia);
+
+        if (!terminos.length) {
+            if (esConsultaPrecio) {
+                const mensaje = agregarMensaje(
+                    "bot",
+                    "No tengo precios ni stock en tiempo real. Escribe el nombre de un producto y te mostraré opciones para consultar a la tienda."
+                );
+
+                agregarAcciones(mensaje, [
+                    {
+                        texto: "Buscar productos",
+                        ejecutar: pedirProducto
+                    },
+                    {
+                        texto: "WhatsApp",
+                        ejecutar: function () {
+                            mostrarWhatsApp();
+                        }
+                    }
+                ]);
+            } else {
+                mostrarCategorias();
+            }
+
+            return;
+        }
+
+        const resultados = productos
+            .map(function (producto) {
+                return {
+                    producto: producto,
+                    puntos: puntuarProducto(
+                        producto,
+                        terminos,
+                        consultaLimpia
+                    )
+                };
+            })
+            .filter(function (resultado) {
+                return resultado.puntos > 0;
+            })
+            .sort(function (a, b) {
+                return b.puntos - a.puntos;
+            })
+            .slice(0, 4)
+            .map(function (resultado) {
+                return resultado.producto;
+            });
+
+        if (!resultados.length) {
+            const mensaje = agregarMensaje(
+                "bot",
+                "No encontré una coincidencia exacta con esa búsqueda. Prueba con una palabra corta, como “mochila”, “gorra”, “juguetes”, “mascotas” o “flores”."
+            );
+
+            agregarAcciones(mensaje, [
+                {
+                    texto: "Ver categorías",
+                    ejecutar: mostrarCategorias
+                },
+                {
+                    texto: "Consultar por WhatsApp",
+                    ejecutar: function () {
+                        mostrarWhatsApp();
+                    }
+                }
+            ]);
+
+            return;
+        }
+
+        mostrarProductos(
+            resultados,
+            esConsultaPrecio
+                ? "No tengo precios ni stock en tiempo real; consulta directamente por WhatsApp."
+                : "Puedes consultar precio y disponibilidad por WhatsApp."
+        );
+    }
+
+    function responder(texto) {
+        const consulta = normalizar(texto);
+
+        if (!consulta) return;
+
+        // No busca ni muestra bebidas alcohólicas.
+        if (PALABRAS_RESTRINGIDAS.test(consulta)) {
+            const mensaje = agregarMensaje(
+                "bot",
+                "Puedo ayudarte a encontrar productos de la tienda que no sean bebidas alcohólicas. Si buscas bebidas sin alcohol, escribe “bebidas” o “jugo”."
+            );
+
+            agregarAcciones(mensaje, [
+                {
+                    texto: "Bebidas sin alcohol",
+                    ejecutar: function () {
+                        buscarProductos("bebidas");
+                    }
+                },
+                {
+                    texto: "Ver categorías",
+                    ejecutar: mostrarCategorias
+                }
+            ]);
+
+            return;
+        }
+
+        if (PALABRAS_UBICACION.test(consulta)) {
+            mostrarUbicacion();
+            return;
+        }
+
+        if (PALABRAS_CONTACTO.test(consulta)) {
+            mostrarWhatsApp(
+                "¡Claro! Puedes escribir a China Mart Mollendo por WhatsApp para consultar con la tienda."
+            );
+
+            return;
+        }
+
+        if (PALABRAS_PRECIO.test(consulta)) {
+            buscarProductos(consulta, true);
+            return;
+        }
+
+        if (SALUDO.test(consulta)) {
+            const mensaje = agregarMensaje(
+                "bot",
+                "¡Hola! 👋 Soy el mini asistente de China Mart Mollendo. Puedo ayudarte a buscar productos, ver categorías, consultar la ubicación o contactar a la tienda."
+            );
+
+            agregarAcciones(mensaje, [
+                {
+                    texto: "Buscar productos",
+                    ejecutar: pedirProducto
+                },
+                {
+                    texto: "Ver categorías",
+                    ejecutar: mostrarCategorias
+                },
+                {
+                    texto: "Ubicación",
+                    ejecutar: mostrarUbicacion
+                }
+            ]);
+
+            return;
+        }
+
+        if (
+            PALABRAS_CATEGORIAS.test(consulta) &&
+            extraerTerminos(consulta).length === 0
+        ) {
+            mostrarCategorias();
+            return;
+        }
+
+        // Busca el producto aunque la pregunta tenga signos o tildes.
+        buscarProductos(consulta, false);
+    }
+
+    function abrirPanel() {
+        panel.classList.add("cm-abierto");
+        panel.setAttribute("aria-hidden", "false");
+        botonAbrir.setAttribute("aria-expanded", "true");
+
+        if (!mensajes.children.length) {
+            const bienvenida = agregarMensaje(
+                "bot",
+                "¡Hola! 👋 Soy el mini asistente de China Mart Mollendo. Escribe lo que buscas, incluso con preguntas como “¿Tienen mochilas?”"
+            );
+
+            agregarAcciones(bienvenida, [
+                {
+                    texto: "Buscar productos",
+                    ejecutar: pedirProducto
+                },
+                {
+                    texto: "Ver categorías",
+                    ejecutar: mostrarCategorias
+                },
+                {
+                    texto: "Ubicación",
+                    ejecutar: mostrarUbicacion
+                }
+            ]);
+        }
+
+        window.setTimeout(function () {
+            entrada.focus();
+        }, 60);
+    }
+
+    function cerrarPanel() {
+        panel.classList.remove("cm-abierto");
+        panel.setAttribute("aria-hidden", "true");
+        botonAbrir.setAttribute("aria-expanded", "false");
+        botonAbrir.focus();
+    }
+
+    botonAbrir.addEventListener("click", function () {
+        if (panel.classList.contains("cm-abierto")) {
+            cerrarPanel();
+        } else {
+            abrirPanel();
+        }
+    });
+
+    botonCerrar.addEventListener("click", cerrarPanel);
+
+    formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
+        const texto = entrada.value.trim();
+
+        if (!texto) return;
+
+        agregarMensaje("usuario", texto);
+        entrada.value = "";
+
+        responder(texto);
+    });
+
+    widget.querySelectorAll("[data-cm-accion]").forEach(function (boton) {
+        boton.addEventListener("click", function () {
+            const accion = boton.getAttribute("data-cm-accion");
+
+            if (accion === "buscar") pedirProducto();
+            if (accion === "categorias") mostrarCategorias();
+            if (accion === "ubicacion") mostrarUbicacion();
+            if (accion === "whatsapp") mostrarWhatsApp();
+        });
+    });
+
+    document.addEventListener("keydown", function (evento) {
+        if (
+            evento.key === "Escape" &&
+            panel.classList.contains("cm-abierto")
+        ) {
+            cerrarPanel();
+        }
+    });
+
+    // Comprueba que productos.js esté cargado.
+    window.setTimeout(function () {
+        const datos = obtenerCatalogo();
+
+        if (!datos.productos.length) {
+            console.warn(
+                "China Mart: el mini asistente no encontró productosChinaMart. " +
+                "Comprueba que productos.js esté cargado antes del asistente."
+            );
+        }
+    }, 0);
+})();
+</script>
 
 </body>
 
