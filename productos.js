@@ -5020,6 +5020,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "juguete Ratucán, ideal para el entretenimiento de tu gato",
+        imagen: "peluche_para_gatos.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "ratucan",
+            "gatos",
+            "gato"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el juguete Ratucan para gatos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
