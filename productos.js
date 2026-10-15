@@ -4999,6 +4999,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "cerdito peluche, textura suave y resistente",
+        imagen: "Cerdito_peludito_ juguete_suave_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "cerdito",
+            "cerditos",
+            "cerdo",
+            "cerdo",
+            "peluche",
+            "peluches",
+            "perro",
+            "perros"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el peluche cerdito",
+
+        codigo: "",
+        stock: null
     }
 ];
 
