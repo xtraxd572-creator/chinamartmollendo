@@ -5038,6 +5038,28 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "resorteras con plumas y peluche raton azul",
+        imagen: "juguetes_para_tus_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "resorteras",
+            "plumas",
+            "pluma",
+            "resortera",
+            "peluche",
+            "peluches",
+            "raton",
+            "rata",
+            "azul"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la resortera con plumas y el raton peluche azul",
+
+        codigo: "",
+        stock: null
     }
 ];
 
