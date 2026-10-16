@@ -5121,6 +5121,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "fuente de agua para mascotas, hidratacion fresca",
+        imagen: "beberedo_para_perros_y_gatos.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "fuente",
+            "agua",
+            "mascotas",
+            "mascota",
+            "gato",
+            "gatos",
+            "perros",
+            "perro",
+            "cat",
+            "dog"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la fuente de agua para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
