@@ -5144,6 +5144,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pollo chillon, diversion y entretenimiento para tus mascotas",
+        imagen: "juguete_pollo.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "pollo",
+            "chillon",
+            "gato",
+            "gatos",
+            "perros",
+            "perro",
+            "cat",
+            "dog"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el pollo chillon",
+
+        codigo: "",
+        stock: null
     }
 ];
 
