@@ -5098,6 +5098,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "peine para mascotas, perros u gatos, cuidado y limpieza eficiente",
+        imagen: "afeitador_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "peines",
+            "peine",
+            "mascotas",
+            "mascota",
+            "perros",
+            "perro",
+            "gato",
+            "gatos",
+            "cat",
+            "dog"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el peine para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
