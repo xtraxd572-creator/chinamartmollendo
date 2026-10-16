@@ -5165,6 +5165,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "peine y juguete para juguete, pet show",
+        imagen: "juguetes_para_gatos.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "peine",
+            "juguete",
+            "gato",
+            "gatos",
+            "cepillo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por le cepillo y juguete pet show para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
