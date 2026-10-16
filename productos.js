@@ -5183,6 +5183,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pelotas sensiriales para mascotas",
+        imagen: "pelotas_sencoriales.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "pelotas",
+            "pelota",
+            "perros",
+            "perro",
+            "dog"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pelotas sensoriales para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
