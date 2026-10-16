@@ -5080,6 +5080,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nomnbre: "cama acogedora para gato, maximo confort y descanso",
+        imagen: "cama_para_gatos.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "cama",
+            "gatos",
+            "gato",
+            "cat",
+            "pet show"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la cama para gatos, pet show",
+
+        codigo: "",
+        stock: null
     }
 ];
 
