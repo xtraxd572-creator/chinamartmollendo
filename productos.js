@@ -5060,6 +5060,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "guia esencial de juguetes para tu gato, juguetes pet show y cat toys",
+        imagen: "juguetes_pet_show_y_cat_toys.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "juguetes",
+            "juguete",
+            "gato",
+            "gatos",
+            "cat",
+            "peluches",
+            "entretenimiento"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes pet show y el cat toys",
+
+        codigo: "",
+        stock: null
     }
 ];
 
