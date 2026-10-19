@@ -5300,6 +5300,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "arnes para tu mascota, material resistente",
+        imagen: "correa_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "arnes",
+            "arne",
+            "mascota",
+            "mascotas",
+            "perro",
+            "perros",
+            "gatos",
+            "gato"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el arnes de perro o gato",
+
+        codigo: "",
+        stock: null
     }
 ];
 
