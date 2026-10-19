@@ -5280,6 +5280,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pelotas en forma de meteoritos, juguete en forma de helado y cuerda distractora",
+        imagen: "juguetes.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "pelotas",
+            "pelota",
+            "meteoritos",
+            "helado",
+            "cuerda",
+            "perro",
+            "perros"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las pelotas en forma de meteoritos, el juguete en forma de helado, cuerda distractora",
+
+        codigo: "",
+        stock: null
     }
 ];
 
