@@ -5321,6 +5321,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "cama para mascotas, suavidad y comodidad",
+        imagen: "cama_para_mascotas.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "mascotas",
+            "mascota",
+            "perro",
+            "perros",
+            "gato",
+            "gatos",
+            "cama"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la cama para mascotas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
