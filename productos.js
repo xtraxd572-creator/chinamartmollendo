@@ -5236,6 +5236,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "laser interactivo en forma de pez y juguete de pluma multicolor",
+        imagen: "juguetes_dos_en_uno.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "laser",
+            "pez",
+            "pluma",
+            "multicolor",
+            "gato",
+            "gatos",
+            "cat"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los juguetes laser interactivos en forma de pez y el juguete de pluma multicolor",
+
+        codigo: "",
+        stock: null
     }
 ];
 
