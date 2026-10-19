@@ -5256,6 +5256,30 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "cereal mimaskot, juguete cupcake y cama espceial para gato o perro",
+        imagen: "comida_para_perros.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "cereal",
+            "mimaskot",
+            "juguete",
+            "cupcake",
+            "cama",
+            "perros",
+            "perro",
+            "gato",
+            "gatos",
+            "cat",
+            "dog"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los productos cereal mimaskot, el juguete cupcake o la cama especial para gato o perro",
+
+        codigo: "",
+        stock: null
     }
 ];
 
