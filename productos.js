@@ -5201,6 +5201,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "peluche de hueso resistente, ideal para tu mascota",
+        imagen: "juguetes_para_perros.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "peluche",
+            "peluches",
+            "hueso",
+            "huesos",
+            "perros",
+            "perro"
+            ],
+        mensaje: "Hola, quisiera consultar por el peluche de hueso",
+
+        codigo: "",
+        stock: null
     }
 ];
 
