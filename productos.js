@@ -5219,6 +5219,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "peluche popo, resistente y diseño unico",
+        imagen: "juguete_popo.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "peluche",
+            "peluches",
+            "popo",
+            "perros",
+            "perro"
+            ],
+        mensaje: "Hola, quisiera consultar por el peluche de popo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
