@@ -5429,17 +5429,38 @@ const productosChinaMart = [
         stock: null
     },
     {
-        nombre: "mascara de terror",
+        nombre: "Máscara Calavera Ojo Saltona",
         imagen: "mascara_de_terror.png",
         categoria: "noches de brujas",
 
         palabrasClave: [
             "mascara",
             "mascaras",
+            "terror",
+            "calavera",
+            "ojo",
+            "saltona"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la Máscara Calavera Ojo Saltona",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "Máscara Calavera Metálica / Sangrienta",
+        imagen: "mascar.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "calavera",
+            "metalica",
+            "sangrienta",
             "terror"
 
             ],
-        mensaje: "Hola, quisiera consultar por la mascara de terror",
+        mensaje: "Hola, quisiera consultar por la mascara calavera metalica sangrienta",
 
         codigo: "",
         stock: null
