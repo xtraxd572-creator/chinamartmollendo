@@ -5411,6 +5411,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "araña decorativa para el cabello",
+        imagen: "araña.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "araña",
+            "cabello",
+            "arañas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la araña decorativa para el cabello",
+
+        codigo: "",
+        stock: null
     }
 ];
 
