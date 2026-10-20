@@ -5394,6 +5394,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "adordo decorativo de calabaza",
+        imagen: "calabazas.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "adordo",
+            "decorativo",
+            "calabazin",
+            "calabaza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el adordo de calabaza",
+
+        codigo: "",
+        stock: null
     }
 ];
 
