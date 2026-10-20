@@ -5377,6 +5377,23 @@ const productosChinaMart = [
             ],
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "sombrero de bruja",
+        imagen: "sobrero_de_bruja.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "sombrero",
+            "bruja",
+            "capa",
+            "halloween"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el sombreo de bruja",
+
+        codigo: "",
+        stock: null
     }
 ];
 
