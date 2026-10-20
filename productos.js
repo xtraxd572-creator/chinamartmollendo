@@ -5482,6 +5482,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscara de Terror Clásica con Capucha (Modelo Bruja / Modelo Vampiro)",
+        imagen: "wasa.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "terror",
+            "clasica",
+            "capucha",
+            "bruja",
+            "vampiro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las mascaras de terror bruja y vampiro",
+
+        codigo: "",
+        stock: null
     }
 ];
 
