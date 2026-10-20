@@ -5368,7 +5368,7 @@ const productosChinaMart = [
     {
         nombre: "noche de brujas, diversion y sustos, lleno de sorpresas",
         imagen: "noche_de_brujas.png",
-        categoria: "noche de brujas",
+        categoria: "noches de brujas",
 
         palabrasClave: [
             "brujas",
