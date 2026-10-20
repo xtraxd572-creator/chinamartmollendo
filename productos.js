@@ -5464,6 +5464,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscara Dragón de Hueso (Blanco y Negro)",
+        imagen: "terror.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "dragon",
+            "hueso",
+            "blanco",
+            "negro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las mascaras dragon de hueso",
+
+        codigo: "",
+        stock: null
     }
 ];
 
