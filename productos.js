@@ -5364,6 +5364,19 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "noche de brujas, diversion y sustos, lleno de sorpresas",
+        imagen: "noche_de_brujas.png",
+        categoria: "noche de brujas",
+
+        palabrasClave: [
+            "brujas",
+            "noches"
+
+            ],
+        codigo: "",
+        stock: null
     }
 ];
 
