@@ -5529,7 +5529,18 @@ const categoriasChinaMart = {
             "chino",
             "china"
         ]
-    }
+    },
+     "nonche de brujas": {
+         nombre: "noches de brujas",
+         icono: "👻",
+         palabras: [
+             "halloween",
+             "noche",
+             "brujas",
+             "dulce",
+             "truco"
+             ]
+     }
     };
 
 // ============================================
