@@ -5341,6 +5341,29 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "peluche de vaca, resistente y unico",
+        imagen: "peluche_de_vaca.png",
+        categoria: "mascotas",
+
+        palabrasClave: [
+            "peluche",
+            "peluches",
+            "vaca",
+            "vacas",
+            "gatos",
+            "gato",
+            "perro",
+            "perros",
+            "dog",
+            "cat"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el peluche de vaca",
+
+        codigo: "",
+        stock: null
     }
 ];
 
