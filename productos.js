@@ -5427,6 +5427,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "mascara de terror",
+        imagen: "mascara_de_terror.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "mascaras",
+            "terror"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la mascara de terror",
+
+        codigo: "",
+        stock: null
     }
 ];
 
