@@ -5543,7 +5543,7 @@ const categoriasChinaMart = {
             "china"
         ]
     },
-     "nonche de brujas": {
+     "noches de brujas": {
          nombre: "noches de brujas",
          icono: "👻",
          palabras: [
