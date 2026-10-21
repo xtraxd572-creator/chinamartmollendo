@@ -5778,6 +5778,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Velo de Novia Clásico con Flores",
+        imagen: "velorio.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "velo",
+            "novia",
+            "clasico",
+            "flores",
+            "blanco"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el velo de novia clasico con flores",
+
+        codigo: "",
+        stock: null
     }
 ];
 
