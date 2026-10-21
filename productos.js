@@ -5609,6 +5609,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Antifaz Coneja Metalizado Tornasol",
+        imagen: "conejo.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "antifaz",
+            "coneja",
+            "metalizado",
+            "tornasol"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el antifaz de coneja matelizado tornasol",
+
+        codigo: "",
+        stock: null
     }
 ];
 
