@@ -5924,6 +5924,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Vincha Araña Peluda Escarchada",
+        imagen: "vincha.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "vincha",
+            "araña",
+            "peluda",
+            "escarchada"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la vincha araña peluda escarchada de halloween",
+
+        codigo: "",
+        stock: null
     }
 ];
 
