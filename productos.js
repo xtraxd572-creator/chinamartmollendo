@@ -5977,6 +5977,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Manos Esqueleto Decorativa con Ojo LED",
+        imagen: "manos.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "manos",
+            "mano",
+            "esqueleto",
+            "esqueletos",
+            "ojos",
+            "ojo",
+            "led"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las manos de esqueleto decorativas con ojo led",
+
+        codigo: "",
+        stock: null
     }
 ];
 
