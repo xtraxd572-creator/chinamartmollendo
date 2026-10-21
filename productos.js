@@ -5570,6 +5570,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscaras de Terror con Luz LED en el Ojo (Modelos Assorted)",
+        imagen: "payasos.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "terror",
+            "luz",
+            "led",
+            "ojo",
+            "colores"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las mascaras de terror con luzes led en el ojo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
