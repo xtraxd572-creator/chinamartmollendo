@@ -5725,6 +5725,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Velas Cilíndrica LED Decorativa Halloween",
+        imagen: "velas.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [ 
+            "velas",
+            "cilindricas",
+            "led",
+            "decorativa",
+            "halloween"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las velas cilindricas led de halloween",
+
+        codigo: "",
+        stock: null
     }
 ];
 
