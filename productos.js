@@ -5816,6 +5816,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Velo de Novia Premium con Tocado Floral Fucsia",
+        imagen: "noviesita.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "velo",
+            "novia",
+            "premimum",
+            "tocado",
+            "floral",
+            "fucsia"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el velo de novia premium con tocado floral fucsia",
+
+        codigo: "",
+        stock: null
     }
 ];
 
