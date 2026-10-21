@@ -5663,6 +5663,30 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Sombrero de Bruja con Luces LED (Disponible en varios colores)",
+        imagen: "sombrero.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "sombrero",
+            "bruja",
+            "luces",
+            "led",
+            "colores",
+            "rosa",
+            "morado",
+            "rojo",
+            "naranaja",
+            "fucsia",
+            "azul"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los sombreros de brujas de diferentes colores",
+
+        codigo: "",
+        stock: null
     }
 ];
 
