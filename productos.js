@@ -5501,6 +5501,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscara de Terror Estilo Grito con Cicatriz de Ciempiés",
+        imagen: "ple.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "terror",
+            "grito",
+            "cicatriz",
+            "ciempies",
+            "niño"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la mascara de terror estilo grito con cicatriz de ciempies",
+
+        codigo: "",
+        stock: null
     }
 ];
 
