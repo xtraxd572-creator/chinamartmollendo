@@ -5545,6 +5545,31 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscaras Ghostface de Tela (7 Colores Disponibles)",
+        imagen: "mascara_goh.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascaras",
+            "mascara",
+            "ghostface",
+            "tela",
+            "colores",
+            "blanco",
+            "amarillo",
+            "naranja",
+            "rosa",
+            "rojo",
+            "azul",
+            "verde"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las mascaras ghstface",
+
+        codigo: "",
+        stock: null
     }
 ];
 
