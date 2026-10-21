@@ -5687,6 +5687,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Sombrero de Bruja Premium con Murciélagos",
+        imagen: "brujita.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "sombrero",
+            "bruja",
+            "premium",
+            "murcielagos",
+            "brujitas",
+            "halloween"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el sombreo de bruja premium con murcielagos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
