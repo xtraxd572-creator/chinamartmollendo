@@ -5889,6 +5889,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Set de Diablita 3 Piezas (Vincha, Moño y Cola)",
+        imagen: "diabla.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "diablitas",
+            "diablita",
+            "vincha",
+            "moño",
+            "cola"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el set de diablita, vincha, moño y cola",
+
+        codigo: "",
+        stock: null
     }
 ];
 
