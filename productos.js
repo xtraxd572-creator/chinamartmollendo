@@ -5646,6 +5646,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Brazalete Egipcio Dorado Cleopatra",
+        imagen: "egipsio.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "brazalete",
+            "egipcio",
+            "dorado",
+            "cleopatra"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el brazalete egipcio dorado de cleopatra",
+
+        codigo: "",
+        stock: null
     }
 ];
 
