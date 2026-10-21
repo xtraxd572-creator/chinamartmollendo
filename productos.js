@@ -5589,6 +5589,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscaras Calavera Zombi con Luz LED y Cabello",
+        imagen: "halloween.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascaras",
+            "mascara",
+            "calavera",
+            "zombi",
+            "luz",
+            "led",
+            "cabello"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las mascaras calaveras zombi con luz led",
+
+        codigo: "",
+        stock: null
     }
 ];
 
