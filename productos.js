@@ -5835,6 +5835,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscara Vampiro Ojos Saltones",
+        imagen: "vampiro.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "mascaras",
+            "vampiro",
+            "ojos",
+            "saltones"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la mascara de vampiro ojos saltones",
+
+        codigo: "",
+        stock: null
     }
 ];
 
