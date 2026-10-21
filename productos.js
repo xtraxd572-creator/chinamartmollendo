@@ -5907,6 +5907,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Peluca de Payaso Multicolor Arcoíris",
+        imagen: "payaso.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "peluca",
+            "payaso",
+            "multicolor",
+            "arcoiris"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la peluca de payaso",
+
+        codigo: "",
+        stock: null
     }
 ];
 
