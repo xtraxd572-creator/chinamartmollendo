@@ -5520,6 +5520,31 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscaras Calavera Clásica de Tela (Variedad de Colores)",
+        imagen: "mascara_milticolor.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascara",
+            "calavera",
+            "clasicas",
+            "tela",
+            "colores",
+            "rojo",
+            "azul",
+            "verde",
+            "naranja",
+            "rosa",
+            "blanco",
+            "amarillo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las mascaras clasicas de tela",
+
+        codigo: "",
+        stock: null
     }
 ];
 
