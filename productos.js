@@ -5941,6 +5941,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Vincha Araña LED con Lazo de Tul",
+        imagen: "vinchas_araña.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "vincha",
+            "araña",
+            "led",
+            "lazo",
+            "tul"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las vinchas de araña con luces led y lazo de tul",
+
+        codigo: "",
+        stock: null
     }
 ];
 
