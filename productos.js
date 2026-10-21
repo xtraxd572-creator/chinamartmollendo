@@ -5871,6 +5871,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Set Pirata Escarchado (Vincha Sombrero + Parche)",
+        imagen: "pirata.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "pirata",
+            "escarchado",
+            "vincha",
+            "sombrero",
+            "parche"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el set pirata escarchado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
