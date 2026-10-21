@@ -5997,6 +5997,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Calavera Colgante LED en Malla Sangrienta",
+        imagen: "calavera.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "calavera",
+            "colgante",
+            "led",
+            "malla",
+            "sangrienta"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la calavera colgante led en malla sangrienta",
+
+        codigo: "",
+        stock: null
     }
 ];
 
