@@ -5959,6 +5959,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Calabaza Decorativa con Luz LED Halloween",
+        imagen: "calabazitas.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "calabaza",
+            "luz",
+            "led",
+            "halloween",
+            "calabazitas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las calabazas decorativas con luz led de halloween",
+
+        codigo: "",
+        stock: null
     }
 ];
 
