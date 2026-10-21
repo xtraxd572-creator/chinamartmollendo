@@ -5853,6 +5853,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Tela de Araña Decorativa Neón con Arañitas",
+        imagen: "telaraña.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "tela",
+            "araña",
+            "decorativa",
+            "neon",
+            "arañitas"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la tela de araña decorativa neon con arañitas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
