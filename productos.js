@@ -5796,6 +5796,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Velo de Novia Premium con Tocado Floral y Perlas",
+        imagen: "flores.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "velo",
+            "novia",
+            "premium",
+            "tocado",
+            "floral",
+            "perlas",
+            "halloween"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el velo de novia premium con tocado floral y perlas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
