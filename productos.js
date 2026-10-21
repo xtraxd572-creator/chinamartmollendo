@@ -5626,6 +5626,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Máscara de Terror Momo Siniestra con Luces LED",
+        imagen: "momo.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "mascaras",
+            "mascara",
+            "terror",
+            "momo",
+            "siniestra",
+            "luces",
+            "led"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la mascara de terror momo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
