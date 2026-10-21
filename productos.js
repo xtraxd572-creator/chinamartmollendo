@@ -5761,6 +5761,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Velo de Novia con Vincha de Orejitas y Lazo",
+        imagen: "boda.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "velo",
+            "novia",
+            "orejitas",
+            "lazo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el velo de novia con vincha de orejitas y lazo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
