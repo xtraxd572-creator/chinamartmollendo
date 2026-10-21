@@ -5743,6 +5743,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Veladoras LED con Llama Cálida Halloween",
+        imagen: "velitas.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "veladoras",
+            "led",
+            "llama",
+            "calida",
+            "halloween"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las veladoras led con llama calidad de halloween",
+
+        codigo: "",
+        stock: null
     }
 ];
 
