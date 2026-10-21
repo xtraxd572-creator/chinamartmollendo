@@ -5706,6 +5706,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Sombreros de Bruja con Peluca e Hilo Telaraña",
+        imagen: "premium.png",
+        categoria: "noches de brujas",
+
+        palabrasClave: [
+            "sombreros",
+            "bruja",
+            "peluca",
+            "hilo",
+            "telaraña",
+            "premium"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los sombreros de brujas con pelucas e hilo telaraña",
+
+        codigo: "",
+        stock: null
     }
 ];
 
