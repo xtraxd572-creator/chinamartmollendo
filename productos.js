@@ -6015,6 +6015,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "LEJÍA MULTISUPERFICIE, MÁXIMA DESINFECCIÓN",
+        imagen: "lejia.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "lejia",
+            "multisuperficie",
+            "desinfeccion",
+            "bacterias"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la lejia multisuperficie",
+
+        codigo: "",
+        stock: null
     }
 ];
 
