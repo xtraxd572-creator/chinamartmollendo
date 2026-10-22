@@ -6191,7 +6191,23 @@ const categoriasChinaMart = {
              "dulce",
              "truco"
              ]
-     }
+     },
+      "Articulos de Limpieza": {
+          nombre: "articulos de limpieza",
+          icono: "✨",
+          palabras: [
+              "limpieza",
+              "hogar",
+              "aseo",
+              "desinfeccion",
+              "trapaador",
+              "escoba",
+              "esponja",
+              "organizador",
+              "cocina",
+              "baño"
+              ]
+      }
     };
 
 // ============================================
