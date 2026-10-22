@@ -6025,10 +6025,30 @@ const productosChinaMart = [
             "lejia",
             "multisuperficie",
             "desinfeccion",
-            "bacterias"
+            "bacterias",
+            "clorox"
 
             ],
         mensaje: "Hola, quisiera consultar por la lejia multisuperficie",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "CLOROX LEJÍA XL, MÁS RENDIMIENTO Y MÁXIMA DESINFECCIÓN",
+        imagen: "lejia_xl.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "clorox",
+            "lejia",
+            "xl",
+            "rendimiento",
+            "desinfeccion",
+            "limpieza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el clorox lejia XL",
 
         codigo: "",
         stock: null
