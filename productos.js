@@ -6052,6 +6052,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "TRAMPA DE RATÓN PEGAJOSA",
+        imagen: "rata.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "trampa",
+            "pegajosa",
+            "rata",
+            "raton",
+            "pericote",
+            "efectivo"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la trampa de raton pegajosa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
