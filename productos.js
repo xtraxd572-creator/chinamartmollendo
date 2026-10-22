@@ -6248,7 +6248,7 @@ const categoriasChinaMart = {
              "truco"
              ]
      },
-      "Articulos de Limpieza": {
+      "articulos de limpieza": {
           nombre: "articulos de limpieza",
           icono: "✨",
           palabras: [
