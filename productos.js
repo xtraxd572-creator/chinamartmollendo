@@ -6071,6 +6071,27 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "HOGAR IMPECABLE, BRILLO Y AROMA DE LARGA DURACIÓN",
+        imagen: "deterjentes.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "hogar",
+            "impecable",
+            "tolbin",
+            "sapollio",
+            "limpiar",
+            "vidrio",
+            "rosas",
+            "lavanda"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los productos de hogar impecable, brillo y aroma de larga duracion",
+
+        codigo: "",
+        stock: null
     }
 ];
 
