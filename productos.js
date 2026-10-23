@@ -6092,6 +6092,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "DOWNY FLORAL, FRESCURA Y AROMA PROLONGADO",
+        imagen: "enjuague.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "dowy",
+            "floral",
+            "frescura",
+            "aroma",
+            "prolongado"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el dowy floral",
+
+        codigo: "",
+        stock: null
     }
 ];
 
