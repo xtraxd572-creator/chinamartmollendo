@@ -6110,6 +6110,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "DOWNY INTENSE, DÚO FRESCURA Y PERFUME 24/7",
+        imagen: "enguaje1.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "downy",
+            "frescura",
+            "perfume",
+            "limpieza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los downy intense duo frescura y perfume",
+
+        codigo: "",
+        stock: null
     }
 ];
 
