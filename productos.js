@@ -6196,6 +6196,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "CLOROX TAMAÑO FAMILIAR 3.8L, LIMPIEZA PROFUNDA Y PROTECCIÓN",
+        imagen: "clorox.png",
+        categoria: "articulo de limpieza",
+
+        palabrasClave: [
+            "clorox",
+            "familiar",
+            "limpieza",
+            "proteccion"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el clorox tamaño familiar 3.8L",
+
+        codigo: "",
+        stock: null
     }
 ];
 
