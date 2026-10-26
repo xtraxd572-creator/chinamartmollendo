@@ -6179,6 +6179,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "ESPIRALES GALLO 2 EN 1, PROTECCIÓN CONTINUA CONTRA ZANCUDOS",
+        imagen: "cok_gallo.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "espirales",
+            "gallo",
+            "proteccion",
+            "zancudos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el espiral gallo contra zancudos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
