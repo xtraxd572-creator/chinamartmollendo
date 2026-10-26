@@ -6127,6 +6127,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "DOWNY INTENSE FLORAL 2.6L, FORMATO MAXI Y FRESCURA DURALA",
+        imagen: "downy.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "downy",
+            "floral",
+            "limpieza",
+            "belleza"
+
+            ],
+        mensaje: "hola, quisiera consultar por el downy intense floral 2.6L",
+
+        codigo: "",
+        stock: null
     }
 ];
 
