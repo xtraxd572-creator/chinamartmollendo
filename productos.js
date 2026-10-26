@@ -6213,6 +6213,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "DETERGENTE ARIEL 3 LITROS, MÁXIMO RENDIMIENTO HASTA 75 LAVADAS",
+        imagen: "ariel.png",
+        categoria: "articulo de limpieza",
+
+        palabrasClave: [
+            "detergente",
+            "ariel",
+            "litros",
+            "litro",
+            "limpieza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el detergente ariel de 3 litros",
+
+        codigo: "",
+        stock: null
     }
 ];
 
