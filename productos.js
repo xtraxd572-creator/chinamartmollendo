@@ -6144,6 +6144,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "ULTREX LIQUIDO, PODER QUITAMANCHAS Y CUIDADO TEXTIL",
+        imagen: "ultrex.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "ultrex",
+            "liquido",
+            "quitamanchas",
+            "limpieza",
+            "sarro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el ultrex liquido",
+
+        codigo: "",
+        stock: null
     }
 ];
 
