@@ -6162,6 +6162,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "TOLBRÍN LIMPIA VIDRIOS 900ML, BRILLO PERFECTO Y SIN VETAS",
+        imagen: "limpia_bidrios.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "tolbrin",
+            "limpia",
+            "vidrios",
+            "limpieza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el otbrin limpia vidrios de 900ML",
+
+        codigo: "",
+        stock: null
     }
 ];
 
