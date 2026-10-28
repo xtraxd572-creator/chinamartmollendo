@@ -6248,6 +6248,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "DKASA AROMATIZADO 900ML, HIGIENE, pH NEUTRO Y FRESCURA DE LAVANDA",
+        imagen: "dukesa.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "dkasa",
+            "aromatizante",
+            "higiene",
+            "neutro",
+            "frescura",
+            "lavanda"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el dkasa aromatizado de 900ML",
+
+        codigo: "",
+        stock: null
     }
 ];
 
