@@ -6267,6 +6267,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "FoamClean Pro / FoamClean Lemon",
+        imagen: "limpiador.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "foamclean",
+            "pro",
+            "foamClean",
+            "lemon"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el foamClean pro, limpiandor tolbin",
+
+        codigo: "",
+        stock: null
     }
 ];
 
