@@ -6200,7 +6200,7 @@ const productosChinaMart = [
     {
         nombre: "CLOROX TAMAÑO FAMILIAR 3.8L, LIMPIEZA PROFUNDA Y PROTECCIÓN",
         imagen: "clorox.png",
-        categoria: "articulo de limpieza",
+        categoria: "articulos de limpieza",
 
         palabrasClave: [
             "clorox",
@@ -6217,7 +6217,7 @@ const productosChinaMart = [
     {
         nombre: "DETERGENTE ARIEL 3 LITROS, MÁXIMO RENDIMIENTO HASTA 75 LAVADAS",
         imagen: "ariel.png",
-        categoria: "articulo de limpieza",
+        categoria: "articulos de limpieza",
 
         palabrasClave: [
             "detergente",
