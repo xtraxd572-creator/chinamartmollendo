@@ -6231,6 +6231,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "TOLBRÍN LIMPIA TODO 900ML, VARIEDAD DE AROMAS Y MÁXIMO RENDIMIENTO",
+        imagen: "tolbin.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "tolbin",
+            "limpieza",
+            "aromas",
+            "rendimiento"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el tolbin limpia todo de 900ML",
+
+        codigo: "",
+        stock: null
     }
 ];
 
