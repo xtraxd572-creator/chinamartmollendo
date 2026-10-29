@@ -6284,6 +6284,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Dkas ScentFresh",
+        imagen: "carro.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "dkas",
+            "scentfresh",
+            "frutos",
+            "bosque"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el dkas scentfresh",
+
+        codigo: "",
+        stock: null
     }
 ];
 
