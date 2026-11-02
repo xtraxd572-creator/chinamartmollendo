@@ -6301,6 +6301,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Orión Power Lemon",
+        imagen: "orion.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "orion",
+            "power",
+            "lemon"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el orion power lemon",
+
+        codigo: "",
+        stock: null
     }
 ];
 
