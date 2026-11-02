@@ -6336,6 +6336,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Tolbrín Multi-Pasta Limón",
+        imagen: "ajudin_de_temu.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "tolbrin",
+            "multipasta",
+            "hogar",
+            "limon"
+
+            ],
+        mensaje: "Hola, quisiera comsultar por el tolbrin muti-pasta de limon",
+
+        codigo: "",
+        stock: null
     }
 ];
 
