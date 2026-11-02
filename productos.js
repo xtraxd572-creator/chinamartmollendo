@@ -6353,6 +6353,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Trome MaxEspuma 4 en 1",
+        imagen: "trome.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "trome",
+            "maxespuma",
+            "4",
+            "en",
+            "1",
+            "hogar"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el trome maxespuma 4 en 1",
+
+        codigo: "",
+        stock: null
     }
 ];
 
