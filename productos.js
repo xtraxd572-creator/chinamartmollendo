@@ -6317,6 +6317,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Tolbrín Max Concentrado,Yang Ultra Rinde (1200 ml)",
+        imagen: "lavabajillas.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "tolbrin",
+            "max",
+            "concentrado",
+            "yang",
+            "ultra",
+            "1200ml"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el tolbirn max concentrado y el yang ultra rinde de 1200 ml",
+
+        codigo: "",
+        stock: null
     }
 ];
 
