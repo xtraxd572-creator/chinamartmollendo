@@ -6486,6 +6486,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Toallas Imperial Soft",
+        imagen: "toallas.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "toallas",
+            "imperial",
+            "soft"
+
+            ],
+        mensaje: "Hola, quisiera consultar por las toallas imperials soft",
+
+        codigo: "",
+        stock: null
     }
 ];
 
