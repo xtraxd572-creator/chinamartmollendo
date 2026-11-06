@@ -6584,6 +6584,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Kleaner esponga de fierro, clave para esos platos sucios",
+        imagen: "malla_de_fierro.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "kleaner",
+            "esponga",
+            "fierro",
+            "platos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el kleaner esponga de fierro",
+
+        codigo: "",
+        stock: null
     }
 ];
 
