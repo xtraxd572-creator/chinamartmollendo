@@ -6568,6 +6568,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "yang detergente y yang suavizante",
+        imagen: "yang_cuidado_del_hogar.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "yang",
+            "detergente",
+            "suavizante"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el yang detergente y el yang suavizante",
+
+        codigo: "",
+        stock: null
     }
 ];
 
