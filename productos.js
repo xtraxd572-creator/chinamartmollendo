@@ -6389,6 +6389,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "magazine, el poder de amistad en tu casa",
+        imagen: "malla.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "magazine",
+            "limpieza",
+            "casa",
+            "amistad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la malla magazine",
+
+        codigo: "",
+        stock: null
     }
 ];
 
