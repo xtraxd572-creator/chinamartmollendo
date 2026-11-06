@@ -6536,6 +6536,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "YANG FLORAL",
+        imagen: "YANG_FLORAL.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "yang",
+            "floral"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el yang floral",
+
+        codigo: "",
+        stock: null
     }
 ];
 
