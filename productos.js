@@ -6437,6 +6437,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "tolbin quita sarro de 3.8 litros",
+        imagen: "tolbin_de_3_8_litros.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "tolbin",
+            "sarro",
+            "litro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el tolbin quita sarro de 3.8 litros",
+
+        codigo: "",
+        stock: null
     }
 ];
 
