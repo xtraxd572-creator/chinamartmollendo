@@ -6519,6 +6519,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Yang quita manchas y colores vivos",
+        imagen: "yang.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "yang",
+            "manchas",
+            "colores",
+            "vivos"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el yang quita manchas",
+
+        codigo: "",
+        stock: null
     }
 ];
 
