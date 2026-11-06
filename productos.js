@@ -6601,6 +6601,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "G.DUCK KIDS, paño de limpiza",
+        imagen: "toalla_de_temu.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "paño",
+            "limpieza",
+            "duck",
+            "kids"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el duck kids paño de limpieza",
+
+        codigo: "",
+        stock: null
     }
 ];
 
