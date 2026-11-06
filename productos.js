@@ -6453,6 +6453,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Cepillo ErgoClean Pro",
+        imagen: "cepillo_a_mano.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "cepillo",
+            "ergoclean",
+            "pro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el cepillo ergoclean pro",
+
+        codigo: "",
+        stock: null
     }
 ];
 
