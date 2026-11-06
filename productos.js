@@ -6372,6 +6372,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "Jabón Zote, limpieza en cada momento",
+        imagen: "jabon.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "jabon",
+            "zote",
+            "limpieza",
+            "jabon"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el jabon zote",
+
+        codigo: "",
+        stock: null
     }
 ];
 
