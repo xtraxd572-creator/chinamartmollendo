@@ -6422,6 +6422,21 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "tolbin quita sarros",
+        imagen: "tolbin_quita_sarro.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "tolbin",
+            "sarro"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el tolbin quita sarros",
+
+        codigo: "",
+        stock: null
     }
 ];
 
