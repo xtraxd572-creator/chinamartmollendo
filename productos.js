@@ -6502,6 +6502,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "colgate family doctor",
+        imagen: "colgate.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "colgate",
+            "family",
+            "doctor"
+
+
+            ],
+        mensaje: "Hola, quisiera consultar por el colgate family doctor",
+
+        codigo: "",
+        stock: null
     }
 ];
 
