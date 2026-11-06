@@ -6554,7 +6554,7 @@ const productosChinaMart = [
     },
     {
         nombre: "YANG SACA GRASA",
-        imagen: "YANG_SACA_GRASA",
+        imagen: "YANG_SACA_GRASA.png",
         categoria: "articulos de limpieza",
 
         palabrasClave: [
