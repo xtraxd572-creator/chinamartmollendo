@@ -6551,6 +6551,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "YANG SACA GRASA",
+        imagen: "YANG_SACA_GRASA",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "yang",
+            "grasa",
+            "casa",
+            "limpieza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el yang saca grasa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
