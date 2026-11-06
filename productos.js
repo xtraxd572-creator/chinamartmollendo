@@ -6469,6 +6469,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "jabon yang, limpieza total y cuidado",
+        imagen: "jabon_yang.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "jabon",
+            "yang",
+            "limpieza",
+            "cuidado"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el jabon yang limpiza y cuidado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
