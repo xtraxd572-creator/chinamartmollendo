@@ -6406,6 +6406,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: " juevo para jabon infantil de pato",
+        imagen: "pato.png",
+        categoria: "articulos de limpieza",
+
+        palabraClave: [
+            "jabon",
+            "juego",
+            "pato",
+            "infantil"
+            ],
+        mensaje: "Hola, quisiera consultar por el juego para jabon infantil de pato",
+
+        codigo: "",
+        stock: null
     }
 ];
 
