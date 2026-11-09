@@ -6703,6 +6703,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "excavadora montable bobdog",
+        imagen: "carrito.png",
+        categoria: "juguetes para niño y niña",
+
+        palabrasClave: [
+            "excavadora",
+            "montable",
+            "bobdog",
+            "juguete",
+            "niño",
+            "niña"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la excavadora montable bobdog",
+
+        codigo: "",
+        stock: null
     }
 ];
 
