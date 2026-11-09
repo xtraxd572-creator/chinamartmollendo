@@ -6637,6 +6637,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "beath glove, secreto para una piel radiante",
+        imagen: "bath.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "beath",
+            "glove",
+            "radiante"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el beath glove",
+
+        codigo: "",
+        stock: null
     }
 ];
 
