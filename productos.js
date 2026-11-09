@@ -6722,6 +6722,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "carrito en forma de zapatito, oule tong",
+        imagen: "zapatito.png",
+        categoria: "juguetes para niño y niña",
+
+        palabrasClave: [
+            "carrito",
+            "zapato",
+            "zapatito",
+            "oule",
+            "tong"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el carrito en forma de zapatito de oule tong",
+
+        codigo: "",
+        stock: null
     }
 ];
 
