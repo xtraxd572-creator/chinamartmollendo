@@ -6653,6 +6653,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "yufumei bath towel & glove, suave limpieza",
+        imagen: "yufu.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "yufumei",
+            "bath",
+            "glove",
+            "limpieza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el yufumei bath towel & glove",
+
+        codigo: "",
+        stock: null
     }
 ];
 
