@@ -6618,6 +6618,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "jie de li stainless stell scourer, revoluciona tu limpieza",
+        imagen: "ije.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "jie",
+            "li",
+            "stainless",
+            "scourer",
+            "limpieza",
+            "hogar"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el jie de li stainlees stell scourer",
+
+        codigo: "",
+        stock: null
     }
 ];
 
