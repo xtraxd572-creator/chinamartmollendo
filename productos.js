@@ -6670,6 +6670,22 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "impeke, guantes multiuso",
+        imagen: "impeke.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "impeke",
+            "guantes",
+            "multiuso"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los guantes mutiuso de impeke",
+
+        codigo: "",
+        stock: null
     }
 ];
 
