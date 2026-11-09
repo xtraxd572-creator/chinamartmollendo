@@ -6686,6 +6686,23 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "paños de microfibra multiuso",
+        imagen: "paños.png",
+        categoria: "articulos de limpieza",
+
+        palabrasClave: [
+            "paños",
+            "microfibra",
+            "multiuso",
+            "limpieza"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los paños de mircrofibra multiuso",
+
+        codigo: "",
+        stock: null
     }
 ];
 
