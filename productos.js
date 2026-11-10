@@ -6932,7 +6932,18 @@ const categoriasChinaMart = {
               "cocina",
               "baño"
               ]
-      }
+      },
+    "productos de navidad 2026": {
+        nombre: "productos de navidad 2026",
+        icono: "🎅",
+        palabras: [
+            "navidad",
+            "santa",
+            "claus",
+            "2026",
+            "navideño"
+            ]
+    }
     };
 
 // ============================================
