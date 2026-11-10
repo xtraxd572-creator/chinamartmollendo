@@ -6933,8 +6933,8 @@ const categoriasChinaMart = {
               "baño"
               ]
       },
-    "productos de navidad 2026": {
-        nombre: "productos de navidad 2026",
+    "productos de navidad": {
+        nombre: "productos de navidad",
         icono: "🎅",
         palabras: [
             "navidad",
