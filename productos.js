@@ -6888,6 +6888,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "colgante campana de gnomo",
+        imagen: "campana_de_gnomo.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "colgante",
+            "campana",
+            "gnomo",
+            "navidad",
+            "navideño"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el colgante de campana de gnomo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
