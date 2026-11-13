@@ -757,9 +757,9 @@
                 Categorías
             </a>
 
-            <a href="#">
-                Ofertas
-            </a>
+            <a href="#ofertas">
+    Ofertas
+</a>
 
             <a href="#" id="abrirContacto">Contacto</a>
 
@@ -824,7 +824,12 @@
             </div>
         </div>
     </div>
-    
+
+    <section id="ofertas">
+    <h2>🎄 Ofertas de Navidad</h2>
+
+    <div id="lista-ofertas"></div>
+</section>
     <footer>
         CALIDAD
         &nbsp; <span>•</span> &nbsp;
@@ -834,7 +839,37 @@
     </footer>
 
 <script src="productos.js?v=3"></script>
-    
+
+    <script src="productos.js?v=3"></script>
+
+<script>
+function cargarOfertas() {
+
+    const contenedor = document.getElementById("lista-ofertas");
+
+    const productosOferta = productosChinaMart.filter(
+        producto => producto.enOferta === true
+    );
+
+    contenedor.innerHTML = "";
+
+    productosOferta.forEach(producto => {
+
+        contenedor.innerHTML += `
+            <div class="producto-oferta">
+                <img src="${producto.imagen}" alt="${producto.nombre}">
+                <h3>${producto.nombre}</h3>
+                <span>🎁 En oferta</span>
+            </div>
+        `;
+
+    });
+}
+
+document.addEventListener("DOMContentLoaded", cargarOfertas);
+</script>
+
+<!-- Aquí continúa el siguiente script que ya tenías -->
     <script>
 
        let slideActual = 0;
