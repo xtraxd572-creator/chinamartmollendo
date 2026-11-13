@@ -6870,6 +6870,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "colgante navideño de campanas",
+        imagen: "campanas.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "colgante",
+            "navideño",
+            "campanas",
+            "navidad",
+            "navideños"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el colgante navideño de campana",
+
+        codigo: "",
+        stock: null
     }
 ];
 
