@@ -6926,6 +6926,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "lazo navideño calado dorado",
+        imagen: "lazo_navideño.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "lazo",
+            "navideño",
+            "calado",
+            "dorado",
+            "navidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el lazo navideño calado dorado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
