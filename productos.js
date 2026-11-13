@@ -6796,6 +6796,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "pack de flores de pascua multicolor",
+        imagen: "flores_de_pascua.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "pack",
+            "flores",
+            "pascua",
+            "multicolor",
+            "navidad",
+            "navidades"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el pack de flores de pascua multicolor",
+
+        codigo: "",
+        stock: null
     }
 ];
 
