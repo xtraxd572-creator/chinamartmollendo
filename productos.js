@@ -6944,6 +6944,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "campana calada con lazo",
+        imagen: "campana_calada.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "campana",
+            "calada",
+            "lazo",
+            "navidad",
+            "navideño"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la campana calada con lazo",
+
+        codigo: "",
+        stock: null
     }
 ];
 
