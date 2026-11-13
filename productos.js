@@ -6759,6 +6759,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "copo de nieve con lazo rustico",
+        imagen: "copo_de_nieve.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "copo",
+            "nieve",
+            "lazo",
+            "rustico",
+            "navidad",
+            "navidades"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el copo de nieve con lazo rustico",
+
+        codigo: "",
+        stock: null
     }
 ];
 
