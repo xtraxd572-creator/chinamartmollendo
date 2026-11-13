@@ -6967,6 +6967,7 @@ const productosChinaMart = [
         nombre: "estrella punta de arbol decorativa",
         imagen: "estrella_punta.png",
         categoria: "articulos de navidad",
+        enOferta: true,
 
         palabrasClave: [
             "estrella",
