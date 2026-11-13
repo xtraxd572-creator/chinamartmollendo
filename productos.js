@@ -6815,6 +6815,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "adornos colgantes filigrana",
+        imagen: "filigrana_colgante.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "adornos",
+            "colgantes",
+            "filigrana",
+            "colgante",
+            "navidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por los adornos colgantes filigrana",
+
+        codigo: "",
+        stock: null
     }
 ];
 
