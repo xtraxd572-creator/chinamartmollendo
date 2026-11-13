@@ -6906,6 +6906,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "estrella punta de arbol dorada puro",
+        imagen: "estrella.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "estrella",
+            "punta",
+            "arbol",
+            "dorada",
+            "puro",
+            "navidad",
+            "navideño"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la estrella punta de arbol dorada puro",
+
+        codigo: "",
+        stock: null
     }
 ];
 
