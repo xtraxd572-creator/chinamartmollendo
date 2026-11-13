@@ -6740,6 +6740,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "reno y flor de pascua dorados",
+        imagen: "reno_y_flor_de_pascua.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "reno",
+            "flor",
+            "pascua",
+            "dorado",
+            "navidad",
+            "navidades"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el reno y el flor de pascua dorado",
+
+        codigo: "",
+        stock: null
     }
 ];
 
