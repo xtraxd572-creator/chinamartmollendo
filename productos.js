@@ -6852,6 +6852,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "set de pavos reales escarchados",
+        imagen: "pavos_reales.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "pavos",
+            "reales",
+            "escarchados",
+            "navidad",
+            "navidades"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el set de pavos reales escarchados",
+
+        codigo: "",
+        stock: null
     }
 ];
 
