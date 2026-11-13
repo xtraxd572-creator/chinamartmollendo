@@ -6962,6 +6962,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "estrella punta de arbol decorativa",
+        imagen: "estrella_punta.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "estrella",
+            "punta",
+            "arbol",
+            "decorativo",
+            "arbol",
+            "navidad",
+            "navideño"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la estrella punta de arbol decorativa",
+
+        codigo: "",
+        stock: null
     }
 ];
 
