@@ -6778,6 +6778,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "set de renos dorados y rojos",
+        imagen: "renos_dorados_y_rojos.png",
+        categoria: "articulos de navidad",
+
+        palabrasClave: [
+            "renos",
+            "dorados",
+            "rojos",
+            "navidad",
+            "navidades"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el set de renos dorados y rojos",
+
+        codigo: "",
+        stock: null
     }
 ];
 
