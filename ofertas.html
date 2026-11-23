@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.png">
+    <title>Ofertas - ChinaMart Mollendo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #15191d;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #15191d;
+            color: white;
+            min-height: 110px;
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            width: 350px;
+        }
+
+        .logo-cuadro {
+            background-color: #ed1c24;
+            width: 70px;
+            height: 70px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-cuadro img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 5px;
+        }
+
+        .logo-texto {
+            margin-left: 15px;
+        }
+
+        .logo-texto h2 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        .logo-texto h2 span {
+            color: #ed1c24;
+        }
+
+        .logo-texto p {
+            margin: 5px 0;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        .buscador-contenedor {
+            position: relative;
+            width: 350px;
+            z-index: 2000;
+        }
+
+        .buscador {
+            width: 100%;
+            background-color: #33383d;
+            border: 1px solid #777;
+            border-radius: 30px;
+            padding: 15px 20px;
+            color: white;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .buscador::placeholder {
+            color: #ddd;
+        }
+
+        .buscador:focus {
+            border-color: #ed1c24;
+        }
+
+        .resultados-busqueda {
+            display: none;
+            position: absolute;
+            top: calc(100% + 8px);
+            left: 0;
+            right: 0;
+            background: white;
+            color: #15191d;
+            border-radius: 14px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+            overflow: hidden;
+            max-height: 360px;
+            overflow-y: auto;
+        }
+
+        .resultados-busqueda.visible {
+            display: block;
+        }
+
+        .resultado-busqueda {
+            display: block;
+            padding: 12px 15px;
+            text-decoration: none;
+            color: #15191d;
+            border-bottom: 1px solid #eeeeee;
+            background: white;
+        }
+
+        .resultado-busqueda:hover {
+            background: #fff1f2;
+        }
+
+        .resultado-busqueda strong {
+            display: block;
+            font-size: 14px;
+        }
+
+        .resultado-busqueda span {
+            display: block;
+            margin-top: 2px;
+            color: #777;
+            font-size: 12px;
+        }
+
+        .sin-resultados-busqueda {
+            padding: 14px 15px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        nav {
+            margin-left: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a.activo {
+            color: #ed1c24;
+        }
+
+        /* SECCIÓN DE OFERTAS */
+        main {
+            flex: 1;
+            padding: 40px 5%;
+        }
+
+        .cabecera-ofertas {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .cabecera-ofertas h1 {
+            color: #15191d;
+            font-size: 32px;
+            margin: 0;
+            border-left: 5px solid #ed1c24;
+            padding-left: 14px;
+        }
+
+        .btn-volver {
+            display: inline-block;
+            background: #15191d;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-volver:hover {
+            background: #ed1c24;
+        }
+
+        #lista-ofertas {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 24px;
+        }
+
+        .producto-oferta {
+            position: relative;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #e8e8e8;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, .07);
+            display: flex;
+            flex-direction: column;
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .producto-oferta:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 22px rgba(0, 0, 0, .13);
+        }
+
+        .etiqueta-oferta {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background: #ed1c24;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .producto-oferta img {
+            display: block;
+            width: 100%;
+            height: 220px;
+            object-fit: contain;
+            padding: 15px;
+            box-sizing: border-box;
+            background: #fff;
+        }
+
+        .producto-info {
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .producto-info h3 {
+            font-size: 16px;
+            color: #202020;
+            margin: 0 0 14px;
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        .btn-whatsapp {
+            display: block;
+            text-align: center;
+            background: #168447;
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-whatsapp:hover {
+            background: #116b38;
+        }
+
+        /* VENTANA DE CONTACTO */
+        .modal-contacto {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .58);
+            z-index: 5000;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-contacto.activo {
+            display: flex;
+        }
+
+        .contacto-contenido {
+            width: 100%;
+            max-width: 520px;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .30);
+        }
+
+        .contacto-cerrar {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            border: none;
+            background: #f1f1f1;
+            color: #15191d;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            font-size: 22px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .contacto-cerrar:hover {
+            background: #ed1c24;
+            color: white;
+        }
+
+        .contacto-contenido h2 {
+            margin: 0 45px 8px 0;
+            color: #ed1c24;
+            font-size: 28px;
+        }
+
+        .contacto-intro {
+            margin: 0 0 22px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .contacto-opciones {
+            display: grid;
+            gap: 14px;
+        }
+
+        .contacto-opcion {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 16px;
+            border: 1px solid #e5e5e5;
+            border-radius: 14px;
+            text-decoration: none;
+            color: #15191d;
+            background: #fafafa;
+        }
+
+        .contacto-opcion:hover {
+            border-color: #ed1c24;
+            background: #fff5f5;
+        }
+
+        .contacto-icono {
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            background: #ed1c24;
+            color: white;
+        }
+
+        footer {
+            background-color: #15191d;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        footer span {
+            color: #ed1c24;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                height: auto;
+                flex-direction: column;
+                padding: 18px 15px 22px;
+                gap: 15px;
+            }
+
+            .logo {
+                width: auto;
+                justify-content: center;
+            }
+
+            .buscador-contenedor {
+                width: 100%;
+                max-width: 600px;
+            }
+
+            nav {
+                margin: 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 8px 18px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            #lista-ofertas {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .producto-oferta img {
+                height: 160px;
+                padding: 10px;
+            }
+
+            .producto-info h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <div class="logo-cuadro">
+                <img src="logo.png" alt="Logo China Mart">
+            </div>
+            <div class="logo-texto">
+                <h2>CHINA<span>MART</span></h2>
+                <p>MOLLENDO</p>
+            </div>
+        </div>
+
+        <div class="buscador-contenedor">
+            <input id="busquedaPrincipal" class="buscador" type="search" placeholder="🔎 ¿Qué producto buscas?" autocomplete="off">
+            <div id="resultadosBusquedaPrincipal" class="resultados-busqueda"></div>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+            <a href="ofertas.html" class="activo">Ofertas</a>
+            <a href="#" id="abrirContacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cabecera-ofertas">
+            <h1>🎄 Ofertas de Navidad</h1>
+            <a href="index.html" class="btn-volver">← Volver al inicio</a>
+        </div>
+
+        <div id="lista-ofertas"></div>
+    </main>
+
+    <!-- VENTANA DE CONTACTO -->
+    <div id="modalContacto" class="modal-contacto" aria-hidden="true">
+        <div class="contacto-contenido" role="dialog" aria-modal="true">
+            <button class="contacto-cerrar" id="cerrarContacto" aria-label="Cerrar">×</button>
+            <h2>📍 Contacta con China Mart</h2>
+            <p class="contacto-intro">Elige una opción para comunicarte o ubicar la tienda.</p>
+
+            <div class="contacto-opciones">
+                <a class="contacto-opcion" href="https://maps.app.goo.gl/TEqRencCkYtUKrMA9" target="_blank" rel="noopener noreferrer">
+                    <div class="contacto-icono">📍</div>
+                    <div>
+                        <strong>Cómo llegar</strong>
+                        <small>Referencia: China Mart está al lado de Credishop.</small>
+                    </div>
+                </a>
+
+                <a class="contacto-opcion" href="https://www.tiktok.com/@chinamart06" target="_blank" rel="noopener noreferrer">
+                    <div class="contacto-icono">🎵</div>
+                    <div>
+                        <strong>TikTok</strong>
+                        <small>@chinamart06</small>
+                    </div>
+                </a>
+
+                <a class="contacto-opcion" href="https://wa.me/51914236008?text=Hola%20China%20Mart%20Mollendo%2C%20quisiera%20hacer%20una%20consulta%20sobre%20una%20oferta." target="_blank" rel="noopener noreferrer">
+                    <div class="contacto-icono">💬</div>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <small>914 236 008 · Consultas sobre productos y ofertas.</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        CALIDAD &nbsp; <span>•</span> &nbsp; VARIEDAD &nbsp; <span>•</span> &nbsp; LOS MEJORES PRECIOS
+    </footer>
+
+    <script src="productos.js?v=3"></script>
+
+    <script>
+        function cargarOfertas() {
+            const contenedor = document.getElementById("lista-ofertas");
+            const productosOferta = productosChinaMart.filter(
+                producto => producto.enOferta === true
+            );
+
+            contenedor.innerHTML = "";
+
+            if (productosOferta.length === 0) {
+                contenedor.innerHTML = "<p>Pronto agregaremos nuevas ofertas.</p>";
+                return;
+            }
+
+            productosOferta.forEach(producto => {
+                const mensajeWsp = encodeURIComponent(
+                    producto.mensaje || `Hola, quisiera consultar por la oferta de: ${producto.nombre}`
+                );
+
+                contenedor.innerHTML += `
+                    <div class="producto-oferta">
+                        <span class="etiqueta-oferta">🎁 En oferta</span>
+                        <img src="${producto.imagen}" alt="${producto.nombre}">
+                        <div class="producto-info">
+                            <h3>${producto.nombre}</h3>
+                            <a class="btn-whatsapp" href="https://wa.me/51914236008?text=${mensajeWsp}" target="_blank" rel="noopener noreferrer">
+                                💬 Consultar oferta
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", cargarOfertas);
+
+        // MODAL CONTACTO
+        const abrirContacto = document.getElementById("abrirContacto");
+        const modalContacto = document.getElementById("modalContacto");
+        const cerrarContacto = document.getElementById("cerrarContacto");
+
+        abrirContacto.addEventListener("click", (e) => {
+            e.preventDefault();
+            modalContacto.classList.add("activo");
+        });
+
+        cerrarContacto.addEventListener("click", () => modalContacto.classList.remove("activo"));
+        modalContacto.addEventListener("click", (e) => {
+            if (e.target === modalContacto) modalContacto.classList.remove("activo");
+        });
+
+        // BUSCADOR
+        const buscadorPrincipal = document.getElementById("busquedaPrincipal");
+        const resultadosPrincipal = document.getElementById("resultadosBusquedaPrincipal");
+
+        const productosBusqueda = productosChinaMart
+            .filter(p => p.soloMayores !== true)
+            .map(p => {
+                const idCat = detectarCategoriaProducto(p);
+                if (!idCat) return null;
+                const datosCat = categoriasChinaMart[idCat];
+                return {
+                    nombre: p.nombre,
+                    categoria: datosCat ? datosCat.nombre : idCat,
+                    id: idCat,
+                    palabrasClave: p.palabrasClave || []
+                };
+            }).filter(Boolean);
+
+        buscadorPrincipal.addEventListener("input", () => {
+            const consulta = normalizarTextoProducto(buscadorPrincipal.value);
+            resultadosPrincipal.innerHTML = "";
+
+            if (!consulta) {
+                resultadosPrincipal.classList.remove("visible");
+                return;
+            }
+
+            const coincidencias = productosBusqueda.filter(p => {
+                const texto = normalizarTextoProducto(p.nombre + " " + p.categoria + " " + p.palabrasClave.join(" "));
+                return texto.includes(consulta);
+            }).slice(0, 6);
+
+            if (coincidencias.length === 0) {
+                resultadosPrincipal.innerHTML = `<div class="sin-resultados-busqueda">No encontramos productos con “${buscadorPrincipal.value.replace(/[<>]/g, "")}”.</div>`;
+            } else {
+                coincidencias.forEach(p => {
+                    const enlace = document.createElement("a");
+                    enlace.className = "resultado-busqueda";
+                    enlace.href = `categorias.html?buscar=${encodeURIComponent(p.nombre)}#${encodeURIComponent(p.id)}`;
+                    enlace.innerHTML = `<strong>${p.nombre}</strong><span>${p.categoria}</span>`;
+                    resultadosPrincipal.appendChild(enlace);
+                });
+            }
+            resultadosPrincipal.classList.add("visible");
+        });
+    </script>
+
+</body>
+</html>
