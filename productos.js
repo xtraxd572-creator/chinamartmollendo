@@ -7007,10 +7007,29 @@ const productosChinaMart = [
             "punta",
             "arbol",
             "tricolor",
-            "navidad",
+            "navidad"
 
             ],
         mensaje: "Hola, quisiera consultar por la estrella punta de arbol tricolor",
+
+        codigo: "",
+        stock: null
+    },
+    {
+        nombre: "estrella fugaz de arbol dorada",
+        imagen: "dorada.png",
+        categoria: "articulos de navidad",
+        nOferta: true,
+
+        palabrasClave: [
+            "estrella",
+            "fugaz",
+            "arbol",
+            "dorada",
+            "navidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la estrella fugaz de arbol dorada",
 
         codigo: "",
         stock: null
