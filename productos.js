@@ -6745,6 +6745,7 @@ const productosChinaMart = [
         nombre: "reno y flor de pascua dorados",
         imagen: "reno_y_flor_de_pascua.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "reno",
@@ -6764,6 +6765,7 @@ const productosChinaMart = [
         nombre: "copo de nieve con lazo rustico",
         imagen: "copo_de_nieve.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "copo",
@@ -6783,6 +6785,7 @@ const productosChinaMart = [
         nombre: "set de renos dorados y rojos",
         imagen: "renos_dorados_y_rojos.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "renos",
@@ -6801,6 +6804,7 @@ const productosChinaMart = [
         nombre: "pack de flores de pascua multicolor",
         imagen: "flores_de_pascua.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "pack",
@@ -6820,6 +6824,7 @@ const productosChinaMart = [
         nombre: "adornos colgantes filigrana",
         imagen: "filigrana_colgante.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "adornos",
@@ -6838,6 +6843,7 @@ const productosChinaMart = [
         nombre: "estrella punta de arbol dorada",
         imagen: "estrella_dorada.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "estrella",
@@ -6857,6 +6863,7 @@ const productosChinaMart = [
         nombre: "set de pavos reales escarchados",
         imagen: "pavos_reales.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "pavos",
@@ -6875,6 +6882,7 @@ const productosChinaMart = [
         nombre: "colgante navideño de campanas",
         imagen: "campanas.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "colgante",
@@ -6893,6 +6901,7 @@ const productosChinaMart = [
         nombre: "colgante campana de gnomo",
         imagen: "campana_de_gnomo.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "colgante",
@@ -6911,6 +6920,7 @@ const productosChinaMart = [
         nombre: "estrella punta de arbol dorada puro",
         imagen: "estrella.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "estrella",
@@ -6931,6 +6941,7 @@ const productosChinaMart = [
         nombre: "lazo navideño calado dorado",
         imagen: "lazo_navideño.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "lazo",
