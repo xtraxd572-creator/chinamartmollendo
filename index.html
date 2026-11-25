@@ -951,35 +951,6 @@
 
 <script src="productos.js?v=3"></script>
 
-    <script src="productos.js?v=3"></script>
-
-<script>
-function cargarOfertas() {
-
-    const contenedor = document.getElementById("lista-ofertas");
-
-    const productosOferta = productosChinaMart.filter(
-        producto => producto.enOferta === true
-    );
-
-    contenedor.innerHTML = "";
-
-    productosOferta.forEach(producto => {
-
-        contenedor.innerHTML += `
-            <div class="producto-oferta">
-                <img src="${producto.imagen}" alt="${producto.nombre}">
-                <h3>${producto.nombre}</h3>
-                <span>🎁 En oferta</span>
-            </div>
-        `;
-
-    });
-}
-
-document.addEventListener("DOMContentLoaded", cargarOfertas);
-</script>
-
 <!-- Aquí continúa el siguiente script que ya tenías -->
     <script>
 
