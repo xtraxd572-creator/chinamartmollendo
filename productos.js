@@ -6995,6 +6995,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "estrella punta de arbol tricolor",
+        imagen: "tricolor.png",
+        categoria: "articulos de navidad",
+        enOferta: true,
+
+        palabrasClave: [
+            "estrella",
+            "punta",
+            "arbol",
+            "tricolor",
+            "navidad",
+
+            ],
+        mensaje: "Hola, quisiera consultar por la estrella punta de arbol tricolor",
+
+        codigo: "",
+        stock: null
     }
 ];
 
