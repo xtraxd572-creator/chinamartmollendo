@@ -6949,6 +6949,7 @@ const productosChinaMart = [
         nombre: "campana calada con lazo",
         imagen: "campana_calada.png",
         categoria: "articulos de navidad",
+         enOferta: true,
 
         palabrasClave: [
             "campana",
