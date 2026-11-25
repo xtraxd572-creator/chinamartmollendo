@@ -7033,6 +7033,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "estrella punta de arbol fuccsia",
+        imagen: "fuccia.png",
+        categoria: "articulos de navidad",
+        nOferta: true,
+
+        palabrasClave: [
+            "estrella",
+            "punta",
+            "arbol",
+            "fuccsia",
+            "navidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la estrella punta de arbol fuccsia",
+
+        codigo: "",
+        stock: null
     }
 ];
 
