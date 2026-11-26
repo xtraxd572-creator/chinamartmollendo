@@ -7125,7 +7125,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    }
+    },
+    {
+        nombre: "esferas navideñas caladas elegantes",
+  imagen: "esferas_navidenas_caladas.png",
+  categoria: "articulos de navidad",
+  Oferta: true,
+  palabrasClave: [
+    "esferas",
+    "navideña",
+    "caladas",
+    "elegante",
+    "decorativa",
+    "navidad",
+    "rojo",
+    "dorado"
+  ],
+  mensaje: "Hola, quisiera consultar por las esferas navideñas caladas elegantes",
+  codigo: "",
+  stock: null
+}
     };
 
 
