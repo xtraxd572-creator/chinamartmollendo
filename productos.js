@@ -7184,6 +7184,26 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por los adornos navideños de reno y corazón escarchados",
   codigo: "",
   stock: null
+},
+    {
+        nombre: "estrellas navideñas de filigrana caladas",
+  imagen: "estrellas_navidenas_filigrana_caladas.png",
+  categoria: "articulos de navidad",
+  Oferta: true,
+  palabrasClave: [
+    "estrellas",
+    "navideña",
+    "filigrana",
+    "caladas",
+    "colgantes",
+    "oro",
+    "plata",
+    "rojo",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por las estrellas navideñas de filigrana caladas",
+  codigo: "",
+  stock: null
 }
     };
 
