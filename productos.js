@@ -7144,6 +7144,26 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por las esferas navideñas caladas elegantes",
   codigo: "",
   stock: null
+},
+    {
+         nombre: "colgantes navideños de tambor y regalo",
+  imagen: "colgantes_navidenos_tambor_regalo.png",
+  categoria: "articulos de navidad",
+  Oferta: true,
+  palabrasClava: [
+    "adornos",
+    "navideña",
+    "tambor",
+    "regalo",
+    "esfera",
+    "colgantes",
+    "rojo",
+    "dorado",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por los colgantes navideños de tambor y regalo",
+  codigo: "",
+  stock: null
 }
     };
 
