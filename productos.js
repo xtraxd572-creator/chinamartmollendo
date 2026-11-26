@@ -7106,6 +7106,25 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "libelula navideña elegante decorativa",
+        imagen: "libelula_navideña.png",
+        categoria: "articulos de navidad",
+        Oferta: true,
+
+        palabrasClava: [
+            "libelula",
+            "navideña",
+            "elegante",
+            "decorativa",
+            "navidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la libelula navideña elegante decorativa",
+
+        codigo: "",
+        stock: null
     }
     };
 
