@@ -7150,7 +7150,7 @@ const productosChinaMart = [
   imagen: "colgantes_navidenos_tambor_regalo.png",
   categoria: "articulos de navidad",
   Oferta: true,
-  palabrasClava: [
+  palabrasClave: [
     "adornos",
     "navideña",
     "tambor",
@@ -7162,6 +7162,26 @@ const productosChinaMart = [
     "navidad"
   ],
   mensaje: "Hola, quisiera consultar por los colgantes navideños de tambor y regalo",
+  codigo: "",
+  stock: null
+},
+    {
+        nombre: "adornos navideños de reno y corazón escarchados",
+  imagen: "adornos_navidenos_reno_corazon.png",
+  categoria: "articulos de navidad",
+  Oferta: true,
+  palabrasClave: [
+    "adornos",
+    "navideña",
+    "reno",
+    "corazón",
+    "colgantes",
+    "escarchado",
+    "dorado",
+    "plata",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por los adornos navideños de reno y corazón escarchados",
   codigo: "",
   stock: null
 }
