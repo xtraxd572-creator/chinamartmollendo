@@ -7205,7 +7205,7 @@ const productosChinaMart = [
   codigo: "",
   stock: null
 }
-    };
+    ];
 
 
 //categorias
