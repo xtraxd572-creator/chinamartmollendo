@@ -7052,7 +7052,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-    }
+    },
+    {
+        nombre: "adorno colgante de reno de navidad",
+        imagen: "colgante_reno.png",
+        categoria: "articulos de navidad",
+        nOferta: true,
+
+        palabrasClave: [
+            "adorno",
+            "colgante",
+            "reno",
+            "navidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar el adorno colgante de reno de navidad plateado",
+
+        codigo: "",
+        stock: null
 ];
 
 
