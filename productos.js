@@ -7070,7 +7070,26 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
-];
+    },
+    {
+        nomnbre: "adorno de flor navideño dorada",
+        imagen: "flor_navideña.png",
+        categoria: "articulos de navidad",
+        Oferta: true,
+
+        palabrasClave: [
+            "adorno",
+            "flor",
+            "navideño",
+            "dorada"
+
+            ],
+        mensaje: "Hola, quisiera consultar por el adorno de flor navideño dorada",
+
+        codigo: "",
+        stock: null
+    }
+    };
 
 
 //categorias
