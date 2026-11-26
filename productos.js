@@ -7088,6 +7088,24 @@ const productosChinaMart = [
 
         codigo: "",
         stock: null
+    },
+    {
+        nombre: "campanas navideñas doradas",
+        imagen: "campanas_navideñas.png",
+        categoria: "artculos de navidad",
+        Oferta: true,
+
+        palabrasClave: [
+            "campanas",
+            "navideñas",
+            "doradas",
+            "navidad"
+
+            ],
+        mensaje: "Hola, quisiera consultar por la campana decorativa de navidad dorada",
+
+        codigo: "",
+        stock: null
     }
     };
 
