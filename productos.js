@@ -7355,6 +7355,28 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por el pack de estrellas navideñas de escarcha multicolores",
   codigo: "",
   stock: null
+},
+    {
+        nombre: 'pack de campanas navideñas metálicas multicolores',
+  imagen: 'pack_campanas_navidenas_metalicas_multicolor.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'campanas',
+    'navideña',
+    'metálicas',
+    'brillantes',
+    'oro',
+    'plata',
+    'rojo',
+    'pack',
+    'adornos',
+    'colgantes',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de campanas navideñas metálicas multicolores',
+  codigo: "",
+  stock: null
 }
     ];
 
