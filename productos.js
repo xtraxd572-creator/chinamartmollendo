@@ -7268,6 +7268,29 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por las campanas navideñas doradas",
   codigo: "",
   stock: null
+},
+    {
+         nombre: "pack de adornos navideños surtidos",
+  imagen: "pack_adornos_navidenos_surtidos.png",
+  categoria: "articulos de navidad",
+  enOferta: true,
+  palabrasClave: [
+    "adornos",
+    "navideña",
+    "surtidos",
+    "esferas",
+    "regalos",
+    "merry christmas",
+    "oro",
+    "rojo",
+    "verde",
+    "pack",
+    "colgantes",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por el pack de adornos navideños surtidos",
+  codigo: "",
+  stock: null
 }
     ];
 
