@@ -7019,7 +7019,7 @@ const productosChinaMart = [
         nombre: "estrella fugaz de arbol dorada",
         imagen: "dorada.png",
         categoria: "articulos de navidad",
-        nOferta: true,
+         enOferta: true,
 
         palabrasClave: [
             "estrella",
@@ -7038,7 +7038,7 @@ const productosChinaMart = [
         nombre: "estrella punta de arbol fuccsia",
         imagen: "fuccia.png",
         categoria: "articulos de navidad",
-        nOferta: true,
+         enOferta: true,
 
         palabrasClave: [
             "estrella",
@@ -7057,7 +7057,7 @@ const productosChinaMart = [
         nombre: "adorno colgante de reno de navidad",
         imagen: "colgante_reno.png",
         categoria: "articulos de navidad",
-        nOferta: true,
+         enOferta: true,
 
         palabrasClave: [
             "adorno",
@@ -7075,7 +7075,7 @@ const productosChinaMart = [
         nomnbre: "adorno de flor navideño dorada",
         imagen: "flor_navideña.png",
         categoria: "articulos de navidad",
-        Oferta: true,
+         enOferta: true,
 
         palabrasClave: [
             "adorno",
@@ -7093,7 +7093,7 @@ const productosChinaMart = [
         nombre: "campanas navideñas doradas",
         imagen: "campanas_navideñas.png",
         categoria: "artculos de navidad",
-        Oferta: true,
+         enOferta: true,
 
         palabrasClave: [
             "campanas",
@@ -7111,7 +7111,7 @@ const productosChinaMart = [
         nombre: "libelula navideña elegante decorativa",
         imagen: "libelula_navideña.png",
         categoria: "articulos de navidad",
-        Oferta: true,
+         enOferta: true,
 
         palabrasClava: [
             "libelula",
@@ -7130,7 +7130,7 @@ const productosChinaMart = [
         nombre: "esferas navideñas caladas elegantes",
   imagen: "esferas_navidenas_caladas.png",
   categoria: "articulos de navidad",
-  Oferta: true,
+   enOferta: true,
   palabrasClave: [
     "esferas",
     "navideña",
@@ -7149,7 +7149,7 @@ const productosChinaMart = [
          nombre: "colgantes navideños de tambor y regalo",
   imagen: "colgantes_navidenos_tambor_regalo.png",
   categoria: "articulos de navidad",
-  Oferta: true,
+   enOferta: true,
   palabrasClave: [
     "adornos",
     "navideña",
@@ -7169,7 +7169,7 @@ const productosChinaMart = [
         nombre: "adornos navideños de reno y corazón escarchados",
   imagen: "adornos_navidenos_reno_corazon.png",
   categoria: "articulos de navidad",
-  Oferta: true,
+   enOferta: true,
   palabrasClave: [
     "adornos",
     "navideña",
@@ -7189,7 +7189,7 @@ const productosChinaMart = [
         nombre: "estrellas navideñas de filigrana caladas",
   imagen: "estrellas_navidenas_filigrana_caladas.png",
   categoria: "articulos de navidad",
-  Oferta: true,
+   enOferta: true,
   palabrasClave: [
     "estrellas",
     "navideña",
@@ -7209,7 +7209,7 @@ const productosChinaMart = [
           nombre: "flores navideñas artificiales de glitter",
   imagen: "flores_navidenas_glitter_multicolor.png",
   categoria: "articulos de navidad",
-  Oferta: true,
+  enOferta: true,
   palabrasClave: [
     "flores",
     "navideña",
