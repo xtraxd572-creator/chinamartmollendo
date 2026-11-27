@@ -7377,6 +7377,29 @@ const productosChinaMart = [
   mensaje: 'Hola, quisiera consultar por el pack de campanas navideñas metálicas multicolores',
   codigo: "",
   stock: null
+},
+    {
+        nombre: 'pack de colgantes navideños de carámbanos de escarcha',
+  imagen: 'pack_colgantes_navidenos_carambanos_escarcha.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'colgantes',
+    'carámbanos',
+    'espirales',
+    'navideña',
+    'escarcha',
+    'glitter',
+    'oro',
+    'plata',
+    'rojo',
+    'pack',
+    'adornos',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de colgantes navideños de carámbanos de escarcha',
+  codigo: "",
+  stock: null
 }
     ];
 
