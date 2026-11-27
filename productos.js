@@ -7446,6 +7446,29 @@ const productosChinaMart = [
   mensaje: 'Hola, quisiera consultar por el pack de mini campanas navideñas labradas multicolores',
   codigo: "",
   stock: null
+},
+    {
+        nombre: 'pack de colgantes navideños de coronas de escarcha',
+  imagen: 'pack_colgantes_navidenos_coronas_escarcha.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'coronas',
+    'realeza',
+    'navideña',
+    'escarcha',
+    'glitter',
+    'purpurina',
+    'oro',
+    'rojo',
+    'pack',
+    'adornos',
+    'colgantes',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de colgantes navideños de coronas de escarcha',
+  codigo: "",
+  stock: null
 }
     ];
 
