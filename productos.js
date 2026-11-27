@@ -7489,6 +7489,31 @@ const productosChinaMart = [
   mensaje: 'Hola, quisiera consultar por el pack de colgantes navideños de renos y campanas dorados',
   codigo: "",
   stock: null
+},
+    {
+        nombre: 'pack de colgantes navideños de renos con escarcha multicolores',
+  imagen: 'pack_colgantes_navidenos_renos_escarcha_multicolor.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'renos',
+    'ciervos',
+    'multicolor',
+    'azul',
+    'plata',
+    'oro',
+    'rojo',
+    'escarcha',
+    'glitter',
+    'navideña',
+    'pack',
+    'adornos',
+    'colgantes',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de colgantes navideños de renos con escarcha multicolores',
+  codigo: "",
+  stock: null
 }
     ];
 
