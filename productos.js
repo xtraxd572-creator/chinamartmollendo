@@ -7332,6 +7332,29 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por los adornos de renos navideños con glitter",
   codigo: "",
   stock: null
+},
+    {
+        nombre: "pack de estrellas navideñas de escarcha multicolores",
+  imagen: "pack_estrellas_navidenas_escarcha_multicolor.png",
+  categoria: "articulos de navidad",
+  enOferta: true,
+  palabrasClave: [
+    "estrellas",
+    "navideña",
+    "escarcha",
+    "glitter",
+    "purpurina",
+    "estrella federal",
+    "oro",
+    "plata",
+    "rojo",
+    "pack",
+    "colgantes",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por el pack de estrellas navideñas de escarcha multicolores",
+  codigo: "",
+  stock: null
 }
     ];
 
