@@ -7226,6 +7226,28 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por el pack de flores navideñas artificiales de glitter",
   codigo: "",
   stock: null
+},
+    {
+         nombre: "adornos navideños de filigrana con glitter",
+  imagen: "adornos_navidenos_filigrana_glitter.png",
+  categoria: "articulos de navidad",
+  enOferta: true,
+  palabrasClave: [
+    "adornos",
+    "navideña",
+    "filigrana",
+    "glitter",
+    "purpurina",
+    "barroco",
+    "troquelado",
+    "oro",
+    "rojo",
+    "colgantes",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por los adornos navideños de filigrana con glitter",
+  codigo: "",
+  stock: null
 }
     ];
 
