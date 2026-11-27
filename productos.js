@@ -7400,6 +7400,29 @@ const productosChinaMart = [
   mensaje: 'Hola, quisiera consultar por el pack de colgantes navideños de carámbanos de escarcha',
   codigo: "",
   stock: null
+},
+    {
+          nombre: 'pack de pajaritos navideños de escarcha dorados',
+  imagen: 'pack_pajaritos_navidenos_escarcha_dorado.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'pajaritos',
+    'aves',
+    'navideña',
+    'escarcha',
+    'glitter',
+    'purpurina',
+    'dorado',
+    'oro',
+    'pack',
+    'adornos',
+    'colgantes',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de pajaritos navideños de escarcha dorados',
+  codigo: "",
+  stock: null
 }
     ];
 
