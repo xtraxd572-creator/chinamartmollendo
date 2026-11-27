@@ -7469,6 +7469,26 @@ const productosChinaMart = [
   mensaje: 'Hola, quisiera consultar por el pack de colgantes navideños de coronas de escarcha',
   codigo: "",
   stock: null
+},
+    {
+         nombre: 'pack de colgantes navideños de renos y campanas dorados',
+  imagen: 'pack_colgantes_navidenos_renos_campanas_dorados.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'renos',
+    'campanas',
+    'dorados',
+    'metálicos',
+    'navideña',
+    'pack',
+    'adornos',
+    'colgantes',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de colgantes navideños de renos y campanas dorados',
+  codigo: "",
+  stock: null
 }
     ];
 
