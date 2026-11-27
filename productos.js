@@ -7204,6 +7204,28 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por las estrellas navideñas de filigrana caladas",
   codigo: "",
   stock: null
+},
+    {
+          nombre: "flores navideñas artificiales de glitter",
+  imagen: "flores_navidenas_glitter_multicolor.png",
+  categoria: "articulos de navidad",
+  Oferta: true,
+  palabrasClave: [
+    "flores",
+    "navideña",
+    "glitter",
+    "purpurina",
+    "pascuas",
+    "dalias",
+    "oro",
+    "plata",
+    "rojo",
+    "pack",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por el pack de flores navideñas artificiales de glitter",
+  codigo: "",
+  stock: null
 }
     ];
 
