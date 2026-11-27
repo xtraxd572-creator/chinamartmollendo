@@ -7291,6 +7291,26 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por el pack de adornos navideños surtidos",
   codigo: "",
   stock: null
+},
+    {
+         nombre: "estrella punta de árbol dorada",
+  imagen: "estrella_punta_arbol_dorada.png",
+  categoria: "articulos de navidad",
+  enOferta: true,
+  palabrasClave: [
+    "estrella",
+    "punta de árbol",
+    "puntera",
+    "dorada",
+    "oro",
+    "brillante",
+    "relieve",
+    "adorno",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por la estrella punta de árbol dorada",
+  codigo: "",
+  stock: null
 }
     ];
 
