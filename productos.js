@@ -7311,6 +7311,27 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por la estrella punta de árbol dorada",
   codigo: "",
   stock: null
+},
+    {
+        nombre: "adornos de renos navideños con glitter",
+  imagen: "adornos_renos_navidenos_glitter_pack.png",
+  categoria: "articulos de navidad",
+  enOferta: true,
+  palabrasClave: [
+    "renos",
+    "navideña",
+    "glitter",
+    "purpurina",
+    "oro",
+    "rojo",
+    "pack",
+    "colgantes",
+    "adornos",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por los adornos de renos navideños con glitter",
+  codigo: "",
+  stock: null
 }
     ];
 
