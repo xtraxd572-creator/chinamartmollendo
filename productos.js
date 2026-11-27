@@ -7248,6 +7248,26 @@ const productosChinaMart = [
   mensaje: "Hola, quisiera consultar por los adornos navideños de filigrana con glitter",
   codigo: "",
   stock: null
+},
+    {
+        nombre: "campanas navideñas doradas",
+  imagen: "campanas_navidenas_doradas_pack.png",
+  categoria: "articulos de navidad",
+  enOferta: true,
+  palabrasClave: [
+    "campanas",
+    "navideña",
+    "doradas",
+    "oro",
+    "pack",
+    "relieve",
+    "colgantes",
+    "adornos",
+    "navidad"
+  ],
+  mensaje: "Hola, quisiera consultar por las campanas navideñas doradas",
+  codigo: "",
+  stock: null
 }
     ];
 
