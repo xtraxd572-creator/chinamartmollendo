@@ -7537,6 +7537,30 @@ const productosChinaMart = [
   mensaje: 'Hola, quisiera consultar por el pack de campanas navideñas medianas de escarcha multicolores',
   codigo: "",
   stock: null
+},
+    {
+         nombre: 'pack de estrellas navideñas planas de escarcha multicolores',
+  imagen: 'pack_estrellas_navidenas_planas_escarcha_multicolor.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'estrellas',
+    'planas',
+    'navideña',
+    'escarcha',
+    'glitter',
+    'purpurina',
+    'oro',
+    'plata',
+    'rojo',
+    'pack',
+    'adornos',
+    'colgantes',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de estrellas navideñas planas de escarcha multicolores',
+  codigo: "",
+  stock: null
 }
     ];
 
