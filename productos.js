@@ -7423,6 +7423,29 @@ const productosChinaMart = [
   mensaje: 'Hola, quisiera consultar por el pack de pajaritos navideños de escarcha dorados',
   codigo: "",
   stock: null
+},
+    {
+        nombre: 'pack de mini campanas navideñas labradas multicolores',
+  imagen: 'pack_mini_campanas_navidenas_labradas_multicolor.png',
+  categoria: 'articulos de navidad',
+  enOferta: true,
+  palabrasClave: [
+    'campanas',
+    'mini campanas',
+    'navideña',
+    'labradas',
+    'texturizadas',
+    'oro',
+    'plata',
+    'rojo',
+    'pack',
+    'adornos',
+    'colgantes',
+    'navidad'
+  ],
+  mensaje: 'Hola, quisiera consultar por el pack de mini campanas navideñas labradas multicolores',
+  codigo: "",
+  stock: null
 }
     ];
 
